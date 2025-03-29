@@ -1,0 +1,93 @@
+---
+title: "acessando_dados"
+format: html
+editor: visual
+---
+
+## 01. Acessando dados de nascidos vivos
+
+```{r}
+#| message: false
+#| warning: false
+
+library(tidyverse)
+library(RODBC)
+
+
+```
+
+O primeiro passo consiste em levantar o total de nascidos vivos por região de saúde.
+
+```{r}
+#| message: false
+#| warning: false
+
+dremio_host <- Sys.getenv("endereco")
+dremio_port <- Sys.getenv("port")
+dremio_uid <- Sys.getenv("uid")
+dremio_pwd <- Sys.getenv("datalake")
+
+
+channel <- odbcDriverConnect(sprintf("DRIVER=Dremio Connector;
+                                     HOST=%s;
+                                     PORT=%s;
+                                     UID=%s;
+                                     PWD=%s;
+                                     AUTHENTICATIONTYPE=Basic Authentication;
+                                     CONNECTIONTYPE=Direct", 
+                         dremio_host, 
+                         dremio_port, 
+                         dremio_uid, 
+                         dremio_pwd))
+
+query <- 'SELECT * FROM "@daniel"."nascidos_regioes_saude"'
+
+
+nascidos <- sqlQuery(channel, 
+                     query, 
+                     as.is = TRUE) 
+
+```
+
+Criando a coluna no formato mês/ano e depois plotar resultado.
+
+```{r}
+
+nascidos$data_nascimento <- as.Date(paste(nascidos$ANO,
+                                          nascidos$MES, 
+                                          "01", sep = "-"))
+
+nascidos <- nascidos |> 
+              janitor::clean_names() |> 
+              select(ano, mes, data_nascimento, 
+                     uf_sigla, cod_regsaud,
+                     regiao_saude, total)
+
+nascidos$total <- as.numeric(nascidos$total)
+
+```
+
+Plotando o gráfico de uma região de saúde apenas.
+
+```{r}
+
+nascidos |> 
+  filter(regiao_saude == "Chapadinha") |> 
+  ggplot(aes(x = data_nascimento, 
+             y = total)) + 
+  geom_line() + theme_minimal() + xlab("Mês/ano") + 
+  ylab("Total")
+
+```
+
+Exportando os dados para consumo facilitado em outros momentos.
+
+```{r}
+
+writexl::write_xlsx(nascidos, 
+                    "~/GitHub/materno_infantil/01_dados/nascidos_regiao_saude.xlsx")
+
+write.csv(nascidos, 
+          "~/GitHub/materno_infantil/01_dados/nascidos_regiao_saude.csv")
+
+```

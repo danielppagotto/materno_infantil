@@ -1,0 +1,829 @@
+"cod_regsaude",".index",".value",".model_id",".model_desc",".key","tipo",".conf_lo",".conf_hi"
+51003,2001-09-01,110,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2012-11-01,74,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2023-01-01,123,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2001-04-01,119,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2014-08-01,103,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2022-08-01,150,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2008-04-01,114,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2019-12-01,114,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2012-09-01,83,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2016-06-01,110,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2018-05-01,116,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2002-10-01,107,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2005-07-01,117,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2011-01-01,76,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2003-02-01,116,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2023-08-01,139,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2006-08-01,93,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2006-04-01,131,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2017-12-01,92,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2009-06-01,91,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2009-09-01,102,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2001-02-01,79,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2008-12-01,133,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2006-03-01,117,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2003-05-01,106,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2004-04-01,137,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2012-02-01,75,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2020-04-01,113,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2014-05-01,108,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2004-06-01,122,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2018-03-01,102,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2003-01-01,100,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2005-01-01,88,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2000-02-01,94,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2010-01-01,110,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2018-08-01,118,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2020-01-01,103,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2021-03-01,136,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2014-02-01,88,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2002-02-01,101,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2021-08-01,123,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2004-08-01,121,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2002-11-01,100,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2001-03-01,74,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2000-06-01,100,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2014-04-01,117,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2009-01-01,101,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2002-06-01,114,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2007-07-01,125,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2005-05-01,163,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2004-03-01,132,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2003-12-01,94,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2019-11-01,113,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2017-09-01,102,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2021-02-01,112,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2019-05-01,118,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2022-01-01,116,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2022-12-01,139,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2017-06-01,92,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2012-01-01,77,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2005-11-01,116,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2015-08-01,110,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2011-10-01,98,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2009-03-01,89,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2023-10-01,127,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2006-01-01,136,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2001-07-01,104,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2022-10-01,136,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2010-09-01,95,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2000-12-01,57,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2009-12-01,90,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2007-02-01,106,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2004-07-01,100,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2001-05-01,101,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2018-02-01,101,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2013-01-01,87,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2001-12-01,105,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2017-03-01,112,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2014-01-01,93,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2015-01-01,106,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2005-12-01,39,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2000-10-01,108,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2019-02-01,123,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2009-04-01,101,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2013-04-01,103,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2003-10-01,105,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2020-12-01,130,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2021-05-01,136,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2017-10-01,123,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2017-08-01,83,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2004-11-01,103,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2010-03-01,100,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2022-04-01,139,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2015-10-01,97,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2020-03-01,122,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2013-03-01,105,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2019-09-01,114,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2008-05-01,126,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2013-05-01,113,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2013-07-01,94,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2002-08-01,115,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2010-11-01,78,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2001-01-01,80,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2012-04-01,97,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2003-08-01,86,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2015-02-01,108,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2023-07-01,127,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2008-01-01,69,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2013-11-01,71,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2016-04-01,114,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2005-08-01,145,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2013-12-01,82,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2014-12-01,65,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2020-10-01,127,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2017-07-01,98,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2010-12-01,71,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2015-03-01,106,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2008-10-01,107,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2012-05-01,119,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2020-07-01,118,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2003-09-01,110,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2003-04-01,114,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2015-05-01,113,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2011-02-01,87,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2002-03-01,112,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2016-03-01,108,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2010-04-01,108,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2008-07-01,110,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2021-10-01,127,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2018-01-01,104,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2017-04-01,68,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2009-08-01,100,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2011-08-01,92,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2006-02-01,108,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2008-02-01,80,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2009-02-01,98,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2018-10-01,104,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2011-07-01,82,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2020-05-01,153,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2012-03-01,83,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2005-06-01,112,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2006-12-01,90,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2002-07-01,111,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2008-03-01,111,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2022-11-01,125,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2000-01-01,93,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2001-11-01,108,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2007-09-01,112,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2006-06-01,139,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2002-01-01,95,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2007-12-01,77,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2006-11-01,86,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2010-06-01,98,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2021-06-01,123,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2000-08-01,108,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2007-03-01,97,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2021-09-01,124,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2022-06-01,137,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2008-06-01,106,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2004-05-01,133,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2019-04-01,121,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2001-08-01,106,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2018-07-01,124,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2006-05-01,134,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2006-07-01,94,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2013-08-01,75,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2016-05-01,106,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2023-02-01,117,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2001-06-01,98,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2011-11-01,86,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2002-12-01,86,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2002-09-01,103,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2021-07-01,122,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2020-02-01,97,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2004-01-01,115,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2014-11-01,95,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2018-12-01,116,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2011-12-01,97,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2015-12-01,80,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2012-06-01,95,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2009-07-01,105,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2020-06-01,115,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2005-09-01,114,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2022-03-01,134,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2019-10-01,111,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2022-02-01,117,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2005-03-01,99,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2007-05-01,106,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2011-05-01,100,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2010-10-01,109,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2016-10-01,71,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2014-03-01,68,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2022-05-01,148,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2016-01-01,121,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2010-07-01,94,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2019-08-01,126,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2015-06-01,98,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2010-02-01,92,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2002-05-01,118,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2019-06-01,129,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2011-04-01,86,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2023-11-01,133,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2000-07-01,105,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2021-04-01,128,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2023-03-01,135,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2000-05-01,111,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2017-05-01,126,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2001-10-01,111,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2023-12-01,115,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2023-04-01,147,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2013-10-01,74,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2012-12-01,96,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2006-09-01,108,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2022-09-01,123,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2016-11-01,91,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2004-02-01,99,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2000-03-01,114,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2015-11-01,91,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2006-10-01,105,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2015-04-01,99,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2020-09-01,113,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2003-03-01,122,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2016-08-01,93,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2018-04-01,143,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2007-10-01,87,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2020-08-01,112,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2016-02-01,119,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2012-07-01,116,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2007-06-01,115,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2004-10-01,115,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2003-11-01,95,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2021-12-01,122,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2017-02-01,93,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2011-06-01,116,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2016-07-01,110,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2007-01-01,108,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2014-09-01,114,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2011-09-01,107,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2014-07-01,84,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2012-10-01,95,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2018-06-01,54,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2019-03-01,147,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2005-04-01,121,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2018-11-01,114,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2009-05-01,82,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2021-01-01,110,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2004-09-01,123,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2019-07-01,117,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2017-11-01,109,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2007-11-01,79,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2014-06-01,90,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2017-01-01,86,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2012-08-01,105,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2005-10-01,88,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2007-04-01,72,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2013-06-01,98,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2004-12-01,111,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2003-07-01,105,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2003-06-01,126,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2014-10-01,77,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2016-09-01,106,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2002-04-01,107,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2021-11-01,112,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2009-11-01,88,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2016-12-01,101,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2013-09-01,108,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2023-05-01,161,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2008-08-01,115,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2018-09-01,122,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2010-05-01,108,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2008-11-01,94,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2010-08-01,111,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2000-09-01,110,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2015-07-01,107,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2011-03-01,107,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2023-06-01,142,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2015-09-01,109,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2000-04-01,116,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2009-10-01,113,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2020-11-01,141,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2007-08-01,116,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2008-09-01,109,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2000-11-01,81,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2023-09-01,102,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2019-01-01,125,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2005-02-01,85,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2013-02-01,83,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2022-07-01,108,0,"Dados Históricos","actual","histórico",NA,NA
+51003,2001-09-01,110,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2012-11-01,74,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2023-01-01,123,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2001-04-01,119,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2014-08-01,103,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2022-08-01,150,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2008-04-01,114,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2019-12-01,114,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2012-09-01,83,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2016-06-01,110,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2018-05-01,116,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2002-10-01,107,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2005-07-01,117,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2011-01-01,76,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2003-02-01,116,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2023-08-01,139,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2006-08-01,93,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2006-04-01,131,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2017-12-01,92,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2009-06-01,91,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2009-09-01,102,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2001-02-01,79,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2008-12-01,133,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2006-03-01,117,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2003-05-01,106,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2004-04-01,137,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2012-02-01,75,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2020-04-01,113,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2014-05-01,108,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2004-06-01,122,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2018-03-01,102,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2003-01-01,100,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2005-01-01,88,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2000-02-01,94,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2010-01-01,110,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2018-08-01,118,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2020-01-01,103,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2021-03-01,136,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2014-02-01,88,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2002-02-01,101,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2021-08-01,123,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2004-08-01,121,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2002-11-01,100,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2001-03-01,74,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2000-06-01,100,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2014-04-01,117,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2009-01-01,101,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2002-06-01,114,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2007-07-01,125,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2005-05-01,163,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2004-03-01,132,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2003-12-01,94,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2019-11-01,113,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2017-09-01,102,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2021-02-01,112,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2019-05-01,118,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2022-01-01,116,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2022-12-01,139,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2017-06-01,92,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2012-01-01,77,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2005-11-01,116,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2015-08-01,110,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2011-10-01,98,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2009-03-01,89,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2023-10-01,127,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2006-01-01,136,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2001-07-01,104,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2022-10-01,136,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2010-09-01,95,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2000-12-01,57,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2009-12-01,90,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2007-02-01,106,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2004-07-01,100,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2001-05-01,101,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2018-02-01,101,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2013-01-01,87,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2001-12-01,105,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2017-03-01,112,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2014-01-01,93,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2015-01-01,106,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2005-12-01,39,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2000-10-01,108,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2019-02-01,123,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2009-04-01,101,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2013-04-01,103,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2003-10-01,105,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2020-12-01,130,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2021-05-01,136,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2017-10-01,123,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2017-08-01,83,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2004-11-01,103,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2010-03-01,100,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2022-04-01,139,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2015-10-01,97,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2020-03-01,122,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2013-03-01,105,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2019-09-01,114,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2008-05-01,126,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2013-05-01,113,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2013-07-01,94,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2002-08-01,115,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2010-11-01,78,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2001-01-01,80,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2012-04-01,97,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2003-08-01,86,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2015-02-01,108,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2023-07-01,127,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2008-01-01,69,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2013-11-01,71,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2016-04-01,114,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2005-08-01,145,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2013-12-01,82,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2014-12-01,65,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2020-10-01,127,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2017-07-01,98,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2010-12-01,71,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2015-03-01,106,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2008-10-01,107,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2012-05-01,119,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2020-07-01,118,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2003-09-01,110,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2003-04-01,114,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2015-05-01,113,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2011-02-01,87,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2002-03-01,112,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2016-03-01,108,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2010-04-01,108,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2008-07-01,110,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2021-10-01,127,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2018-01-01,104,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2017-04-01,68,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2009-08-01,100,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2011-08-01,92,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2006-02-01,108,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2008-02-01,80,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2009-02-01,98,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2018-10-01,104,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2011-07-01,82,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2020-05-01,153,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2012-03-01,83,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2005-06-01,112,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2006-12-01,90,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2002-07-01,111,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2008-03-01,111,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2022-11-01,125,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2000-01-01,93,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2001-11-01,108,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2007-09-01,112,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2006-06-01,139,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2002-01-01,95,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2007-12-01,77,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2006-11-01,86,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2010-06-01,98,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2021-06-01,123,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2000-08-01,108,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2007-03-01,97,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2021-09-01,124,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2022-06-01,137,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2008-06-01,106,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2004-05-01,133,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2019-04-01,121,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2001-08-01,106,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2018-07-01,124,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2006-05-01,134,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2006-07-01,94,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2013-08-01,75,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2016-05-01,106,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2023-02-01,117,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2001-06-01,98,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2011-11-01,86,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2002-12-01,86,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2002-09-01,103,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2021-07-01,122,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2020-02-01,97,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2004-01-01,115,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2014-11-01,95,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2018-12-01,116,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2011-12-01,97,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2015-12-01,80,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2012-06-01,95,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2009-07-01,105,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2020-06-01,115,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2005-09-01,114,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2022-03-01,134,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2019-10-01,111,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2022-02-01,117,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2005-03-01,99,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2007-05-01,106,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2011-05-01,100,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2010-10-01,109,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2016-10-01,71,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2014-03-01,68,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2022-05-01,148,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2016-01-01,121,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2010-07-01,94,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2019-08-01,126,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2015-06-01,98,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2010-02-01,92,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2002-05-01,118,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2019-06-01,129,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2011-04-01,86,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2023-11-01,133,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2000-07-01,105,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2021-04-01,128,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2023-03-01,135,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2000-05-01,111,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2017-05-01,126,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2001-10-01,111,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2023-12-01,115,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2023-04-01,147,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2013-10-01,74,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2012-12-01,96,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2006-09-01,108,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2022-09-01,123,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2016-11-01,91,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2004-02-01,99,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2000-03-01,114,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2015-11-01,91,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2006-10-01,105,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2015-04-01,99,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2020-09-01,113,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2003-03-01,122,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2016-08-01,93,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2018-04-01,143,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2007-10-01,87,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2020-08-01,112,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2016-02-01,119,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2012-07-01,116,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2007-06-01,115,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2004-10-01,115,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2003-11-01,95,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2021-12-01,122,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2017-02-01,93,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2011-06-01,116,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2016-07-01,110,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2007-01-01,108,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2014-09-01,114,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2011-09-01,107,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2014-07-01,84,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2012-10-01,95,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2018-06-01,54,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2019-03-01,147,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2005-04-01,121,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2018-11-01,114,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2009-05-01,82,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2021-01-01,110,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2004-09-01,123,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2019-07-01,117,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2017-11-01,109,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2007-11-01,79,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2014-06-01,90,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2017-01-01,86,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2012-08-01,105,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2005-10-01,88,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2007-04-01,72,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2013-06-01,98,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2004-12-01,111,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2003-07-01,105,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2003-06-01,126,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2014-10-01,77,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2016-09-01,106,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2002-04-01,107,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2021-11-01,112,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2009-11-01,88,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2016-12-01,101,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2013-09-01,108,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2023-05-01,161,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2008-08-01,115,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2018-09-01,122,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2010-05-01,108,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2008-11-01,94,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2010-08-01,111,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2000-09-01,110,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2015-07-01,107,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2011-03-01,107,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2023-06-01,142,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2015-09-01,109,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2000-04-01,116,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2009-10-01,113,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2020-11-01,141,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2007-08-01,116,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2008-09-01,109,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2000-11-01,81,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2023-09-01,102,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2019-01-01,125,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2005-02-01,85,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2013-02-01,83,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2022-07-01,108,NA,"ACTUAL","actual","histórico",NA,NA
+51003,2024-01-01,128.379056406995,1,"PROPHET","prediction","projeção",100.703778035446,156.054334778545
+51003,2024-02-01,126.933459685118,1,"PROPHET","prediction","projeção",99.2581813135683,154.608738056668
+51003,2024-03-01,135.420589499839,1,"PROPHET","prediction","projeção",107.745311128289,163.095867871389
+51003,2024-04-01,141.831527929714,1,"PROPHET","prediction","projeção",114.156249558164,169.506806301264
+51003,2024-05-01,150.94766857788,1,"PROPHET","prediction","projeção",123.27239020633,178.62294694943
+51003,2024-06-01,133.657459546021,1,"PROPHET","prediction","projeção",105.982181174471,161.332737917571
+51003,2024-07-01,135.805950104649,1,"PROPHET","prediction","projeção",108.130671733099,163.481228476199
+51003,2024-08-01,136.949965555016,1,"PROPHET","prediction","projeção",109.274687183466,164.625243926566
+51003,2024-09-01,137.193269679078,1,"PROPHET","prediction","projeção",109.517991307528,164.868548050628
+51003,2024-10-01,133.720845034702,1,"PROPHET","prediction","projeção",106.045566663152,161.396123406252
+51003,2024-11-01,127.860208908927,1,"PROPHET","prediction","projeção",100.184930537377,155.535487280477
+51003,2024-12-01,127.094082135217,1,"PROPHET","prediction","projeção",99.4188037636674,154.769360506767
+51003,2025-01-01,129.780309276818,1,"PROPHET","prediction","projeção",102.105030905268,157.455587648368
+51003,2025-02-01,128.046113747758,1,"PROPHET","prediction","projeção",100.370835376208,155.721392119308
+51003,2025-03-01,139.928146731919,1,"PROPHET","prediction","projeção",112.252868360369,167.603425103469
+51003,2025-04-01,144.524096687694,1,"PROPHET","prediction","projeção",116.848818316144,172.199375059244
+51003,2025-05-01,152.924621892638,1,"PROPHET","prediction","projeção",125.249343521088,180.599900264188
+51003,2025-06-01,139.409519312792,1,"PROPHET","prediction","projeção",111.734240941242,167.084797684342
+51003,2025-07-01,139.122167512928,1,"PROPHET","prediction","projeção",111.446889141378,166.797445884477
+51003,2025-08-01,141.542965480777,1,"PROPHET","prediction","projeção",113.867687109227,169.218243852327
+51003,2025-09-01,141.188882308191,1,"PROPHET","prediction","projeção",113.513603936641,168.86416067974
+51003,2025-10-01,137.372537786961,1,"PROPHET","prediction","projeção",109.697259415411,165.047816158511
+51003,2025-11-01,131.71028581275,1,"PROPHET","prediction","projeção",104.0350074412,159.3855641843
+51003,2025-12-01,129.31163499547,1,"PROPHET","prediction","projeção",101.63635662392,156.98691336702
+51003,2026-01-01,134.394467887355,1,"PROPHET","prediction","projeção",106.719189515805,162.069746258905
+51003,2026-02-01,132.790395357265,1,"PROPHET","prediction","projeção",105.115116985715,160.465673728815
+51003,2026-03-01,144.39458603624,1,"PROPHET","prediction","projeção",116.71930766469,172.069864407789
+51003,2026-04-01,147.180800754492,1,"PROPHET","prediction","projeção",119.505522382942,174.856079126042
+51003,2026-05-01,154.937520266757,1,"PROPHET","prediction","projeção",127.262241895207,182.612798638306
+51003,2026-06-01,145.193958617381,1,"PROPHET","prediction","projeção",117.518680245831,172.869236988931
+51003,2026-07-01,142.43398337477,1,"PROPHET","prediction","projeção",114.75870500322,170.10926174632
+51003,2026-08-01,146.136820124013,1,"PROPHET","prediction","projeção",118.461541752463,173.812098495563
+51003,2026-09-01,145.166678098928,1,"PROPHET","prediction","projeção",117.491399727378,172.841956470478
+51003,2026-10-01,141.011199276242,1,"PROPHET","prediction","projeção",113.335920904692,168.686477647792
+51003,2026-11-01,135.544705377049,1,"PROPHET","prediction","projeção",107.869427005499,163.219983748599
+51003,2026-12-01,131.552049253832,1,"PROPHET","prediction","projeção",103.876770882282,159.227327625381
+51003,2027-01-01,139.049774515458,1,"PROPHET","prediction","projeção",111.374496143908,166.725052887008
+51003,2027-02-01,137.542163650261,1,"PROPHET","prediction","projeção",109.866885278711,165.217442021811
+51003,2027-03-01,148.819231714593,1,"PROPHET","prediction","projeção",121.143953343043,176.494510086143
+51003,2027-04-01,149.803286369949,1,"PROPHET","prediction","projeção",122.128007998399,177.478564741499
+51003,2027-05-01,156.988384885045,1,"PROPHET","prediction","projeção",129.313106513495,184.663663256595
+51003,2027-06-01,151.009278397543,1,"PROPHET","prediction","projeção",123.334000025993,178.684556769093
+51003,2027-07-01,145.741231041206,1,"PROPHET","prediction","projeção",118.065952669656,173.416509412756
+51003,2027-08-01,150.730639303086,1,"PROPHET","prediction","projeção",123.055360931536,178.405917674636
+51003,2027-09-01,149.126335850413,1,"PROPHET","prediction","projeção",121.451057478863,176.801614221963
+51003,2027-10-01,144.637183707607,1,"PROPHET","prediction","projeção",116.961905336057,172.312462079157
+51003,2027-11-01,139.364092548472,1,"PROPHET","prediction","projeção",111.688814176922,167.039370920022
+51003,2027-12-01,133.816978531074,1,"PROPHET","prediction","projeção",106.141700159524,161.492256902624
+51003,2028-01-01,143.745381609811,1,"PROPHET","prediction","projeção",116.070103238261,171.420659981361
+51003,2028-02-01,142.299784887938,1,"PROPHET","prediction","projeção",114.624506516388,169.975063259487
+51003,2028-03-01,150.786914702666,1,"PROPHET","prediction","projeção",123.111636331116,178.462193074215
+51003,2028-04-01,157.19785313254,1,"PROPHET","prediction","projeção",129.52257476099,184.87313150409
+51003,2028-05-01,166.313993780698,1,"PROPHET","prediction","projeção",138.638715409148,193.989272152248
+51003,2028-06-01,149.023784748834,1,"PROPHET","prediction","projeção",121.348506377284,176.699063120384
+51003,2028-07-01,151.172275307468,1,"PROPHET","prediction","projeção",123.496996935918,178.847553679018
+51003,2028-08-01,152.316290757824,1,"PROPHET","prediction","projeção",124.641012386274,179.991569129374
+51003,2028-09-01,152.559594881902,1,"PROPHET","prediction","projeção",124.884316510352,180.234873253452
+51003,2028-10-01,149.087170237519,1,"PROPHET","prediction","projeção",121.411891865969,176.762448609068
+51003,2028-11-01,143.226534111747,1,"PROPHET","prediction","projeção",115.551255740197,170.901812483297
+51003,2028-12-01,142.460407338041,1,"PROPHET","prediction","projeção",114.785128966491,170.135685709591
+51003,2029-01-01,145.146634479641,1,"PROPHET","prediction","projeção",117.471356108091,172.821912851191
+51003,2029-02-01,143.412438950588,1,"PROPHET","prediction","projeção",115.737160579038,171.087717322137
+51003,2029-03-01,155.294471934742,1,"PROPHET","prediction","projeção",127.619193563192,182.969750306292
+51003,2029-04-01,159.890421890525,1,"PROPHET","prediction","projeção",132.215143518975,187.565700262075
+51003,2029-05-01,168.290947095465,1,"PROPHET","prediction","projeção",140.615668723915,195.966225467015
+51003,2029-06-01,154.77584451562,1,"PROPHET","prediction","projeção",127.10056614407,182.45112288717
+51003,2029-07-01,154.488492715746,1,"PROPHET","prediction","projeção",126.813214344196,182.163771087296
+51003,2029-08-01,156.909290683611,1,"PROPHET","prediction","projeção",129.234012312061,184.584569055161
+51003,2029-09-01,156.555207511011,1,"PROPHET","prediction","projeção",128.879929139461,184.23048588256
+51003,2029-10-01,152.738862989789,1,"PROPHET","prediction","projeção",125.063584618239,180.414141361339
+51003,2029-11-01,147.076611015577,1,"PROPHET","prediction","projeção",119.401332644027,174.751889387127
+51003,2029-12-01,144.677960198292,1,"PROPHET","prediction","projeção",117.002681826742,172.353238569841
+51003,2030-01-01,149.760793090164,1,"PROPHET","prediction","projeção",122.085514718614,177.436071461714
+51003,2030-02-01,148.156720560084,1,"PROPHET","prediction","projeção",120.481442188534,175.831998931634
+51003,2030-03-01,159.760911239064,1,"PROPHET","prediction","projeção",132.085632867514,187.436189610614
+51003,2030-04-01,162.547125957314,1,"PROPHET","prediction","projeção",134.871847585764,190.222404328863
+51003,2030-05-01,170.303845469588,1,"PROPHET","prediction","projeção",142.628567098038,197.979123841138
+51003,2030-06-01,160.560283820212,1,"PROPHET","prediction","projeção",132.885005448662,188.235562191762
+51003,2030-07-01,157.800308577589,1,"PROPHET","prediction","projeção",130.125030206039,185.475586949139
+51003,2030-08-01,161.503145326826,1,"PROPHET","prediction","projeção",133.827866955276,189.178423698376
+51003,2030-09-01,160.533003301751,1,"PROPHET","prediction","projeção",132.857724930201,188.208281673301
+51003,2030-10-01,156.377524479052,1,"PROPHET","prediction","projeção",128.702246107502,184.052802850602
+51003,2030-11-01,150.911030579876,1,"PROPHET","prediction","projeção",123.235752208326,178.586308951426
+51003,2030-12-01,146.91837445666,1,"PROPHET","prediction","projeção",119.24309608511,174.59365282821
+51003,2024-01-01,136.870398840531,2,"EARTH","prediction","projeção",108.120780878374,165.620016802689
+51003,2024-02-01,137.285412797249,2,"EARTH","prediction","projeção",108.535794835091,166.035030759407
+51003,2024-03-01,137.673651659985,2,"EARTH","prediction","projeção",108.924033697827,166.423269622143
+51003,2024-04-01,138.088665616702,2,"EARTH","prediction","projeção",109.339047654544,166.83828357886
+51003,2024-05-01,138.490292026429,2,"EARTH","prediction","projeção",109.740674064271,167.239909988587
+51003,2024-06-01,138.905305983147,2,"EARTH","prediction","projeção",110.155688020989,167.654923945304
+51003,2024-07-01,139.306932392873,2,"EARTH","prediction","projeção",110.557314430715,168.056550355031
+51003,2024-08-01,139.721946349591,2,"EARTH","prediction","projeção",110.972328387433,168.471564311749
+51003,2024-09-01,140.136960306308,2,"EARTH","prediction","projeção",111.38734234415,168.886578268466
+51003,2024-10-01,140.538586716035,2,"EARTH","prediction","projeção",111.788968753877,169.288204678193
+51003,2024-11-01,140.953600672753,2,"EARTH","prediction","projeção",112.203982710595,169.70321863491
+51003,2024-12-01,141.355227082479,2,"EARTH","prediction","projeção",112.605609120321,170.104845044637
+51003,2025-01-01,141.770241039197,2,"EARTH","prediction","projeção",113.020623077039,170.519859001355
+51003,2025-02-01,142.185254995914,2,"EARTH","prediction","projeção",113.435637033756,170.934872958072
+51003,2025-03-01,142.560106311659,2,"EARTH","prediction","projeção",113.810488349501,171.309724273817
+51003,2025-04-01,142.975120268377,2,"EARTH","prediction","projeção",114.225502306219,171.724738230535
+51003,2025-05-01,143.376746678103,2,"EARTH","prediction","projeção",114.627128715946,172.126364640261
+51003,2025-06-01,143.791760634821,2,"EARTH","prediction","projeção",115.042142672663,172.541378596979
+51003,2025-07-01,144.193387044548,2,"EARTH","prediction","projeção",115.44376908239,172.943005006706
+51003,2025-08-01,144.608401001265,2,"EARTH","prediction","projeção",115.858783039107,173.358018963423
+51003,2025-09-01,145.023414957983,2,"EARTH","prediction","projeção",116.273796995825,173.773032920141
+51003,2025-10-01,145.425041367709,2,"EARTH","prediction","projeção",116.675423405552,174.174659329867
+51003,2025-11-01,145.840055324427,2,"EARTH","prediction","projeção",117.090437362269,174.589673286585
+51003,2025-12-01,146.241681734154,2,"EARTH","prediction","projeção",117.492063771996,174.991299696312
+51003,2026-01-01,146.656695690871,2,"EARTH","prediction","projeção",117.907077728713,175.406313653029
+51003,2026-02-01,147.071709647589,2,"EARTH","prediction","projeção",118.322091685431,175.821327609747
+51003,2026-03-01,147.446560963334,2,"EARTH","prediction","projeção",118.696943001176,176.196178925491
+51003,2026-04-01,147.861574920051,2,"EARTH","prediction","projeção",119.111956957893,176.611192882209
+51003,2026-05-01,148.263201329778,2,"EARTH","prediction","projeção",119.51358336762,177.012819291936
+51003,2026-06-01,148.678215286495,2,"EARTH","prediction","projeção",119.928597324338,177.427833248653
+51003,2026-07-01,149.079841696222,2,"EARTH","prediction","projeção",120.330223734064,177.82945965838
+51003,2026-08-01,149.49485565294,2,"EARTH","prediction","projeção",120.745237690782,178.244473615098
+51003,2026-09-01,149.909869609657,2,"EARTH","prediction","projeção",121.160251647499,178.659487571815
+51003,2026-10-01,150.311496019384,2,"EARTH","prediction","projeção",121.561878057226,179.061113981542
+51003,2026-11-01,150.726509976102,2,"EARTH","prediction","projeção",121.976892013944,179.476127938259
+51003,2026-12-01,151.128136385828,2,"EARTH","prediction","projeção",122.37851842367,179.877754347986
+51003,2027-01-01,151.543150342546,2,"EARTH","prediction","projeção",122.793532380388,180.292768304704
+51003,2027-02-01,151.958164299263,2,"EARTH","prediction","projeção",123.208546337105,180.707782261421
+51003,2027-03-01,152.333015615008,2,"EARTH","prediction","projeção",123.58339765285,181.082633577166
+51003,2027-04-01,152.748029571726,2,"EARTH","prediction","projeção",123.998411609568,181.497647533884
+51003,2027-05-01,153.149655981452,2,"EARTH","prediction","projeção",124.400038019295,181.89927394361
+51003,2027-06-01,153.56466993817,2,"EARTH","prediction","projeção",124.815051976012,182.314287900328
+51003,2027-07-01,153.966296347897,2,"EARTH","prediction","projeção",125.216678385739,182.715914310054
+51003,2027-08-01,154.381310304614,2,"EARTH","prediction","projeção",125.631692342456,183.130928266772
+51003,2027-09-01,154.796324261332,2,"EARTH","prediction","projeção",126.046706299174,183.54594222349
+51003,2027-10-01,155.197950671058,2,"EARTH","prediction","projeção",126.448332708901,183.947568633216
+51003,2027-11-01,155.612964627776,2,"EARTH","prediction","projeção",126.863346665618,184.362582589934
+51003,2027-12-01,156.014591037503,2,"EARTH","prediction","projeção",127.264973075345,184.764208999661
+51003,2028-01-01,156.42960499422,2,"EARTH","prediction","projeção",127.679987032062,185.179222956378
+51003,2028-02-01,156.844618950938,2,"EARTH","prediction","projeção",128.09500098878,185.594236913096
+51003,2028-03-01,157.232857813674,2,"EARTH","prediction","projeção",128.483239851516,185.982475775831
+51003,2028-04-01,157.647871770391,2,"EARTH","prediction","projeção",128.898253808233,186.397489732549
+51003,2028-05-01,158.049498180118,2,"EARTH","prediction","projeção",129.29988021796,186.799116142276
+51003,2028-06-01,158.464512136835,2,"EARTH","prediction","projeção",129.714894174677,187.214130098993
+51003,2028-07-01,158.866138546562,2,"EARTH","prediction","projeção",130.116520584404,187.61575650872
+51003,2028-08-01,159.28115250328,2,"EARTH","prediction","projeção",130.531534541122,188.030770465437
+51003,2028-09-01,159.696166459997,2,"EARTH","prediction","projeção",130.946548497839,188.445784422155
+51003,2028-10-01,160.097792869724,2,"EARTH","prediction","projeção",131.348174907566,188.847410831882
+51003,2028-11-01,160.512806826441,2,"EARTH","prediction","projeção",131.763188864284,189.262424788599
+51003,2028-12-01,160.914433236168,2,"EARTH","prediction","projeção",132.16481527401,189.664051198326
+51003,2029-01-01,161.329447192886,2,"EARTH","prediction","projeção",132.579829230728,190.079065155043
+51003,2029-02-01,161.744461149603,2,"EARTH","prediction","projeção",132.994843187445,190.494079111761
+51003,2029-03-01,162.119312465348,2,"EARTH","prediction","projeção",133.36969450319,190.868930427506
+51003,2029-04-01,162.534326422066,2,"EARTH","prediction","projeção",133.784708459908,191.283944384223
+51003,2029-05-01,162.935952831792,2,"EARTH","prediction","projeção",134.186334869634,191.68557079395
+51003,2029-06-01,163.35096678851,2,"EARTH","prediction","projeção",134.601348826352,192.100584750668
+51003,2029-07-01,163.752593198236,2,"EARTH","prediction","projeção",135.002975236079,192.502211160394
+51003,2029-08-01,164.167607154954,2,"EARTH","prediction","projeção",135.417989192796,192.917225117112
+51003,2029-09-01,164.582621111672,2,"EARTH","prediction","projeção",135.833003149514,193.332239073829
+51003,2029-10-01,164.984247521398,2,"EARTH","prediction","projeção",136.23462955924,193.733865483556
+51003,2029-11-01,165.399261478116,2,"EARTH","prediction","projeção",136.649643515958,194.148879440274
+51003,2029-12-01,165.800887887842,2,"EARTH","prediction","projeção",137.051269925685,194.55050585
+51003,2030-01-01,166.21590184456,2,"EARTH","prediction","projeção",137.466283882402,194.965519806718
+51003,2030-02-01,166.630915801278,2,"EARTH","prediction","projeção",137.88129783912,195.380533763435
+51003,2030-03-01,167.005767117023,2,"EARTH","prediction","projeção",138.256149154865,195.75538507918
+51003,2030-04-01,167.42078107374,2,"EARTH","prediction","projeção",138.671163111582,196.170399035898
+51003,2030-05-01,167.822407483467,2,"EARTH","prediction","projeção",139.072789521309,196.572025445625
+51003,2030-06-01,168.237421440184,2,"EARTH","prediction","projeção",139.487803478026,196.987039402342
+51003,2030-07-01,168.639047849911,2,"EARTH","prediction","projeção",139.889429887753,197.388665812069
+51003,2030-08-01,169.054061806629,2,"EARTH","prediction","projeção",140.304443844471,197.803679768786
+51003,2030-09-01,169.469075763346,2,"EARTH","prediction","projeção",140.719457801188,198.218693725504
+51003,2030-10-01,169.870702173073,2,"EARTH","prediction","projeção",141.121084210915,198.620320135231
+51003,2030-11-01,170.28571612979,2,"EARTH","prediction","projeção",141.536098167632,199.035334091948
+51003,2030-12-01,170.687342539517,2,"EARTH","prediction","projeção",141.937724577359,199.436960501675
+51003,2024-01-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2024-02-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2024-03-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2024-04-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2024-05-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2024-06-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2024-07-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2024-08-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2024-09-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2024-10-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2024-11-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2024-12-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2025-01-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2025-02-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2025-03-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2025-04-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2025-05-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2025-06-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2025-07-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2025-08-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2025-09-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2025-10-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2025-11-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2025-12-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2026-01-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2026-02-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2026-03-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2026-04-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2026-05-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2026-06-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2026-07-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2026-08-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2026-09-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2026-10-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2026-11-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2026-12-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2027-01-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2027-02-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2027-03-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2027-04-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2027-05-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2027-06-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2027-07-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2027-08-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2027-09-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2027-10-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2027-11-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2027-12-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2028-01-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2028-02-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2028-03-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2028-04-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2028-05-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2028-06-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2028-07-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2028-08-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2028-09-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2028-10-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2028-11-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2028-12-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2029-01-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2029-02-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2029-03-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2029-04-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2029-05-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2029-06-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2029-07-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2029-08-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2029-09-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2029-10-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2029-11-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2029-12-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2030-01-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2030-02-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2030-03-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2030-04-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2030-05-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2030-06-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2030-07-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2030-08-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2030-09-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2030-10-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2030-11-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536
+51003,2030-12-01,116.72566986084,3,"XGBOOST","prediction","projeção",80.3494130541439,153.101926667536

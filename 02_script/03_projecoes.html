@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>03_projecoes</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="03_projecoes_files/libs/clipboard/clipboard.min.js"></script>
+<script src="03_projecoes_files/libs/quarto-html/quarto.js"></script>
+<script src="03_projecoes_files/libs/quarto-html/popper.min.js"></script>
+<script src="03_projecoes_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="03_projecoes_files/libs/quarto-html/anchor.min.js"></script>
+<link href="03_projecoes_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="03_projecoes_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="03_projecoes_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="03_projecoes_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="03_projecoes_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="03_projecoes_files/libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+
+<script src="03_projecoes_files/libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+
+<script src="03_projecoes_files/libs/plotly-binding-4.10.4/plotly.js"></script>
+
+<script src="03_projecoes_files/libs/typedarray-0.1/typedarray.min.js"></script>
+
+<script src="03_projecoes_files/libs/jquery-3.5.1/jquery.min.js"></script>
+
+<link href="03_projecoes_files/libs/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet">
+
+<script src="03_projecoes_files/libs/crosstalk-1.2.1/js/crosstalk.min.js"></script>
+
+<link href="03_projecoes_files/libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet">
+
+<script src="03_projecoes_files/libs/plotly-main-2.11.1/plotly-latest.min.js"></script>
+
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">03_projecoes</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(modeltime)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lubridate)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(timetk)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(modeltime)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(parsnip)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(workflows)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(recipes)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(earth)  </span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(xgboost)  </span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(rsample)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="projeções-de-nascidos-vivos" class="level1">
+<h1>1. Projeções de nascidos vivos</h1>
+<p>O objetivo deste documento é descrever procedimentos relacionados à projeção de nascidos vivos.</p>
+<p>Vamos fazer para apenas uma região de saúde e depois automatizamos para as demais.</p>
+<p>Lendo os dados gerados no script 1.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>nascidos <span class="ot">&lt;-</span> </span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  vroom<span class="sc">::</span><span class="fu">vroom</span>(<span class="st">"~/GitHub/materno_infantil/01_dados/nascidos_regiao_saude.csv"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span><span class="st">`</span><span class="at">...1</span><span class="st">`</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="região-de-saúde-df_regiao-mg" class="level2">
+<h2 class="anchored" data-anchor-id="região-de-saúde-df_regiao-mg">1.2. Região de saúde df_regiao (MG)</h2>
+<p>Acessando os dados apenas desta região de saúde.</p>
+<p>Em sequência, faremos a divisão da base em treino e teste.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>df_regiao <span class="ot">&lt;-</span> </span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  nascidos <span class="sc">|&gt;</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(cod_regsaud <span class="sc">==</span> <span class="st">"31093"</span>) </span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>splits <span class="ot">&lt;-</span> <span class="fu">time_series_split</span>(</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>                df_regiao, </span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>                <span class="at">date_var =</span> data_nascimento,</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>                <span class="at">assess =</span> <span class="st">"2 years"</span>,</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>                <span class="at">cumulative =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="rodando-vários-modelos" class="level2">
+<h2 class="anchored" data-anchor-id="rodando-vários-modelos">1.3. Rodando vários modelos</h2>
+<p>Instanciando diferentes modelos de projeção - Prophet, Arima, Exponential Smoothing, Regressão Adaptativa Multivariada e XGboost - e rodando todos.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>receita <span class="ot">&lt;-</span> </span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">recipe</span>(total <span class="sc">~</span> data_nascimento, </span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>         <span class="at">data =</span> <span class="fu">training</span>(splits)) <span class="sc">|&gt;</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">step_timeseries_signature</span>(data_nascimento)</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>modelo_arima <span class="ot">&lt;-</span> </span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arima_reg</span>() <span class="sc">|&gt;</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_engine</span>(<span class="st">"auto_arima"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">fit</span>(total <span class="sc">~</span> data_nascimento, </span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>      <span class="at">data =</span> <span class="fu">training</span>(splits))</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Prophet</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>modelo_prophet <span class="ot">&lt;-</span> </span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">prophet_reg</span>() <span class="sc">|&gt;</span></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_engine</span>(<span class="st">"prophet"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">fit</span>(total <span class="sc">~</span> data_nascimento, </span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>      <span class="at">data =</span> <span class="fu">training</span>(splits))</span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a><span class="co"># 3. Regressão Exponencial</span></span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>modelo_exp <span class="ot">&lt;-</span> </span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">exp_smoothing</span>() <span class="sc">|&gt;</span></span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_engine</span>(<span class="st">"ets"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">fit</span>(total <span class="sc">~</span> data_nascimento, </span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>      <span class="at">data =</span> <span class="fu">training</span>(splits))</span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a><span class="co"># 4. MARS (Regressão Adaptativa Multivariada)</span></span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a>modelo_mars <span class="ot">&lt;-</span> </span>
+<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mars</span>(<span class="at">mode =</span> <span class="st">"regression"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_engine</span>(<span class="st">"earth"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a>  <span class="fu">fit</span>(total <span class="sc">~</span> data_nascimento, </span>
+<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a>      <span class="at">data =</span> <span class="fu">training</span>(splits))</span>
+<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a><span class="co"># 5. XGBoost </span></span>
+<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a>modelo_xgboost <span class="ot">&lt;-</span> </span>
+<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a>  <span class="fu">boost_tree</span>(<span class="at">mode =</span> <span class="st">"regression"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_engine</span>(<span class="st">"xgboost"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb4-37"><a href="#cb4-37" aria-hidden="true" tabindex="-1"></a>  <span class="fu">fit</span>(total <span class="sc">~</span> data_nascimento, </span>
+<span id="cb4-38"><a href="#cb4-38" aria-hidden="true" tabindex="-1"></a>      <span class="at">data =</span> <span class="fu">training</span>(splits))</span>
+<span id="cb4-39"><a href="#cb4-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-40"><a href="#cb4-40" aria-hidden="true" tabindex="-1"></a>modelos <span class="ot">&lt;-</span> </span>
+<span id="cb4-41"><a href="#cb4-41" aria-hidden="true" tabindex="-1"></a>  <span class="fu">modeltime_table</span>(</span>
+<span id="cb4-42"><a href="#cb4-42" aria-hidden="true" tabindex="-1"></a>    modelo_arima,</span>
+<span id="cb4-43"><a href="#cb4-43" aria-hidden="true" tabindex="-1"></a>    modelo_prophet,</span>
+<span id="cb4-44"><a href="#cb4-44" aria-hidden="true" tabindex="-1"></a>    modelo_exp,</span>
+<span id="cb4-45"><a href="#cb4-45" aria-hidden="true" tabindex="-1"></a>    modelo_mars,</span>
+<span id="cb4-46"><a href="#cb4-46" aria-hidden="true" tabindex="-1"></a>    modelo_xgboost)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="avaliando-a-qualidade-dos-modelos" class="level2">
+<h2 class="anchored" data-anchor-id="avaliando-a-qualidade-dos-modelos">1.4. Avaliando a qualidade dos modelos</h2>
+<p>Avaliação dos resultados do modelos. O modelo do Prophet apresentou o menor <em>mean absolute error</em> (MAE). Guardamos ele para acessar no momento da geração de</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>calibracao <span class="ot">&lt;-</span> </span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  modelos <span class="sc">|&gt;</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">modeltime_calibrate</span>(<span class="fu">testing</span>(splits))</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>tabela_precisao <span class="ot">&lt;-</span> </span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>  calibracao <span class="sc">|&gt;</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">modeltime_accuracy</span>() <span class="sc">|&gt;</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">arrange</span>(mae)</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="co"># guardando modelo com o menor MAE</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>melhor_modelo <span class="ot">&lt;-</span> tabela_precisao <span class="sc">|&gt;</span> </span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>                    <span class="fu">slice_min</span>(mae)</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>tabela_precisao</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 5 × 9
+  .model_id .model_desc             .type   mae  mape  mase smape  rmse      rsq
+      &lt;int&gt; &lt;chr&gt;                   &lt;chr&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;    &lt;dbl&gt;
+1         2 PROPHET                 Test   7.08  11.1 0.626  10.4  9.84  2.16e-1
+2         3 ETS(M,N,A)              Test   7.24  11.1 0.640  10.6  9.89  2.10e-1
+3         5 XGBOOST                 Test   8.74  13.6 0.773  12.7 11.1  NA      
+4         1 ARIMA(1,1,3)(2,0,0)[12] Test   9.11  14.0 0.806  13.2 11.6   1.08e-4
+5         4 EARTH                   Test   9.21  14.9 0.815  13.2 12.0   1.07e-2</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">write.csv</span>(tabela_precisao, </span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>          <span class="at">file =</span> <span class="fu">paste0</span>(<span class="st">"~/GitHub/materno_infantil/02_script/03_outputs_projecoes/metricas_previsoes/metricas_"</span>, </span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>                        <span class="fu">unique</span>(df_regiao<span class="sc">$</span>cod_regsaud), <span class="st">".csv"</span>),</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>          <span class="at">row.names =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Abaixo plotamos os gráficos que comparam os modelos visualmente, considerando base de treino e teste.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Faz a previsão</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>previsao <span class="ot">&lt;-</span> calibracao <span class="sc">|&gt;</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>               <span class="fu">modeltime_forecast</span>(</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>                      <span class="at">new_data_nascimento =</span> <span class="fu">testing</span>(splits),</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>                      <span class="at">actual_data_nascimento =</span> df_nascidos)</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>teste <span class="ot">&lt;-</span> <span class="fu">testing</span>(splits) <span class="sc">|&gt;</span> </span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>            <span class="fu">mutate</span>(<span class="at">.model_id =</span> <span class="dv">6</span>,</span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>                   <span class="at">.model_desc =</span> <span class="st">"real"</span>,</span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>                   <span class="at">.key =</span> <span class="st">"actual"</span>) <span class="sc">|&gt;</span>           </span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>            <span class="fu">rename</span>(<span class="at">.index =</span> data_nascimento,</span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>                   <span class="at">.value =</span> total)  <span class="sc">|&gt;</span> </span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>            <span class="fu">select</span>(.model_id, .model_desc,</span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>                   .key, .index, .value)</span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>previsao <span class="ot">&lt;-</span> previsao <span class="sc">|&gt;</span> </span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>              <span class="fu">select</span>(.model_id, .model_desc,</span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>                     .key, .index, .value)</span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>teste_previsto <span class="ot">&lt;-</span> <span class="fu">rbind</span>(teste, </span>
+<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a>                        previsao) </span>
+<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualiza a previsão</span></span>
+<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a>teste_previsto <span class="sc">|&gt;</span></span>
+<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">plot_modeltime_forecast</span>(</span>
+<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a>    <span class="at">.legend_max_width =</span> <span class="dv">250</span>, </span>
+<span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a>    <span class="at">.conf_interval_show =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb8-28"><a href="#cb8-28" aria-hidden="true" tabindex="-1"></a>    <span class="at">.interactive =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb8-29"><a href="#cb8-29" aria-hidden="true" tabindex="-1"></a>    <span class="at">.title =</span> <span class="st">"Comparação de Previsões de Nascidos Vivos"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-0d73246ce7bd51268760" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-0d73246ce7bd51268760">{"x":{"data":[{"x":["2022-01-01","2022-02-01","2022-03-01","2022-04-01","2022-05-01","2022-06-01","2022-07-01","2022-08-01","2022-09-01","2022-10-01","2022-11-01","2022-12-01","2023-01-01","2023-02-01","2023-03-01","2023-04-01","2023-05-01","2023-06-01","2023-07-01","2023-08-01","2023-09-01","2023-10-01","2023-11-01","2023-12-01"],"y":[44,87,83,77,72,73,66,64,76,63,46,67,77,81,87,79,69,63,76,87,67,79,61,72],"text":[".index: 2022-01-01<br />.value: 44.00000<br />.color_mod: 6_real<br />.color_mod: 6_real",".index: 2022-02-01<br />.value: 87.00000<br />.color_mod: 6_real<br />.color_mod: 6_real",".index: 2022-03-01<br />.value: 83.00000<br />.color_mod: 6_real<br />.color_mod: 6_real",".index: 2022-04-01<br />.value: 77.00000<br />.color_mod: 6_real<br />.color_mod: 6_real",".index: 2022-05-01<br />.value: 72.00000<br />.color_mod: 6_real<br />.color_mod: 6_real",".index: 2022-06-01<br />.value: 73.00000<br />.color_mod: 6_real<br />.color_mod: 6_real",".index: 2022-07-01<br />.value: 66.00000<br />.color_mod: 6_real<br />.color_mod: 6_real",".index: 2022-08-01<br />.value: 64.00000<br />.color_mod: 6_real<br />.color_mod: 6_real",".index: 2022-09-01<br />.value: 76.00000<br />.color_mod: 6_real<br />.color_mod: 6_real",".index: 2022-10-01<br />.value: 63.00000<br />.color_mod: 6_real<br />.color_mod: 6_real",".index: 2022-11-01<br />.value: 46.00000<br />.color_mod: 6_real<br />.color_mod: 6_real",".index: 2022-12-01<br />.value: 67.00000<br />.color_mod: 6_real<br />.color_mod: 6_real",".index: 2023-01-01<br />.value: 77.00000<br />.color_mod: 6_real<br />.color_mod: 6_real",".index: 2023-02-01<br />.value: 81.00000<br />.color_mod: 6_real<br />.color_mod: 6_real",".index: 2023-03-01<br />.value: 87.00000<br />.color_mod: 6_real<br />.color_mod: 6_real",".index: 2023-04-01<br />.value: 79.00000<br />.color_mod: 6_real<br />.color_mod: 6_real",".index: 2023-05-01<br />.value: 69.00000<br />.color_mod: 6_real<br />.color_mod: 6_real",".index: 2023-06-01<br />.value: 63.00000<br />.color_mod: 6_real<br />.color_mod: 6_real",".index: 2023-07-01<br />.value: 76.00000<br />.color_mod: 6_real<br />.color_mod: 6_real",".index: 2023-08-01<br />.value: 87.00000<br />.color_mod: 6_real<br />.color_mod: 6_real",".index: 2023-09-01<br />.value: 67.00000<br />.color_mod: 6_real<br />.color_mod: 6_real",".index: 2023-10-01<br />.value: 79.00000<br />.color_mod: 6_real<br />.color_mod: 6_real",".index: 2023-11-01<br />.value: 61.00000<br />.color_mod: 6_real<br />.color_mod: 6_real",".index: 2023-12-01<br />.value: 72.00000<br />.color_mod: 6_real<br />.color_mod: 6_real"],"type":"scatter","mode":"lines","line":{"width":1.8897637795275593,"color":"rgba(44,62,80,1)","dash":"solid"},"hoveron":"points","name":"6_real","legendgroup":"6_real","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":["2022-01-01","2022-02-01","2022-03-01","2022-04-01","2022-05-01","2022-06-01","2022-07-01","2022-08-01","2022-09-01","2022-10-01","2022-11-01","2022-12-01","2023-01-01","2023-02-01","2023-03-01","2023-04-01","2023-05-01","2023-06-01","2023-07-01","2023-08-01","2023-09-01","2023-10-01","2023-11-01","2023-12-01"],"y":[73.992506870323993,71.014432699197627,73.930453031777859,74.511678517316625,76.994450386422031,69.422284083168037,65.642604503231965,68.958207958674009,65.193628141371846,66.724098358141433,69.976398661567814,72.887067079617196,73.616527181701827,69.326727121421371,70.126340796890346,70.189030266868784,74.764249904608008,69.604050009923128,64.624362747645563,70.796046399167054,66.242136294763583,67.873317114670982,71.086675823757062,71.763246269516401],"text":[".index: 2022-01-01<br />.value: 73.99251<br />.color_mod: 1_ARIMA(1,1,3)(2,0,0)[12]<br />.color_mod: 1_ARIMA(1,1,3)(2,0,0)[12]",".index: 2022-02-01<br />.value: 71.01443<br />.color_mod: 1_ARIMA(1,1,3)(2,0,0)[12]<br />.color_mod: 1_ARIMA(1,1,3)(2,0,0)[12]",".index: 2022-03-01<br />.value: 73.93045<br />.color_mod: 1_ARIMA(1,1,3)(2,0,0)[12]<br />.color_mod: 1_ARIMA(1,1,3)(2,0,0)[12]",".index: 2022-04-01<br />.value: 74.51168<br />.color_mod: 1_ARIMA(1,1,3)(2,0,0)[12]<br />.color_mod: 1_ARIMA(1,1,3)(2,0,0)[12]",".index: 2022-05-01<br />.value: 76.99445<br />.color_mod: 1_ARIMA(1,1,3)(2,0,0)[12]<br />.color_mod: 1_ARIMA(1,1,3)(2,0,0)[12]",".index: 2022-06-01<br />.value: 69.42228<br />.color_mod: 1_ARIMA(1,1,3)(2,0,0)[12]<br />.color_mod: 1_ARIMA(1,1,3)(2,0,0)[12]",".index: 2022-07-01<br />.value: 65.64260<br />.color_mod: 1_ARIMA(1,1,3)(2,0,0)[12]<br />.color_mod: 1_ARIMA(1,1,3)(2,0,0)[12]",".index: 2022-08-01<br />.value: 68.95821<br />.color_mod: 1_ARIMA(1,1,3)(2,0,0)[12]<br />.color_mod: 1_ARIMA(1,1,3)(2,0,0)[12]",".index: 2022-09-01<br />.value: 65.19363<br />.color_mod: 1_ARIMA(1,1,3)(2,0,0)[12]<br />.color_mod: 1_ARIMA(1,1,3)(2,0,0)[12]",".index: 2022-10-01<br />.value: 66.72410<br />.color_mod: 1_ARIMA(1,1,3)(2,0,0)[12]<br />.color_mod: 1_ARIMA(1,1,3)(2,0,0)[12]",".index: 2022-11-01<br />.value: 69.97640<br />.color_mod: 1_ARIMA(1,1,3)(2,0,0)[12]<br />.color_mod: 1_ARIMA(1,1,3)(2,0,0)[12]",".index: 2022-12-01<br />.value: 72.88707<br />.color_mod: 1_ARIMA(1,1,3)(2,0,0)[12]<br />.color_mod: 1_ARIMA(1,1,3)(2,0,0)[12]",".index: 2023-01-01<br />.value: 73.61653<br />.color_mod: 1_ARIMA(1,1,3)(2,0,0)[12]<br />.color_mod: 1_ARIMA(1,1,3)(2,0,0)[12]",".index: 2023-02-01<br />.value: 69.32673<br />.color_mod: 1_ARIMA(1,1,3)(2,0,0)[12]<br />.color_mod: 1_ARIMA(1,1,3)(2,0,0)[12]",".index: 2023-03-01<br />.value: 70.12634<br />.color_mod: 1_ARIMA(1,1,3)(2,0,0)[12]<br />.color_mod: 1_ARIMA(1,1,3)(2,0,0)[12]",".index: 2023-04-01<br />.value: 70.18903<br />.color_mod: 1_ARIMA(1,1,3)(2,0,0)[12]<br />.color_mod: 1_ARIMA(1,1,3)(2,0,0)[12]",".index: 2023-05-01<br />.value: 74.76425<br />.color_mod: 1_ARIMA(1,1,3)(2,0,0)[12]<br />.color_mod: 1_ARIMA(1,1,3)(2,0,0)[12]",".index: 2023-06-01<br />.value: 69.60405<br />.color_mod: 1_ARIMA(1,1,3)(2,0,0)[12]<br />.color_mod: 1_ARIMA(1,1,3)(2,0,0)[12]",".index: 2023-07-01<br />.value: 64.62436<br />.color_mod: 1_ARIMA(1,1,3)(2,0,0)[12]<br />.color_mod: 1_ARIMA(1,1,3)(2,0,0)[12]",".index: 2023-08-01<br />.value: 70.79605<br />.color_mod: 1_ARIMA(1,1,3)(2,0,0)[12]<br />.color_mod: 1_ARIMA(1,1,3)(2,0,0)[12]",".index: 2023-09-01<br />.value: 66.24214<br />.color_mod: 1_ARIMA(1,1,3)(2,0,0)[12]<br />.color_mod: 1_ARIMA(1,1,3)(2,0,0)[12]",".index: 2023-10-01<br />.value: 67.87332<br />.color_mod: 1_ARIMA(1,1,3)(2,0,0)[12]<br />.color_mod: 1_ARIMA(1,1,3)(2,0,0)[12]",".index: 2023-11-01<br />.value: 71.08668<br />.color_mod: 1_ARIMA(1,1,3)(2,0,0)[12]<br />.color_mod: 1_ARIMA(1,1,3)(2,0,0)[12]",".index: 2023-12-01<br />.value: 71.76325<br />.color_mod: 1_ARIMA(1,1,3)(2,0,0)[12]<br />.color_mod: 1_ARIMA(1,1,3)(2,0,0)[12]"],"type":"scatter","mode":"lines","line":{"width":1.8897637795275593,"color":"rgba(227,26,28,1)","dash":"solid"},"hoveron":"points","name":"1_ARIMA(1,1,3)(2,0,0)[12]","legendgroup":"1_ARIMA(1,1,3)(2,0,0)[12]","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":["2022-01-01","2022-02-01","2022-03-01","2022-04-01","2022-05-01","2022-06-01","2022-07-01","2022-08-01","2022-09-01","2022-10-01","2022-11-01","2022-12-01","2023-01-01","2023-02-01","2023-03-01","2023-04-01","2023-05-01","2023-06-01","2023-07-01","2023-08-01","2023-09-01","2023-10-01","2023-11-01","2023-12-01"],"y":[71.299391097878313,70.779983923464229,82.865878371399219,77.725708069707792,78.187979228328572,72.665242194917994,72.239453978231651,66.670507933347608,69.082580704228846,66.58253847022813,64.146921873588909,68.172978916170976,70.572713859591602,73.445484002483752,84.310275972578538,78.097967699604638,76.879357248941176,73.950637448046194,73.907679625118732,67.601222311825069,69.529904555544874,67.760341425524558,65.265458497010883,67.703744777350678],"text":[".index: 2022-01-01<br />.value: 71.29939<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2022-02-01<br />.value: 70.77998<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2022-03-01<br />.value: 82.86588<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2022-04-01<br />.value: 77.72571<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2022-05-01<br />.value: 78.18798<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2022-06-01<br />.value: 72.66524<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2022-07-01<br />.value: 72.23945<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2022-08-01<br />.value: 66.67051<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2022-09-01<br />.value: 69.08258<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2022-10-01<br />.value: 66.58254<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2022-11-01<br />.value: 64.14692<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2022-12-01<br />.value: 68.17298<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2023-01-01<br />.value: 70.57271<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2023-02-01<br />.value: 73.44548<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2023-03-01<br />.value: 84.31028<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2023-04-01<br />.value: 78.09797<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2023-05-01<br />.value: 76.87936<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2023-06-01<br />.value: 73.95064<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2023-07-01<br />.value: 73.90768<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2023-08-01<br />.value: 67.60122<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2023-09-01<br />.value: 69.52990<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2023-10-01<br />.value: 67.76034<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2023-11-01<br />.value: 65.26546<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2023-12-01<br />.value: 67.70374<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET"],"type":"scatter","mode":"lines","line":{"width":1.8897637795275593,"color":"rgba(24,188,156,1)","dash":"solid"},"hoveron":"points","name":"2_PROPHET","legendgroup":"2_PROPHET","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":["2022-01-01","2022-02-01","2022-03-01","2022-04-01","2022-05-01","2022-06-01","2022-07-01","2022-08-01","2022-09-01","2022-10-01","2022-11-01","2022-12-01","2023-01-01","2023-02-01","2023-03-01","2023-04-01","2023-05-01","2023-06-01","2023-07-01","2023-08-01","2023-09-01","2023-10-01","2023-11-01","2023-12-01"],"y":[69.835933018280642,71.493859252520139,82.089494984578778,77.65601431798855,78.29840821443625,71.665298971333073,70.805884378397025,66.557041485525502,69.113234231138478,64.244812343714969,63.023260640315179,66.888590278211879,69.835933018280642,71.493859252520139,82.089494984578778,77.65601431798855,78.29840821443625,71.665298971333073,70.805884378397025,66.557041485525502,69.113234231138478,64.244812343714969,63.023260640315179,66.888590278211879],"text":[".index: 2022-01-01<br />.value: 69.83593<br />.color_mod: 3_ETS(M,N,A)<br />.color_mod: 3_ETS(M,N,A)",".index: 2022-02-01<br />.value: 71.49386<br />.color_mod: 3_ETS(M,N,A)<br />.color_mod: 3_ETS(M,N,A)",".index: 2022-03-01<br />.value: 82.08949<br />.color_mod: 3_ETS(M,N,A)<br />.color_mod: 3_ETS(M,N,A)",".index: 2022-04-01<br />.value: 77.65601<br />.color_mod: 3_ETS(M,N,A)<br />.color_mod: 3_ETS(M,N,A)",".index: 2022-05-01<br />.value: 78.29841<br />.color_mod: 3_ETS(M,N,A)<br />.color_mod: 3_ETS(M,N,A)",".index: 2022-06-01<br />.value: 71.66530<br />.color_mod: 3_ETS(M,N,A)<br />.color_mod: 3_ETS(M,N,A)",".index: 2022-07-01<br />.value: 70.80588<br />.color_mod: 3_ETS(M,N,A)<br />.color_mod: 3_ETS(M,N,A)",".index: 2022-08-01<br />.value: 66.55704<br />.color_mod: 3_ETS(M,N,A)<br />.color_mod: 3_ETS(M,N,A)",".index: 2022-09-01<br />.value: 69.11323<br />.color_mod: 3_ETS(M,N,A)<br />.color_mod: 3_ETS(M,N,A)",".index: 2022-10-01<br />.value: 64.24481<br />.color_mod: 3_ETS(M,N,A)<br />.color_mod: 3_ETS(M,N,A)",".index: 2022-11-01<br />.value: 63.02326<br />.color_mod: 3_ETS(M,N,A)<br />.color_mod: 3_ETS(M,N,A)",".index: 2022-12-01<br />.value: 66.88859<br />.color_mod: 3_ETS(M,N,A)<br />.color_mod: 3_ETS(M,N,A)",".index: 2023-01-01<br />.value: 69.83593<br />.color_mod: 3_ETS(M,N,A)<br />.color_mod: 3_ETS(M,N,A)",".index: 2023-02-01<br />.value: 71.49386<br />.color_mod: 3_ETS(M,N,A)<br />.color_mod: 3_ETS(M,N,A)",".index: 2023-03-01<br />.value: 82.08949<br />.color_mod: 3_ETS(M,N,A)<br />.color_mod: 3_ETS(M,N,A)",".index: 2023-04-01<br />.value: 77.65601<br />.color_mod: 3_ETS(M,N,A)<br />.color_mod: 3_ETS(M,N,A)",".index: 2023-05-01<br />.value: 78.29841<br />.color_mod: 3_ETS(M,N,A)<br />.color_mod: 3_ETS(M,N,A)",".index: 2023-06-01<br />.value: 71.66530<br />.color_mod: 3_ETS(M,N,A)<br />.color_mod: 3_ETS(M,N,A)",".index: 2023-07-01<br />.value: 70.80588<br />.color_mod: 3_ETS(M,N,A)<br />.color_mod: 3_ETS(M,N,A)",".index: 2023-08-01<br />.value: 66.55704<br />.color_mod: 3_ETS(M,N,A)<br />.color_mod: 3_ETS(M,N,A)",".index: 2023-09-01<br />.value: 69.11323<br />.color_mod: 3_ETS(M,N,A)<br />.color_mod: 3_ETS(M,N,A)",".index: 2023-10-01<br />.value: 64.24481<br />.color_mod: 3_ETS(M,N,A)<br />.color_mod: 3_ETS(M,N,A)",".index: 2023-11-01<br />.value: 63.02326<br />.color_mod: 3_ETS(M,N,A)<br />.color_mod: 3_ETS(M,N,A)",".index: 2023-12-01<br />.value: 66.88859<br />.color_mod: 3_ETS(M,N,A)<br />.color_mod: 3_ETS(M,N,A)"],"type":"scatter","mode":"lines","line":{"width":1.8897637795275593,"color":"rgba(204,190,147,1)","dash":"solid"},"hoveron":"points","name":"3_ETS(M,N,A)","legendgroup":"3_ETS(M,N,A)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":["2022-01-01","2022-02-01","2022-03-01","2022-04-01","2022-05-01","2022-06-01","2022-07-01","2022-08-01","2022-09-01","2022-10-01","2022-11-01","2022-12-01","2023-01-01","2023-02-01","2023-03-01","2023-04-01","2023-05-01","2023-06-01","2023-07-01","2023-08-01","2023-09-01","2023-10-01","2023-11-01","2023-12-01"],"y":[71.253795533971498,71.669419587351456,72.044821958146258,72.460446011526329,72.862662837377897,73.278286890757798,73.680503716609593,74.096127769989494,74.511751823369451,74.91396864922109,75.329592702601161,75.731809528452786,76.1474335818328,76.563057635212701,76.938460006007674,77.354084059387574,77.756300885239085,78.171924938619156,78.574141764470795,78.989765817850866,79.405389871230881,79.807606697082448,80.223230750462292,80.625447576313974],"text":[".index: 2022-01-01<br />.value: 71.25380<br />.color_mod: 4_EARTH<br />.color_mod: 4_EARTH",".index: 2022-02-01<br />.value: 71.66942<br />.color_mod: 4_EARTH<br />.color_mod: 4_EARTH",".index: 2022-03-01<br />.value: 72.04482<br />.color_mod: 4_EARTH<br />.color_mod: 4_EARTH",".index: 2022-04-01<br />.value: 72.46045<br />.color_mod: 4_EARTH<br />.color_mod: 4_EARTH",".index: 2022-05-01<br />.value: 72.86266<br />.color_mod: 4_EARTH<br />.color_mod: 4_EARTH",".index: 2022-06-01<br />.value: 73.27829<br />.color_mod: 4_EARTH<br />.color_mod: 4_EARTH",".index: 2022-07-01<br />.value: 73.68050<br />.color_mod: 4_EARTH<br />.color_mod: 4_EARTH",".index: 2022-08-01<br />.value: 74.09613<br />.color_mod: 4_EARTH<br />.color_mod: 4_EARTH",".index: 2022-09-01<br />.value: 74.51175<br />.color_mod: 4_EARTH<br />.color_mod: 4_EARTH",".index: 2022-10-01<br />.value: 74.91397<br />.color_mod: 4_EARTH<br />.color_mod: 4_EARTH",".index: 2022-11-01<br />.value: 75.32959<br />.color_mod: 4_EARTH<br />.color_mod: 4_EARTH",".index: 2022-12-01<br />.value: 75.73181<br />.color_mod: 4_EARTH<br />.color_mod: 4_EARTH",".index: 2023-01-01<br />.value: 76.14743<br />.color_mod: 4_EARTH<br />.color_mod: 4_EARTH",".index: 2023-02-01<br />.value: 76.56306<br />.color_mod: 4_EARTH<br />.color_mod: 4_EARTH",".index: 2023-03-01<br />.value: 76.93846<br />.color_mod: 4_EARTH<br />.color_mod: 4_EARTH",".index: 2023-04-01<br />.value: 77.35408<br />.color_mod: 4_EARTH<br />.color_mod: 4_EARTH",".index: 2023-05-01<br />.value: 77.75630<br />.color_mod: 4_EARTH<br />.color_mod: 4_EARTH",".index: 2023-06-01<br />.value: 78.17192<br />.color_mod: 4_EARTH<br />.color_mod: 4_EARTH",".index: 2023-07-01<br />.value: 78.57414<br />.color_mod: 4_EARTH<br />.color_mod: 4_EARTH",".index: 2023-08-01<br />.value: 78.98977<br />.color_mod: 4_EARTH<br />.color_mod: 4_EARTH",".index: 2023-09-01<br />.value: 79.40539<br />.color_mod: 4_EARTH<br />.color_mod: 4_EARTH",".index: 2023-10-01<br />.value: 79.80761<br />.color_mod: 4_EARTH<br />.color_mod: 4_EARTH",".index: 2023-11-01<br />.value: 80.22323<br />.color_mod: 4_EARTH<br />.color_mod: 4_EARTH",".index: 2023-12-01<br />.value: 80.62545<br />.color_mod: 4_EARTH<br />.color_mod: 4_EARTH"],"type":"scatter","mode":"lines","line":{"width":1.8897637795275593,"color":"rgba(166,206,227,1)","dash":"solid"},"hoveron":"points","name":"4_EARTH","legendgroup":"4_EARTH","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":["2022-01-01","2022-02-01","2022-03-01","2022-04-01","2022-05-01","2022-06-01","2022-07-01","2022-08-01","2022-09-01","2022-10-01","2022-11-01","2022-12-01","2023-01-01","2023-02-01","2023-03-01","2023-04-01","2023-05-01","2023-06-01","2023-07-01","2023-08-01","2023-09-01","2023-10-01","2023-11-01","2023-12-01"],"y":[71.5491943359375,71.5491943359375,71.5491943359375,71.5491943359375,71.5491943359375,71.5491943359375,71.5491943359375,71.5491943359375,71.5491943359375,71.5491943359375,71.5491943359375,71.5491943359375,71.5491943359375,71.5491943359375,71.5491943359375,71.5491943359375,71.5491943359375,71.5491943359375,71.5491943359375,71.5491943359375,71.5491943359375,71.5491943359375,71.5491943359375,71.5491943359375],"text":[".index: 2022-01-01<br />.value: 71.54919<br />.color_mod: 5_XGBOOST<br />.color_mod: 5_XGBOOST",".index: 2022-02-01<br />.value: 71.54919<br />.color_mod: 5_XGBOOST<br />.color_mod: 5_XGBOOST",".index: 2022-03-01<br />.value: 71.54919<br />.color_mod: 5_XGBOOST<br />.color_mod: 5_XGBOOST",".index: 2022-04-01<br />.value: 71.54919<br />.color_mod: 5_XGBOOST<br />.color_mod: 5_XGBOOST",".index: 2022-05-01<br />.value: 71.54919<br />.color_mod: 5_XGBOOST<br />.color_mod: 5_XGBOOST",".index: 2022-06-01<br />.value: 71.54919<br />.color_mod: 5_XGBOOST<br />.color_mod: 5_XGBOOST",".index: 2022-07-01<br />.value: 71.54919<br />.color_mod: 5_XGBOOST<br />.color_mod: 5_XGBOOST",".index: 2022-08-01<br />.value: 71.54919<br />.color_mod: 5_XGBOOST<br />.color_mod: 5_XGBOOST",".index: 2022-09-01<br />.value: 71.54919<br />.color_mod: 5_XGBOOST<br />.color_mod: 5_XGBOOST",".index: 2022-10-01<br />.value: 71.54919<br />.color_mod: 5_XGBOOST<br />.color_mod: 5_XGBOOST",".index: 2022-11-01<br />.value: 71.54919<br />.color_mod: 5_XGBOOST<br />.color_mod: 5_XGBOOST",".index: 2022-12-01<br />.value: 71.54919<br />.color_mod: 5_XGBOOST<br />.color_mod: 5_XGBOOST",".index: 2023-01-01<br />.value: 71.54919<br />.color_mod: 5_XGBOOST<br />.color_mod: 5_XGBOOST",".index: 2023-02-01<br />.value: 71.54919<br />.color_mod: 5_XGBOOST<br />.color_mod: 5_XGBOOST",".index: 2023-03-01<br />.value: 71.54919<br />.color_mod: 5_XGBOOST<br />.color_mod: 5_XGBOOST",".index: 2023-04-01<br />.value: 71.54919<br />.color_mod: 5_XGBOOST<br />.color_mod: 5_XGBOOST",".index: 2023-05-01<br />.value: 71.54919<br />.color_mod: 5_XGBOOST<br />.color_mod: 5_XGBOOST",".index: 2023-06-01<br />.value: 71.54919<br />.color_mod: 5_XGBOOST<br />.color_mod: 5_XGBOOST",".index: 2023-07-01<br />.value: 71.54919<br />.color_mod: 5_XGBOOST<br />.color_mod: 5_XGBOOST",".index: 2023-08-01<br />.value: 71.54919<br />.color_mod: 5_XGBOOST<br />.color_mod: 5_XGBOOST",".index: 2023-09-01<br />.value: 71.54919<br />.color_mod: 5_XGBOOST<br />.color_mod: 5_XGBOOST",".index: 2023-10-01<br />.value: 71.54919<br />.color_mod: 5_XGBOOST<br />.color_mod: 5_XGBOOST",".index: 2023-11-01<br />.value: 71.54919<br />.color_mod: 5_XGBOOST<br />.color_mod: 5_XGBOOST",".index: 2023-12-01<br />.value: 71.54919<br />.color_mod: 5_XGBOOST<br />.color_mod: 5_XGBOOST"],"type":"scatter","mode":"lines","line":{"width":1.8897637795275593,"color":"rgba(31,120,180,1)","dash":"solid"},"hoveron":"points","name":"5_XGBOOST","legendgroup":"5_XGBOOST","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":43.762557077625573,"r":7.3059360730593621,"b":25.570776255707766,"l":22.648401826484022},"plot_bgcolor":"rgba(255,255,255,1)","paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(44,62,80,1)","family":"","size":14.611872146118724},"title":{"text":"Comparação de Previsões de Nascidos Vivos","font":{"color":"rgba(44,62,80,1)","family":"","size":17.534246575342465},"x":0,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"date","autorange":true,"range":["2021-11-27","2024-01-04"],"tickmode":"auto","ticktext":["2022-01","2022-07","2023-01","2023-07","2024-01"],"tickvals":[18993,19174,19358,19539,19723],"categoryorder":"array","categoryarray":["2022-01","2022-07","2023-01","2023-07","2024-01"],"nticks":null,"ticks":"outside","tickcolor":"rgba(204,204,204,1)","ticklen":3.6529680365296811,"tickwidth":0.22139200221392005,"showticklabels":true,"tickfont":{"color":"rgba(44,62,80,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(204,204,204,1)","gridwidth":0.22139200221392005,"zeroline":false,"anchor":"y","title":{"text":"","font":{"color":"rgba(44,62,80,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":true,"range":[41.850000000000001,89.150000000000006],"tickmode":"auto","ticktext":["50","60","70","80"],"tickvals":[50,60,70,80],"categoryorder":"array","categoryarray":["50","60","70","80"],"nticks":null,"ticks":"outside","tickcolor":"rgba(204,204,204,1)","ticklen":3.6529680365296811,"tickwidth":0.22139200221392005,"showticklabels":true,"tickfont":{"color":"rgba(44,62,80,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(204,204,204,1)","gridwidth":0.22139200221392005,"zeroline":false,"anchor":"x","title":{"text":"","font":{"color":"rgba(44,62,80,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":"transparent","line":{"color":"rgba(44,62,80,1)","width":0.33208800332088001,"linetype":"solid"},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":true,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"transparent","borderwidth":1.8897637795275593,"font":{"color":"rgba(44,62,80,1)","family":"","size":11.68949771689498},"title":{"text":"Legend","font":{"color":"rgba(44,62,80,1)","family":"","size":14.611872146118724}}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"63485f6958a4":{"x":{},"y":{},"colour":{},"type":"scatter"}},"cur_data":"63485f6958a4","visdat":{"63485f6958a4":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="unindo-dados-históricos-e-projeção" class="level2">
+<h2 class="anchored" data-anchor-id="unindo-dados-históricos-e-projeção">1.5. Unindo dados históricos e projeção</h2>
+<p>O próximo passo consiste em criar um dataframe que vai unir os dados reais com as projeções mensalmente.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Obter a última data dos dados</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>ultima_data <span class="ot">&lt;-</span> <span class="fu">max</span>(df_regiao<span class="sc">$</span>data_nascimento)</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Criar um dataframe com datas futuras até 2030</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>datas_futuras <span class="ot">&lt;-</span> <span class="fu">seq.Date</span>(</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>                    <span class="at">from =</span> <span class="fu">as.Date</span>(ultima_data) <span class="sc">+</span> <span class="fu">months</span>(<span class="dv">1</span>),  </span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>                    <span class="at">to =</span> <span class="fu">as.Date</span>(<span class="st">"2030-12-01"</span>),               </span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>                    <span class="at">by =</span> <span class="st">"month"</span>)</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Criar dataframe futuro</span></span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>futuro <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">data_nascimento =</span> datas_futuras)</span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Reajustar todos os modelos usando os dados completos (não apenas os dados de treinamento)</span></span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>modelos_reajustados <span class="ot">&lt;-</span> calibracao <span class="sc">|&gt;</span></span>
+<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a>                          <span class="fu">modeltime_refit</span>(<span class="at">data =</span> df_regiao)</span>
+<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a><span class="co"># Fazer a projeção até 2030</span></span>
+<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a>projecao_2030 <span class="ot">&lt;-</span> modelos_reajustados <span class="sc">|&gt;</span></span>
+<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a>                      <span class="fu">modeltime_forecast</span>(</span>
+<span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a>                        <span class="at">new_data =</span> futuro,</span>
+<span id="cb9-22"><a href="#cb9-22" aria-hidden="true" tabindex="-1"></a>                        <span class="at">actual_data =</span> df_regiao)</span>
+<span id="cb9-23"><a href="#cb9-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-24"><a href="#cb9-24" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualizar a projeção até 2030 trazendo os dados históricos e todas as projecoes</span></span>
+<span id="cb9-25"><a href="#cb9-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-26"><a href="#cb9-26" aria-hidden="true" tabindex="-1"></a>projecao_2030 <span class="sc">|&gt;</span></span>
+<span id="cb9-27"><a href="#cb9-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> .index, <span class="at">y =</span> .value, <span class="at">col =</span> .model_desc)) <span class="sc">+</span> </span>
+<span id="cb9-28"><a href="#cb9-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span> <span class="fu">theme_minimal</span>() <span class="sc">+</span> </span>
+<span id="cb9-29"><a href="#cb9-29" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">"Anos"</span>) <span class="sc">+</span> <span class="fu">ylab</span>(<span class="st">"Nascidos"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="03_projecoes_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>O próximo bloco de código serve para projetar o total de nascidos usando uma visualização anual.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Criar tabela com valores anuais (mais fácil de analisar)</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>projecao_anual <span class="ot">&lt;-</span> </span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>        projecao_2030 <span class="sc">|&gt;</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>          <span class="fu">mutate</span>(</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>            <span class="at">ano =</span> lubridate<span class="sc">::</span><span class="fu">year</span>(.index),</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>            <span class="at">mes =</span> lubridate<span class="sc">::</span><span class="fu">month</span>(.index)</span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>          ) <span class="sc">|&gt;</span></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>          <span class="fu">group_by</span>(.model_id, </span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>                   .model_desc, </span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>                   ano) <span class="sc">|&gt;</span></span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>          <span class="fu">summarise</span>(</span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>            <span class="at">total_nascidos =</span> <span class="fu">sum</span>(.value, </span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>                                 <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>            <span class="at">.groups =</span> <span class="st">"drop"</span>)</span>
+<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualizar projeção anual</span></span>
+<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a>projecao_anual <span class="sc">|&gt;</span></span>
+<span id="cb10-19"><a href="#cb10-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> ano, </span>
+<span id="cb10-20"><a href="#cb10-20" aria-hidden="true" tabindex="-1"></a>             <span class="at">y =</span> total_nascidos, </span>
+<span id="cb10-21"><a href="#cb10-21" aria-hidden="true" tabindex="-1"></a>             <span class="at">color =</span> .model_desc)) <span class="sc">+</span></span>
+<span id="cb10-22"><a href="#cb10-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span></span>
+<span id="cb10-23"><a href="#cb10-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb10-24"><a href="#cb10-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb10-25"><a href="#cb10-25" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Média Anual de Nascidos Vivos - Projeção até 2030"</span>,</span>
+<span id="cb10-26"><a href="#cb10-26" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Ano"</span>,</span>
+<span id="cb10-27"><a href="#cb10-27" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Média Mensal de Nascidos Vivos"</span>,</span>
+<span id="cb10-28"><a href="#cb10-28" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> <span class="st">"Modelo"</span></span>
+<span id="cb10-29"><a href="#cb10-29" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb10-30"><a href="#cb10-30" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb10-31"><a href="#cb10-31" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> <span class="fu">seq</span>(<span class="fu">min</span>(projecao_anual<span class="sc">$</span>ano), </span>
+<span id="cb10-32"><a href="#cb10-32" aria-hidden="true" tabindex="-1"></a>                                  <span class="dv">2030</span>, </span>
+<span id="cb10-33"><a href="#cb10-33" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">by =</span> <span class="dv">2</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="03_projecoes_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Tabela com os valores das projeções anuais</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>projecao_anual_wide <span class="ot">&lt;-</span> </span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  projecao_anual <span class="sc">|&gt;</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(ano <span class="sc">&gt;=</span> <span class="dv">2023</span>) <span class="sc">|&gt;</span>  <span class="co"># Filtra apenas anos futuros</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">select</span>(ano, .model_desc, total_nascidos) <span class="sc">|&gt;</span></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>    tidyr<span class="sc">::</span><span class="fu">pivot_wider</span>(</span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>      <span class="at">names_from =</span> .model_desc,</span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>      <span class="at">values_from =</span> total_nascidos</span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">|&gt;</span></span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">arrange</span>(ano)</span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Exportar para CSV (opcional)</span></span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a><span class="co"># write.csv(projecao_anual_wide, </span></span>
+<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a><span class="co">#            "projecao_nascidos_2030.csv", row.names = FALSE)</span></span>
+<span id="cb11-15"><a href="#cb11-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-16"><a href="#cb11-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Salvar melhor modelo em objeto separado</span></span>
+<span id="cb11-17"><a href="#cb11-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-18"><a href="#cb11-18" aria-hidden="true" tabindex="-1"></a>melhor_modelo_id <span class="ot">&lt;-</span> </span>
+<span id="cb11-19"><a href="#cb11-19" aria-hidden="true" tabindex="-1"></a>  tabela_precisao <span class="sc">|&gt;</span> </span>
+<span id="cb11-20"><a href="#cb11-20" aria-hidden="true" tabindex="-1"></a>    <span class="fu">slice_min</span>(mae) <span class="sc">|&gt;</span> </span>
+<span id="cb11-21"><a href="#cb11-21" aria-hidden="true" tabindex="-1"></a>    <span class="fu">pull</span>(.model_id)</span>
+<span id="cb11-22"><a href="#cb11-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-23"><a href="#cb11-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-24"><a href="#cb11-24" aria-hidden="true" tabindex="-1"></a>projecao_melhor_modelo <span class="ot">&lt;-</span> projecao_2030 <span class="sc">|&gt;</span></span>
+<span id="cb11-25"><a href="#cb11-25" aria-hidden="true" tabindex="-1"></a>                            <span class="fu">filter</span>(.model_id <span class="sc">==</span> melhor_modelo_id)</span>
+<span id="cb11-26"><a href="#cb11-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-27"><a href="#cb11-27" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualizar apenas o melhor modelo</span></span>
+<span id="cb11-28"><a href="#cb11-28" aria-hidden="true" tabindex="-1"></a>projecao_melhor_modelo <span class="sc">|&gt;</span></span>
+<span id="cb11-29"><a href="#cb11-29" aria-hidden="true" tabindex="-1"></a>  <span class="fu">plot_modeltime_forecast</span>(</span>
+<span id="cb11-30"><a href="#cb11-30" aria-hidden="true" tabindex="-1"></a>    <span class="at">.legend_max_width =</span> <span class="dv">250</span>,</span>
+<span id="cb11-31"><a href="#cb11-31" aria-hidden="true" tabindex="-1"></a>    <span class="at">.conf_interval_show =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb11-32"><a href="#cb11-32" aria-hidden="true" tabindex="-1"></a>    <span class="at">.interactive =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb11-33"><a href="#cb11-33" aria-hidden="true" tabindex="-1"></a>    <span class="at">.title =</span> <span class="fu">paste</span>(<span class="st">"Projeção até 2030 com o Melhor Modelo:"</span>, </span>
+<span id="cb11-34"><a href="#cb11-34" aria-hidden="true" tabindex="-1"></a>                   melhor_modelo<span class="sc">$</span>.model_desc),</span>
+<span id="cb11-35"><a href="#cb11-35" aria-hidden="true" tabindex="-1"></a>    <span class="at">.x_lab =</span> <span class="st">"Data"</span>,</span>
+<span id="cb11-36"><a href="#cb11-36" aria-hidden="true" tabindex="-1"></a>    <span class="at">.y_lab =</span> <span class="st">"Total de Nascidos Vivos"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-8ac92a91f4b2fee9dca0" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-8ac92a91f4b2fee9dca0">{"x":{"data":[{"x":["2024-01-01","2024-02-01","2024-03-01","2024-04-01","2024-05-01","2024-06-01","2024-07-01","2024-08-01","2024-09-01","2024-10-01","2024-11-01","2024-12-01","2025-01-01","2025-02-01","2025-03-01","2025-04-01","2025-05-01","2025-06-01","2025-07-01","2025-08-01","2025-09-01","2025-10-01","2025-11-01","2025-12-01","2026-01-01","2026-02-01","2026-03-01","2026-04-01","2026-05-01","2026-06-01","2026-07-01","2026-08-01","2026-09-01","2026-10-01","2026-11-01","2026-12-01","2027-01-01","2027-02-01","2027-03-01","2027-04-01","2027-05-01","2027-06-01","2027-07-01","2027-08-01","2027-09-01","2027-10-01","2027-11-01","2027-12-01","2028-01-01","2028-02-01","2028-03-01","2028-04-01","2028-05-01","2028-06-01","2028-07-01","2028-08-01","2028-09-01","2028-10-01","2028-11-01","2028-12-01","2029-01-01","2029-02-01","2029-03-01","2029-04-01","2029-05-01","2029-06-01","2029-07-01","2029-08-01","2029-09-01","2029-10-01","2029-11-01","2029-12-01","2030-01-01","2030-02-01","2030-03-01","2030-04-01","2030-05-01","2030-06-01","2030-07-01","2030-08-01","2030-09-01","2030-10-01","2030-11-01","2030-12-01","2030-12-01","2030-12-01","2030-11-01","2030-10-01","2030-09-01","2030-08-01","2030-07-01","2030-06-01","2030-05-01","2030-04-01","2030-03-01","2030-02-01","2030-01-01","2029-12-01","2029-11-01","2029-10-01","2029-09-01","2029-08-01","2029-07-01","2029-06-01","2029-05-01","2029-04-01","2029-03-01","2029-02-01","2029-01-01","2028-12-01","2028-11-01","2028-10-01","2028-09-01","2028-08-01","2028-07-01","2028-06-01","2028-05-01","2028-04-01","2028-03-01","2028-02-01","2028-01-01","2027-12-01","2027-11-01","2027-10-01","2027-09-01","2027-08-01","2027-07-01","2027-06-01","2027-05-01","2027-04-01","2027-03-01","2027-02-01","2027-01-01","2026-12-01","2026-11-01","2026-10-01","2026-09-01","2026-08-01","2026-07-01","2026-06-01","2026-05-01","2026-04-01","2026-03-01","2026-02-01","2026-01-01","2025-12-01","2025-11-01","2025-10-01","2025-09-01","2025-08-01","2025-07-01","2025-06-01","2025-05-01","2025-04-01","2025-03-01","2025-02-01","2025-01-01","2024-12-01","2024-11-01","2024-10-01","2024-09-01","2024-08-01","2024-07-01","2024-06-01","2024-05-01","2024-04-01","2024-03-01","2024-02-01","2024-01-01","2024-01-01"],"y":[49.884569359645283,56.995482558161171,62.827601741782075,59.763764435760223,63.929383059584453,53.575697390747237,51.868218966733409,47.538581709400717,51.780117648307879,47.40078969546623,45.092005985937178,52.370582580264113,53.680060790077661,52.624452713172943,64.528873017497418,60.369847687339146,62.228745129886548,54.313095700492241,53.500259206349213,49.180020935652109,52.026690216611314,48.743929535869341,45.525187649070119,51.859787313591553,53.305376167766255,54.984215559519129,66.190200960683939,60.919561656854597,60.529881361077756,55.103192861446004,55.154722286896146,50.808829928149976,52.259537894001753,50.074995293366754,45.931710759222909,51.348662611984821,52.98201894212346,57.384079140565319,67.810025449117248,61.413465868367226,58.835790535724584,55.946462985364107,56.830214538725301,52.423698266879256,52.478689670694607,51.393546986965816,46.312172598014754,50.839008909917766,52.710999109438106,59.821912307947969,65.65403149157919,62.590194185553273,66.755812809366304,56.402127140536834,54.694648716527539,50.365011459177339,54.606547398096112,50.227219445251748,47.918435735716656,55.197012330052019,56.506490539858177,55.450882462961019,67.355302767295569,63.196277437131229,65.05517487968369,57.139525450272998,56.326688956130511,52.006450685448826,54.853119966398069,51.570359285660189,48.35161739886415,54.686217063376617,56.131805917553109,57.810645309310303,69.016630710468348,63.745991406645132,63.356311110870578,57.929622611234549,57.981152036685614,53.635259677936176,55.085967643781359,52.901425043142495,48.758140509018673,54.17509236178158,54.17509236178158,93.150465024889868,87.733513172126962,91.876797706250784,94.061340306889647,92.610632341044465,96.956524699793903,96.904995274342838,102.33168377397887,102.72136406975342,107.99200337357664,96.786017972418591,95.107178580661397,93.661589726484905,87.326990061972438,90.545731948768477,93.828492629506357,90.981823348557114,95.302061619238799,96.114898113381287,104.03054754279198,102.17165010023952,106.33067543040386,94.426255126069307,95.481863202966466,94.172384993160307,86.893808398824945,89.202592108360037,93.5819200612044,89.340384122285627,93.670021379635827,95.377499803645122,105.73118547247459,101.56556684866156,104.62940415468748,98.797284971056257,91.686371772546394,89.814381573026054,85.287545261123043,90.368919650074105,91.454062333802895,91.399070929987545,95.805587201833589,94.921835648472396,97.811163198832872,100.38883853147551,106.78539811222554,96.359451803673608,91.957391605231749,90.324035275093109,84.907083422331198,89.050367956475043,91.234910557110041,89.784202591258264,94.130094950004434,94.078565524554293,99.505254024186044,99.894934319962886,105.16557362379223,93.959588222627417,92.280748830874543,90.835159976699842,84.500560312178408,87.71930219897763,91.002062879719603,88.155393598760398,92.475631869457501,93.288468363600529,101.20411779299484,99.345220350447434,103.50424568060571,91.599825376281231,92.65543345318595,91.345955243372401,84.067378649045466,86.376162358574518,90.755490311416168,86.513954372509005,90.843591629841697,92.551070053855526,102.90475572269274,98.739137098868511,101.80297440489036,95.97085522126946,88.859942022753572,49.884569359645283],"text":[".index: 2024-01-01<br />.value: 69.37226<br />.conf_lo: 49.88457<br />.conf_hi:  88.85994<br />.model_desc: 2_PROPHET",".index: 2024-02-01<br />.value: 76.48317<br />.conf_lo: 56.99548<br />.conf_hi:  95.97086<br />.model_desc: 2_PROPHET",".index: 2024-03-01<br />.value: 82.31529<br />.conf_lo: 62.82760<br />.conf_hi: 101.80297<br />.model_desc: 2_PROPHET",".index: 2024-04-01<br />.value: 79.25145<br />.conf_lo: 59.76376<br />.conf_hi:  98.73914<br />.model_desc: 2_PROPHET",".index: 2024-05-01<br />.value: 83.41707<br />.conf_lo: 63.92938<br />.conf_hi: 102.90476<br />.model_desc: 2_PROPHET",".index: 2024-06-01<br />.value: 73.06338<br />.conf_lo: 53.57570<br />.conf_hi:  92.55107<br />.model_desc: 2_PROPHET",".index: 2024-07-01<br />.value: 71.35591<br />.conf_lo: 51.86822<br />.conf_hi:  90.84359<br />.model_desc: 2_PROPHET",".index: 2024-08-01<br />.value: 67.02627<br />.conf_lo: 47.53858<br />.conf_hi:  86.51395<br />.model_desc: 2_PROPHET",".index: 2024-09-01<br />.value: 71.26780<br />.conf_lo: 51.78012<br />.conf_hi:  90.75549<br />.model_desc: 2_PROPHET",".index: 2024-10-01<br />.value: 66.88848<br />.conf_lo: 47.40079<br />.conf_hi:  86.37616<br />.model_desc: 2_PROPHET",".index: 2024-11-01<br />.value: 64.57969<br />.conf_lo: 45.09201<br />.conf_hi:  84.06738<br />.model_desc: 2_PROPHET",".index: 2024-12-01<br />.value: 71.85827<br />.conf_lo: 52.37058<br />.conf_hi:  91.34596<br />.model_desc: 2_PROPHET",".index: 2025-01-01<br />.value: 73.16775<br />.conf_lo: 53.68006<br />.conf_hi:  92.65543<br />.model_desc: 2_PROPHET",".index: 2025-02-01<br />.value: 72.11214<br />.conf_lo: 52.62445<br />.conf_hi:  91.59983<br />.model_desc: 2_PROPHET",".index: 2025-03-01<br />.value: 84.01656<br />.conf_lo: 64.52887<br />.conf_hi: 103.50425<br />.model_desc: 2_PROPHET",".index: 2025-04-01<br />.value: 79.85753<br />.conf_lo: 60.36985<br />.conf_hi:  99.34522<br />.model_desc: 2_PROPHET",".index: 2025-05-01<br />.value: 81.71643<br />.conf_lo: 62.22875<br />.conf_hi: 101.20412<br />.model_desc: 2_PROPHET",".index: 2025-06-01<br />.value: 73.80078<br />.conf_lo: 54.31310<br />.conf_hi:  93.28847<br />.model_desc: 2_PROPHET",".index: 2025-07-01<br />.value: 72.98795<br />.conf_lo: 53.50026<br />.conf_hi:  92.47563<br />.model_desc: 2_PROPHET",".index: 2025-08-01<br />.value: 68.66771<br />.conf_lo: 49.18002<br />.conf_hi:  88.15539<br />.model_desc: 2_PROPHET",".index: 2025-09-01<br />.value: 71.51438<br />.conf_lo: 52.02669<br />.conf_hi:  91.00206<br />.model_desc: 2_PROPHET",".index: 2025-10-01<br />.value: 68.23162<br />.conf_lo: 48.74393<br />.conf_hi:  87.71930<br />.model_desc: 2_PROPHET",".index: 2025-11-01<br />.value: 65.01287<br />.conf_lo: 45.52519<br />.conf_hi:  84.50056<br />.model_desc: 2_PROPHET",".index: 2025-12-01<br />.value: 71.34747<br />.conf_lo: 51.85979<br />.conf_hi:  90.83516<br />.model_desc: 2_PROPHET",".index: 2026-01-01<br />.value: 72.79306<br />.conf_lo: 53.30538<br />.conf_hi:  92.28075<br />.model_desc: 2_PROPHET",".index: 2026-02-01<br />.value: 74.47190<br />.conf_lo: 54.98422<br />.conf_hi:  93.95959<br />.model_desc: 2_PROPHET",".index: 2026-03-01<br />.value: 85.67789<br />.conf_lo: 66.19020<br />.conf_hi: 105.16557<br />.model_desc: 2_PROPHET",".index: 2026-04-01<br />.value: 80.40725<br />.conf_lo: 60.91956<br />.conf_hi:  99.89493<br />.model_desc: 2_PROPHET",".index: 2026-05-01<br />.value: 80.01757<br />.conf_lo: 60.52988<br />.conf_hi:  99.50525<br />.model_desc: 2_PROPHET",".index: 2026-06-01<br />.value: 74.59088<br />.conf_lo: 55.10319<br />.conf_hi:  94.07857<br />.model_desc: 2_PROPHET",".index: 2026-07-01<br />.value: 74.64241<br />.conf_lo: 55.15472<br />.conf_hi:  94.13009<br />.model_desc: 2_PROPHET",".index: 2026-08-01<br />.value: 70.29652<br />.conf_lo: 50.80883<br />.conf_hi:  89.78420<br />.model_desc: 2_PROPHET",".index: 2026-09-01<br />.value: 71.74722<br />.conf_lo: 52.25954<br />.conf_hi:  91.23491<br />.model_desc: 2_PROPHET",".index: 2026-10-01<br />.value: 69.56268<br />.conf_lo: 50.07500<br />.conf_hi:  89.05037<br />.model_desc: 2_PROPHET",".index: 2026-11-01<br />.value: 65.41940<br />.conf_lo: 45.93171<br />.conf_hi:  84.90708<br />.model_desc: 2_PROPHET",".index: 2026-12-01<br />.value: 70.83635<br />.conf_lo: 51.34866<br />.conf_hi:  90.32404<br />.model_desc: 2_PROPHET",".index: 2027-01-01<br />.value: 72.46971<br />.conf_lo: 52.98202<br />.conf_hi:  91.95739<br />.model_desc: 2_PROPHET",".index: 2027-02-01<br />.value: 76.87177<br />.conf_lo: 57.38408<br />.conf_hi:  96.35945<br />.model_desc: 2_PROPHET",".index: 2027-03-01<br />.value: 87.29771<br />.conf_lo: 67.81003<br />.conf_hi: 106.78540<br />.model_desc: 2_PROPHET",".index: 2027-04-01<br />.value: 80.90115<br />.conf_lo: 61.41347<br />.conf_hi: 100.38884<br />.model_desc: 2_PROPHET",".index: 2027-05-01<br />.value: 78.32348<br />.conf_lo: 58.83579<br />.conf_hi:  97.81116<br />.model_desc: 2_PROPHET",".index: 2027-06-01<br />.value: 75.43415<br />.conf_lo: 55.94646<br />.conf_hi:  94.92184<br />.model_desc: 2_PROPHET",".index: 2027-07-01<br />.value: 76.31790<br />.conf_lo: 56.83021<br />.conf_hi:  95.80559<br />.model_desc: 2_PROPHET",".index: 2027-08-01<br />.value: 71.91138<br />.conf_lo: 52.42370<br />.conf_hi:  91.39907<br />.model_desc: 2_PROPHET",".index: 2027-09-01<br />.value: 71.96638<br />.conf_lo: 52.47869<br />.conf_hi:  91.45406<br />.model_desc: 2_PROPHET",".index: 2027-10-01<br />.value: 70.88123<br />.conf_lo: 51.39355<br />.conf_hi:  90.36892<br />.model_desc: 2_PROPHET",".index: 2027-11-01<br />.value: 65.79986<br />.conf_lo: 46.31217<br />.conf_hi:  85.28755<br />.model_desc: 2_PROPHET",".index: 2027-12-01<br />.value: 70.32670<br />.conf_lo: 50.83901<br />.conf_hi:  89.81438<br />.model_desc: 2_PROPHET",".index: 2028-01-01<br />.value: 72.19869<br />.conf_lo: 52.71100<br />.conf_hi:  91.68637<br />.model_desc: 2_PROPHET",".index: 2028-02-01<br />.value: 79.30960<br />.conf_lo: 59.82191<br />.conf_hi:  98.79728<br />.model_desc: 2_PROPHET",".index: 2028-03-01<br />.value: 85.14172<br />.conf_lo: 65.65403<br />.conf_hi: 104.62940<br />.model_desc: 2_PROPHET",".index: 2028-04-01<br />.value: 82.07788<br />.conf_lo: 62.59019<br />.conf_hi: 101.56557<br />.model_desc: 2_PROPHET",".index: 2028-05-01<br />.value: 86.24350<br />.conf_lo: 66.75581<br />.conf_hi: 105.73119<br />.model_desc: 2_PROPHET",".index: 2028-06-01<br />.value: 75.88981<br />.conf_lo: 56.40213<br />.conf_hi:  95.37750<br />.model_desc: 2_PROPHET",".index: 2028-07-01<br />.value: 74.18234<br />.conf_lo: 54.69465<br />.conf_hi:  93.67002<br />.model_desc: 2_PROPHET",".index: 2028-08-01<br />.value: 69.85270<br />.conf_lo: 50.36501<br />.conf_hi:  89.34038<br />.model_desc: 2_PROPHET",".index: 2028-09-01<br />.value: 74.09423<br />.conf_lo: 54.60655<br />.conf_hi:  93.58192<br />.model_desc: 2_PROPHET",".index: 2028-10-01<br />.value: 69.71491<br />.conf_lo: 50.22722<br />.conf_hi:  89.20259<br />.model_desc: 2_PROPHET",".index: 2028-11-01<br />.value: 67.40612<br />.conf_lo: 47.91844<br />.conf_hi:  86.89381<br />.model_desc: 2_PROPHET",".index: 2028-12-01<br />.value: 74.68470<br />.conf_lo: 55.19701<br />.conf_hi:  94.17238<br />.model_desc: 2_PROPHET",".index: 2029-01-01<br />.value: 75.99418<br />.conf_lo: 56.50649<br />.conf_hi:  95.48186<br />.model_desc: 2_PROPHET",".index: 2029-02-01<br />.value: 74.93857<br />.conf_lo: 55.45088<br />.conf_hi:  94.42626<br />.model_desc: 2_PROPHET",".index: 2029-03-01<br />.value: 86.84299<br />.conf_lo: 67.35530<br />.conf_hi: 106.33068<br />.model_desc: 2_PROPHET",".index: 2029-04-01<br />.value: 82.68396<br />.conf_lo: 63.19628<br />.conf_hi: 102.17165<br />.model_desc: 2_PROPHET",".index: 2029-05-01<br />.value: 84.54286<br />.conf_lo: 65.05517<br />.conf_hi: 104.03055<br />.model_desc: 2_PROPHET",".index: 2029-06-01<br />.value: 76.62721<br />.conf_lo: 57.13953<br />.conf_hi:  96.11490<br />.model_desc: 2_PROPHET",".index: 2029-07-01<br />.value: 75.81438<br />.conf_lo: 56.32669<br />.conf_hi:  95.30206<br />.model_desc: 2_PROPHET",".index: 2029-08-01<br />.value: 71.49414<br />.conf_lo: 52.00645<br />.conf_hi:  90.98182<br />.model_desc: 2_PROPHET",".index: 2029-09-01<br />.value: 74.34081<br />.conf_lo: 54.85312<br />.conf_hi:  93.82849<br />.model_desc: 2_PROPHET",".index: 2029-10-01<br />.value: 71.05805<br />.conf_lo: 51.57036<br />.conf_hi:  90.54573<br />.model_desc: 2_PROPHET",".index: 2029-11-01<br />.value: 67.83930<br />.conf_lo: 48.35162<br />.conf_hi:  87.32699<br />.model_desc: 2_PROPHET",".index: 2029-12-01<br />.value: 74.17390<br />.conf_lo: 54.68622<br />.conf_hi:  93.66159<br />.model_desc: 2_PROPHET",".index: 2030-01-01<br />.value: 75.61949<br />.conf_lo: 56.13181<br />.conf_hi:  95.10718<br />.model_desc: 2_PROPHET",".index: 2030-02-01<br />.value: 77.29833<br />.conf_lo: 57.81065<br />.conf_hi:  96.78602<br />.model_desc: 2_PROPHET",".index: 2030-03-01<br />.value: 88.50432<br />.conf_lo: 69.01663<br />.conf_hi: 107.99200<br />.model_desc: 2_PROPHET",".index: 2030-04-01<br />.value: 83.23368<br />.conf_lo: 63.74599<br />.conf_hi: 102.72136<br />.model_desc: 2_PROPHET",".index: 2030-05-01<br />.value: 82.84400<br />.conf_lo: 63.35631<br />.conf_hi: 102.33168<br />.model_desc: 2_PROPHET",".index: 2030-06-01<br />.value: 77.41731<br />.conf_lo: 57.92962<br />.conf_hi:  96.90500<br />.model_desc: 2_PROPHET",".index: 2030-07-01<br />.value: 77.46884<br />.conf_lo: 57.98115<br />.conf_hi:  96.95652<br />.model_desc: 2_PROPHET",".index: 2030-08-01<br />.value: 73.12295<br />.conf_lo: 53.63526<br />.conf_hi:  92.61063<br />.model_desc: 2_PROPHET",".index: 2030-09-01<br />.value: 74.57365<br />.conf_lo: 55.08597<br />.conf_hi:  94.06134<br />.model_desc: 2_PROPHET",".index: 2030-10-01<br />.value: 72.38911<br />.conf_lo: 52.90143<br />.conf_hi:  91.87680<br />.model_desc: 2_PROPHET",".index: 2030-11-01<br />.value: 68.24583<br />.conf_lo: 48.75814<br />.conf_hi:  87.73351<br />.model_desc: 2_PROPHET",".index: 2030-12-01<br />.value: 73.66278<br />.conf_lo: 54.17509<br />.conf_hi:  93.15047<br />.model_desc: 2_PROPHET",".index: 2030-12-01<br />.value: 73.66278<br />.conf_lo: 54.17509<br />.conf_hi:  93.15047<br />.model_desc: 2_PROPHET",".index: 2030-12-01<br />.value: 73.66278<br />.conf_lo: 54.17509<br />.conf_hi:  93.15047<br />.model_desc: 2_PROPHET",".index: 2030-11-01<br />.value: 68.24583<br />.conf_lo: 48.75814<br />.conf_hi:  87.73351<br />.model_desc: 2_PROPHET",".index: 2030-10-01<br />.value: 72.38911<br />.conf_lo: 52.90143<br />.conf_hi:  91.87680<br />.model_desc: 2_PROPHET",".index: 2030-09-01<br />.value: 74.57365<br />.conf_lo: 55.08597<br />.conf_hi:  94.06134<br />.model_desc: 2_PROPHET",".index: 2030-08-01<br />.value: 73.12295<br />.conf_lo: 53.63526<br />.conf_hi:  92.61063<br />.model_desc: 2_PROPHET",".index: 2030-07-01<br />.value: 77.46884<br />.conf_lo: 57.98115<br />.conf_hi:  96.95652<br />.model_desc: 2_PROPHET",".index: 2030-06-01<br />.value: 77.41731<br />.conf_lo: 57.92962<br />.conf_hi:  96.90500<br />.model_desc: 2_PROPHET",".index: 2030-05-01<br />.value: 82.84400<br />.conf_lo: 63.35631<br />.conf_hi: 102.33168<br />.model_desc: 2_PROPHET",".index: 2030-04-01<br />.value: 83.23368<br />.conf_lo: 63.74599<br />.conf_hi: 102.72136<br />.model_desc: 2_PROPHET",".index: 2030-03-01<br />.value: 88.50432<br />.conf_lo: 69.01663<br />.conf_hi: 107.99200<br />.model_desc: 2_PROPHET",".index: 2030-02-01<br />.value: 77.29833<br />.conf_lo: 57.81065<br />.conf_hi:  96.78602<br />.model_desc: 2_PROPHET",".index: 2030-01-01<br />.value: 75.61949<br />.conf_lo: 56.13181<br />.conf_hi:  95.10718<br />.model_desc: 2_PROPHET",".index: 2029-12-01<br />.value: 74.17390<br />.conf_lo: 54.68622<br />.conf_hi:  93.66159<br />.model_desc: 2_PROPHET",".index: 2029-11-01<br />.value: 67.83930<br />.conf_lo: 48.35162<br />.conf_hi:  87.32699<br />.model_desc: 2_PROPHET",".index: 2029-10-01<br />.value: 71.05805<br />.conf_lo: 51.57036<br />.conf_hi:  90.54573<br />.model_desc: 2_PROPHET",".index: 2029-09-01<br />.value: 74.34081<br />.conf_lo: 54.85312<br />.conf_hi:  93.82849<br />.model_desc: 2_PROPHET",".index: 2029-08-01<br />.value: 71.49414<br />.conf_lo: 52.00645<br />.conf_hi:  90.98182<br />.model_desc: 2_PROPHET",".index: 2029-07-01<br />.value: 75.81438<br />.conf_lo: 56.32669<br />.conf_hi:  95.30206<br />.model_desc: 2_PROPHET",".index: 2029-06-01<br />.value: 76.62721<br />.conf_lo: 57.13953<br />.conf_hi:  96.11490<br />.model_desc: 2_PROPHET",".index: 2029-05-01<br />.value: 84.54286<br />.conf_lo: 65.05517<br />.conf_hi: 104.03055<br />.model_desc: 2_PROPHET",".index: 2029-04-01<br />.value: 82.68396<br />.conf_lo: 63.19628<br />.conf_hi: 102.17165<br />.model_desc: 2_PROPHET",".index: 2029-03-01<br />.value: 86.84299<br />.conf_lo: 67.35530<br />.conf_hi: 106.33068<br />.model_desc: 2_PROPHET",".index: 2029-02-01<br />.value: 74.93857<br />.conf_lo: 55.45088<br />.conf_hi:  94.42626<br />.model_desc: 2_PROPHET",".index: 2029-01-01<br />.value: 75.99418<br />.conf_lo: 56.50649<br />.conf_hi:  95.48186<br />.model_desc: 2_PROPHET",".index: 2028-12-01<br />.value: 74.68470<br />.conf_lo: 55.19701<br />.conf_hi:  94.17238<br />.model_desc: 2_PROPHET",".index: 2028-11-01<br />.value: 67.40612<br />.conf_lo: 47.91844<br />.conf_hi:  86.89381<br />.model_desc: 2_PROPHET",".index: 2028-10-01<br />.value: 69.71491<br />.conf_lo: 50.22722<br />.conf_hi:  89.20259<br />.model_desc: 2_PROPHET",".index: 2028-09-01<br />.value: 74.09423<br />.conf_lo: 54.60655<br />.conf_hi:  93.58192<br />.model_desc: 2_PROPHET",".index: 2028-08-01<br />.value: 69.85270<br />.conf_lo: 50.36501<br />.conf_hi:  89.34038<br />.model_desc: 2_PROPHET",".index: 2028-07-01<br />.value: 74.18234<br />.conf_lo: 54.69465<br />.conf_hi:  93.67002<br />.model_desc: 2_PROPHET",".index: 2028-06-01<br />.value: 75.88981<br />.conf_lo: 56.40213<br />.conf_hi:  95.37750<br />.model_desc: 2_PROPHET",".index: 2028-05-01<br />.value: 86.24350<br />.conf_lo: 66.75581<br />.conf_hi: 105.73119<br />.model_desc: 2_PROPHET",".index: 2028-04-01<br />.value: 82.07788<br />.conf_lo: 62.59019<br />.conf_hi: 101.56557<br />.model_desc: 2_PROPHET",".index: 2028-03-01<br />.value: 85.14172<br />.conf_lo: 65.65403<br />.conf_hi: 104.62940<br />.model_desc: 2_PROPHET",".index: 2028-02-01<br />.value: 79.30960<br />.conf_lo: 59.82191<br />.conf_hi:  98.79728<br />.model_desc: 2_PROPHET",".index: 2028-01-01<br />.value: 72.19869<br />.conf_lo: 52.71100<br />.conf_hi:  91.68637<br />.model_desc: 2_PROPHET",".index: 2027-12-01<br />.value: 70.32670<br />.conf_lo: 50.83901<br />.conf_hi:  89.81438<br />.model_desc: 2_PROPHET",".index: 2027-11-01<br />.value: 65.79986<br />.conf_lo: 46.31217<br />.conf_hi:  85.28755<br />.model_desc: 2_PROPHET",".index: 2027-10-01<br />.value: 70.88123<br />.conf_lo: 51.39355<br />.conf_hi:  90.36892<br />.model_desc: 2_PROPHET",".index: 2027-09-01<br />.value: 71.96638<br />.conf_lo: 52.47869<br />.conf_hi:  91.45406<br />.model_desc: 2_PROPHET",".index: 2027-08-01<br />.value: 71.91138<br />.conf_lo: 52.42370<br />.conf_hi:  91.39907<br />.model_desc: 2_PROPHET",".index: 2027-07-01<br />.value: 76.31790<br />.conf_lo: 56.83021<br />.conf_hi:  95.80559<br />.model_desc: 2_PROPHET",".index: 2027-06-01<br />.value: 75.43415<br />.conf_lo: 55.94646<br />.conf_hi:  94.92184<br />.model_desc: 2_PROPHET",".index: 2027-05-01<br />.value: 78.32348<br />.conf_lo: 58.83579<br />.conf_hi:  97.81116<br />.model_desc: 2_PROPHET",".index: 2027-04-01<br />.value: 80.90115<br />.conf_lo: 61.41347<br />.conf_hi: 100.38884<br />.model_desc: 2_PROPHET",".index: 2027-03-01<br />.value: 87.29771<br />.conf_lo: 67.81003<br />.conf_hi: 106.78540<br />.model_desc: 2_PROPHET",".index: 2027-02-01<br />.value: 76.87177<br />.conf_lo: 57.38408<br />.conf_hi:  96.35945<br />.model_desc: 2_PROPHET",".index: 2027-01-01<br />.value: 72.46971<br />.conf_lo: 52.98202<br />.conf_hi:  91.95739<br />.model_desc: 2_PROPHET",".index: 2026-12-01<br />.value: 70.83635<br />.conf_lo: 51.34866<br />.conf_hi:  90.32404<br />.model_desc: 2_PROPHET",".index: 2026-11-01<br />.value: 65.41940<br />.conf_lo: 45.93171<br />.conf_hi:  84.90708<br />.model_desc: 2_PROPHET",".index: 2026-10-01<br />.value: 69.56268<br />.conf_lo: 50.07500<br />.conf_hi:  89.05037<br />.model_desc: 2_PROPHET",".index: 2026-09-01<br />.value: 71.74722<br />.conf_lo: 52.25954<br />.conf_hi:  91.23491<br />.model_desc: 2_PROPHET",".index: 2026-08-01<br />.value: 70.29652<br />.conf_lo: 50.80883<br />.conf_hi:  89.78420<br />.model_desc: 2_PROPHET",".index: 2026-07-01<br />.value: 74.64241<br />.conf_lo: 55.15472<br />.conf_hi:  94.13009<br />.model_desc: 2_PROPHET",".index: 2026-06-01<br />.value: 74.59088<br />.conf_lo: 55.10319<br />.conf_hi:  94.07857<br />.model_desc: 2_PROPHET",".index: 2026-05-01<br />.value: 80.01757<br />.conf_lo: 60.52988<br />.conf_hi:  99.50525<br />.model_desc: 2_PROPHET",".index: 2026-04-01<br />.value: 80.40725<br />.conf_lo: 60.91956<br />.conf_hi:  99.89493<br />.model_desc: 2_PROPHET",".index: 2026-03-01<br />.value: 85.67789<br />.conf_lo: 66.19020<br />.conf_hi: 105.16557<br />.model_desc: 2_PROPHET",".index: 2026-02-01<br />.value: 74.47190<br />.conf_lo: 54.98422<br />.conf_hi:  93.95959<br />.model_desc: 2_PROPHET",".index: 2026-01-01<br />.value: 72.79306<br />.conf_lo: 53.30538<br />.conf_hi:  92.28075<br />.model_desc: 2_PROPHET",".index: 2025-12-01<br />.value: 71.34747<br />.conf_lo: 51.85979<br />.conf_hi:  90.83516<br />.model_desc: 2_PROPHET",".index: 2025-11-01<br />.value: 65.01287<br />.conf_lo: 45.52519<br />.conf_hi:  84.50056<br />.model_desc: 2_PROPHET",".index: 2025-10-01<br />.value: 68.23162<br />.conf_lo: 48.74393<br />.conf_hi:  87.71930<br />.model_desc: 2_PROPHET",".index: 2025-09-01<br />.value: 71.51438<br />.conf_lo: 52.02669<br />.conf_hi:  91.00206<br />.model_desc: 2_PROPHET",".index: 2025-08-01<br />.value: 68.66771<br />.conf_lo: 49.18002<br />.conf_hi:  88.15539<br />.model_desc: 2_PROPHET",".index: 2025-07-01<br />.value: 72.98795<br />.conf_lo: 53.50026<br />.conf_hi:  92.47563<br />.model_desc: 2_PROPHET",".index: 2025-06-01<br />.value: 73.80078<br />.conf_lo: 54.31310<br />.conf_hi:  93.28847<br />.model_desc: 2_PROPHET",".index: 2025-05-01<br />.value: 81.71643<br />.conf_lo: 62.22875<br />.conf_hi: 101.20412<br />.model_desc: 2_PROPHET",".index: 2025-04-01<br />.value: 79.85753<br />.conf_lo: 60.36985<br />.conf_hi:  99.34522<br />.model_desc: 2_PROPHET",".index: 2025-03-01<br />.value: 84.01656<br />.conf_lo: 64.52887<br />.conf_hi: 103.50425<br />.model_desc: 2_PROPHET",".index: 2025-02-01<br />.value: 72.11214<br />.conf_lo: 52.62445<br />.conf_hi:  91.59983<br />.model_desc: 2_PROPHET",".index: 2025-01-01<br />.value: 73.16775<br />.conf_lo: 53.68006<br />.conf_hi:  92.65543<br />.model_desc: 2_PROPHET",".index: 2024-12-01<br />.value: 71.85827<br />.conf_lo: 52.37058<br />.conf_hi:  91.34596<br />.model_desc: 2_PROPHET",".index: 2024-11-01<br />.value: 64.57969<br />.conf_lo: 45.09201<br />.conf_hi:  84.06738<br />.model_desc: 2_PROPHET",".index: 2024-10-01<br />.value: 66.88848<br />.conf_lo: 47.40079<br />.conf_hi:  86.37616<br />.model_desc: 2_PROPHET",".index: 2024-09-01<br />.value: 71.26780<br />.conf_lo: 51.78012<br />.conf_hi:  90.75549<br />.model_desc: 2_PROPHET",".index: 2024-08-01<br />.value: 67.02627<br />.conf_lo: 47.53858<br />.conf_hi:  86.51395<br />.model_desc: 2_PROPHET",".index: 2024-07-01<br />.value: 71.35591<br />.conf_lo: 51.86822<br />.conf_hi:  90.84359<br />.model_desc: 2_PROPHET",".index: 2024-06-01<br />.value: 73.06338<br />.conf_lo: 53.57570<br />.conf_hi:  92.55107<br />.model_desc: 2_PROPHET",".index: 2024-05-01<br />.value: 83.41707<br />.conf_lo: 63.92938<br />.conf_hi: 102.90476<br />.model_desc: 2_PROPHET",".index: 2024-04-01<br />.value: 79.25145<br />.conf_lo: 59.76376<br />.conf_hi:  98.73914<br />.model_desc: 2_PROPHET",".index: 2024-03-01<br />.value: 82.31529<br />.conf_lo: 62.82760<br />.conf_hi: 101.80297<br />.model_desc: 2_PROPHET",".index: 2024-02-01<br />.value: 76.48317<br />.conf_lo: 56.99548<br />.conf_hi:  95.97086<br />.model_desc: 2_PROPHET",".index: 2024-01-01<br />.value: 69.37226<br />.conf_lo: 49.88457<br />.conf_hi:  88.85994<br />.model_desc: 2_PROPHET",".index: 2024-01-01<br />.value: 69.37226<br />.conf_lo: 49.88457<br />.conf_hi:  88.85994<br />.model_desc: 2_PROPHET"],"type":"scatter","mode":"lines","line":{"width":1.8897637795275593,"color":"rgba(44,62,80,0.2)","dash":"none"},"fill":"toself","fillcolor":"rgba(51,51,51,0.2)","hoveron":"points","name":"2_PROPHET","legendgroup":"2_PROPHET","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":["2024-01-01","2024-02-01","2024-03-01","2024-04-01","2024-05-01","2024-06-01","2024-07-01","2024-08-01","2024-09-01","2024-10-01","2024-11-01","2024-12-01","2025-01-01","2025-02-01","2025-03-01","2025-04-01","2025-05-01","2025-06-01","2025-07-01","2025-08-01","2025-09-01","2025-10-01","2025-11-01","2025-12-01","2026-01-01","2026-02-01","2026-03-01","2026-04-01","2026-05-01","2026-06-01","2026-07-01","2026-08-01","2026-09-01","2026-10-01","2026-11-01","2026-12-01","2027-01-01","2027-02-01","2027-03-01","2027-04-01","2027-05-01","2027-06-01","2027-07-01","2027-08-01","2027-09-01","2027-10-01","2027-11-01","2027-12-01","2028-01-01","2028-02-01","2028-03-01","2028-04-01","2028-05-01","2028-06-01","2028-07-01","2028-08-01","2028-09-01","2028-10-01","2028-11-01","2028-12-01","2029-01-01","2029-02-01","2029-03-01","2029-04-01","2029-05-01","2029-06-01","2029-07-01","2029-08-01","2029-09-01","2029-10-01","2029-11-01","2029-12-01","2030-01-01","2030-02-01","2030-03-01","2030-04-01","2030-05-01","2030-06-01","2030-07-01","2030-08-01","2030-09-01","2030-10-01","2030-11-01","2030-12-01"],"y":[69.372255691199427,76.483168889715316,82.31528807333622,79.251450767314367,83.417069391138597,73.063383722301381,71.355905298287553,67.026268040954861,71.267803979862023,66.888476027020374,64.579692317491322,71.858268911818257,73.167747121631805,72.112139044727087,84.016559349051562,79.85753401889329,81.716431461440692,73.800782032046385,72.987945537903357,68.667707267206254,71.514376548165458,68.231615867423486,65.012873980624263,71.347473645145698,72.793062499320399,74.471901891073273,85.677887292238083,80.407247988408741,80.0175676926319,74.590879193000148,74.64240861845029,70.29651625970412,71.747224225555897,69.562681624920899,65.419397090777053,70.836348943538965,72.469705273677604,76.871765472119463,87.297711780671392,80.90115219992137,78.323476867278728,75.434149316918251,76.317900870279445,71.911384598433401,71.966376002248751,70.881233318519961,65.799858929568899,70.32669524147191,72.19868544099225,79.309598639502113,85.141717823133334,82.077880517107417,86.243499140920449,75.889813472090978,74.182335048081683,69.852697790731483,74.094233729650256,69.714905776805892,67.4061220672708,74.684698661606163,75.994176871412321,74.938568794515163,86.842989098849714,82.683963768685373,84.542861211237835,76.627211781827143,75.814375287684655,71.49413701700297,74.340806297952213,71.058045617214333,67.839303730418294,74.173903394930761,75.619492249107253,77.298331640864447,88.504317042022493,83.233677738199276,82.843997442424723,77.417308942788694,77.468838368239759,73.12294600949032,74.573653975335503,72.38911137469664,68.245826840572818,73.662778693335724],"text":[".index: 2024-01-01<br />.value: 69.37226<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2024-02-01<br />.value: 76.48317<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2024-03-01<br />.value: 82.31529<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2024-04-01<br />.value: 79.25145<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2024-05-01<br />.value: 83.41707<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2024-06-01<br />.value: 73.06338<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2024-07-01<br />.value: 71.35591<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2024-08-01<br />.value: 67.02627<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2024-09-01<br />.value: 71.26780<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2024-10-01<br />.value: 66.88848<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2024-11-01<br />.value: 64.57969<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2024-12-01<br />.value: 71.85827<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2025-01-01<br />.value: 73.16775<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2025-02-01<br />.value: 72.11214<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2025-03-01<br />.value: 84.01656<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2025-04-01<br />.value: 79.85753<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2025-05-01<br />.value: 81.71643<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2025-06-01<br />.value: 73.80078<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2025-07-01<br />.value: 72.98795<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2025-08-01<br />.value: 68.66771<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2025-09-01<br />.value: 71.51438<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2025-10-01<br />.value: 68.23162<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2025-11-01<br />.value: 65.01287<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2025-12-01<br />.value: 71.34747<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2026-01-01<br />.value: 72.79306<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2026-02-01<br />.value: 74.47190<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2026-03-01<br />.value: 85.67789<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2026-04-01<br />.value: 80.40725<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2026-05-01<br />.value: 80.01757<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2026-06-01<br />.value: 74.59088<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2026-07-01<br />.value: 74.64241<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2026-08-01<br />.value: 70.29652<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2026-09-01<br />.value: 71.74722<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2026-10-01<br />.value: 69.56268<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2026-11-01<br />.value: 65.41940<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2026-12-01<br />.value: 70.83635<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2027-01-01<br />.value: 72.46971<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2027-02-01<br />.value: 76.87177<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2027-03-01<br />.value: 87.29771<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2027-04-01<br />.value: 80.90115<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2027-05-01<br />.value: 78.32348<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2027-06-01<br />.value: 75.43415<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2027-07-01<br />.value: 76.31790<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2027-08-01<br />.value: 71.91138<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2027-09-01<br />.value: 71.96638<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2027-10-01<br />.value: 70.88123<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2027-11-01<br />.value: 65.79986<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2027-12-01<br />.value: 70.32670<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2028-01-01<br />.value: 72.19869<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2028-02-01<br />.value: 79.30960<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2028-03-01<br />.value: 85.14172<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2028-04-01<br />.value: 82.07788<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2028-05-01<br />.value: 86.24350<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2028-06-01<br />.value: 75.88981<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2028-07-01<br />.value: 74.18234<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2028-08-01<br />.value: 69.85270<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2028-09-01<br />.value: 74.09423<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2028-10-01<br />.value: 69.71491<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2028-11-01<br />.value: 67.40612<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2028-12-01<br />.value: 74.68470<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2029-01-01<br />.value: 75.99418<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2029-02-01<br />.value: 74.93857<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2029-03-01<br />.value: 86.84299<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2029-04-01<br />.value: 82.68396<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2029-05-01<br />.value: 84.54286<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2029-06-01<br />.value: 76.62721<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2029-07-01<br />.value: 75.81438<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2029-08-01<br />.value: 71.49414<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2029-09-01<br />.value: 74.34081<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2029-10-01<br />.value: 71.05805<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2029-11-01<br />.value: 67.83930<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2029-12-01<br />.value: 74.17390<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2030-01-01<br />.value: 75.61949<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2030-02-01<br />.value: 77.29833<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2030-03-01<br />.value: 88.50432<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2030-04-01<br />.value: 83.23368<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2030-05-01<br />.value: 82.84400<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2030-06-01<br />.value: 77.41731<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2030-07-01<br />.value: 77.46884<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2030-08-01<br />.value: 73.12295<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2030-09-01<br />.value: 74.57365<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2030-10-01<br />.value: 72.38911<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2030-11-01<br />.value: 68.24583<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET",".index: 2030-12-01<br />.value: 73.66278<br />.color_mod: 2_PROPHET<br />.color_mod: 2_PROPHET"],"type":"scatter","mode":"lines","line":{"width":1.8897637795275593,"color":"rgba(44,62,80,1)","dash":"solid"},"hoveron":"points","name":"2_PROPHET","legendgroup":"2_PROPHET","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":43.762557077625573,"r":7.3059360730593621,"b":40.182648401826491,"l":43.105022831050235},"plot_bgcolor":"rgba(255,255,255,1)","paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(44,62,80,1)","family":"","size":14.611872146118724},"title":{"text":"Projeção até 2030 com o Melhor Modelo: PROPHET","font":{"color":"rgba(44,62,80,1)","family":"","size":17.534246575342465},"x":0,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"date","autorange":true,"range":["2023-08-27","2031-04-06"],"tickmode":"auto","ticktext":["2024","2026","2028","2030"],"tickvals":[19723,20454,21184,21915],"categoryorder":"array","categoryarray":["2024","2026","2028","2030"],"nticks":null,"ticks":"outside","tickcolor":"rgba(204,204,204,1)","ticklen":3.6529680365296811,"tickwidth":0.22139200221392005,"showticklabels":true,"tickfont":{"color":"rgba(44,62,80,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(204,204,204,1)","gridwidth":0.22139200221392005,"zeroline":false,"anchor":"y","title":{"text":"Data","font":{"color":"rgba(44,62,80,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":true,"range":[41.947006116555201,111.13700324295861],"tickmode":"auto","ticktext":["60","80","100"],"tickvals":[60,80,100],"categoryorder":"array","categoryarray":["60","80","100"],"nticks":null,"ticks":"outside","tickcolor":"rgba(204,204,204,1)","ticklen":3.6529680365296811,"tickwidth":0.22139200221392005,"showticklabels":true,"tickfont":{"color":"rgba(44,62,80,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(204,204,204,1)","gridwidth":0.22139200221392005,"zeroline":false,"anchor":"x","title":{"text":"Total de Nascidos Vivos","font":{"color":"rgba(44,62,80,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":"transparent","line":{"color":"rgba(44,62,80,1)","width":0.33208800332088001,"linetype":"solid"},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":true,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"transparent","borderwidth":1.8897637795275593,"font":{"color":"rgba(44,62,80,1)","family":"","size":11.68949771689498},"title":{"text":"Legend","font":{"color":"rgba(44,62,80,1)","family":"","size":14.611872146118724}}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"6348593f3ca1":{"x":{},"y":{},"ymin":{},"ymax":{},"colour":{},"type":"scatter"},"63481759587":{"x":{},"y":{},"colour":{}}},"cur_data":"6348593f3ca1","visdat":{"6348593f3ca1":["function (y) ","x"],"63481759587":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="adicionando-tudo-a-um-único-dataframe" class="level2">
+<h2 class="anchored" data-anchor-id="adicionando-tudo-a-um-único-dataframe">1.6. Adicionando tudo a um único dataframe</h2>
+<p>O próximo passo consiste em adicionar tudo em um único dataframe, tanto os dados de treino quanto a projeção para a gente plotar gráficos.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 1) Juntar dados reais e projeção em um único dataframe</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Preparar dados reais para combinar com projecao. Para isso, precisamos renomear algumas colunas da base original</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>dados_reais <span class="ot">&lt;-</span> </span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>  df_regiao <span class="sc">|&gt;</span></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(data_nascimento, total) <span class="sc">|&gt;</span></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(</span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">.index =</span> data_nascimento,</span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">.value =</span> total</span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">.model_id =</span> <span class="dv">0</span>,</span>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">.model_desc =</span> <span class="st">"Dados Históricos"</span>,</span>
+<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">.key =</span> <span class="st">"actual"</span>,</span>
+<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">tipo =</span> <span class="st">"histórico"</span></span>
+<span id="cb12-16"><a href="#cb12-16" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb12-17"><a href="#cb12-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-18"><a href="#cb12-18" aria-hidden="true" tabindex="-1"></a><span class="co"># Adicionar coluna de tipo na projeção</span></span>
+<span id="cb12-19"><a href="#cb12-19" aria-hidden="true" tabindex="-1"></a>projecao_com_tipo <span class="ot">&lt;-</span> </span>
+<span id="cb12-20"><a href="#cb12-20" aria-hidden="true" tabindex="-1"></a>  projecao_2030 <span class="sc">|&gt;</span></span>
+<span id="cb12-21"><a href="#cb12-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">tipo =</span> <span class="fu">case_when</span>(</span>
+<span id="cb12-22"><a href="#cb12-22" aria-hidden="true" tabindex="-1"></a>    .key <span class="sc">==</span> <span class="st">"actual"</span> <span class="sc">~</span> <span class="st">"histórico"</span>,</span>
+<span id="cb12-23"><a href="#cb12-23" aria-hidden="true" tabindex="-1"></a>    <span class="cn">TRUE</span> <span class="sc">~</span> <span class="st">"projeção"</span></span>
+<span id="cb12-24"><a href="#cb12-24" aria-hidden="true" tabindex="-1"></a>  ))</span>
+<span id="cb12-25"><a href="#cb12-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-26"><a href="#cb12-26" aria-hidden="true" tabindex="-1"></a><span class="co"># Combinar dados reais e projeção</span></span>
+<span id="cb12-27"><a href="#cb12-27" aria-hidden="true" tabindex="-1"></a>serie_completa <span class="ot">&lt;-</span> </span>
+<span id="cb12-28"><a href="#cb12-28" aria-hidden="true" tabindex="-1"></a>    <span class="fu">bind_rows</span>(</span>
+<span id="cb12-29"><a href="#cb12-29" aria-hidden="true" tabindex="-1"></a>        dados_reais,</span>
+<span id="cb12-30"><a href="#cb12-30" aria-hidden="true" tabindex="-1"></a>        projecao_com_tipo) <span class="sc">|&gt;</span></span>
+<span id="cb12-31"><a href="#cb12-31" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Remover duplicatas potenciais na sobreposição</span></span>
+<span id="cb12-32"><a href="#cb12-32" aria-hidden="true" tabindex="-1"></a>        <span class="fu">distinct</span>(.index, .model_desc, <span class="at">.keep_all =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb12-33"><a href="#cb12-33" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">cod_regsaude =</span> <span class="fu">unique</span>(df_regiao<span class="sc">$</span>cod_regsaud), </span>
+<span id="cb12-34"><a href="#cb12-34" aria-hidden="true" tabindex="-1"></a>           <span class="at">.before =</span> .index)</span>
+<span id="cb12-35"><a href="#cb12-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-36"><a href="#cb12-36" aria-hidden="true" tabindex="-1"></a><span class="co"># 2) Plotar gráfico completo com dados reais e projeção</span></span>
+<span id="cb12-37"><a href="#cb12-37" aria-hidden="true" tabindex="-1"></a>grafico_completo <span class="ot">&lt;-</span> </span>
+<span id="cb12-38"><a href="#cb12-38" aria-hidden="true" tabindex="-1"></a>  serie_completa <span class="sc">|&gt;</span></span>
+<span id="cb12-39"><a href="#cb12-39" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(</span>
+<span id="cb12-40"><a href="#cb12-40" aria-hidden="true" tabindex="-1"></a>      <span class="co"># Manter apenas dados reais históricos e o melhor modelo</span></span>
+<span id="cb12-41"><a href="#cb12-41" aria-hidden="true" tabindex="-1"></a>      (.model_desc <span class="sc">==</span> <span class="st">"Dados Históricos"</span> <span class="sc">&amp;</span> tipo <span class="sc">==</span> <span class="st">"histórico"</span>) <span class="sc">|</span></span>
+<span id="cb12-42"><a href="#cb12-42" aria-hidden="true" tabindex="-1"></a>      (.model_id <span class="sc">==</span> melhor_modelo_id <span class="sc">&amp;</span> tipo <span class="sc">==</span> <span class="st">"projeção"</span>)</span>
+<span id="cb12-43"><a href="#cb12-43" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">|&gt;</span></span>
+<span id="cb12-44"><a href="#cb12-44" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> .index, </span>
+<span id="cb12-45"><a href="#cb12-45" aria-hidden="true" tabindex="-1"></a>             <span class="at">y =</span> .value, </span>
+<span id="cb12-46"><a href="#cb12-46" aria-hidden="true" tabindex="-1"></a>             <span class="at">color =</span> tipo)) <span class="sc">+</span></span>
+<span id="cb12-47"><a href="#cb12-47" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span></span>
+<span id="cb12-48"><a href="#cb12-48" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.3</span>, <span class="at">size =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb12-49"><a href="#cb12-49" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb12-50"><a href="#cb12-50" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="fu">paste</span>(<span class="st">"Série Temporal Completa de Nascidos Vivos (2000-2030) - "</span>, <span class="fu">unique</span>(df_regiao<span class="sc">$</span>regiao_saude), <span class="st">"-"</span>,<span class="fu">unique</span>(df_regiao<span class="sc">$</span>uf_sigla)),</span>
+<span id="cb12-51"><a href="#cb12-51" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="fu">paste</span>(<span class="st">"Histórico + Projeção com"</span>, melhor_modelo<span class="sc">$</span>.model_desc),</span>
+<span id="cb12-52"><a href="#cb12-52" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Data"</span>,</span>
+<span id="cb12-53"><a href="#cb12-53" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Total de Nascidos Vivos"</span>,</span>
+<span id="cb12-54"><a href="#cb12-54" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> <span class="st">"Tipo de Dado"</span></span>
+<span id="cb12-55"><a href="#cb12-55" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb12-56"><a href="#cb12-56" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb12-57"><a href="#cb12-57" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values =</span> </span>
+<span id="cb12-58"><a href="#cb12-58" aria-hidden="true" tabindex="-1"></a>                       <span class="fu">c</span>(<span class="st">"histórico"</span> <span class="ot">=</span> <span class="st">"blue"</span>, </span>
+<span id="cb12-59"><a href="#cb12-59" aria-hidden="true" tabindex="-1"></a>                         <span class="st">"projeção"</span> <span class="ot">=</span> <span class="st">"red"</span>)) <span class="sc">+</span></span>
+<span id="cb12-60"><a href="#cb12-60" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Adicionando linha vertical no ponto de transição</span></span>
+<span id="cb12-61"><a href="#cb12-61" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_vline</span>(<span class="at">xintercept =</span> <span class="fu">as.numeric</span>(<span class="fu">max</span>(dados_reais<span class="sc">$</span>.index)), </span>
+<span id="cb12-62"><a href="#cb12-62" aria-hidden="true" tabindex="-1"></a>             <span class="at">linetype =</span> <span class="st">"dashed"</span>, <span class="at">color =</span> <span class="st">"darkgray"</span>)</span>
+<span id="cb12-63"><a href="#cb12-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-64"><a href="#cb12-64" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(grafico_completo)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="03_projecoes_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">write.csv</span>(serie_completa, </span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>          <span class="at">file =</span> <span class="fu">paste0</span>(<span class="st">"~/GitHub/materno_infantil/02_script/03_outputs_projecoes/data/data_"</span>, </span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>                        <span class="fu">unique</span>(serie_completa<span class="sc">$</span>cod_regsaude), <span class="st">".csv"</span>),</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>          <span class="at">row.names =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="fu">ggsave</span>(<span class="at">filename =</span> <span class="fu">paste0</span>(<span class="st">"~/GitHub/materno_infantil/02_script/03_outputs_projecoes/plot_mensal/plot_mensal"</span>,  </span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>                         <span class="fu">unique</span>(serie_completa<span class="sc">$</span>cod_regsaude), <span class="st">".jpeg"</span>),</span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>       <span class="at">plot =</span> grafico_completo,</span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>       <span class="at">width =</span> <span class="dv">10</span>, </span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>       <span class="at">height =</span> <span class="dv">7</span>, </span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>       <span class="at">dpi =</span> <span class="dv">300</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="acessando-tendência-anual" class="level2">
+<h2 class="anchored" data-anchor-id="acessando-tendência-anual">1.7. Acessando tendência anual</h2>
+<p>O próximo passo consiste em extrair a tendência anual da série temporal para fins de visualização.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 3) Extrair tendência anual de toda a série temporal</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Calcular médias anuais</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>tendencia_anual <span class="ot">&lt;-</span> serie_completa <span class="sc">|&gt;</span></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">ano =</span> lubridate<span class="sc">::</span><span class="fu">year</span>(.index),</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">mes =</span> lubridate<span class="sc">::</span><span class="fu">month</span>(.index)</span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(ano, tipo, .model_desc) <span class="sc">|&gt;</span></span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">total_nascidos =</span> <span class="fu">sum</span>(.value, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">n =</span> <span class="fu">n</span>(),</span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">.groups =</span> <span class="st">"drop"</span>)</span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Filtrar apenas dados históricos do melhor modelo</span></span>
+<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-16"><a href="#cb14-16" aria-hidden="true" tabindex="-1"></a>tendencia_filtrada <span class="ot">&lt;-</span> tendencia_anual <span class="sc">|&gt;</span></span>
+<span id="cb14-17"><a href="#cb14-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(</span>
+<span id="cb14-18"><a href="#cb14-18" aria-hidden="true" tabindex="-1"></a>    (.model_desc <span class="sc">==</span> <span class="st">"Dados Históricos"</span> <span class="sc">&amp;</span> </span>
+<span id="cb14-19"><a href="#cb14-19" aria-hidden="true" tabindex="-1"></a>     tipo <span class="sc">==</span> <span class="st">"histórico"</span>) <span class="sc">|</span></span>
+<span id="cb14-20"><a href="#cb14-20" aria-hidden="true" tabindex="-1"></a>    (.model_desc <span class="sc">==</span> melhor_modelo<span class="sc">$</span>.model_desc <span class="sc">&amp;</span> </span>
+<span id="cb14-21"><a href="#cb14-21" aria-hidden="true" tabindex="-1"></a>     tipo <span class="sc">==</span> <span class="st">"projeção"</span>))</span>
+<span id="cb14-22"><a href="#cb14-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-23"><a href="#cb14-23" aria-hidden="true" tabindex="-1"></a><span class="co"># Aplicar suavização à tendência para extrair componente de longo prazo</span></span>
+<span id="cb14-24"><a href="#cb14-24" aria-hidden="true" tabindex="-1"></a><span class="co"># Criar uma série temporal contínua de 2000 a 2030</span></span>
+<span id="cb14-25"><a href="#cb14-25" aria-hidden="true" tabindex="-1"></a>anos_completos <span class="ot">&lt;-</span> </span>
+<span id="cb14-26"><a href="#cb14-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">data.frame</span>(</span>
+<span id="cb14-27"><a href="#cb14-27" aria-hidden="true" tabindex="-1"></a>  <span class="at">ano =</span> <span class="dv">2000</span><span class="sc">:</span><span class="dv">2030</span></span>
+<span id="cb14-28"><a href="#cb14-28" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb14-29"><a href="#cb14-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-30"><a href="#cb14-30" aria-hidden="true" tabindex="-1"></a><span class="co"># Juntar com dados filtrados</span></span>
+<span id="cb14-31"><a href="#cb14-31" aria-hidden="true" tabindex="-1"></a>tendencia_suavizada <span class="ot">&lt;-</span> </span>
+<span id="cb14-32"><a href="#cb14-32" aria-hidden="true" tabindex="-1"></a>  tendencia_filtrada <span class="sc">|&gt;</span></span>
+<span id="cb14-33"><a href="#cb14-33" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(ano, total_nascidos, tipo) <span class="sc">|&gt;</span></span>
+<span id="cb14-34"><a href="#cb14-34" aria-hidden="true" tabindex="-1"></a>  <span class="fu">right_join</span>(anos_completos, <span class="at">by =</span> <span class="st">"ano"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb14-35"><a href="#cb14-35" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(ano)</span>
+<span id="cb14-36"><a href="#cb14-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-37"><a href="#cb14-37" aria-hidden="true" tabindex="-1"></a><span class="co"># Aplicar suavização loess para extrair a tendência</span></span>
+<span id="cb14-38"><a href="#cb14-38" aria-hidden="true" tabindex="-1"></a>modelo_tendencia <span class="ot">&lt;-</span> <span class="fu">loess</span>(total_nascidos <span class="sc">~</span> ano, </span>
+<span id="cb14-39"><a href="#cb14-39" aria-hidden="true" tabindex="-1"></a>                          <span class="at">data =</span> tendencia_suavizada, </span>
+<span id="cb14-40"><a href="#cb14-40" aria-hidden="true" tabindex="-1"></a>                          <span class="at">span =</span> <span class="fl">0.5</span>)</span>
+<span id="cb14-41"><a href="#cb14-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-42"><a href="#cb14-42" aria-hidden="true" tabindex="-1"></a>tendencia_suavizada<span class="sc">$</span>tendencia <span class="ot">&lt;-</span> </span>
+<span id="cb14-43"><a href="#cb14-43" aria-hidden="true" tabindex="-1"></a>  <span class="fu">predict</span>(modelo_tendencia)</span>
+<span id="cb14-44"><a href="#cb14-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-45"><a href="#cb14-45" aria-hidden="true" tabindex="-1"></a>tendencia_suavizada<span class="sc">$</span>tendencia <span class="ot">&lt;-</span> </span>
+<span id="cb14-46"><a href="#cb14-46" aria-hidden="true" tabindex="-1"></a>  <span class="fu">round</span>(tendencia_suavizada<span class="sc">$</span>tendencia)</span>
+<span id="cb14-47"><a href="#cb14-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-48"><a href="#cb14-48" aria-hidden="true" tabindex="-1"></a><span class="co"># 4) Plotar apenas a tendência de toda a série temporal</span></span>
+<span id="cb14-49"><a href="#cb14-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-50"><a href="#cb14-50" aria-hidden="true" tabindex="-1"></a>grafico_tendencia <span class="ot">&lt;-</span> </span>
+<span id="cb14-51"><a href="#cb14-51" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(tendencia_filtrada) <span class="sc">+</span></span>
+<span id="cb14-52"><a href="#cb14-52" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Dados originais</span></span>
+<span id="cb14-53"><a href="#cb14-53" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">x =</span> ano, </span>
+<span id="cb14-54"><a href="#cb14-54" aria-hidden="true" tabindex="-1"></a>                 <span class="at">y =</span> total_nascidos, </span>
+<span id="cb14-55"><a href="#cb14-55" aria-hidden="true" tabindex="-1"></a>                 <span class="at">color =</span> tipo), <span class="at">size =</span> <span class="dv">3</span>, <span class="at">alpha =</span> <span class="fl">0.7</span>) <span class="sc">+</span></span>
+<span id="cb14-56"><a href="#cb14-56" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Linha conectando pontos originais</span></span>
+<span id="cb14-57"><a href="#cb14-57" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">x =</span> ano, <span class="at">y =</span> total_nascidos, </span>
+<span id="cb14-58"><a href="#cb14-58" aria-hidden="true" tabindex="-1"></a>                <span class="at">color =</span> tipo, </span>
+<span id="cb14-59"><a href="#cb14-59" aria-hidden="true" tabindex="-1"></a>                <span class="at">linetype =</span> tipo)) <span class="sc">+</span></span>
+<span id="cb14-60"><a href="#cb14-60" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Tendência suavizada</span></span>
+<span id="cb14-61"><a href="#cb14-61" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">data =</span> tendencia_suavizada, </span>
+<span id="cb14-62"><a href="#cb14-62" aria-hidden="true" tabindex="-1"></a>              <span class="fu">aes</span>(<span class="at">x =</span> ano, <span class="at">y =</span> total_nascidos), </span>
+<span id="cb14-63"><a href="#cb14-63" aria-hidden="true" tabindex="-1"></a>              <span class="at">method =</span> <span class="st">"loess"</span>, <span class="at">span =</span> <span class="fl">0.5</span>,</span>
+<span id="cb14-64"><a href="#cb14-64" aria-hidden="true" tabindex="-1"></a>              <span class="at">se =</span> <span class="cn">TRUE</span>, <span class="at">color =</span> <span class="st">"darkblue"</span>, <span class="at">linetype =</span> <span class="st">"dashed"</span>) <span class="sc">+</span></span>
+<span id="cb14-65"><a href="#cb14-65" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Linha vertical no ponto de transição</span></span>
+<span id="cb14-66"><a href="#cb14-66" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_vline</span>(<span class="at">xintercept =</span> <span class="dv">2023</span>, <span class="at">linetype =</span> <span class="st">"dotted"</span>) <span class="sc">+</span></span>
+<span id="cb14-67"><a href="#cb14-67" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Anotação</span></span>
+<span id="cb14-68"><a href="#cb14-68" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"text"</span>, <span class="at">x =</span> <span class="dv">2011</span>, </span>
+<span id="cb14-69"><a href="#cb14-69" aria-hidden="true" tabindex="-1"></a>           <span class="at">y =</span> <span class="fu">max</span>(tendencia_filtrada<span class="sc">$</span>total_nascidos, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb14-70"><a href="#cb14-70" aria-hidden="true" tabindex="-1"></a>           <span class="at">label =</span> <span class="st">"Dados históricos"</span>, </span>
+<span id="cb14-71"><a href="#cb14-71" aria-hidden="true" tabindex="-1"></a>           <span class="at">color =</span> <span class="st">"blue"</span>, </span>
+<span id="cb14-72"><a href="#cb14-72" aria-hidden="true" tabindex="-1"></a>           <span class="at">hjust =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="cb14-73"><a href="#cb14-73" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"text"</span>, <span class="at">x =</span> <span class="dv">2026</span>, </span>
+<span id="cb14-74"><a href="#cb14-74" aria-hidden="true" tabindex="-1"></a>           <span class="at">y =</span> <span class="fu">max</span>(tendencia_filtrada<span class="sc">$</span>total_nascidos, </span>
+<span id="cb14-75"><a href="#cb14-75" aria-hidden="true" tabindex="-1"></a>                   <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb14-76"><a href="#cb14-76" aria-hidden="true" tabindex="-1"></a>           <span class="at">label =</span> <span class="st">"Projeção"</span>, </span>
+<span id="cb14-77"><a href="#cb14-77" aria-hidden="true" tabindex="-1"></a>           <span class="at">color =</span> <span class="st">"red"</span>, </span>
+<span id="cb14-78"><a href="#cb14-78" aria-hidden="true" tabindex="-1"></a>           <span class="at">hjust =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="cb14-79"><a href="#cb14-79" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Estética</span></span>
+<span id="cb14-80"><a href="#cb14-80" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"histórico"</span> <span class="ot">=</span> <span class="st">"blue"</span>, </span>
+<span id="cb14-81"><a href="#cb14-81" aria-hidden="true" tabindex="-1"></a>                                <span class="st">"projeção"</span> <span class="ot">=</span> <span class="st">"red"</span>)) <span class="sc">+</span></span>
+<span id="cb14-82"><a href="#cb14-82" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_linetype_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"histórico"</span> <span class="ot">=</span> <span class="st">"solid"</span>, </span>
+<span id="cb14-83"><a href="#cb14-83" aria-hidden="true" tabindex="-1"></a>                                   <span class="st">"projeção"</span> <span class="ot">=</span> <span class="st">"dashed"</span>)) <span class="sc">+</span></span>
+<span id="cb14-84"><a href="#cb14-84" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb14-85"><a href="#cb14-85" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="fu">paste</span>(<span class="st">"Série Temporal Completa de Nascidos Vivos (2000-2030) - "</span>, <span class="fu">unique</span>(df_regiao<span class="sc">$</span>regiao_saude), <span class="st">"-"</span>,<span class="fu">unique</span>(df_regiao<span class="sc">$</span>uf_sigla)), </span>
+<span id="cb14-86"><a href="#cb14-86" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"Dados históricos e projeção com tendência suavizada"</span>,</span>
+<span id="cb14-87"><a href="#cb14-87" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Ano"</span>,</span>
+<span id="cb14-88"><a href="#cb14-88" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Média Anual de Nascidos Vivos"</span></span>
+<span id="cb14-89"><a href="#cb14-89" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb14-90"><a href="#cb14-90" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb14-91"><a href="#cb14-91" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"bottom"</span>) <span class="sc">+</span></span>
+<span id="cb14-92"><a href="#cb14-92" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">2000</span>, <span class="dv">2030</span>, <span class="at">by =</span> <span class="dv">5</span>))</span>
+<span id="cb14-93"><a href="#cb14-93" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-94"><a href="#cb14-94" aria-hidden="true" tabindex="-1"></a>grafico_tendencia</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="03_projecoes_files/figure-html/unnamed-chunk-10-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggsave</span>(<span class="at">filename =</span> <span class="fu">paste0</span>(<span class="st">"~/GitHub/materno_infantil/02_script/03_outputs_projecoes/plot_anual/plot_anual_"</span>,</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>                         <span class="fu">unique</span>(serie_completa<span class="sc">$</span>cod_regsaude), <span class="st">".jpeg"</span>),</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>       <span class="at">plot =</span> grafico_tendencia,</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>       <span class="at">width =</span> <span class="dv">10</span>, </span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>       <span class="at">height =</span> <span class="dv">7</span>, </span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>       <span class="at">dpi =</span> <span class="dv">300</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="gerando-uma-tabela-de-tendência-anual" class="level2">
+<h2 class="anchored" data-anchor-id="gerando-uma-tabela-de-tendência-anual">1.8. Gerando uma tabela de tendência anual</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Tabela de tendência anual</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>tabela_tendencia <span class="ot">&lt;-</span> </span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>    tendencia_filtrada <span class="sc">|&gt;</span></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>        <span class="fu">arrange</span>(ano) <span class="sc">|&gt;</span></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>        <span class="fu">mutate</span>(</span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>          <span class="at">total_nascidos =</span> <span class="fu">round</span>(total_nascidos, <span class="dv">1</span>)</span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>        ) <span class="sc">|&gt;</span></span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>        <span class="fu">select</span>(ano, tipo, total_nascidos)</span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Versão wide da tabela (mais fácil de ler)</span></span>
+<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a>tabela_tendencia_wide <span class="ot">&lt;-</span> </span>
+<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a>            tabela_tendencia <span class="sc">|&gt;</span></span>
+<span id="cb16-13"><a href="#cb16-13" aria-hidden="true" tabindex="-1"></a>                  <span class="fu">select</span>(ano, tipo, total_nascidos) <span class="sc">|&gt;</span></span>
+<span id="cb16-14"><a href="#cb16-14" aria-hidden="true" tabindex="-1"></a>                  tidyr<span class="sc">::</span><span class="fu">pivot_wider</span>(</span>
+<span id="cb16-15"><a href="#cb16-15" aria-hidden="true" tabindex="-1"></a>                    <span class="at">id_cols =</span> ano,</span>
+<span id="cb16-16"><a href="#cb16-16" aria-hidden="true" tabindex="-1"></a>                    <span class="at">names_from =</span> tipo,</span>
+<span id="cb16-17"><a href="#cb16-17" aria-hidden="true" tabindex="-1"></a>                    <span class="at">values_from =</span> total_nascidos</span>
+<span id="cb16-18"><a href="#cb16-18" aria-hidden="true" tabindex="-1"></a>                  ) <span class="sc">|&gt;</span></span>
+<span id="cb16-19"><a href="#cb16-19" aria-hidden="true" tabindex="-1"></a>                  <span class="fu">arrange</span>(ano)</span>
+<span id="cb16-20"><a href="#cb16-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-21"><a href="#cb16-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Imprimir tabela de tendência anual</span></span>
+<span id="cb16-22"><a href="#cb16-22" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="st">"Tendência Anual de Nascidos Vivos (2000-2030):"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "Tendência Anual de Nascidos Vivos (2000-2030):"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(tabela_tendencia_wide)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 31 × 3
+     ano histórico projeção
+   &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;
+ 1  2000      1052       NA
+ 2  2001      1034       NA
+ 3  2002       916       NA
+ 4  2003       921       NA
+ 5  2004       900       NA
+ 6  2005       938       NA
+ 7  2006       864       NA
+ 8  2007       848       NA
+ 9  2008       873       NA
+10  2009       770       NA
+# ℹ 21 more rows</code></pre>
+</div>
+</div>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

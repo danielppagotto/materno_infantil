@@ -1,0 +1,829 @@
+"cod_regsaude",".index",".value",".model_id",".model_desc",".key","tipo",".conf_lo",".conf_hi"
+31055,2013-05-01,183,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2020-05-01,158,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2003-03-01,189,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2019-05-01,188,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2004-04-01,228,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2019-03-01,171,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2020-11-01,127,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2013-08-01,135,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2019-12-01,149,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2014-05-01,195,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2022-04-01,167,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2012-11-01,133,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2018-09-01,130,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2012-12-01,147,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2023-05-01,167,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2002-06-01,184,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2021-04-01,150,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2007-05-01,250,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2022-05-01,173,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2001-05-01,255,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2005-11-01,203,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2010-01-01,179,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2002-10-01,200,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2013-01-01,168,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2020-01-01,149,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2018-07-01,150,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2009-12-01,165,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2004-09-01,219,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2015-03-01,191,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2019-04-01,174,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2009-10-01,175,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2000-05-01,252,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2017-11-01,139,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2023-09-01,145,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2004-01-01,205,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2012-07-01,162,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2017-04-01,170,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2023-12-01,132,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2023-10-01,127,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2021-09-01,155,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2015-06-01,155,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2014-01-01,156,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2001-07-01,230,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2023-07-01,131,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2004-06-01,206,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2017-03-01,174,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2004-11-01,177,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2002-02-01,243,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2001-11-01,184,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2008-08-01,177,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2021-12-01,167,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2009-06-01,164,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2002-03-01,238,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2001-12-01,187,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2010-12-01,166,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2002-12-01,224,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2008-06-01,181,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2020-03-01,170,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2011-12-01,164,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2015-02-01,161,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2007-01-01,187,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2021-03-01,166,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2017-07-01,160,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2016-11-01,123,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2013-12-01,129,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2007-11-01,167,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2008-12-01,173,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2010-03-01,197,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2007-03-01,245,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2007-09-01,154,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2019-11-01,112,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2011-04-01,203,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2021-06-01,137,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2021-02-01,154,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2017-08-01,159,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2002-07-01,212,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2010-09-01,157,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2008-09-01,195,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2005-07-01,219,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2008-07-01,173,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2022-10-01,126,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2019-02-01,155,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2000-07-01,239,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2017-02-01,124,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2007-06-01,188,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2015-12-01,141,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2003-08-01,235,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2013-04-01,192,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2020-10-01,144,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2014-04-01,162,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2015-05-01,171,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2001-03-01,262,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2011-01-01,164,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2000-09-01,243,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2016-10-01,135,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2009-08-01,129,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2022-07-01,151,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2018-12-01,155,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2015-11-01,153,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2021-10-01,123,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2021-11-01,140,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2008-05-01,211,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2013-11-01,141,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2010-11-01,129,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2022-03-01,155,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2017-10-01,187,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2006-06-01,198,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2015-04-01,171,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2005-05-01,232,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2018-08-01,161,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2013-09-01,147,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2015-08-01,150,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2001-10-01,197,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2018-03-01,194,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2000-04-01,219,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2007-10-01,184,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2003-01-01,199,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2015-07-01,169,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2016-06-01,145,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2012-09-01,126,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2009-11-01,144,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2009-07-01,161,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2021-01-01,170,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2020-12-01,142,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2019-01-01,166,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2006-10-01,165,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2020-07-01,162,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2022-11-01,147,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2021-05-01,134,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2021-08-01,116,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2019-07-01,149,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2014-02-01,185,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2001-06-01,154,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2002-04-01,265,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2009-04-01,195,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2014-08-01,163,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2017-09-01,160,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2003-04-01,262,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2001-09-01,175,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2012-06-01,159,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2023-02-01,131,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2014-12-01,149,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2005-09-01,197,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2011-03-01,205,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2006-04-01,210,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2019-09-01,141,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2015-09-01,165,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2001-01-01,179,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2023-11-01,122,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2010-10-01,148,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2010-04-01,183,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2017-06-01,140,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2017-05-01,162,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2016-09-01,132,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2012-10-01,169,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2006-11-01,207,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2003-06-01,201,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2017-12-01,145,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2020-09-01,172,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2006-08-01,199,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2009-02-01,174,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2023-03-01,206,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2016-08-01,124,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2003-09-01,246,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2011-11-01,185,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2015-10-01,157,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2010-05-01,155,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2001-08-01,217,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2008-04-01,167,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2014-09-01,146,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2011-09-01,153,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2011-02-01,188,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2002-09-01,191,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2007-04-01,205,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2009-09-01,190,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2013-02-01,154,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2016-12-01,112,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2000-12-01,186,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2018-02-01,158,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2023-01-01,164,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2004-07-01,218,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2010-06-01,177,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2012-08-01,165,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2006-02-01,197,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2005-01-01,183,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2003-12-01,190,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2003-07-01,217,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2022-12-01,148,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2004-08-01,215,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2000-06-01,208,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2011-08-01,163,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2013-03-01,177,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2000-10-01,212,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2008-11-01,188,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2014-10-01,166,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2006-05-01,194,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2000-02-01,231,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2004-02-01,184,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2011-10-01,149,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2005-08-01,208,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2018-10-01,146,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2012-05-01,166,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2020-06-01,147,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2014-06-01,188,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2011-05-01,223,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2005-04-01,230,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2010-08-01,150,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2008-03-01,171,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2018-06-01,157,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2018-11-01,137,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2000-03-01,231,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2006-12-01,187,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2023-06-01,139,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2016-07-01,114,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2018-01-01,152,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2003-02-01,227,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2001-04-01,256,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2007-02-01,200,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2019-10-01,126,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2001-02-01,222,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2012-01-01,155,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2011-07-01,169,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2012-04-01,160,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2022-09-01,128,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2012-02-01,163,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2006-07-01,220,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2016-04-01,171,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2020-04-01,184,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2006-09-01,202,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2005-10-01,210,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2021-07-01,159,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2005-02-01,227,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2004-03-01,224,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2010-07-01,160,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2005-12-01,173,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2000-11-01,192,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2022-02-01,174,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2016-01-01,155,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2022-01-01,139,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2012-03-01,188,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2003-10-01,234,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2014-07-01,175,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2022-06-01,138,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2007-08-01,177,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2002-05-01,237,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2002-08-01,206,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2007-07-01,140,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2013-10-01,151,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2011-06-01,177,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2005-06-01,231,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2023-08-01,159,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2004-05-01,232,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2010-02-01,162,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2019-08-01,149,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2016-03-01,161,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2013-06-01,176,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2013-07-01,171,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2017-01-01,153,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2003-11-01,158,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2006-01-01,195,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2020-02-01,142,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2008-10-01,166,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2008-01-01,189,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2016-05-01,148,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2022-08-01,123,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2004-12-01,187,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2023-04-01,192,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2009-05-01,203,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2009-03-01,218,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2014-03-01,209,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2003-05-01,240,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2015-01-01,166,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2000-08-01,196,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2005-03-01,227,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2007-12-01,181,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2020-08-01,146,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2004-10-01,204,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2018-05-01,206,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2000-01-01,223,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2008-02-01,189,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2014-11-01,163,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2002-01-01,218,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2002-11-01,186,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2018-04-01,164,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2006-03-01,206,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2009-01-01,191,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2016-02-01,145,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2019-06-01,140,0,"Dados Históricos","actual","histórico",NA,NA
+31055,2013-05-01,183,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2020-05-01,158,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2003-03-01,189,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2019-05-01,188,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2004-04-01,228,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2019-03-01,171,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2020-11-01,127,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2013-08-01,135,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2019-12-01,149,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2014-05-01,195,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2022-04-01,167,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2012-11-01,133,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2018-09-01,130,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2012-12-01,147,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2023-05-01,167,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2002-06-01,184,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2021-04-01,150,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2007-05-01,250,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2022-05-01,173,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2001-05-01,255,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2005-11-01,203,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2010-01-01,179,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2002-10-01,200,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2013-01-01,168,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2020-01-01,149,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2018-07-01,150,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2009-12-01,165,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2004-09-01,219,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2015-03-01,191,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2019-04-01,174,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2009-10-01,175,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2000-05-01,252,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2017-11-01,139,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2023-09-01,145,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2004-01-01,205,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2012-07-01,162,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2017-04-01,170,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2023-12-01,132,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2023-10-01,127,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2021-09-01,155,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2015-06-01,155,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2014-01-01,156,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2001-07-01,230,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2023-07-01,131,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2004-06-01,206,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2017-03-01,174,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2004-11-01,177,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2002-02-01,243,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2001-11-01,184,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2008-08-01,177,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2021-12-01,167,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2009-06-01,164,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2002-03-01,238,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2001-12-01,187,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2010-12-01,166,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2002-12-01,224,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2008-06-01,181,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2020-03-01,170,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2011-12-01,164,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2015-02-01,161,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2007-01-01,187,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2021-03-01,166,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2017-07-01,160,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2016-11-01,123,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2013-12-01,129,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2007-11-01,167,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2008-12-01,173,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2010-03-01,197,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2007-03-01,245,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2007-09-01,154,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2019-11-01,112,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2011-04-01,203,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2021-06-01,137,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2021-02-01,154,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2017-08-01,159,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2002-07-01,212,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2010-09-01,157,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2008-09-01,195,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2005-07-01,219,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2008-07-01,173,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2022-10-01,126,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2019-02-01,155,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2000-07-01,239,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2017-02-01,124,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2007-06-01,188,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2015-12-01,141,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2003-08-01,235,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2013-04-01,192,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2020-10-01,144,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2014-04-01,162,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2015-05-01,171,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2001-03-01,262,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2011-01-01,164,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2000-09-01,243,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2016-10-01,135,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2009-08-01,129,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2022-07-01,151,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2018-12-01,155,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2015-11-01,153,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2021-10-01,123,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2021-11-01,140,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2008-05-01,211,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2013-11-01,141,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2010-11-01,129,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2022-03-01,155,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2017-10-01,187,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2006-06-01,198,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2015-04-01,171,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2005-05-01,232,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2018-08-01,161,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2013-09-01,147,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2015-08-01,150,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2001-10-01,197,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2018-03-01,194,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2000-04-01,219,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2007-10-01,184,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2003-01-01,199,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2015-07-01,169,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2016-06-01,145,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2012-09-01,126,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2009-11-01,144,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2009-07-01,161,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2021-01-01,170,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2020-12-01,142,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2019-01-01,166,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2006-10-01,165,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2020-07-01,162,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2022-11-01,147,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2021-05-01,134,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2021-08-01,116,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2019-07-01,149,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2014-02-01,185,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2001-06-01,154,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2002-04-01,265,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2009-04-01,195,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2014-08-01,163,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2017-09-01,160,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2003-04-01,262,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2001-09-01,175,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2012-06-01,159,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2023-02-01,131,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2014-12-01,149,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2005-09-01,197,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2011-03-01,205,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2006-04-01,210,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2019-09-01,141,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2015-09-01,165,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2001-01-01,179,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2023-11-01,122,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2010-10-01,148,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2010-04-01,183,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2017-06-01,140,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2017-05-01,162,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2016-09-01,132,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2012-10-01,169,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2006-11-01,207,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2003-06-01,201,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2017-12-01,145,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2020-09-01,172,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2006-08-01,199,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2009-02-01,174,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2023-03-01,206,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2016-08-01,124,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2003-09-01,246,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2011-11-01,185,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2015-10-01,157,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2010-05-01,155,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2001-08-01,217,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2008-04-01,167,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2014-09-01,146,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2011-09-01,153,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2011-02-01,188,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2002-09-01,191,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2007-04-01,205,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2009-09-01,190,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2013-02-01,154,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2016-12-01,112,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2000-12-01,186,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2018-02-01,158,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2023-01-01,164,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2004-07-01,218,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2010-06-01,177,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2012-08-01,165,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2006-02-01,197,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2005-01-01,183,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2003-12-01,190,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2003-07-01,217,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2022-12-01,148,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2004-08-01,215,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2000-06-01,208,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2011-08-01,163,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2013-03-01,177,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2000-10-01,212,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2008-11-01,188,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2014-10-01,166,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2006-05-01,194,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2000-02-01,231,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2004-02-01,184,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2011-10-01,149,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2005-08-01,208,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2018-10-01,146,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2012-05-01,166,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2020-06-01,147,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2014-06-01,188,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2011-05-01,223,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2005-04-01,230,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2010-08-01,150,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2008-03-01,171,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2018-06-01,157,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2018-11-01,137,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2000-03-01,231,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2006-12-01,187,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2023-06-01,139,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2016-07-01,114,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2018-01-01,152,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2003-02-01,227,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2001-04-01,256,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2007-02-01,200,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2019-10-01,126,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2001-02-01,222,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2012-01-01,155,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2011-07-01,169,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2012-04-01,160,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2022-09-01,128,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2012-02-01,163,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2006-07-01,220,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2016-04-01,171,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2020-04-01,184,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2006-09-01,202,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2005-10-01,210,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2021-07-01,159,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2005-02-01,227,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2004-03-01,224,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2010-07-01,160,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2005-12-01,173,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2000-11-01,192,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2022-02-01,174,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2016-01-01,155,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2022-01-01,139,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2012-03-01,188,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2003-10-01,234,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2014-07-01,175,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2022-06-01,138,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2007-08-01,177,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2002-05-01,237,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2002-08-01,206,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2007-07-01,140,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2013-10-01,151,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2011-06-01,177,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2005-06-01,231,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2023-08-01,159,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2004-05-01,232,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2010-02-01,162,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2019-08-01,149,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2016-03-01,161,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2013-06-01,176,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2013-07-01,171,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2017-01-01,153,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2003-11-01,158,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2006-01-01,195,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2020-02-01,142,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2008-10-01,166,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2008-01-01,189,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2016-05-01,148,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2022-08-01,123,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2004-12-01,187,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2023-04-01,192,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2009-05-01,203,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2009-03-01,218,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2014-03-01,209,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2003-05-01,240,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2015-01-01,166,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2000-08-01,196,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2005-03-01,227,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2007-12-01,181,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2020-08-01,146,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2004-10-01,204,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2018-05-01,206,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2000-01-01,223,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2008-02-01,189,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2014-11-01,163,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2002-01-01,218,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2002-11-01,186,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2018-04-01,164,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2006-03-01,206,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2009-01-01,191,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2016-02-01,145,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2019-06-01,140,NA,"ACTUAL","actual","histórico",NA,NA
+31055,2024-01-01,140.438110309577,1,"PROPHET","prediction","projeção",108.617260474586,172.258960144569
+31055,2024-02-01,137.838529866977,1,"PROPHET","prediction","projeção",106.017680031986,169.659379701969
+31055,2024-03-01,163.53466677197,1,"PROPHET","prediction","projeção",131.713816936978,195.355516606962
+31055,2024-04-01,159.680338378933,1,"PROPHET","prediction","projeção",127.859488543941,191.501188213925
+31055,2024-05-01,161.167195126162,1,"PROPHET","prediction","projeção",129.34634529117,192.988044961153
+31055,2024-06-01,139.766115352162,1,"PROPHET","prediction","projeção",107.94526551717,171.586965187154
+31055,2024-07-01,148.546014673691,1,"PROPHET","prediction","projeção",116.725164838699,180.366864508683
+31055,2024-08-01,130.793647354189,1,"PROPHET","prediction","projeção",98.9727975191977,162.614497189181
+31055,2024-09-01,140.46842805587,1,"PROPHET","prediction","projeção",108.647578220878,172.289277890861
+31055,2024-10-01,135.702487460889,1,"PROPHET","prediction","projeção",103.881637625897,167.52333729588
+31055,2024-11-01,123.24878054481,1,"PROPHET","prediction","projeção",91.4279307098188,155.069630379802
+31055,2024-12-01,125.817406675846,1,"PROPHET","prediction","projeção",93.9965568408546,157.638256510838
+31055,2025-01-01,142.143939415084,1,"PROPHET","prediction","projeção",110.323089580093,173.964789250076
+31055,2025-02-01,152.301278027723,1,"PROPHET","prediction","projeção",120.480428192732,184.122127862715
+31055,2025-03-01,163.583770971165,1,"PROPHET","prediction","projeção",131.762921136173,195.404620806157
+31055,2025-04-01,159.811984840403,1,"PROPHET","prediction","projeção",127.991135005412,191.632834675395
+31055,2025-05-01,161.992874774798,1,"PROPHET","prediction","projeção",130.172024939807,193.81372460979
+31055,2025-06-01,137.058466154805,1,"PROPHET","prediction","projeção",105.237616319814,168.879315989797
+31055,2025-07-01,143.354600745271,1,"PROPHET","prediction","projeção",111.533750910279,175.175450580263
+31055,2025-08-01,132.293510465436,1,"PROPHET","prediction","projeção",100.472660630445,164.114360300428
+31055,2025-09-01,136.963172579604,1,"PROPHET","prediction","projeção",105.142322744612,168.784022414595
+31055,2025-10-01,133.530139548462,1,"PROPHET","prediction","projeção",101.70928971347,165.350989383454
+31055,2025-11-01,122.696990554094,1,"PROPHET","prediction","projeção",90.8761407191027,154.517840389086
+31055,2025-12-01,127.672146539588,1,"PROPHET","prediction","projeção",95.8512967045966,159.49299637458
+31055,2026-01-01,139.492016451676,1,"PROPHET","prediction","projeção",107.671166616684,171.312866286667
+31055,2026-02-01,145.25104647183,1,"PROPHET","prediction","projeção",113.430196636839,177.071896306822
+31055,2026-03-01,163.735493483317,1,"PROPHET","prediction","projeção",131.914643648325,195.556343318308
+31055,2026-04-01,159.972680128586,1,"PROPHET","prediction","projeção",128.151830293594,191.793529963577
+31055,2026-05-01,162.753428422412,1,"PROPHET","prediction","projeção",130.93257858742,194.574278257404
+31055,2026-06-01,134.267717978512,1,"PROPHET","prediction","projeção",102.44686814352,166.088567813504
+31055,2026-07-01,138.199545475132,1,"PROPHET","prediction","projeção",106.37869564014,170.020395310124
+31055,2026-08-01,133.823370935828,1,"PROPHET","prediction","projeção",102.002521100837,165.64422077082
+31055,2026-09-01,133.434403368735,1,"PROPHET","prediction","projeção",101.613553533743,165.255253203727
+31055,2026-10-01,131.407577964324,1,"PROPHET","prediction","projeção",99.5867281293322,163.228427799316
+31055,2026-11-01,122.200546127905,1,"PROPHET","prediction","projeção",90.3796962929135,154.021395962897
+31055,2026-12-01,129.47015735468,1,"PROPHET","prediction","projeção",97.6493075196883,161.291007189672
+31055,2027-01-01,136.709609933909,1,"PROPHET","prediction","projeção",104.888760098917,168.530459768901
+31055,2027-02-01,138.214802706477,1,"PROPHET","prediction","projeção",106.393952871486,170.035652541469
+31055,2027-03-01,163.988114024968,1,"PROPHET","prediction","projeção",132.167264189976,195.80896385996
+31055,2027-04-01,160.159042583664,1,"PROPHET","prediction","projeção",128.338192748672,191.979892418655
+31055,2027-05-01,163.445897239841,1,"PROPHET","prediction","projeção",131.625047404849,195.266747074832
+31055,2027-06-01,131.395476463959,1,"PROPHET","prediction","projeção",99.5746266289675,163.216326298951
+31055,2027-07-01,133.08455779823,1,"PROPHET","prediction","projeção",101.263707963238,164.905407633222
+31055,2027-08-01,135.38126365385,1,"PROPHET","prediction","projeção",103.560413818858,167.202113488841
+31055,2027-09-01,129.88368924741,1,"PROPHET","prediction","projeção",98.062839412418,161.704539082401
+31055,2027-10-01,129.335344218719,1,"PROPHET","prediction","projeção",97.5144943837272,161.15619405371
+31055,2027-11-01,121.757176394637,1,"PROPHET","prediction","projeção",89.9363265596451,153.578026229628
+31055,2027-12-01,131.207339437157,1,"PROPHET","prediction","projeção",99.3864896021653,163.028189272149
+31055,2028-01-01,133.798545216451,1,"PROPHET","prediction","projeção",101.977695381459,165.619395051442
+31055,2028-02-01,131.198964773851,1,"PROPHET","prediction","projeção",99.3781149388595,163.019814608843
+31055,2028-03-01,156.89510167885,1,"PROPHET","prediction","projeção",125.074251843859,188.715951513842
+31055,2028-04-01,153.040773285784,1,"PROPHET","prediction","projeção",121.219923450792,184.861623120776
+31055,2028-05-01,154.527630033038,1,"PROPHET","prediction","projeção",122.706780198046,186.34847986803
+31055,2028-06-01,133.126550259032,1,"PROPHET","prediction","projeção",101.305700424041,164.947400094024
+31055,2028-07-01,141.906449580553,1,"PROPHET","prediction","projeção",110.085599745562,173.727299415545
+31055,2028-08-01,124.154082261092,1,"PROPHET","prediction","projeção",92.3332324261005,155.974932096084
+31055,2028-09-01,133.828862962727,1,"PROPHET","prediction","projeção",102.008013127736,165.649712797719
+31055,2028-10-01,129.062922367788,1,"PROPHET","prediction","projeção",97.2420725327968,160.88377220278
+31055,2028-11-01,116.609215451701,1,"PROPHET","prediction","projeção",84.7883656167094,148.430065286693
+31055,2028-12-01,119.177841582716,1,"PROPHET","prediction","projeção",87.3569917477239,150.998691417707
+31055,2029-01-01,135.504374321953,1,"PROPHET","prediction","projeção",103.683524486962,167.325224156945
+31055,2029-02-01,145.66171293459,1,"PROPHET","prediction","projeção",113.840863099599,177.482562769582
+31055,2029-03-01,156.944205878046,1,"PROPHET","prediction","projeção",125.123356043054,188.765055713038
+31055,2029-04-01,153.172419747264,1,"PROPHET","prediction","projeção",121.351569912272,184.993269582255
+31055,2029-05-01,155.353309681671,1,"PROPHET","prediction","projeção",123.53245984668,187.174159516663
+31055,2029-06-01,130.41890106169,1,"PROPHET","prediction","projeção",98.5980512266988,162.239750896682
+31055,2029-07-01,136.715035652165,1,"PROPHET","prediction","projeção",104.894185817173,168.535885487157
+31055,2029-08-01,125.653945372299,1,"PROPHET","prediction","projeção",93.8330955373074,157.474795207291
+31055,2029-09-01,130.32360748647,1,"PROPHET","prediction","projeção",98.5027576514786,162.144457321462
+31055,2029-10-01,126.890574455323,1,"PROPHET","prediction","projeção",95.0697246203311,158.711424290314
+31055,2029-11-01,116.057425460954,1,"PROPHET","prediction","projeção",84.2365756259625,147.878275295946
+31055,2029-12-01,121.032581446455,1,"PROPHET","prediction","projeção",89.2117316114631,152.853431281446
+31055,2030-01-01,132.852451358552,1,"PROPHET","prediction","projeção",101.03160152356,164.673301193543
+31055,2030-02-01,138.611481378704,1,"PROPHET","prediction","projeção",106.790631543712,170.432331213696
+31055,2030-03-01,157.095928390191,1,"PROPHET","prediction","projeção",125.275078555199,188.916778225183
+31055,2030-04-01,153.333115035436,1,"PROPHET","prediction","projeção",121.512265200445,185.153964870428
+31055,2030-05-01,156.113863329259,1,"PROPHET","prediction","projeção",124.293013494267,187.934713164251
+31055,2030-06-01,127.628152885367,1,"PROPHET","prediction","projeção",95.807303050375,159.449002720358
+31055,2030-07-01,131.559980381974,1,"PROPHET","prediction","projeção",99.7391305469823,163.380830216966
+31055,2030-08-01,127.18380584271,1,"PROPHET","prediction","projeção",95.3629560077182,159.004655677702
+31055,2030-09-01,126.794838275631,1,"PROPHET","prediction","projeção",94.9739884406397,158.615688110623
+31055,2030-10-01,124.768012871231,1,"PROPHET","prediction","projeção",92.9471630362396,156.588862706223
+31055,2030-11-01,115.560981034766,1,"PROPHET","prediction","projeção",83.7401311997748,147.381830869758
+31055,2030-12-01,122.830592261564,1,"PROPHET","prediction","projeção",91.0097424265721,154.651442096555
+31055,2024-01-01,110.391761583506,2,"EARTH","prediction","projeção",66.3760733516841,154.407449815328
+31055,2024-02-01,102.820020921861,2,"EARTH","prediction","projeção",58.8043326900387,146.835709153683
+31055,2024-03-01,95.7367796577407,2,"EARTH","prediction","projeção",51.7210914259186,139.752467889563
+31055,2024-04-01,88.1650389960951,2,"EARTH","prediction","projeção",44.1493507642729,132.180727227917
+31055,2024-05-01,80.8375480332124,2,"EARTH","prediction","projeção",36.8218598013903,124.853236265035
+31055,2024-06-01,73.2658073715668,2,"EARTH","prediction","projeção",29.2501191397446,117.281495603389
+31055,2024-07-01,65.9383164086839,2,"EARTH","prediction","projeção",21.9226281768618,109.954004640506
+31055,2024-08-01,58.3665757470387,2,"EARTH","prediction","projeção",14.3508875152166,102.382263978861
+31055,2024-09-01,50.7948350853928,2,"EARTH","prediction","projeção",6.77914685357069,94.810523317215
+31055,2024-10-01,43.4673441225102,2,"EARTH","prediction","projeção",-0.548344109311927,87.4830323543324
+31055,2024-11-01,35.8956034608648,2,"EARTH","prediction","projeção",-8.12008477095736,79.9112916926869
+31055,2024-12-01,28.5681124979819,2,"EARTH","prediction","projeção",-15.4475757338402,72.5838007298041
+31055,2025-01-01,20.9963718363365,2,"EARTH","prediction","projeção",-23.0193163954856,65.0120600681586
+31055,2025-02-01,13.4246311746906,2,"EARTH","prediction","projeção",-30.5910570571315,57.4403194065127
+31055,2025-03-01,6.58563960933361,2,"EARTH","prediction","projeção",-37.4300486224885,50.6013278411558
+31055,2025-04-01,-0.986101052312051,2,"EARTH","prediction","projeção",-45.0017892841342,43.0295871795101
+31055,2025-05-01,-8.3135920151949,2,"EARTH","prediction","projeção",-52.329280247017,35.7020962166272
+31055,2025-06-01,-15.8853326768403,2,"EARTH","prediction","projeção",-59.9010209086625,28.1303555549818
+31055,2025-07-01,-23.2128236397234,2,"EARTH","prediction","projeção",-67.2285118715455,20.8028645920987
+31055,2025-08-01,-30.7845643013684,2,"EARTH","prediction","projeção",-74.8002525331905,13.2311239304537
+31055,2025-09-01,-38.3563049630141,2,"EARTH","prediction","projeção",-82.3719931948362,5.65938326880809
+31055,2025-10-01,-45.6837959258971,2,"EARTH","prediction","projeção",-89.6994841577193,-1.66810769407499
+31055,2025-11-01,-53.2555365875423,2,"EARTH","prediction","projeção",-97.2712248193645,-9.2398483557202
+31055,2025-12-01,-60.5830275504254,2,"EARTH","prediction","projeção",-104.598715782248,-16.5673393186033
+31055,2026-01-01,-68.1547682120708,2,"EARTH","prediction","projeção",-112.170456443893,-24.1390799802487
+31055,2026-02-01,-75.7265088737163,2,"EARTH","prediction","projeção",-119.742197105538,-31.7108206418941
+31055,2026-03-01,-82.5655004390733,2,"EARTH","prediction","projeção",-126.581188670895,-38.5498122072511
+31055,2026-04-01,-90.1372411007192,2,"EARTH","prediction","projeção",-134.152929332541,-46.121552868897
+31055,2026-05-01,-97.4647320636018,2,"EARTH","prediction","projeção",-141.480420295424,-53.4490438317796
+31055,2026-06-01,-105.036472725247,2,"EARTH","prediction","projeção",-149.052160957069,-61.0207844934251
+31055,2026-07-01,-112.36396368813,2,"EARTH","prediction","projeção",-156.379651919952,-68.3482754563079
+31055,2026-08-01,-119.935704349776,2,"EARTH","prediction","projeção",-163.951392581598,-75.9200161179536
+31055,2026-09-01,-127.507445011421,2,"EARTH","prediction","projeção",-171.523133243244,-83.4917567795993
+31055,2026-10-01,-134.834935974304,2,"EARTH","prediction","projeção",-178.850624206126,-90.8192477424819
+31055,2026-11-01,-142.406676635949,2,"EARTH","prediction","projeção",-186.422364867772,-98.3909884041273
+31055,2026-12-01,-149.734167598833,2,"EARTH","prediction","projeção",-193.749855830655,-105.71847936701
+31055,2027-01-01,-157.305908260478,2,"EARTH","prediction","projeção",-201.3215964923,-113.290220028656
+31055,2027-02-01,-164.877648922123,2,"EARTH","prediction","projeção",-208.893337153945,-120.861960690301
+31055,2027-03-01,-171.716640487481,2,"EARTH","prediction","projeção",-215.732328719303,-127.700952255658
+31055,2027-04-01,-179.288381149126,2,"EARTH","prediction","projeção",-223.304069380948,-135.272692917304
+31055,2027-05-01,-186.615872112009,2,"EARTH","prediction","projeção",-230.631560343831,-142.600183880187
+31055,2027-06-01,-194.187612773654,2,"EARTH","prediction","projeção",-238.203301005476,-150.171924541832
+31055,2027-07-01,-201.515103736537,2,"EARTH","prediction","projeção",-245.53079196836,-157.499415504715
+31055,2027-08-01,-209.086844398183,2,"EARTH","prediction","projeção",-253.102532630005,-165.071156166361
+31055,2027-09-01,-216.658585059829,2,"EARTH","prediction","projeção",-260.674273291651,-172.642896828006
+31055,2027-10-01,-223.986076022711,2,"EARTH","prediction","projeção",-268.001764254533,-179.970387790889
+31055,2027-11-01,-231.557816684357,2,"EARTH","prediction","projeção",-275.573504916179,-187.542128452534
+31055,2027-12-01,-238.885307647239,2,"EARTH","prediction","projeção",-282.900995879062,-194.869619415417
+31055,2028-01-01,-246.457048308885,2,"EARTH","prediction","projeção",-290.472736540707,-202.441360077063
+31055,2028-02-01,-254.028788970531,2,"EARTH","prediction","projeção",-298.044477202353,-210.013100738708
+31055,2028-03-01,-261.112030234651,2,"EARTH","prediction","projeção",-305.127718466473,-217.096342002829
+31055,2028-04-01,-268.683770896296,2,"EARTH","prediction","projeção",-312.699459128118,-224.668082664474
+31055,2028-05-01,-276.011261859179,2,"EARTH","prediction","projeção",-320.026950091001,-231.995573627357
+31055,2028-06-01,-283.583002520824,2,"EARTH","prediction","projeção",-327.598690752646,-239.567314289002
+31055,2028-07-01,-290.910493483707,2,"EARTH","prediction","projeção",-334.926181715529,-246.894805251885
+31055,2028-08-01,-298.482234145353,2,"EARTH","prediction","projeção",-342.497922377175,-254.466545913531
+31055,2028-09-01,-306.053974806998,2,"EARTH","prediction","projeção",-350.06966303882,-262.038286575176
+31055,2028-10-01,-313.381465769881,2,"EARTH","prediction","projeção",-357.397154001703,-269.365777538059
+31055,2028-11-01,-320.953206431526,2,"EARTH","prediction","projeção",-364.968894663349,-276.937518199704
+31055,2028-12-01,-328.28069739441,2,"EARTH","prediction","projeção",-372.296385626232,-284.265009162587
+31055,2029-01-01,-335.852438056055,2,"EARTH","prediction","projeção",-379.868126287877,-291.836749824233
+31055,2029-02-01,-343.4241787177,2,"EARTH","prediction","projeção",-387.439866949522,-299.408490485878
+31055,2029-03-01,-350.263170283057,2,"EARTH","prediction","projeção",-394.278858514879,-306.247482051235
+31055,2029-04-01,-357.834910944703,2,"EARTH","prediction","projeção",-401.850599176525,-313.819222712881
+31055,2029-05-01,-365.162401907586,2,"EARTH","prediction","projeção",-409.178090139408,-321.146713675764
+31055,2029-06-01,-372.734142569232,2,"EARTH","prediction","projeção",-416.749830801054,-328.718454337409
+31055,2029-07-01,-380.061633532114,2,"EARTH","prediction","projeção",-424.077321763937,-336.045945300292
+31055,2029-08-01,-387.63337419376,2,"EARTH","prediction","projeção",-431.649062425582,-343.617685961938
+31055,2029-09-01,-395.205114855405,2,"EARTH","prediction","projeção",-439.220803087227,-351.189426623583
+31055,2029-10-01,-402.532605818288,2,"EARTH","prediction","projeção",-446.54829405011,-358.516917586466
+31055,2029-11-01,-410.104346479934,2,"EARTH","prediction","projeção",-454.120034711756,-366.088658248111
+31055,2029-12-01,-417.431837442817,2,"EARTH","prediction","projeção",-461.447525674639,-373.416149210995
+31055,2030-01-01,-425.003578104462,2,"EARTH","prediction","projeção",-469.019266336284,-380.98788987264
+31055,2030-02-01,-432.575318766108,2,"EARTH","prediction","projeção",-476.59100699793,-388.559630534286
+31055,2030-03-01,-439.414310331465,2,"EARTH","prediction","projeção",-483.429998563287,-395.398622099643
+31055,2030-04-01,-446.986050993111,2,"EARTH","prediction","projeção",-491.001739224933,-402.970362761289
+31055,2030-05-01,-454.313541955993,2,"EARTH","prediction","projeção",-498.329230187815,-410.297853724171
+31055,2030-06-01,-461.885282617639,2,"EARTH","prediction","projeção",-505.900970849461,-417.869594385817
+31055,2030-07-01,-469.212773580521,2,"EARTH","prediction","projeção",-513.228461812344,-425.197085348699
+31055,2030-08-01,-476.784514242167,2,"EARTH","prediction","projeção",-520.800202473989,-432.768826010345
+31055,2030-09-01,-484.356254903813,2,"EARTH","prediction","projeção",-528.371943135635,-440.340566671991
+31055,2030-10-01,-491.683745866695,2,"EARTH","prediction","projeção",-535.699434098517,-447.668057634873
+31055,2030-11-01,-499.255486528341,2,"EARTH","prediction","projeção",-543.271174760163,-455.239798296519
+31055,2030-12-01,-506.582977491224,2,"EARTH","prediction","projeção",-550.598665723046,-462.567289259402
+31055,2024-01-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2024-02-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2024-03-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2024-04-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2024-05-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2024-06-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2024-07-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2024-08-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2024-09-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2024-10-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2024-11-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2024-12-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2025-01-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2025-02-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2025-03-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2025-04-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2025-05-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2025-06-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2025-07-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2025-08-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2025-09-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2025-10-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2025-11-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2025-12-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2026-01-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2026-02-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2026-03-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2026-04-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2026-05-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2026-06-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2026-07-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2026-08-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2026-09-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2026-10-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2026-11-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2026-12-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2027-01-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2027-02-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2027-03-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2027-04-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2027-05-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2027-06-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2027-07-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2027-08-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2027-09-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2027-10-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2027-11-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2027-12-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2028-01-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2028-02-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2028-03-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2028-04-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2028-05-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2028-06-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2028-07-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2028-08-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2028-09-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2028-10-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2028-11-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2028-12-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2029-01-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2029-02-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2029-03-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2029-04-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2029-05-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2029-06-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2029-07-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2029-08-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2029-09-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2029-10-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2029-11-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2029-12-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2030-01-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2030-02-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2030-03-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2030-04-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2030-05-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2030-06-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2030-07-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2030-08-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2030-09-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2030-10-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2030-11-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913
+31055,2030-12-01,129.540512084961,3,"XGBOOST","prediction","projeção",86.0522186670088,173.028805502913

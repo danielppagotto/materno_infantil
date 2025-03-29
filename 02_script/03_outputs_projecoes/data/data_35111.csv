@@ -1,0 +1,829 @@
+"cod_regsaude",".index",".value",".model_id",".model_desc",".key","tipo",".conf_lo",".conf_hi"
+35111,2016-08-01,101,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2008-10-01,126,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2008-08-01,106,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2013-07-01,126,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2012-01-01,128,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2001-06-01,147,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2020-10-01,107,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2023-08-01,110,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2017-03-01,154,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2004-07-01,127,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2002-02-01,139,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2018-02-01,107,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2004-09-01,109,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2000-04-01,135,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2013-01-01,141,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2001-10-01,112,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2009-02-01,134,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2009-12-01,113,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2015-02-01,150,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2006-05-01,163,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2015-09-01,112,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2014-03-01,168,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2010-12-01,118,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2012-08-01,134,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2014-01-01,136,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2000-07-01,128,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2012-11-01,130,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2009-04-01,129,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2007-06-01,137,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2005-09-01,118,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2017-06-01,139,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2015-07-01,134,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2005-01-01,126,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2005-02-01,131,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2003-08-01,117,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2002-01-01,124,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2006-11-01,81,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2018-05-01,128,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2020-04-01,148,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2007-12-01,118,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2010-04-01,150,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2014-09-01,142,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2007-08-01,102,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2014-08-01,130,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2004-10-01,104,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2013-05-01,139,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2013-02-01,125,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2018-08-01,130,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2022-11-01,114,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2007-03-01,128,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2020-07-01,101,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2007-02-01,140,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2016-11-01,76,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2004-04-01,135,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2006-04-01,142,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2000-02-01,138,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2019-10-01,109,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2002-06-01,119,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2008-11-01,104,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2015-06-01,117,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2011-07-01,140,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2019-09-01,101,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2019-11-01,110,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2001-01-01,140,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2023-04-01,111,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2012-12-01,133,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2019-02-01,129,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2005-05-01,147,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2019-06-01,134,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2001-08-01,114,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2001-03-01,130,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2021-10-01,84,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2000-08-01,123,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2009-07-01,118,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2018-01-01,139,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2020-11-01,95,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2019-08-01,113,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2003-01-01,116,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2014-05-01,139,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2023-09-01,91,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2007-10-01,98,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2023-05-01,115,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2006-03-01,118,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2015-04-01,162,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2007-09-01,87,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2012-07-01,117,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2021-09-01,112,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2023-10-01,97,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2006-08-01,113,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2015-12-01,100,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2004-03-01,138,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2013-03-01,124,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2009-09-01,112,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2021-08-01,103,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2022-05-01,131,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2015-11-01,88,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2022-09-01,104,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2018-03-01,128,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2022-04-01,99,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2011-01-01,140,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2020-08-01,112,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2016-10-01,113,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2012-03-01,163,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2015-10-01,121,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2004-11-01,92,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2017-11-01,110,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2004-06-01,124,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2022-08-01,109,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2003-05-01,126,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2014-07-01,148,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2007-05-01,143,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2011-02-01,125,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2002-11-01,97,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2009-06-01,113,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2005-12-01,109,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2010-01-01,109,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2009-10-01,119,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2000-01-01,127,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2002-10-01,104,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2004-12-01,133,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2008-09-01,94,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2001-11-01,120,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2014-11-01,130,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2003-04-01,154,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2000-03-01,183,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2011-10-01,134,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2004-05-01,125,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2022-12-01,107,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2021-04-01,122,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2019-01-01,119,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2010-08-01,109,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2013-08-01,130,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2006-01-01,121,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2003-03-01,134,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2006-07-01,98,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2018-06-01,109,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2005-07-01,119,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2012-02-01,125,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2021-01-01,123,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2019-05-01,142,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2020-03-01,131,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2005-03-01,129,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2014-12-01,120,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2009-03-01,146,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2022-07-01,116,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2002-12-01,121,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2018-04-01,158,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2010-07-01,119,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2020-01-01,118,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2010-03-01,135,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2018-11-01,103,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2019-07-01,120,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2000-05-01,169,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2005-04-01,113,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2002-08-01,120,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2005-06-01,141,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2023-03-01,122,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2016-02-01,134,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2017-12-01,126,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2023-01-01,118,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2000-06-01,105,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2005-08-01,151,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2022-03-01,133,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2019-12-01,112,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2001-09-01,127,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2021-03-01,127,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2010-02-01,148,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2014-02-01,144,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2017-01-01,105,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2006-12-01,107,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2011-05-01,160,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2003-12-01,114,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2013-06-01,133,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2016-07-01,130,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2009-11-01,106,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2016-03-01,161,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2023-02-01,115,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2012-05-01,121,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2000-10-01,113,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2014-04-01,149,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2016-04-01,167,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2009-01-01,120,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2008-04-01,146,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2000-12-01,113,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2013-11-01,133,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2002-07-01,123,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2018-09-01,120,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2015-01-01,180,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2022-10-01,99,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2021-06-01,102,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2016-05-01,136,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2008-03-01,145,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2014-06-01,122,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2021-12-01,101,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2006-06-01,130,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2020-12-01,104,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2016-09-01,142,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2002-04-01,158,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2001-04-01,130,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2002-05-01,121,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2016-06-01,116,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2006-02-01,122,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2011-12-01,126,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2003-09-01,125,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2012-04-01,160,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2011-03-01,149,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2003-10-01,93,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2019-04-01,134,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2019-03-01,143,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2001-07-01,111,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2000-11-01,114,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2011-11-01,116,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2023-07-01,128,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2017-02-01,131,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2023-11-01,85,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2020-06-01,97,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2003-07-01,122,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2002-09-01,118,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2017-07-01,112,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2015-05-01,137,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2010-10-01,101,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2021-02-01,119,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2016-01-01,162,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2012-10-01,136,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2015-08-01,147,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2010-06-01,111,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2008-01-01,109,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2021-07-01,118,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2022-01-01,116,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2000-09-01,121,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2001-02-01,134,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2006-10-01,126,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2008-06-01,110,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2009-05-01,103,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2017-09-01,137,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2003-06-01,121,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2012-09-01,120,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2010-05-01,112,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2002-03-01,145,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2018-10-01,109,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2001-12-01,120,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2011-04-01,149,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2020-09-01,122,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2013-12-01,111,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2023-12-01,96,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2006-09-01,102,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2017-08-01,129,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2015-03-01,136,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2007-04-01,120,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2008-02-01,134,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2017-10-01,102,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2012-06-01,145,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2008-07-01,107,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2005-10-01,109,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2003-11-01,118,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2010-09-01,93,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2017-04-01,141,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2007-07-01,113,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2001-05-01,139,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2004-02-01,119,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2010-11-01,95,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2008-12-01,112,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2013-10-01,121,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2014-10-01,128,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2023-06-01,115,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2007-01-01,101,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2017-05-01,141,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2003-02-01,110,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2022-02-01,130,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2020-02-01,110,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2018-12-01,114,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2005-11-01,102,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2013-04-01,128,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2007-11-01,94,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2004-08-01,124,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2013-09-01,133,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2021-05-01,123,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2004-01-01,110,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2021-11-01,88,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2011-08-01,123,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2018-07-01,109,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2009-08-01,106,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2022-06-01,132,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2008-05-01,116,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2020-05-01,135,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2016-12-01,132,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2011-06-01,135,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2011-09-01,111,0,"Dados Históricos","actual","histórico",NA,NA
+35111,2016-08-01,101,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2008-10-01,126,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2008-08-01,106,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2013-07-01,126,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2012-01-01,128,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2001-06-01,147,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2020-10-01,107,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2023-08-01,110,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2017-03-01,154,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2004-07-01,127,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2002-02-01,139,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2018-02-01,107,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2004-09-01,109,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2000-04-01,135,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2013-01-01,141,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2001-10-01,112,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2009-02-01,134,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2009-12-01,113,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2015-02-01,150,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2006-05-01,163,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2015-09-01,112,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2014-03-01,168,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2010-12-01,118,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2012-08-01,134,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2014-01-01,136,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2000-07-01,128,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2012-11-01,130,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2009-04-01,129,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2007-06-01,137,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2005-09-01,118,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2017-06-01,139,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2015-07-01,134,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2005-01-01,126,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2005-02-01,131,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2003-08-01,117,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2002-01-01,124,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2006-11-01,81,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2018-05-01,128,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2020-04-01,148,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2007-12-01,118,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2010-04-01,150,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2014-09-01,142,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2007-08-01,102,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2014-08-01,130,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2004-10-01,104,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2013-05-01,139,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2013-02-01,125,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2018-08-01,130,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2022-11-01,114,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2007-03-01,128,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2020-07-01,101,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2007-02-01,140,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2016-11-01,76,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2004-04-01,135,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2006-04-01,142,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2000-02-01,138,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2019-10-01,109,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2002-06-01,119,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2008-11-01,104,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2015-06-01,117,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2011-07-01,140,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2019-09-01,101,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2019-11-01,110,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2001-01-01,140,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2023-04-01,111,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2012-12-01,133,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2019-02-01,129,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2005-05-01,147,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2019-06-01,134,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2001-08-01,114,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2001-03-01,130,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2021-10-01,84,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2000-08-01,123,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2009-07-01,118,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2018-01-01,139,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2020-11-01,95,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2019-08-01,113,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2003-01-01,116,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2014-05-01,139,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2023-09-01,91,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2007-10-01,98,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2023-05-01,115,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2006-03-01,118,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2015-04-01,162,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2007-09-01,87,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2012-07-01,117,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2021-09-01,112,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2023-10-01,97,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2006-08-01,113,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2015-12-01,100,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2004-03-01,138,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2013-03-01,124,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2009-09-01,112,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2021-08-01,103,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2022-05-01,131,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2015-11-01,88,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2022-09-01,104,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2018-03-01,128,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2022-04-01,99,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2011-01-01,140,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2020-08-01,112,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2016-10-01,113,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2012-03-01,163,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2015-10-01,121,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2004-11-01,92,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2017-11-01,110,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2004-06-01,124,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2022-08-01,109,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2003-05-01,126,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2014-07-01,148,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2007-05-01,143,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2011-02-01,125,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2002-11-01,97,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2009-06-01,113,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2005-12-01,109,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2010-01-01,109,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2009-10-01,119,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2000-01-01,127,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2002-10-01,104,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2004-12-01,133,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2008-09-01,94,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2001-11-01,120,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2014-11-01,130,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2003-04-01,154,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2000-03-01,183,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2011-10-01,134,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2004-05-01,125,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2022-12-01,107,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2021-04-01,122,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2019-01-01,119,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2010-08-01,109,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2013-08-01,130,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2006-01-01,121,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2003-03-01,134,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2006-07-01,98,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2018-06-01,109,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2005-07-01,119,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2012-02-01,125,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2021-01-01,123,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2019-05-01,142,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2020-03-01,131,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2005-03-01,129,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2014-12-01,120,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2009-03-01,146,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2022-07-01,116,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2002-12-01,121,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2018-04-01,158,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2010-07-01,119,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2020-01-01,118,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2010-03-01,135,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2018-11-01,103,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2019-07-01,120,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2000-05-01,169,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2005-04-01,113,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2002-08-01,120,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2005-06-01,141,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2023-03-01,122,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2016-02-01,134,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2017-12-01,126,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2023-01-01,118,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2000-06-01,105,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2005-08-01,151,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2022-03-01,133,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2019-12-01,112,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2001-09-01,127,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2021-03-01,127,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2010-02-01,148,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2014-02-01,144,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2017-01-01,105,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2006-12-01,107,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2011-05-01,160,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2003-12-01,114,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2013-06-01,133,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2016-07-01,130,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2009-11-01,106,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2016-03-01,161,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2023-02-01,115,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2012-05-01,121,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2000-10-01,113,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2014-04-01,149,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2016-04-01,167,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2009-01-01,120,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2008-04-01,146,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2000-12-01,113,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2013-11-01,133,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2002-07-01,123,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2018-09-01,120,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2015-01-01,180,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2022-10-01,99,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2021-06-01,102,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2016-05-01,136,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2008-03-01,145,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2014-06-01,122,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2021-12-01,101,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2006-06-01,130,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2020-12-01,104,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2016-09-01,142,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2002-04-01,158,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2001-04-01,130,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2002-05-01,121,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2016-06-01,116,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2006-02-01,122,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2011-12-01,126,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2003-09-01,125,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2012-04-01,160,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2011-03-01,149,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2003-10-01,93,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2019-04-01,134,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2019-03-01,143,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2001-07-01,111,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2000-11-01,114,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2011-11-01,116,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2023-07-01,128,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2017-02-01,131,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2023-11-01,85,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2020-06-01,97,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2003-07-01,122,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2002-09-01,118,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2017-07-01,112,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2015-05-01,137,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2010-10-01,101,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2021-02-01,119,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2016-01-01,162,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2012-10-01,136,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2015-08-01,147,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2010-06-01,111,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2008-01-01,109,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2021-07-01,118,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2022-01-01,116,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2000-09-01,121,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2001-02-01,134,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2006-10-01,126,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2008-06-01,110,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2009-05-01,103,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2017-09-01,137,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2003-06-01,121,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2012-09-01,120,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2010-05-01,112,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2002-03-01,145,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2018-10-01,109,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2001-12-01,120,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2011-04-01,149,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2020-09-01,122,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2013-12-01,111,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2023-12-01,96,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2006-09-01,102,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2017-08-01,129,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2015-03-01,136,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2007-04-01,120,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2008-02-01,134,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2017-10-01,102,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2012-06-01,145,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2008-07-01,107,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2005-10-01,109,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2003-11-01,118,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2010-09-01,93,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2017-04-01,141,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2007-07-01,113,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2001-05-01,139,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2004-02-01,119,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2010-11-01,95,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2008-12-01,112,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2013-10-01,121,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2014-10-01,128,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2023-06-01,115,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2007-01-01,101,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2017-05-01,141,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2003-02-01,110,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2022-02-01,130,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2020-02-01,110,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2018-12-01,114,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2005-11-01,102,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2013-04-01,128,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2007-11-01,94,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2004-08-01,124,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2013-09-01,133,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2021-05-01,123,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2004-01-01,110,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2021-11-01,88,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2011-08-01,123,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2018-07-01,109,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2009-08-01,106,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2022-06-01,132,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2008-05-01,116,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2020-05-01,135,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2016-12-01,132,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2011-06-01,135,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2011-09-01,111,NA,"ACTUAL","actual","histórico",NA,NA
+35111,2024-01-01,115.655398979222,1,"PROPHET","prediction","projeção",93.1362593402681,138.174538618177
+35111,2024-02-01,116.317238932349,1,"PROPHET","prediction","projeção",93.7980992933945,138.836378571303
+35111,2024-03-01,131.500265903157,1,"PROPHET","prediction","projeção",108.981126264203,154.019405542112
+35111,2024-04-01,126.380516857129,1,"PROPHET","prediction","projeção",103.861377218175,148.899656496083
+35111,2024-05-01,117.885562198078,1,"PROPHET","prediction","projeção",95.3664225591239,140.404701837033
+35111,2024-06-01,106.093312475749,1,"PROPHET","prediction","projeção",83.5741728367942,128.612452114703
+35111,2024-07-01,102.637920150212,1,"PROPHET","prediction","projeção",80.1187805112575,125.157059789166
+35111,2024-08-01,103.70438412619,1,"PROPHET","prediction","projeção",81.1852444872357,126.223523765144
+35111,2024-09-01,105.607550190103,1,"PROPHET","prediction","projeção",83.0884105511489,128.126689829058
+35111,2024-10-01,96.3727977197442,1,"PROPHET","prediction","projeção",73.8536580807898,118.891937358698
+35111,2024-11-01,86.6983281068943,1,"PROPHET","prediction","projeção",64.17918846794,109.217467745849
+35111,2024-12-01,99.8628536535931,1,"PROPHET","prediction","projeção",77.3437140146388,122.381993292547
+35111,2025-01-01,106.570683223729,1,"PROPHET","prediction","projeção",84.0515435847746,129.089822862683
+35111,2025-02-01,110.942074017024,1,"PROPHET","prediction","projeção",88.4229343780695,133.461213655978
+35111,2025-03-01,125.615103257378,1,"PROPHET","prediction","projeção",103.095963618424,148.134242896332
+35111,2025-04-01,122.913719392139,1,"PROPHET","prediction","projeção",100.394579753185,145.432859031094
+35111,2025-05-01,116.405128534907,1,"PROPHET","prediction","projeção",93.8859888959524,138.924268173861
+35111,2025-06-01,105.256609234855,1,"PROPHET","prediction","projeção",82.7374695959008,127.775748873809
+35111,2025-07-01,102.104097469783,1,"PROPHET","prediction","projeção",79.5849578308286,124.623237108737
+35111,2025-08-01,101.62313201088,1,"PROPHET","prediction","projeção",79.1039923719259,124.142271649835
+35111,2025-09-01,99.2403884009678,1,"PROPHET","prediction","projeção",76.7212487620135,121.759528039922
+35111,2025-10-01,93.5503193986035,1,"PROPHET","prediction","projeção",71.0311797596492,116.069459037558
+35111,2025-11-01,85.6986339206615,1,"PROPHET","prediction","projeção",63.1794942817071,108.217773559616
+35111,2025-12-01,97.2106266862996,1,"PROPHET","prediction","projeção",74.6914870473453,119.729766325254
+35111,2026-01-01,106.369601068433,1,"PROPHET","prediction","projeção",83.8504614294786,128.888740707387
+35111,2026-02-01,109.577587678229,1,"PROPHET","prediction","projeção",87.0584480392747,132.096727317183
+35111,2026-03-01,119.707359182485,1,"PROPHET","prediction","projeção",97.1882195435306,142.226498821439
+35111,2026-04-01,119.515014913696,1,"PROPHET","prediction","projeção",96.9958752747413,142.03415455265
+35111,2026-05-01,114.986753675478,1,"PROPHET","prediction","projeção",92.4676140365238,137.505893314432
+35111,2026-06-01,104.443111111232,1,"PROPHET","prediction","projeção",81.9239714722781,126.962250750187
+35111,2026-07-01,101.524929231534,1,"PROPHET","prediction","projeção",79.0057895925801,124.044068870489
+35111,2026-08-01,99.4424542000096,1,"PROPHET","prediction","projeção",76.9233145610553,121.961593838964
+35111,2026-09-01,92.8511104636963,1,"PROPHET","prediction","projeção",70.331970824742,115.370250102651
+35111,2026-10-01,90.8073337369357,1,"PROPHET","prediction","projeção",68.2881940979814,113.32647337589
+35111,2026-11-01,84.7404586223659,1,"PROPHET","prediction","projeção",62.2213189834116,107.25959826132
+35111,2026-12-01,94.5769237137892,1,"PROPHET","prediction","projeção",72.0577840748349,117.096063352743
+35111,2027-01-01,106.16058581207,1,"PROPHET","prediction","projeção",83.6414461731153,128.679725451024
+35111,2027-02-01,108.131440314859,1,"PROPHET","prediction","projeção",85.6123006759046,130.650579953813
+35111,2027-03-01,113.781473235973,1,"PROPHET","prediction","projeção",91.2623335970191,136.300612874928
+35111,2027-04-01,116.186494441792,1,"PROPHET","prediction","projeção",93.6673548028377,138.705634080746
+35111,2027-05-01,113.62904486499,1,"PROPHET","prediction","projeção",91.1099052260353,136.148184503944
+35111,2027-06-01,103.65001174742,1,"PROPHET","prediction","projeção",81.1308721084661,126.169151386375
+35111,2027-07-01,100.897721264018,1,"PROPHET","prediction","projeção",78.3785816250633,123.416860902972
+35111,2027-08-01,97.1627393218479,1,"PROPHET","prediction","projeção",74.6435996828936,119.681878960802
+35111,2027-09-01,86.4446070103566,1,"PROPHET","prediction","projeção",63.9254673714023,108.963746649311
+35111,2027-10-01,88.145055161108,1,"PROPHET","prediction","projeção",65.6259155221537,110.664194800062
+35111,2027-11-01,83.8222359936347,1,"PROPHET","prediction","projeção",61.3030963546804,106.341375632589
+35111,2027-12-01,91.960572375208,1,"PROPHET","prediction","projeção",69.4414327362537,114.479712014162
+35111,2028-01-01,105.940586185362,1,"PROPHET","prediction","projeção",83.4214465464079,128.459725824317
+35111,2028-02-01,106.602426138493,1,"PROPHET","prediction","projeção",84.0832864995391,129.121565777448
+35111,2028-03-01,121.785453109279,1,"PROPHET","prediction","projeção",99.2663134703244,144.304592748233
+35111,2028-04-01,116.665704063298,1,"PROPHET","prediction","projeção",94.1465644243438,139.184843702252
+35111,2028-05-01,108.170749404227,1,"PROPHET","prediction","projeção",85.6516097652723,130.689889043181
+35111,2028-06-01,96.3784996819013,1,"PROPHET","prediction","projeção",73.859360042947,118.897639320856
+35111,2028-07-01,92.9231073563676,1,"PROPHET","prediction","projeção",70.4039677174133,115.442246995322
+35111,2028-08-01,93.9895713323454,1,"PROPHET","prediction","projeção",71.4704316933911,116.5087109713
+35111,2028-09-01,95.8927373962226,1,"PROPHET","prediction","projeção",73.3735977572683,118.411877035177
+35111,2028-10-01,86.6579849258772,1,"PROPHET","prediction","projeção",64.1388452869229,109.177124564832
+35111,2028-11-01,76.9835153130548,1,"PROPHET","prediction","projeção",54.4643756741005,99.5026549520091
+35111,2028-12-01,90.1480408597337,1,"PROPHET","prediction","projeção",67.6289012207794,112.667180498688
+35111,2029-01-01,96.8558704298866,1,"PROPHET","prediction","projeção",74.3367307909323,119.375010068841
+35111,2029-02-01,101.227261223174,1,"PROPHET","prediction","projeção",78.7081215842195,123.746400862128
+35111,2029-03-01,115.900290463524,1,"PROPHET","prediction","projeção",93.38115082457,138.419430102479
+35111,2029-04-01,113.198906598301,1,"PROPHET","prediction","projeção",90.6797669593469,135.718046237256
+35111,2029-05-01,106.690315741065,1,"PROPHET","prediction","projeção",84.1711761021103,129.209455380019
+35111,2029-06-01,95.5417964410161,1,"PROPHET","prediction","projeção",73.0226568020618,118.06093607997
+35111,2029-07-01,92.3892846759133,1,"PROPHET","prediction","projeção",69.870145036959,114.908424314868
+35111,2029-08-01,91.9083192170252,1,"PROPHET","prediction","projeção",69.3891795780709,114.427458855979
+35111,2029-09-01,89.5255756071122,1,"PROPHET","prediction","projeção",67.0064359681579,112.044715246066
+35111,2029-10-01,83.8355066047559,1,"PROPHET","prediction","projeção",61.3163669658016,106.35464624371
+35111,2029-11-01,75.9838211268133,1,"PROPHET","prediction","projeção",53.464681487859,98.5029607657676
+35111,2029-12-01,87.4958138924744,1,"PROPHET","prediction","projeção",64.9766742535201,110.014953531429
+35111,2030-01-01,96.6547882745572,1,"PROPHET","prediction","projeção",74.1356486356029,119.173927913512
+35111,2030-02-01,99.8627748843926,1,"PROPHET","prediction","projeção",77.3436352454383,122.381914523347
+35111,2030-03-01,109.992546388624,1,"PROPHET","prediction","projeção",87.4734067496701,132.511686027579
+35111,2030-04-01,109.80020211984,1,"PROPHET","prediction","projeção",87.2810624808854,132.319341758794
+35111,2030-05-01,105.271940881615,1,"PROPHET","prediction","projeção",82.7528012426608,127.791080520569
+35111,2030-06-01,94.7282983174123,1,"PROPHET","prediction","projeção",72.209158678458,117.247437956367
+35111,2030-07-01,91.8101164376991,1,"PROPHET","prediction","projeção",69.2909767987448,114.329256076653
+35111,2030-08-01,89.7276414061604,1,"PROPHET","prediction","projeção",67.2085017672061,112.246781045115
+35111,2030-09-01,83.1362976698553,1,"PROPHET","prediction","projeção",60.617158030901,105.65543730881
+35111,2030-10-01,81.092520943065,1,"PROPHET","prediction","projeção",58.5733813041107,103.611660582019
+35111,2030-11-01,75.0256458285115,1,"PROPHET","prediction","projeção",52.5065061895572,97.5447854674658
+35111,2030-12-01,84.8621109199281,1,"PROPHET","prediction","projeção",62.3429712809738,107.381250558882
+35111,2024-01-01,106.140786072536,2,"EARTH","prediction","projeção",76.644863881835,135.636708263237
+35111,2024-02-01,105.887075699517,2,"EARTH","prediction","projeção",76.3911535088158,135.382997890218
+35111,2024-03-01,105.64973373766,2,"EARTH","prediction","projeção",76.1538115469592,135.145655928361
+35111,2024-04-01,105.396023364641,2,"EARTH","prediction","projeção",75.90010117394,134.891945555342
+35111,2024-05-01,105.150497197203,2,"EARTH","prediction","projeção",75.6545750065021,134.646419387904
+35111,2024-06-01,104.896786824184,2,"EARTH","prediction","projeção",75.4008646334829,134.392709014885
+35111,2024-07-01,104.651260656746,2,"EARTH","prediction","projeção",75.155338466045,134.147182847447
+35111,2024-08-01,104.397550283727,2,"EARTH","prediction","projeção",74.9016280930258,133.893472474428
+35111,2024-09-01,104.143839910708,2,"EARTH","prediction","projeção",74.6479177200066,133.639762101409
+35111,2024-10-01,103.89831374327,2,"EARTH","prediction","projeção",74.4023915525687,133.394235933971
+35111,2024-11-01,103.64460337025,2,"EARTH","prediction","projeção",74.1486811795495,133.140525560951
+35111,2024-12-01,103.399077202813,2,"EARTH","prediction","projeção",73.9031550121116,132.894999393514
+35111,2025-01-01,103.145366829793,2,"EARTH","prediction","projeção",73.6494446390925,132.641289020494
+35111,2025-02-01,102.891656456774,2,"EARTH","prediction","projeção",73.3957342660732,132.387578647475
+35111,2025-03-01,102.662498700499,2,"EARTH","prediction","projeção",73.1665765097979,132.1584208912
+35111,2025-04-01,102.40878832748,2,"EARTH","prediction","projeção",72.9128661367787,131.904710518181
+35111,2025-05-01,102.163262160042,2,"EARTH","prediction","projeção",72.6673399693408,131.659184350743
+35111,2025-06-01,101.909551787023,2,"EARTH","prediction","projeção",72.4136295963216,131.405473977724
+35111,2025-07-01,101.664025619585,2,"EARTH","prediction","projeção",72.1681034288837,131.159947810286
+35111,2025-08-01,101.410315246565,2,"EARTH","prediction","projeção",71.9143930558645,130.906237437266
+35111,2025-09-01,101.156604873546,2,"EARTH","prediction","projeção",71.6606826828453,130.652527064247
+35111,2025-10-01,100.911078706108,2,"EARTH","prediction","projeção",71.4151565154074,130.407000896809
+35111,2025-11-01,100.657368333089,2,"EARTH","prediction","projeção",71.1614461423882,130.15329052379
+35111,2025-12-01,100.411842165651,2,"EARTH","prediction","projeção",70.9159199749503,129.907764356352
+35111,2026-01-01,100.158131792632,2,"EARTH","prediction","projeção",70.6622096019311,129.654053983333
+35111,2026-02-01,99.9044214196129,2,"EARTH","prediction","projeção",70.4084992289119,129.400343610314
+35111,2026-03-01,99.6752636633375,2,"EARTH","prediction","projeção",70.1793414726366,129.171185854039
+35111,2026-04-01,99.4215532903184,2,"EARTH","prediction","projeção",69.9256310996174,128.917475481019
+35111,2026-05-01,99.1760271228804,2,"EARTH","prediction","projeção",69.6801049321795,128.671949313581
+35111,2026-06-01,98.9223167498613,2,"EARTH","prediction","projeção",69.4263945591603,128.418238940562
+35111,2026-07-01,98.6767905824234,2,"EARTH","prediction","projeção",69.1808683917224,128.172712773124
+35111,2026-08-01,98.4230802094042,2,"EARTH","prediction","projeção",68.9271580187032,127.919002400105
+35111,2026-09-01,98.169369836385,2,"EARTH","prediction","projeção",68.673447645684,127.665292027086
+35111,2026-10-01,97.9238436689471,2,"EARTH","prediction","projeção",68.4279214782461,127.419765859648
+35111,2026-11-01,97.6701332959279,2,"EARTH","prediction","projeção",68.1742111052269,127.166055486629
+35111,2026-12-01,97.42460712849,2,"EARTH","prediction","projeção",67.928684937789,126.920529319191
+35111,2027-01-01,97.1708967554708,2,"EARTH","prediction","projeção",67.6749745647698,126.666818946172
+35111,2027-02-01,96.9171863824516,2,"EARTH","prediction","projeção",67.4212641917507,126.413108573153
+35111,2027-03-01,96.6880286261762,2,"EARTH","prediction","projeção",67.1921064354753,126.183950816877
+35111,2027-04-01,96.4343182531571,2,"EARTH","prediction","projeção",66.9383960624561,125.930240443858
+35111,2027-05-01,96.1887920857192,2,"EARTH","prediction","projeção",66.6928698950182,125.68471427642
+35111,2027-06-01,95.9350817127,2,"EARTH","prediction","projeção",66.439159521999,125.431003903401
+35111,2027-07-01,95.6895555452621,2,"EARTH","prediction","projeção",66.1936333545611,125.185477735963
+35111,2027-08-01,95.4358451722429,2,"EARTH","prediction","projeção",65.9399229815419,124.931767362944
+35111,2027-09-01,95.1821347992237,2,"EARTH","prediction","projeção",65.6862126085227,124.678056989925
+35111,2027-10-01,94.9366086317858,2,"EARTH","prediction","projeção",65.4406864410848,124.432530822487
+35111,2027-11-01,94.6828982587666,2,"EARTH","prediction","projeção",65.1869760680657,124.178820449468
+35111,2027-12-01,94.4373720913287,2,"EARTH","prediction","projeção",64.9414499006277,123.93329428203
+35111,2028-01-01,94.1836617183095,2,"EARTH","prediction","projeção",64.6877395276085,123.67958390901
+35111,2028-02-01,93.9299513452903,2,"EARTH","prediction","projeção",64.4340291545894,123.425873535991
+35111,2028-03-01,93.6926093834337,2,"EARTH","prediction","projeção",64.1966871927327,123.188531574135
+35111,2028-04-01,93.4388990104145,2,"EARTH","prediction","projeção",63.9429768197135,122.934821201115
+35111,2028-05-01,93.1933728429766,2,"EARTH","prediction","projeção",63.6974506522756,122.689295033678
+35111,2028-06-01,92.9396624699574,2,"EARTH","prediction","projeção",63.4437402792564,122.435584660658
+35111,2028-07-01,92.6941363025195,2,"EARTH","prediction","projeção",63.1982141118185,122.19005849322
+35111,2028-08-01,92.4404259295003,2,"EARTH","prediction","projeção",62.9445037387993,121.936348120201
+35111,2028-09-01,92.1867155564812,2,"EARTH","prediction","projeção",62.6907933657802,121.682637747182
+35111,2028-10-01,91.9411893890432,2,"EARTH","prediction","projeção",62.4452671983423,121.437111579744
+35111,2028-11-01,91.687479016024,2,"EARTH","prediction","projeção",62.1915568253231,121.183401206725
+35111,2028-12-01,91.4419528485861,2,"EARTH","prediction","projeção",61.9460306578852,120.937875039287
+35111,2029-01-01,91.188242475567,2,"EARTH","prediction","projeção",61.692320284866,120.684164666268
+35111,2029-02-01,90.9345321025478,2,"EARTH","prediction","projeção",61.4386099118468,120.430454293249
+35111,2029-03-01,90.7053743462724,2,"EARTH","prediction","projeção",61.2094521555714,120.201296536973
+35111,2029-04-01,90.4516639732532,2,"EARTH","prediction","projeção",60.9557417825522,119.947586163954
+35111,2029-05-01,90.2061378058153,2,"EARTH","prediction","projeção",60.7102156151143,119.702059996516
+35111,2029-06-01,89.9524274327961,2,"EARTH","prediction","projeção",60.4565052420951,119.448349623497
+35111,2029-07-01,89.7069012653582,2,"EARTH","prediction","projeção",60.2109790746572,119.202823456059
+35111,2029-08-01,89.453190892339,2,"EARTH","prediction","projeção",59.957268701638,118.94911308304
+35111,2029-09-01,89.1994805193198,2,"EARTH","prediction","projeção",59.7035583286189,118.695402710021
+35111,2029-10-01,88.9539543518819,2,"EARTH","prediction","projeção",59.4580321611809,118.449876542583
+35111,2029-11-01,88.7002439788627,2,"EARTH","prediction","projeção",59.2043217881618,118.196166169564
+35111,2029-12-01,88.4547178114248,2,"EARTH","prediction","projeção",58.9587956207239,117.950640002126
+35111,2030-01-01,88.2010074384057,2,"EARTH","prediction","projeção",58.7050852477047,117.696929629107
+35111,2030-02-01,87.9472970653865,2,"EARTH","prediction","projeção",58.4513748746855,117.443219256087
+35111,2030-03-01,87.7181393091111,2,"EARTH","prediction","projeção",58.2222171184101,117.214061499812
+35111,2030-04-01,87.4644289360919,2,"EARTH","prediction","projeção",57.9685067453909,116.960351126793
+35111,2030-05-01,87.218902768654,2,"EARTH","prediction","projeção",57.722980577953,116.714824959355
+35111,2030-06-01,86.9651923956348,2,"EARTH","prediction","projeção",57.4692702049339,116.461114586336
+35111,2030-07-01,86.7196662281969,2,"EARTH","prediction","projeção",57.2237440374959,116.215588418898
+35111,2030-08-01,86.4659558551777,2,"EARTH","prediction","projeção",56.9700336644768,115.961878045879
+35111,2030-09-01,86.2122454821586,2,"EARTH","prediction","projeção",56.7163232914576,115.70816767286
+35111,2030-10-01,85.9667193147206,2,"EARTH","prediction","projeção",56.4707971240197,115.462641505422
+35111,2030-11-01,85.7130089417014,2,"EARTH","prediction","projeção",56.2170867510005,115.208931132402
+35111,2030-12-01,85.4674827742635,2,"EARTH","prediction","projeção",55.9715605835626,114.963404964965
+35111,2024-01-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2024-02-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2024-03-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2024-04-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2024-05-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2024-06-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2024-07-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2024-08-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2024-09-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2024-10-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2024-11-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2024-12-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2025-01-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2025-02-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2025-03-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2025-04-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2025-05-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2025-06-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2025-07-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2025-08-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2025-09-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2025-10-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2025-11-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2025-12-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2026-01-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2026-02-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2026-03-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2026-04-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2026-05-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2026-06-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2026-07-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2026-08-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2026-09-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2026-10-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2026-11-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2026-12-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2027-01-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2027-02-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2027-03-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2027-04-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2027-05-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2027-06-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2027-07-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2027-08-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2027-09-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2027-10-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2027-11-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2027-12-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2028-01-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2028-02-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2028-03-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2028-04-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2028-05-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2028-06-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2028-07-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2028-08-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2028-09-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2028-10-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2028-11-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2028-12-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2029-01-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2029-02-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2029-03-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2029-04-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2029-05-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2029-06-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2029-07-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2029-08-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2029-09-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2029-10-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2029-11-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2029-12-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2030-01-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2030-02-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2030-03-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2030-04-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2030-05-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2030-06-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2030-07-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2030-08-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2030-09-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2030-10-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2030-11-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
+35111,2030-12-01,93.4445037841797,3,"XGBOOST","prediction","projeção",49.7092792607328,137.179728307627
