@@ -12,3 +12,4 @@ There are several codes available for conducting the analyses. Here I describe t
 	- Annual projections plots - [link](https://github.com/danielppagotto/materno_infantil/tree/main/02_script/03_outputs_projecoes/prophet/plot_anual_prophet)
 	- Monthly projections plots - [link](https://github.com/danielppagotto/materno_infantil/tree/main/02_script/03_outputs_projecoes/prophet/plot_mensal_prophet)
 	- Projection model metrics - [link](https://github.com/danielppagotto/materno_infantil/tree/main/02_script/03_outputs_projecoes/prophet/metricas_previsoes_prophet)
+- Function that automates reading all best model projections - [link](https://github.com/danielppagotto/materno_infantil/blob/main/02_script/03_outputs_projecoes/prophet/melhor_previsao_prophet/unindo_dfs_previsoes.R)
