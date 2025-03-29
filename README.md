@@ -1,4 +1,4 @@
-# Tese 
+# Thesis 
 
 This repository was created to describe the procedures performed for developing a workforce planning method in healthcare with a maternal and child health focus.
 
