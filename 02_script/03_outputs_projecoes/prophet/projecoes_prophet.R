@@ -14,8 +14,11 @@ nascidos <-
   vroom::vroom("~/GitHub/materno_infantil/01_dados/nascidos_regiao_saude.csv") |> 
   select(-`...1`)
 
+teste <- nascidos |> 
+  select(uf_sigla, cod_regsaud) |> 
+  distinct()
 
-
+write.csv(teste,"teste.csv")
 projecao <- function(regiao){
   
   df_regiao <- 
@@ -413,18 +416,17 @@ tendencia_filtrada <-
   
 }
 
-regioes_mg <- nascidos |> 
-  filter(uf_sigla == "AP") 
+regioes <- nascidos |> 
+  filter(uf_sigla == "RS") 
 
-regioes_mg <- unique(regioes_mg$cod_regsaud)
+regioes <- unique(regioes$cod_regsaud)
 
-for (regiao in regioes_mg) {
-  # Exibir mensagem informativa (opcional)
-  cat("Processando região:", regiao, "\n")
+for (regiao in regioes) {
+
+    cat("Processando região:", regiao, "\n")
   
-  # Chamar a função projecao para a região atual
-  projecao(regiao)
+    projecao(regiao)
   
   # Opcionalmente, você pode adicionar um pequeno intervalo para evitar sobrecarga
-  # Sys.sleep(0.5)
+  Sys.sleep(1)
 }

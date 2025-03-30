@@ -1,0 +1,793 @@
+"cod_regsaude",".index",".value",".model_id",".model_desc",".key","tipo",".conf_lo",".conf_hi"
+11006,2010-03-01,205,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2013-03-01,206,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2006-02-01,195,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2023-02-01,201,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2007-04-01,186,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2011-05-01,188,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2015-05-01,191,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2021-04-01,215,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2023-08-01,176,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2002-12-01,213,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2020-01-01,193,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2018-05-01,214,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2018-10-01,231,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2020-07-01,186,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2019-10-01,223,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2018-01-01,217,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2001-05-01,136,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2012-10-01,168,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2005-05-01,195,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2016-05-01,221,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2008-08-01,184,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2018-09-01,204,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2006-10-01,206,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2011-09-01,190,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2016-08-01,207,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2017-12-01,175,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2015-12-01,210,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2020-06-01,197,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2019-01-01,206,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2014-04-01,219,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2021-12-01,198,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2007-07-01,196,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2002-05-01,225,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2011-04-01,206,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2009-04-01,212,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2014-10-01,185,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2003-05-01,213,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2007-03-01,197,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2023-09-01,199,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2005-01-01,157,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2012-07-01,176,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2011-03-01,214,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2016-06-01,213,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2002-08-01,226,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2005-06-01,195,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2008-04-01,184,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2015-08-01,190,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2010-10-01,180,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2003-10-01,198,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2007-10-01,30,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2014-08-01,199,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2016-04-01,221,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2009-07-01,176,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2001-03-01,163,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2014-06-01,203,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2004-01-01,188,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2012-01-01,109,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2000-02-01,185,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2017-09-01,179,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2019-05-01,203,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2011-08-01,212,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2022-04-01,209,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2008-01-01,183,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2009-08-01,177,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2013-10-01,202,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2000-12-01,179,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2007-09-01,182,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2013-12-01,195,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2022-09-01,183,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2021-08-01,227,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2022-11-01,185,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2019-02-01,220,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2022-07-01,182,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2007-05-01,186,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2012-03-01,199,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2021-09-01,228,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2022-10-01,190,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2018-04-01,218,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2012-04-01,185,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2013-05-01,221,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2019-08-01,195,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2008-06-01,174,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2014-11-01,201,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2005-04-01,223,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2008-07-01,214,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2021-02-01,212,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2000-01-01,198,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2003-03-01,222,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2007-02-01,181,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2000-11-01,150,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2005-02-01,171,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2010-07-01,189,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2013-07-01,197,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2005-03-01,224,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2017-10-01,200,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2006-06-01,215,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2005-10-01,175,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2023-05-01,200,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2002-03-01,204,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2016-12-01,201,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2006-12-01,157,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2002-02-01,191,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2017-07-01,200,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2012-11-01,158,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2012-02-01,164,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2021-11-01,196,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2012-05-01,168,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2000-03-01,193,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2009-01-01,190,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2009-10-01,216,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2021-10-01,193,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2013-09-01,190,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2001-01-01,118,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2022-06-01,199,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2020-09-01,193,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2006-01-01,188,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2018-06-01,197,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2021-01-01,191,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2009-02-01,170,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2017-04-01,194,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2008-09-01,188,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2005-07-01,206,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2009-12-01,174,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2019-04-01,223,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2013-02-01,175,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2023-11-01,183,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2012-09-01,192,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2021-07-01,195,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2021-06-01,191,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2023-12-01,181,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2011-12-01,171,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2019-03-01,225,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2020-12-01,220,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2020-10-01,196,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2001-02-01,138,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2009-03-01,203,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2004-03-01,197,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2015-11-01,205,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2014-12-01,184,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2000-10-01,236,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2003-01-01,175,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2018-02-01,181,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2002-09-01,170,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2019-09-01,189,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2001-08-01,222,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2015-02-01,206,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2022-02-01,192,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2009-06-01,170,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2008-03-01,209,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2014-09-01,196,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2023-04-01,173,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2010-05-01,198,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2023-01-01,200,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2004-07-01,200,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2003-06-01,205,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2003-09-01,187,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2015-03-01,233,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2004-09-01,193,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2005-08-01,200,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2007-08-01,166,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2014-01-01,209,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2015-01-01,190,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2001-07-01,128,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2010-11-01,184,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2006-08-01,170,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2005-11-01,190,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2007-11-01,33,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2017-01-01,184,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2017-08-01,192,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2005-09-01,206,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2006-05-01,200,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2003-04-01,217,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2003-11-01,191,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2004-05-01,227,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2011-02-01,167,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2017-02-01,161,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2010-02-01,156,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2000-05-01,192,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2014-07-01,195,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2019-11-01,218,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2012-12-01,211,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2010-09-01,163,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2002-04-01,207,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2012-08-01,164,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2011-11-01,183,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2020-02-01,181,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2004-12-01,185,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2013-01-01,193,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2001-11-01,195,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2011-10-01,197,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2020-08-01,219,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2003-07-01,188,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2022-12-01,197,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2007-06-01,173,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2004-02-01,160,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2012-06-01,183,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2014-02-01,162,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2002-10-01,207,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2002-01-01,173,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2001-12-01,77,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2016-11-01,183,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2013-08-01,189,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2017-06-01,195,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2023-03-01,247,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2008-11-01,193,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2001-10-01,183,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2000-07-01,214,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2004-10-01,175,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2006-09-01,116,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2003-02-01,155,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2010-08-01,172,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2020-04-01,228,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2000-06-01,177,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2004-04-01,198,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2014-03-01,179,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2007-01-01,163,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2002-07-01,172,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2020-11-01,167,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2013-11-01,185,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2014-05-01,204,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2022-05-01,199,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2006-03-01,191,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2021-05-01,216,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2013-06-01,181,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2008-02-01,172,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2019-12-01,186,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2015-07-01,202,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2022-01-01,201,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2015-09-01,236,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2020-03-01,197,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2015-04-01,195,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2016-01-01,164,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2006-11-01,177,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2000-09-01,235,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2009-05-01,218,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2001-09-01,223,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2006-07-01,196,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2019-07-01,193,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2016-07-01,175,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2018-08-01,221,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2018-11-01,205,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2023-07-01,208,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2010-06-01,178,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2013-04-01,171,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2010-12-01,164,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2008-10-01,206,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2001-06-01,131,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2019-06-01,169,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2009-09-01,193,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2016-09-01,180,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2011-06-01,181,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2015-06-01,202,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2016-02-01,161,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2011-07-01,183,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2017-03-01,221,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2010-04-01,208,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2008-12-01,189,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2000-04-01,198,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2008-05-01,172,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2021-03-01,223,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2002-11-01,204,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2003-12-01,205,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2022-03-01,207,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2010-01-01,204,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2018-03-01,212,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2018-07-01,200,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2016-10-01,191,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2018-12-01,200,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2017-11-01,219,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2011-01-01,182,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2007-12-01,150,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2002-06-01,195,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2017-05-01,240,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2005-12-01,185,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2020-05-01,225,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2000-08-01,212,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2022-08-01,224,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2004-11-01,204,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2001-04-01,130,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2003-08-01,195,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2023-10-01,209,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2009-11-01,166,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2004-08-01,192,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2016-03-01,195,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2004-06-01,193,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2006-04-01,203,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2015-10-01,206,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2023-06-01,167,0,"Dados Históricos","actual","histórico",NA,NA
+11006,2010-03-01,205,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2013-03-01,206,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2006-02-01,195,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2023-02-01,201,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2007-04-01,186,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2011-05-01,188,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2015-05-01,191,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2021-04-01,215,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2023-08-01,176,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2002-12-01,213,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2020-01-01,193,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2018-05-01,214,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2018-10-01,231,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2020-07-01,186,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2019-10-01,223,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2018-01-01,217,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2001-05-01,136,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2012-10-01,168,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2005-05-01,195,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2016-05-01,221,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2008-08-01,184,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2018-09-01,204,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2006-10-01,206,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2011-09-01,190,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2016-08-01,207,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2017-12-01,175,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2015-12-01,210,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2020-06-01,197,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2019-01-01,206,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2014-04-01,219,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2021-12-01,198,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2007-07-01,196,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2002-05-01,225,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2011-04-01,206,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2009-04-01,212,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2014-10-01,185,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2003-05-01,213,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2007-03-01,197,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2023-09-01,199,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2005-01-01,157,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2012-07-01,176,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2011-03-01,214,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2016-06-01,213,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2002-08-01,226,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2005-06-01,195,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2008-04-01,184,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2015-08-01,190,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2010-10-01,180,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2003-10-01,198,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2007-10-01,30,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2014-08-01,199,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2016-04-01,221,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2009-07-01,176,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2001-03-01,163,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2014-06-01,203,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2004-01-01,188,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2012-01-01,109,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2000-02-01,185,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2017-09-01,179,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2019-05-01,203,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2011-08-01,212,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2022-04-01,209,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2008-01-01,183,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2009-08-01,177,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2013-10-01,202,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2000-12-01,179,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2007-09-01,182,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2013-12-01,195,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2022-09-01,183,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2021-08-01,227,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2022-11-01,185,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2019-02-01,220,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2022-07-01,182,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2007-05-01,186,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2012-03-01,199,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2021-09-01,228,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2022-10-01,190,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2018-04-01,218,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2012-04-01,185,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2013-05-01,221,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2019-08-01,195,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2008-06-01,174,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2014-11-01,201,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2005-04-01,223,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2008-07-01,214,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2021-02-01,212,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2000-01-01,198,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2003-03-01,222,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2007-02-01,181,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2000-11-01,150,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2005-02-01,171,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2010-07-01,189,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2013-07-01,197,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2005-03-01,224,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2017-10-01,200,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2006-06-01,215,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2005-10-01,175,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2023-05-01,200,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2002-03-01,204,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2016-12-01,201,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2006-12-01,157,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2002-02-01,191,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2017-07-01,200,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2012-11-01,158,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2012-02-01,164,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2021-11-01,196,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2012-05-01,168,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2000-03-01,193,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2009-01-01,190,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2009-10-01,216,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2021-10-01,193,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2013-09-01,190,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2001-01-01,118,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2022-06-01,199,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2020-09-01,193,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2006-01-01,188,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2018-06-01,197,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2021-01-01,191,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2009-02-01,170,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2017-04-01,194,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2008-09-01,188,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2005-07-01,206,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2009-12-01,174,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2019-04-01,223,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2013-02-01,175,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2023-11-01,183,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2012-09-01,192,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2021-07-01,195,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2021-06-01,191,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2023-12-01,181,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2011-12-01,171,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2019-03-01,225,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2020-12-01,220,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2020-10-01,196,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2001-02-01,138,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2009-03-01,203,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2004-03-01,197,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2015-11-01,205,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2014-12-01,184,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2000-10-01,236,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2003-01-01,175,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2018-02-01,181,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2002-09-01,170,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2019-09-01,189,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2001-08-01,222,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2015-02-01,206,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2022-02-01,192,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2009-06-01,170,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2008-03-01,209,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2014-09-01,196,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2023-04-01,173,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2010-05-01,198,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2023-01-01,200,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2004-07-01,200,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2003-06-01,205,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2003-09-01,187,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2015-03-01,233,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2004-09-01,193,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2005-08-01,200,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2007-08-01,166,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2014-01-01,209,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2015-01-01,190,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2001-07-01,128,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2010-11-01,184,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2006-08-01,170,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2005-11-01,190,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2007-11-01,33,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2017-01-01,184,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2017-08-01,192,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2005-09-01,206,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2006-05-01,200,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2003-04-01,217,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2003-11-01,191,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2004-05-01,227,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2011-02-01,167,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2017-02-01,161,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2010-02-01,156,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2000-05-01,192,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2014-07-01,195,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2019-11-01,218,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2012-12-01,211,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2010-09-01,163,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2002-04-01,207,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2012-08-01,164,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2011-11-01,183,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2020-02-01,181,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2004-12-01,185,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2013-01-01,193,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2001-11-01,195,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2011-10-01,197,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2020-08-01,219,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2003-07-01,188,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2022-12-01,197,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2007-06-01,173,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2004-02-01,160,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2012-06-01,183,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2014-02-01,162,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2002-10-01,207,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2002-01-01,173,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2001-12-01,77,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2016-11-01,183,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2013-08-01,189,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2017-06-01,195,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2023-03-01,247,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2008-11-01,193,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2001-10-01,183,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2000-07-01,214,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2004-10-01,175,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2006-09-01,116,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2003-02-01,155,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2010-08-01,172,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2020-04-01,228,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2000-06-01,177,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2004-04-01,198,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2014-03-01,179,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2007-01-01,163,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2002-07-01,172,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2020-11-01,167,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2013-11-01,185,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2014-05-01,204,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2022-05-01,199,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2006-03-01,191,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2021-05-01,216,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2013-06-01,181,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2008-02-01,172,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2019-12-01,186,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2015-07-01,202,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2022-01-01,201,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2015-09-01,236,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2020-03-01,197,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2015-04-01,195,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2016-01-01,164,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2006-11-01,177,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2000-09-01,235,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2009-05-01,218,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2001-09-01,223,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2006-07-01,196,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2019-07-01,193,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2016-07-01,175,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2018-08-01,221,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2018-11-01,205,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2023-07-01,208,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2010-06-01,178,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2013-04-01,171,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2010-12-01,164,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2008-10-01,206,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2001-06-01,131,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2019-06-01,169,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2009-09-01,193,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2016-09-01,180,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2011-06-01,181,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2015-06-01,202,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2016-02-01,161,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2011-07-01,183,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2017-03-01,221,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2010-04-01,208,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2008-12-01,189,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2000-04-01,198,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2008-05-01,172,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2021-03-01,223,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2002-11-01,204,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2003-12-01,205,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2022-03-01,207,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2010-01-01,204,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2018-03-01,212,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2018-07-01,200,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2016-10-01,191,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2018-12-01,200,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2017-11-01,219,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2011-01-01,182,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2007-12-01,150,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2002-06-01,195,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2017-05-01,240,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2005-12-01,185,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2020-05-01,225,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2000-08-01,212,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2022-08-01,224,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2004-11-01,204,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2001-04-01,130,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2003-08-01,195,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2023-10-01,209,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2009-11-01,166,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2004-08-01,192,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2016-03-01,195,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2004-06-01,193,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2006-04-01,203,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2015-10-01,206,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2023-06-01,167,NA,"ACTUAL","actual","histórico",NA,NA
+11006,2024-01-01,194.559712899532,1,"PROPHET","prediction","projeção",155.771159108245,233.348266690819
+11006,2024-02-01,189.767179294584,1,"PROPHET","prediction","projeção",150.978625503297,228.555733085871
+11006,2024-03-01,218.434125297292,1,"PROPHET","prediction","projeção",179.645571506005,257.222679088579
+11006,2024-04-01,214.014963978087,1,"PROPHET","prediction","projeção",175.2264101868,252.803517769374
+11006,2024-05-01,215.704433497283,1,"PROPHET","prediction","projeção",176.915879705996,254.49298728857
+11006,2024-06-01,199.583971956445,1,"PROPHET","prediction","projeção",160.795418165158,238.372525747732
+11006,2024-07-01,202.333748881372,1,"PROPHET","prediction","projeção",163.545195090085,241.122302672659
+11006,2024-08-01,209.501646295595,1,"PROPHET","prediction","projeção",170.713092504308,248.290200086882
+11006,2024-09-01,204.720859013761,1,"PROPHET","prediction","projeção",165.932305222474,243.509412805048
+11006,2024-10-01,204.905854101188,1,"PROPHET","prediction","projeção",166.117300309901,243.694407892475
+11006,2024-11-01,194.863411257615,1,"PROPHET","prediction","projeção",156.074857466328,233.651965048902
+11006,2024-12-01,196.703155789073,1,"PROPHET","prediction","projeção",157.914601997786,235.49170958036
+11006,2025-01-01,196.158513478069,1,"PROPHET","prediction","projeção",157.369959686782,234.947067269356
+11006,2025-02-01,191.082679714658,1,"PROPHET","prediction","projeção",152.294125923371,229.871233505945
+11006,2025-03-01,220.253899311104,1,"PROPHET","prediction","projeção",181.465345519817,259.042453102391
+11006,2025-04-01,214.843907765516,1,"PROPHET","prediction","projeção",176.055353974229,253.632461556803
+11006,2025-05-01,216.185838244455,1,"PROPHET","prediction","projeção",177.397284453168,254.974392035742
+11006,2025-06-01,200.518192795427,1,"PROPHET","prediction","projeção",161.72963900414,239.306746586714
+11006,2025-07-01,203.896108458561,1,"PROPHET","prediction","projeção",165.107554667274,242.684662249848
+11006,2025-08-01,210.803276886409,1,"PROPHET","prediction","projeção",172.014723095122,249.591830677696
+11006,2025-09-01,206.001346291079,1,"PROPHET","prediction","projeção",167.212792499792,244.789900082366
+11006,2025-10-01,205.749779390514,1,"PROPHET","prediction","projeção",166.961225599228,244.538333181801
+11006,2025-11-01,196.048164374048,1,"PROPHET","prediction","projeção",157.259610582761,234.836718165335
+11006,2025-12-01,197.578279633501,1,"PROPHET","prediction","projeção",158.789725842214,236.366833424788
+11006,2026-01-01,197.086168587304,1,"PROPHET","prediction","projeção",158.297614796017,235.87472237859
+11006,2026-02-01,192.092057175316,1,"PROPHET","prediction","projeção",153.303503384029,230.880610966603
+11006,2026-03-01,222.057627323107,1,"PROPHET","prediction","projeção",183.269073531821,260.846181114394
+11006,2026-04-01,215.651456947692,1,"PROPHET","prediction","projeção",176.862903156405,254.440010738979
+11006,2026-05-01,216.665612486656,1,"PROPHET","prediction","projeção",177.877058695369,255.454166277943
+11006,2026-06-01,201.473756089793,1,"PROPHET","prediction","projeção",162.685202298506,240.26230988108
+11006,2026-07-01,205.468270091279,1,"PROPHET","prediction","projeção",166.679716299992,244.256823882566
+11006,2026-08-01,212.098853801321,1,"PROPHET","prediction","projeção",173.310300010034,250.887407592608
+11006,2026-09-01,207.273233360787,1,"PROPHET","prediction","projeção",168.4846795695,246.061787152074
+11006,2026-10-01,206.587412191061,1,"PROPHET","prediction","projeção",167.798858399774,245.375965982348
+11006,2026-11-01,197.233688953166,1,"PROPHET","prediction","projeção",158.445135161879,236.022242744453
+11006,2026-12-01,198.452882057236,1,"PROPHET","prediction","projeção",159.664328265949,237.241435848523
+11006,2027-01-01,198.021181220807,1,"PROPHET","prediction","projeção",159.23262742952,236.809735012094
+11006,2027-02-01,193.121675473845,1,"PROPHET","prediction","projeção",154.333121682558,231.910229265132
+11006,2027-03-01,223.844375544148,1,"PROPHET","prediction","projeção",185.055821752861,262.632929335434
+11006,2027-04-01,216.437950117355,1,"PROPHET","prediction","projeção",177.649396326068,255.226503908642
+11006,2027-05-01,217.144731413215,1,"PROPHET","prediction","projeção",178.356177621928,255.933285204502
+11006,2027-06-01,202.450998142152,1,"PROPHET","prediction","projeção",163.662444350865,241.239551933439
+11006,2027-07-01,207.049575849393,1,"PROPHET","prediction","projeção",168.261022058106,245.83812964068
+11006,2027-08-01,213.387924421461,1,"PROPHET","prediction","projeção",174.599370630174,252.176478212748
+11006,2027-09-01,208.536327990476,1,"PROPHET","prediction","projeção",169.747774199189,247.324881781763
+11006,2027-10-01,207.419080420791,1,"PROPHET","prediction","projeção",168.630526629504,246.207634212078
+11006,2027-11-01,198.420105866252,1,"PROPHET","prediction","projeção",159.631552074965,237.208659657539
+11006,2027-12-01,199.327284590319,1,"PROPHET","prediction","projeção",160.538730799032,238.115838381606
+11006,2028-01-01,198.963829422681,1,"PROPHET","prediction","projeção",160.175275631394,237.752383213968
+11006,2028-02-01,194.171295817736,1,"PROPHET","prediction","projeção",155.382742026449,232.959849609023
+11006,2028-03-01,222.83824182045,1,"PROPHET","prediction","projeção",184.049688029163,261.626795611737
+11006,2028-04-01,218.419080501238,1,"PROPHET","prediction","projeção",179.630526709951,257.207634292525
+11006,2028-05-01,220.108550020432,1,"PROPHET","prediction","projeção",181.319996229145,258.897103811719
+11006,2028-06-01,203.988088479596,1,"PROPHET","prediction","projeção",165.199534688309,242.776642270883
+11006,2028-07-01,206.737865404526,1,"PROPHET","prediction","projeção",167.949311613239,245.526419195813
+11006,2028-08-01,213.905762818741,1,"PROPHET","prediction","projeção",175.117209027454,252.694316610028
+11006,2028-09-01,209.124975536913,1,"PROPHET","prediction","projeção",170.336421745626,247.9135293282
+11006,2028-10-01,209.309970624338,1,"PROPHET","prediction","projeção",170.521416833051,248.098524415625
+11006,2028-11-01,199.26752778076,1,"PROPHET","prediction","projeção",160.478973989473,238.056081572047
+11006,2028-12-01,201.107272312225,1,"PROPHET","prediction","projeção",162.318718520938,239.895826103512
+11006,2029-01-01,200.56263000122,1,"PROPHET","prediction","projeção",161.774076209933,239.351183792507
+11006,2029-02-01,195.486796237809,1,"PROPHET","prediction","projeção",156.698242446522,234.275350029096
+11006,2029-03-01,224.658015834259,1,"PROPHET","prediction","projeção",185.869462042972,263.446569625546
+11006,2029-04-01,219.248024288668,1,"PROPHET","prediction","projeção",180.459470497381,258.036578079955
+11006,2029-05-01,220.58995476761,1,"PROPHET","prediction","projeção",181.801400976323,259.378508558897
+11006,2029-06-01,204.922309318577,1,"PROPHET","prediction","projeção",166.13375552729,243.710863109864
+11006,2029-07-01,208.300224981711,1,"PROPHET","prediction","projeção",169.511671190424,247.088778772998
+11006,2029-08-01,215.207393409563,1,"PROPHET","prediction","projeção",176.418839618277,253.99594720085
+11006,2029-09-01,210.405462814229,1,"PROPHET","prediction","projeção",171.616909022942,249.194016605516
+11006,2029-10-01,210.153895913665,1,"PROPHET","prediction","projeção",171.365342122378,248.942449704952
+11006,2029-11-01,200.4522808972,1,"PROPHET","prediction","projeção",161.663727105913,239.240834688487
+11006,2029-12-01,201.982396156647,1,"PROPHET","prediction","projeção",163.19384236536,240.770949947934
+11006,2030-01-01,201.490285110455,1,"PROPHET","prediction","projeção",162.701731319168,240.278838901742
+11006,2030-02-01,196.496173698464,1,"PROPHET","prediction","projeção",157.707619907177,235.284727489751
+11006,2030-03-01,226.461743846258,1,"PROPHET","prediction","projeção",187.673190054971,265.250297637545
+11006,2030-04-01,220.055573470841,1,"PROPHET","prediction","projeção",181.267019679554,258.844127262128
+11006,2030-05-01,221.06972900981,1,"PROPHET","prediction","projeção",182.281175218523,259.858282801097
+11006,2030-06-01,205.877872612942,1,"PROPHET","prediction","projeção",167.089318821655,244.666426404229
+11006,2030-07-01,209.87238661443,1,"PROPHET","prediction","projeção",171.083832823143,248.660940405717
+11006,2030-08-01,216.502970324471,1,"PROPHET","prediction","projeção",177.714416533184,255.291524115758
+11006,2030-09-01,211.677349883938,1,"PROPHET","prediction","projeção",172.888796092651,250.465903675225
+11006,2030-10-01,210.991528714213,1,"PROPHET","prediction","projeção",172.202974922926,249.7800825055
+11006,2030-11-01,201.637805476321,1,"PROPHET","prediction","projeção",162.849251685034,240.426359267608
+11006,2030-12-01,202.856998580389,1,"PROPHET","prediction","projeção",164.068444789102,241.645552371676
+11006,2031-01-01,202.425297743958,1,"PROPHET","prediction","projeção",163.636743952671,241.213851535245
+11006,2031-02-01,197.525791996996,1,"PROPHET","prediction","projeção",158.737238205709,236.314345788283
+11006,2031-03-01,228.248492067302,1,"PROPHET","prediction","projeção",189.459938276015,267.037045858589
+11006,2031-04-01,220.842066640508,1,"PROPHET","prediction","projeção",182.053512849221,259.630620431795
+11006,2031-05-01,221.548847936362,1,"PROPHET","prediction","projeção",182.760294145076,260.337401727649
+11006,2031-06-01,206.855114665303,1,"PROPHET","prediction","projeção",168.066560874016,245.64366845659
+11006,2031-07-01,211.453692372548,1,"PROPHET","prediction","projeção",172.665138581261,250.242246163834
+11006,2031-08-01,217.792040944608,1,"PROPHET","prediction","projeção",179.003487153321,256.580594735895
+11006,2031-09-01,212.940444513628,1,"PROPHET","prediction","projeção",174.151890722341,251.728998304915
+11006,2031-10-01,211.823196943943,1,"PROPHET","prediction","projeção",173.034643152656,250.61175073523
+11006,2031-11-01,202.824222389402,1,"PROPHET","prediction","projeção",164.035668598115,241.612776180689
+11006,2031-12-01,203.731401113469,1,"PROPHET","prediction","projeção",164.942847322182,242.519954904756
+11006,2032-01-01,203.36794594583,1,"PROPHET","prediction","projeção",164.579392154543,242.156499737117
+11006,2032-02-01,198.575412340884,1,"PROPHET","prediction","projeção",159.786858549597,237.363966132171
+11006,2032-03-01,227.242358343597,1,"PROPHET","prediction","projeção",188.45380455231,266.030912134884
+11006,2032-04-01,222.823197024389,1,"PROPHET","prediction","projeção",184.034643233102,261.611750815676
+11006,2032-05-01,224.512666543574,1,"PROPHET","prediction","projeção",185.724112752287,263.301220334861
+11006,2032-06-01,208.392205002747,1,"PROPHET","prediction","projeção",169.60365121146,247.180758794034
+11006,2032-07-01,211.141981927674,1,"PROPHET","prediction","projeção",172.353428136387,249.930535718961
+11006,2032-08-01,218.309879341896,1,"PROPHET","prediction","projeção",179.521325550609,257.098433133182
+11006,2032-09-01,213.529092060061,1,"PROPHET","prediction","projeção",174.740538268774,252.317645851348
+11006,2032-10-01,213.71408714749,1,"PROPHET","prediction","projeção",174.925533356203,252.502640938777
+11006,2032-11-01,203.671644303915,1,"PROPHET","prediction","projeção",164.883090512628,242.460198095202
+11006,2032-12-01,205.511388835375,1,"PROPHET","prediction","projeção",166.722835044088,244.299942626662
+11006,2024-01-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2024-02-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2024-03-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2024-04-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2024-05-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2024-06-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2024-07-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2024-08-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2024-09-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2024-10-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2024-11-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2024-12-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2025-01-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2025-02-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2025-03-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2025-04-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2025-05-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2025-06-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2025-07-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2025-08-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2025-09-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2025-10-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2025-11-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2025-12-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2026-01-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2026-02-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2026-03-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2026-04-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2026-05-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2026-06-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2026-07-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2026-08-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2026-09-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2026-10-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2026-11-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2026-12-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2027-01-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2027-02-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2027-03-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2027-04-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2027-05-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2027-06-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2027-07-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2027-08-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2027-09-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2027-10-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2027-11-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2027-12-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2028-01-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2028-02-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2028-03-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2028-04-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2028-05-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2028-06-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2028-07-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2028-08-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2028-09-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2028-10-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2028-11-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2028-12-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2029-01-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2029-02-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2029-03-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2029-04-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2029-05-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2029-06-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2029-07-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2029-08-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2029-09-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2029-10-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2029-11-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2029-12-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2030-01-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2030-02-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2030-03-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2030-04-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2030-05-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2030-06-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2030-07-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2030-08-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2030-09-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2030-10-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2030-11-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2030-12-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2031-01-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2031-02-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2031-03-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2031-04-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2031-05-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2031-06-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2031-07-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2031-08-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2031-09-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2031-10-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2031-11-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2031-12-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2032-01-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2032-02-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2032-03-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2032-04-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2032-05-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2032-06-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2032-07-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2032-08-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2032-09-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2032-10-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2032-11-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358
+11006,2032-12-01,183.309326171875,2,"XGBOOST","prediction","projeção",149.973881072392,216.644771271358

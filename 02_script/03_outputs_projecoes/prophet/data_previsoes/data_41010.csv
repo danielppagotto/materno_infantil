@@ -1,0 +1,793 @@
+"cod_regsaude",".index",".value",".model_id",".model_desc",".key","tipo",".conf_lo",".conf_hi"
+41010,2006-08-01,563,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2009-01-01,594,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2009-11-01,588,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2017-09-01,659,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2016-02-01,646,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2001-08-01,661,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2008-01-01,578,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2005-11-01,570,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2008-10-01,574,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2019-11-01,632,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2020-12-01,623,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2018-02-01,616,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2012-06-01,651,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2003-03-01,658,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2001-04-01,632,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2000-11-01,651,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2000-07-01,714,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2013-07-01,674,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2004-08-01,618,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2003-10-01,573,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2001-03-01,728,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2000-03-01,777,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2001-05-01,673,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2010-08-01,604,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2017-11-01,616,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2003-04-01,618,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2003-01-01,610,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2012-08-01,642,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2019-12-01,679,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2009-08-01,565,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2021-11-01,597,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2021-10-01,599,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2006-01-01,651,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2011-09-01,563,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2017-01-01,647,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2015-06-01,654,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2003-12-01,607,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2022-01-01,643,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2001-01-01,739,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2001-10-01,587,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2020-04-01,729,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2011-03-01,691,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2019-07-01,741,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2007-12-01,536,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2008-12-01,560,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2004-11-01,532,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2018-03-01,675,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2023-01-01,725,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2019-02-01,692,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2013-10-01,590,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2023-09-01,632,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2002-07-01,634,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2013-12-01,650,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2021-12-01,685,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2015-07-01,645,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2022-03-01,731,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2000-05-01,746,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2018-11-01,597,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2006-05-01,697,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2010-03-01,687,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2013-11-01,591,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2014-08-01,630,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2022-10-01,557,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2007-10-01,535,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2019-04-01,721,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2003-02-01,596,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2015-11-01,615,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2022-02-01,637,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2023-05-01,702,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2002-08-01,642,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2014-07-01,692,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2007-05-01,654,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2015-09-01,643,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2016-11-01,528,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2014-09-01,626,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2006-07-01,638,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2012-11-01,601,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2009-09-01,634,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2004-04-01,636,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2003-07-01,651,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2001-12-01,668,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2019-10-01,609,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2018-04-01,725,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2002-03-01,724,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2018-12-01,639,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2018-05-01,756,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2001-02-01,651,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2003-06-01,636,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2020-11-01,587,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2017-03-01,748,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2008-06-01,623,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2003-08-01,614,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2000-09-01,676,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2015-03-01,768,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2015-10-01,641,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2013-05-01,667,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2005-03-01,702,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2019-06-01,656,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2008-11-01,509,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2013-01-01,713,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2001-07-01,670,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2014-06-01,706,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2006-04-01,658,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2014-02-01,660,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2005-08-01,680,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2000-12-01,649,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2021-07-01,633,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2016-06-01,675,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2014-04-01,705,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2002-06-01,560,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2006-09-01,556,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2009-12-01,565,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2003-09-01,594,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2007-09-01,546,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2001-06-01,665,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2006-10-01,584,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2010-06-01,645,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2020-05-01,718,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2018-07-01,715,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2000-06-01,716,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2002-04-01,662,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2016-03-01,726,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2019-08-01,665,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2020-09-01,675,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2015-04-01,667,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2004-10-01,610,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2004-02-01,566,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2007-04-01,570,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2002-10-01,592,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2015-01-01,726,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2016-12-01,562,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2004-07-01,639,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2023-10-01,606,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2007-11-01,509,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2009-03-01,657,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2021-02-01,662,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2016-10-01,570,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2007-02-01,617,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2008-04-01,640,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2013-06-01,606,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2011-07-01,641,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2022-07-01,611,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2011-12-01,605,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2019-03-01,769,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2022-12-01,643,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2019-09-01,687,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2012-01-01,574,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2005-06-01,676,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2009-04-01,624,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2021-09-01,643,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2001-11-01,566,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2005-05-01,701,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2006-02-01,631,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2020-06-01,668,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2016-09-01,649,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2007-01-01,678,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2008-08-01,561,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2010-04-01,604,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2012-05-01,690,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2014-12-01,637,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2011-06-01,597,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2023-04-01,643,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2000-02-01,764,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2017-02-01,632,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2007-08-01,534,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2001-09-01,654,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2003-05-01,662,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2010-07-01,621,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2012-04-01,652,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2005-02-01,624,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2002-05-01,718,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2005-04-01,676,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2013-09-01,560,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2022-09-01,619,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2008-02-01,573,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2011-01-01,650,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2023-08-01,622,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2019-01-01,714,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2018-10-01,599,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2009-10-01,583,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2022-06-01,651,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2010-09-01,558,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2023-06-01,626,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2011-08-01,653,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2009-05-01,568,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2014-11-01,593,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2002-11-01,593,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2017-12-01,631,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2013-03-01,624,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2018-08-01,703,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2010-10-01,559,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2002-09-01,639,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2020-01-01,709,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2016-05-01,724,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2000-01-01,773,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2021-06-01,608,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2008-05-01,643,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2004-12-01,567,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2020-08-01,627,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2011-02-01,604,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2005-09-01,627,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2021-03-01,711,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2007-06-01,667,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2010-11-01,573,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2018-09-01,689,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2020-10-01,615,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2015-05-01,708,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2003-11-01,595,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2016-01-01,732,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2006-11-01,520,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2016-08-01,603,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2012-02-01,557,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2002-02-01,627,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2017-10-01,605,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2004-06-01,626,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2011-10-01,574,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2020-07-01,623,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2004-01-01,654,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2000-04-01,767,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2000-08-01,763,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2012-03-01,679,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2018-06-01,677,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2012-12-01,619,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2017-04-01,736,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2022-04-01,662,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2005-01-01,666,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2012-07-01,600,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2021-05-01,697,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2008-07-01,660,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2023-11-01,573,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2009-07-01,584,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2023-07-01,667,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2016-04-01,701,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2009-06-01,573,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2014-03-01,749,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2017-08-01,687,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2004-03-01,727,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2015-08-01,627,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2018-01-01,727,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2011-04-01,626,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2006-12-01,575,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2009-02-01,588,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2005-12-01,583,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2011-05-01,596,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2022-08-01,646,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2006-03-01,691,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2021-04-01,693,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2014-10-01,652,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2005-07-01,711,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2023-02-01,583,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2010-02-01,619,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2017-07-01,684,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2023-12-01,630,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2014-05-01,697,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2013-04-01,663,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2016-07-01,680,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2011-11-01,509,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2015-12-01,656,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2014-01-01,672,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2008-09-01,580,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2010-05-01,624,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2023-03-01,702,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2013-02-01,629,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2007-03-01,679,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2005-10-01,595,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2010-01-01,609,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2004-09-01,655,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2008-03-01,652,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2015-02-01,654,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2002-01-01,658,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2017-05-01,758,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2006-06-01,632,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2020-03-01,708,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2004-05-01,685,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2021-08-01,657,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2022-05-01,718,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2007-07-01,644,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2017-06-01,713,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2000-10-01,686,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2012-10-01,570,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2012-09-01,650,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2013-08-01,580,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2021-01-01,661,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2002-12-01,592,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2010-12-01,590,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2019-05-01,728,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2020-02-01,636,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2022-11-01,553,0,"Dados Históricos","actual","histórico",NA,NA
+41010,2006-08-01,563,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2009-01-01,594,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2009-11-01,588,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2017-09-01,659,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2016-02-01,646,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2001-08-01,661,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2008-01-01,578,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2005-11-01,570,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2008-10-01,574,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2019-11-01,632,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2020-12-01,623,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2018-02-01,616,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2012-06-01,651,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2003-03-01,658,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2001-04-01,632,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2000-11-01,651,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2000-07-01,714,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2013-07-01,674,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2004-08-01,618,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2003-10-01,573,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2001-03-01,728,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2000-03-01,777,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2001-05-01,673,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2010-08-01,604,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2017-11-01,616,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2003-04-01,618,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2003-01-01,610,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2012-08-01,642,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2019-12-01,679,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2009-08-01,565,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2021-11-01,597,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2021-10-01,599,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2006-01-01,651,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2011-09-01,563,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2017-01-01,647,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2015-06-01,654,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2003-12-01,607,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2022-01-01,643,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2001-01-01,739,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2001-10-01,587,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2020-04-01,729,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2011-03-01,691,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2019-07-01,741,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2007-12-01,536,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2008-12-01,560,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2004-11-01,532,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2018-03-01,675,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2023-01-01,725,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2019-02-01,692,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2013-10-01,590,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2023-09-01,632,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2002-07-01,634,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2013-12-01,650,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2021-12-01,685,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2015-07-01,645,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2022-03-01,731,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2000-05-01,746,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2018-11-01,597,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2006-05-01,697,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2010-03-01,687,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2013-11-01,591,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2014-08-01,630,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2022-10-01,557,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2007-10-01,535,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2019-04-01,721,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2003-02-01,596,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2015-11-01,615,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2022-02-01,637,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2023-05-01,702,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2002-08-01,642,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2014-07-01,692,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2007-05-01,654,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2015-09-01,643,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2016-11-01,528,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2014-09-01,626,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2006-07-01,638,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2012-11-01,601,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2009-09-01,634,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2004-04-01,636,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2003-07-01,651,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2001-12-01,668,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2019-10-01,609,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2018-04-01,725,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2002-03-01,724,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2018-12-01,639,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2018-05-01,756,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2001-02-01,651,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2003-06-01,636,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2020-11-01,587,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2017-03-01,748,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2008-06-01,623,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2003-08-01,614,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2000-09-01,676,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2015-03-01,768,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2015-10-01,641,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2013-05-01,667,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2005-03-01,702,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2019-06-01,656,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2008-11-01,509,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2013-01-01,713,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2001-07-01,670,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2014-06-01,706,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2006-04-01,658,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2014-02-01,660,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2005-08-01,680,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2000-12-01,649,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2021-07-01,633,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2016-06-01,675,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2014-04-01,705,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2002-06-01,560,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2006-09-01,556,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2009-12-01,565,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2003-09-01,594,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2007-09-01,546,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2001-06-01,665,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2006-10-01,584,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2010-06-01,645,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2020-05-01,718,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2018-07-01,715,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2000-06-01,716,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2002-04-01,662,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2016-03-01,726,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2019-08-01,665,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2020-09-01,675,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2015-04-01,667,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2004-10-01,610,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2004-02-01,566,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2007-04-01,570,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2002-10-01,592,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2015-01-01,726,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2016-12-01,562,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2004-07-01,639,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2023-10-01,606,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2007-11-01,509,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2009-03-01,657,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2021-02-01,662,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2016-10-01,570,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2007-02-01,617,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2008-04-01,640,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2013-06-01,606,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2011-07-01,641,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2022-07-01,611,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2011-12-01,605,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2019-03-01,769,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2022-12-01,643,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2019-09-01,687,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2012-01-01,574,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2005-06-01,676,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2009-04-01,624,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2021-09-01,643,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2001-11-01,566,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2005-05-01,701,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2006-02-01,631,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2020-06-01,668,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2016-09-01,649,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2007-01-01,678,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2008-08-01,561,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2010-04-01,604,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2012-05-01,690,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2014-12-01,637,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2011-06-01,597,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2023-04-01,643,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2000-02-01,764,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2017-02-01,632,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2007-08-01,534,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2001-09-01,654,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2003-05-01,662,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2010-07-01,621,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2012-04-01,652,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2005-02-01,624,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2002-05-01,718,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2005-04-01,676,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2013-09-01,560,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2022-09-01,619,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2008-02-01,573,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2011-01-01,650,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2023-08-01,622,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2019-01-01,714,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2018-10-01,599,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2009-10-01,583,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2022-06-01,651,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2010-09-01,558,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2023-06-01,626,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2011-08-01,653,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2009-05-01,568,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2014-11-01,593,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2002-11-01,593,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2017-12-01,631,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2013-03-01,624,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2018-08-01,703,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2010-10-01,559,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2002-09-01,639,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2020-01-01,709,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2016-05-01,724,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2000-01-01,773,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2021-06-01,608,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2008-05-01,643,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2004-12-01,567,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2020-08-01,627,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2011-02-01,604,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2005-09-01,627,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2021-03-01,711,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2007-06-01,667,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2010-11-01,573,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2018-09-01,689,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2020-10-01,615,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2015-05-01,708,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2003-11-01,595,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2016-01-01,732,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2006-11-01,520,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2016-08-01,603,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2012-02-01,557,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2002-02-01,627,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2017-10-01,605,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2004-06-01,626,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2011-10-01,574,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2020-07-01,623,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2004-01-01,654,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2000-04-01,767,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2000-08-01,763,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2012-03-01,679,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2018-06-01,677,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2012-12-01,619,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2017-04-01,736,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2022-04-01,662,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2005-01-01,666,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2012-07-01,600,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2021-05-01,697,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2008-07-01,660,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2023-11-01,573,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2009-07-01,584,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2023-07-01,667,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2016-04-01,701,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2009-06-01,573,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2014-03-01,749,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2017-08-01,687,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2004-03-01,727,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2015-08-01,627,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2018-01-01,727,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2011-04-01,626,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2006-12-01,575,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2009-02-01,588,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2005-12-01,583,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2011-05-01,596,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2022-08-01,646,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2006-03-01,691,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2021-04-01,693,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2014-10-01,652,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2005-07-01,711,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2023-02-01,583,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2010-02-01,619,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2017-07-01,684,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2023-12-01,630,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2014-05-01,697,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2013-04-01,663,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2016-07-01,680,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2011-11-01,509,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2015-12-01,656,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2014-01-01,672,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2008-09-01,580,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2010-05-01,624,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2023-03-01,702,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2013-02-01,629,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2007-03-01,679,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2005-10-01,595,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2010-01-01,609,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2004-09-01,655,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2008-03-01,652,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2015-02-01,654,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2002-01-01,658,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2017-05-01,758,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2006-06-01,632,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2020-03-01,708,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2004-05-01,685,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2021-08-01,657,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2022-05-01,718,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2007-07-01,644,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2017-06-01,713,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2000-10-01,686,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2012-10-01,570,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2012-09-01,650,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2013-08-01,580,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2021-01-01,661,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2002-12-01,592,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2010-12-01,590,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2019-05-01,728,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2020-02-01,636,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2022-11-01,553,NA,"ACTUAL","actual","histórico",NA,NA
+41010,2024-01-01,668.670291019194,1,"PROPHET","prediction","projeção",588.608689152486,748.731892885902
+41010,2024-02-01,618.140145094024,1,"PROPHET","prediction","projeção",538.078543227316,698.201746960732
+41010,2024-03-01,695.05781624461,1,"PROPHET","prediction","projeção",614.996214377903,775.119418111318
+41010,2024-04-01,677.374933008553,1,"PROPHET","prediction","projeção",597.313331141845,757.436534875261
+41010,2024-05-01,683.05495392158,1,"PROPHET","prediction","projeção",602.993352054873,763.116555788288
+41010,2024-06-01,639.568136353097,1,"PROPHET","prediction","projeção",559.506534486389,719.629738219804
+41010,2024-07-01,636.854762858846,1,"PROPHET","prediction","projeção",556.793160992138,716.916364725553
+41010,2024-08-01,625.928968296413,1,"PROPHET","prediction","projeção",545.867366429705,705.990570163121
+41010,2024-09-01,633.240815990897,1,"PROPHET","prediction","projeção",553.179214124189,713.302417857605
+41010,2024-10-01,591.359632307627,1,"PROPHET","prediction","projeção",511.298030440919,671.421234174334
+41010,2024-11-01,566.675780134721,1,"PROPHET","prediction","projeção",486.614178268013,646.737382001428
+41010,2024-12-01,598.625964670895,1,"PROPHET","prediction","projeção",518.564362804187,678.687566537603
+41010,2025-01-01,660.243646758932,1,"PROPHET","prediction","projeção",580.182044892224,740.305248625639
+41010,2025-02-01,623.658962894228,1,"PROPHET","prediction","projeção",543.597361027521,703.720564760936
+41010,2025-03-01,693.794061962318,1,"PROPHET","prediction","projeção",613.73246009561,773.855663829026
+41010,2025-04-01,661.126510581907,1,"PROPHET","prediction","projeção",581.0649087152,741.188112448615
+41010,2025-05-01,677.104229342373,1,"PROPHET","prediction","projeção",597.042627475666,757.165831209081
+41010,2025-06-01,633.964271518867,1,"PROPHET","prediction","projeção",553.902669652159,714.025873385575
+41010,2025-07-01,640.35896167901,1,"PROPHET","prediction","projeção",560.297359812302,720.420563545718
+41010,2025-08-01,619.249297471483,1,"PROPHET","prediction","projeção",539.187695604776,699.310899338191
+41010,2025-09-01,617.621362187374,1,"PROPHET","prediction","projeção",537.559760320666,697.682964054081
+41010,2025-10-01,582.449402008063,1,"PROPHET","prediction","projeção",502.387800141355,662.511003874771
+41010,2025-11-01,560.991833787108,1,"PROPHET","prediction","projeção",480.930231920401,641.053435653816
+41010,2025-12-01,597.975762369097,1,"PROPHET","prediction","projeção",517.914160502389,678.037364235805
+41010,2026-01-01,654.332583972333,1,"PROPHET","prediction","projeção",574.270982105625,734.394185839041
+41010,2026-02-01,612.938338916723,1,"PROPHET","prediction","projeção",532.876737050015,692.99994078343
+41010,2026-03-01,692.416949788741,1,"PROPHET","prediction","projeção",612.355347922033,772.478551655449
+41010,2026-04-01,644.847439962492,1,"PROPHET","prediction","projeção",564.785838095785,724.9090418292
+41010,2026-05-01,671.331546879039,1,"PROPHET","prediction","projeção",591.269945012331,751.393148745747
+41010,2026-06-01,628.533457898967,1,"PROPHET","prediction","projeção",548.471856032259,708.595059765674
+41010,2026-07-01,643.782459039042,1,"PROPHET","prediction","projeção",563.720857172334,723.844060905749
+41010,2026-08-01,612.268753201127,1,"PROPHET","prediction","projeção",532.207151334419,692.330355067835
+41010,2026-09-01,601.911316565105,1,"PROPHET","prediction","projeção",521.849714698397,681.972918431813
+41010,2026-10-01,573.712816733723,1,"PROPHET","prediction","projeção",493.651214867015,653.774418600431
+41010,2026-11-01,555.492798669636,1,"PROPHET","prediction","projeção",475.431196802929,635.554400536344
+41010,2026-12-01,597.329922233071,1,"PROPHET","prediction","projeção",517.268320366363,677.391524099779
+41010,2027-01-01,648.268131122391,1,"PROPHET","prediction","projeção",568.206529255683,728.329732989099
+41010,2027-02-01,602.223821289288,1,"PROPHET","prediction","projeção",522.16221942258,682.285423155996
+41010,2027-03-01,690.924047260113,1,"PROPHET","prediction","projeção",610.862445393405,770.985649126821
+41010,2027-04-01,628.547928171848,1,"PROPHET","prediction","projeção",548.48632630514,708.609530038555
+41010,2027-05-01,665.737851056646,1,"PROPHET","prediction","projeção",585.676249189938,745.799452923354
+41010,2027-06-01,623.271329946227,1,"PROPHET","prediction","projeção",543.209728079519,703.332931812935
+41010,2027-07-01,647.113011206541,1,"PROPHET","prediction","projeção",567.051409339833,727.174613073249
+41010,2027-08-01,604.987677285107,1,"PROPHET","prediction","projeção",524.926075418399,685.049279151815
+41010,2027-09-01,586.122492382077,1,"PROPHET","prediction","projeção",506.060890515369,666.184094248785
+41010,2027-10-01,565.155017206009,1,"PROPHET","prediction","projeção",485.093415339301,645.216619072716
+41010,2027-11-01,550.176403594909,1,"PROPHET","prediction","projeção",470.114801728201,630.238005461617
+41010,2027-12-01,596.679926830337,1,"PROPHET","prediction","projeção",516.618324963629,676.741528697045
+41010,2028-01-01,642.048386582842,1,"PROPHET","prediction","projeção",561.986784716134,722.10998844955
+41010,2028-02-01,591.518240657703,1,"PROPHET","prediction","projeção",511.456638790995,671.57984252441
+41010,2028-03-01,668.435911808333,1,"PROPHET","prediction","projeção",588.374309941625,748.497513675041
+41010,2028-04-01,650.753028572266,1,"PROPHET","prediction","projeção",570.691426705558,730.814630438974
+41010,2028-05-01,656.433049485267,1,"PROPHET","prediction","projeção",576.371447618559,736.494651351975
+41010,2028-06-01,612.946231916776,1,"PROPHET","prediction","projeção",532.884630050068,693.007833783484
+41010,2028-07-01,610.232858422562,1,"PROPHET","prediction","projeção",530.171256555854,690.29446028927
+41010,2028-08-01,599.307063860084,1,"PROPHET","prediction","projeção",519.245461993376,679.368665726792
+41010,2028-09-01,606.6189115545,1,"PROPHET","prediction","projeção",526.557309687793,686.680513421208
+41010,2028-10-01,564.737727871303,1,"PROPHET","prediction","projeção",484.676126004595,644.799329738011
+41010,2028-11-01,540.053875698317,1,"PROPHET","prediction","projeção",459.992273831609,620.115477565025
+41010,2028-12-01,572.004060234581,1,"PROPHET","prediction","projeção",491.942458367874,652.065662101289
+41010,2029-01-01,633.621742322618,1,"PROPHET","prediction","projeção",553.56014045591,713.683344189325
+41010,2029-02-01,597.037058457914,1,"PROPHET","prediction","projeção",516.975456591206,677.098660324621
+41010,2029-03-01,667.172157526017,1,"PROPHET","prediction","projeção",587.11055565931,747.233759392725
+41010,2029-04-01,634.504606145633,1,"PROPHET","prediction","projeção",554.443004278925,714.566208012341
+41010,2029-05-01,650.482324906077,1,"PROPHET","prediction","projeção",570.420723039369,730.543926772785
+41010,2029-06-01,607.342367082573,1,"PROPHET","prediction","projeção",527.280765215865,687.403968949281
+41010,2029-07-01,613.737057242646,1,"PROPHET","prediction","projeção",533.675455375939,693.798659109354
+41010,2029-08-01,592.627393035172,1,"PROPHET","prediction","projeção",512.565791168464,672.688994901879
+41010,2029-09-01,590.999457751003,1,"PROPHET","prediction","projeção",510.937855884295,671.06105961771
+41010,2029-10-01,555.827497571757,1,"PROPHET","prediction","projeção",475.765895705049,635.889099438464
+41010,2029-11-01,534.369929350787,1,"PROPHET","prediction","projeção",454.30832748408,614.431531217495
+41010,2029-12-01,571.353857932786,1,"PROPHET","prediction","projeção",491.292256066078,651.415459799494
+41010,2030-01-01,627.710679535985,1,"PROPHET","prediction","projeção",547.649077669277,707.772281402693
+41010,2030-02-01,586.316434480378,1,"PROPHET","prediction","projeção",506.25483261367,666.378036347086
+41010,2030-03-01,665.795045352426,1,"PROPHET","prediction","projeção",585.733443485718,745.856647219134
+41010,2030-04-01,618.225535526068,1,"PROPHET","prediction","projeção",538.16393365936,698.287137392776
+41010,2030-05-01,644.709642442683,1,"PROPHET","prediction","projeção",564.648040575976,724.771244309391
+41010,2030-06-01,601.911553462649,1,"PROPHET","prediction","projeção",521.849951595941,681.973155329357
+41010,2030-07-01,617.16055460275,1,"PROPHET","prediction","projeção",537.098952736043,697.222156469458
+41010,2030-08-01,585.646848764793,1,"PROPHET","prediction","projeção",505.585246898085,665.708450631501
+41010,2030-09-01,575.289412128872,1,"PROPHET","prediction","projeção",495.227810262164,655.35101399558
+41010,2030-10-01,547.090912297425,1,"PROPHET","prediction","projeção",467.029310430717,627.152514164133
+41010,2030-11-01,528.870894233345,1,"PROPHET","prediction","projeção",448.809292366637,608.932496100053
+41010,2030-12-01,570.708017796674,1,"PROPHET","prediction","projeção",490.646415929966,650.769619663382
+41010,2031-01-01,621.64622668608,1,"PROPHET","prediction","projeção",541.584624819372,701.707828552788
+41010,2031-02-01,575.601916852947,1,"PROPHET","prediction","projeção",495.540314986239,655.663518719655
+41010,2031-03-01,664.302142823835,1,"PROPHET","prediction","projeção",584.240540957127,744.363744690543
+41010,2031-04-01,601.926023735548,1,"PROPHET","prediction","projeção",521.864421868841,681.987625602256
+41010,2031-05-01,639.115946620361,1,"PROPHET","prediction","projeção",559.054344753653,719.177548487069
+41010,2031-06-01,596.64942550996,1,"PROPHET","prediction","projeção",516.587823643252,676.711027376667
+41010,2031-07-01,620.491106770252,1,"PROPHET","prediction","projeção",540.429504903544,700.55270863696
+41010,2031-08-01,578.365772848774,1,"PROPHET","prediction","projeção",498.304170982066,658.427374715481
+41010,2031-09-01,559.500587945678,1,"PROPHET","prediction","projeção",479.43898607897,639.562189812385
+41010,2031-10-01,538.533112769697,1,"PROPHET","prediction","projeção",458.471510902989,618.594714636405
+41010,2031-11-01,523.554499158568,1,"PROPHET","prediction","projeção",443.492897291861,603.616101025276
+41010,2031-12-01,570.058022393982,1,"PROPHET","prediction","projeção",489.996420527274,650.11962426069
+41010,2032-01-01,615.426482146514,1,"PROPHET","prediction","projeção",535.364880279807,695.488084013222
+41010,2032-02-01,564.896336221373,1,"PROPHET","prediction","projeção",484.834734354665,644.957938088081
+41010,2032-03-01,641.814007372015,1,"PROPHET","prediction","projeção",561.752405505307,721.875609238722
+41010,2032-04-01,624.131124135889,1,"PROPHET","prediction","projeção",544.069522269181,704.192726002596
+41010,2032-05-01,629.811145048928,1,"PROPHET","prediction","projeção",549.74954318222,709.872746915636
+41010,2032-06-01,586.32432748045,1,"PROPHET","prediction","projeção",506.262725613742,666.385929347158
+41010,2032-07-01,583.610953986223,1,"PROPHET","prediction","projeção",503.549352119516,663.672555852931
+41010,2032-08-01,572.685159423773,1,"PROPHET","prediction","projeção",492.623557557065,652.746761290481
+41010,2032-09-01,579.997007118222,1,"PROPHET","prediction","projeção",499.935405251514,660.05860898493
+41010,2032-10-01,538.115823434966,1,"PROPHET","prediction","projeção",458.054221568259,618.177425301674
+41010,2032-11-01,513.431971262059,1,"PROPHET","prediction","projeção",433.370369395351,593.493573128767
+41010,2032-12-01,545.382155798233,1,"PROPHET","prediction","projeção",465.320553931525,625.443757664941
+41010,2024-01-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2024-02-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2024-03-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2024-04-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2024-05-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2024-06-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2024-07-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2024-08-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2024-09-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2024-10-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2024-11-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2024-12-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2025-01-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2025-02-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2025-03-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2025-04-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2025-05-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2025-06-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2025-07-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2025-08-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2025-09-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2025-10-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2025-11-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2025-12-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2026-01-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2026-02-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2026-03-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2026-04-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2026-05-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2026-06-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2026-07-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2026-08-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2026-09-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2026-10-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2026-11-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2026-12-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2027-01-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2027-02-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2027-03-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2027-04-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2027-05-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2027-06-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2027-07-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2027-08-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2027-09-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2027-10-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2027-11-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2027-12-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2028-01-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2028-02-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2028-03-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2028-04-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2028-05-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2028-06-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2028-07-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2028-08-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2028-09-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2028-10-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2028-11-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2028-12-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2029-01-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2029-02-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2029-03-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2029-04-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2029-05-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2029-06-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2029-07-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2029-08-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2029-09-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2029-10-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2029-11-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2029-12-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2030-01-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2030-02-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2030-03-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2030-04-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2030-05-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2030-06-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2030-07-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2030-08-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2030-09-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2030-10-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2030-11-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2030-12-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2031-01-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2031-02-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2031-03-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2031-04-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2031-05-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2031-06-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2031-07-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2031-08-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2031-09-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2031-10-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2031-11-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2031-12-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2032-01-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2032-02-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2032-03-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2032-04-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2032-05-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2032-06-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2032-07-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2032-08-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2032-09-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2032-10-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2032-11-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135
+41010,2032-12-01,617.684020996094,2,"XGBOOST","prediction","projeção",521.006341658052,714.361700334135

@@ -1,0 +1,793 @@
+"cod_regsaude",".index",".value",".model_id",".model_desc",".key","tipo",".conf_lo",".conf_hi"
+31044,2012-05-01,175,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2013-04-01,183,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2023-04-01,124,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2010-08-01,153,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2021-05-01,111,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2022-08-01,128,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2019-04-01,192,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2009-10-01,167,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2001-11-01,163,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2011-05-01,198,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2000-03-01,234,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2011-11-01,159,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2016-12-01,142,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2014-06-01,180,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2000-04-01,213,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2008-10-01,140,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2009-04-01,182,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2016-03-01,201,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2003-09-01,186,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2017-10-01,125,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2000-05-01,222,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2004-07-01,152,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2016-05-01,199,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2016-08-01,125,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2002-02-01,201,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2012-02-01,192,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2004-08-01,116,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2013-09-01,128,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2014-05-01,173,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2015-10-01,159,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2021-02-01,144,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2003-12-01,133,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2002-04-01,228,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2013-12-01,158,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2005-09-01,155,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2005-12-01,145,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2023-03-01,148,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2009-07-01,148,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2002-09-01,159,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2013-10-01,141,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2022-12-01,121,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2002-07-01,186,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2000-06-01,187,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2003-10-01,154,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2007-09-01,142,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2009-06-01,166,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2002-03-01,211,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2018-12-01,150,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2010-10-01,137,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2011-06-01,152,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2005-10-01,159,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2003-04-01,217,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2006-04-01,197,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2012-01-01,188,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2001-07-01,180,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2016-01-01,153,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2004-10-01,147,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2006-07-01,166,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2015-12-01,121,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2012-12-01,160,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2008-01-01,133,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2012-11-01,152,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2005-07-01,208,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2016-11-01,116,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2017-02-01,172,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2020-02-01,170,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2006-05-01,226,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2010-06-01,154,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2008-04-01,171,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2023-01-01,149,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2018-09-01,118,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2014-12-01,165,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2022-11-01,115,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2021-01-01,151,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2005-08-01,167,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2019-10-01,154,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2017-12-01,159,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2007-12-01,161,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2006-08-01,168,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2008-11-01,116,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2001-09-01,207,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2021-10-01,114,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2003-06-01,185,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2007-02-01,157,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2007-07-01,165,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2011-12-01,180,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2007-04-01,170,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2017-09-01,147,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2004-11-01,136,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2006-02-01,159,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2004-06-01,204,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2004-01-01,167,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2004-12-01,143,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2007-10-01,141,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2017-03-01,215,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2016-02-01,174,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2013-11-01,148,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2008-08-01,157,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2023-10-01,119,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2006-10-01,149,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2017-11-01,143,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2005-04-01,222,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2008-06-01,179,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2019-05-01,152,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2014-10-01,135,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2009-08-01,128,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2002-11-01,151,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2019-01-01,166,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2015-08-01,131,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2002-10-01,129,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2002-05-01,176,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2017-07-01,209,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2023-05-01,153,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2009-03-01,196,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2010-09-01,116,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2004-04-01,192,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2019-03-01,185,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2022-10-01,116,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2004-05-01,194,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2006-11-01,148,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2023-09-01,118,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2018-07-01,166,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2012-04-01,162,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2012-06-01,162,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2020-09-01,147,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2002-01-01,195,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2004-03-01,188,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2007-06-01,159,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2022-05-01,137,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2007-03-01,192,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2001-02-01,209,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2020-12-01,141,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2021-09-01,130,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2014-09-01,157,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2001-04-01,217,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2010-04-01,161,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2018-11-01,131,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2011-01-01,144,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2021-04-01,165,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2021-12-01,142,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2023-11-01,95,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2003-08-01,165,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2021-07-01,118,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2006-06-01,186,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2015-02-01,162,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2014-02-01,163,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2018-02-01,156,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2014-11-01,159,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2007-05-01,196,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2020-11-01,117,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2012-10-01,145,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2019-09-01,125,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2010-03-01,218,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2019-11-01,131,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2011-07-01,192,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2009-05-01,162,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2011-02-01,170,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2014-08-01,153,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2022-07-01,117,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2008-05-01,177,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2007-11-01,110,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2016-09-01,127,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2006-12-01,152,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2018-08-01,158,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2005-01-01,183,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2011-08-01,142,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2019-07-01,156,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2002-12-01,154,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2022-02-01,133,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2020-01-01,149,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2008-12-01,141,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2022-03-01,146,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2022-06-01,147,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2013-08-01,137,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2000-08-01,178,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2005-06-01,190,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2009-11-01,125,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2001-01-01,194,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2017-06-01,181,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2019-02-01,172,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2023-02-01,123,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2000-10-01,194,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2004-09-01,146,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2013-02-01,143,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2005-11-01,160,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2011-10-01,128,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2010-05-01,164,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2000-09-01,191,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2013-06-01,148,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2020-08-01,116,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2020-05-01,150,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2001-08-01,174,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2014-04-01,163,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2016-04-01,188,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2012-09-01,137,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2019-06-01,153,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2002-06-01,183,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2006-01-01,149,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2000-02-01,190,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2020-10-01,125,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2003-11-01,154,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2009-12-01,145,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2015-01-01,157,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2005-05-01,201,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2012-03-01,216,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2012-07-01,187,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2017-05-01,180,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2015-04-01,186,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2020-04-01,183,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2023-08-01,124,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2010-07-01,141,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2023-06-01,130,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2015-06-01,169,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2011-03-01,220,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2005-02-01,179,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2012-08-01,146,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2002-08-01,183,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2013-07-01,134,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2015-07-01,165,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2008-03-01,189,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2008-02-01,160,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2023-07-01,128,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2000-01-01,138,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2010-12-01,128,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2006-09-01,159,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2000-07-01,237,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2001-06-01,183,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2018-06-01,177,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2010-02-01,168,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2008-07-01,154,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2013-05-01,185,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2017-04-01,168,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2003-01-01,200,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2003-03-01,193,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2018-03-01,188,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2021-11-01,113,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2018-01-01,172,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2001-12-01,211,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2004-02-01,170,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2000-12-01,191,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2003-07-01,182,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2010-11-01,133,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2019-12-01,122,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2021-08-01,126,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2020-07-01,135,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2003-05-01,203,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2023-12-01,91,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2007-08-01,132,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2014-01-01,164,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2016-10-01,141,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2017-01-01,145,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2011-09-01,148,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2015-03-01,179,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2015-09-01,142,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2005-03-01,225,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2019-08-01,149,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2021-06-01,152,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2022-09-01,103,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2009-09-01,142,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2001-05-01,192,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2022-04-01,171,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2015-05-01,190,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2003-02-01,205,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2001-10-01,164,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2010-01-01,168,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2016-06-01,164,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2020-03-01,165,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2014-07-01,171,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2011-04-01,162,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2008-09-01,137,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2018-05-01,176,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2013-01-01,175,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2018-10-01,142,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2015-11-01,123,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2022-01-01,138,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2020-06-01,154,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2001-03-01,191,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2017-08-01,156,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2021-03-01,155,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2000-11-01,149,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2014-03-01,158,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2009-01-01,144,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2016-07-01,147,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2007-01-01,185,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2018-04-01,162,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2009-02-01,169,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2006-03-01,188,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2013-03-01,181,0,"Dados Históricos","actual","histórico",NA,NA
+31044,2012-05-01,175,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2013-04-01,183,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2023-04-01,124,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2010-08-01,153,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2021-05-01,111,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2022-08-01,128,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2019-04-01,192,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2009-10-01,167,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2001-11-01,163,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2011-05-01,198,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2000-03-01,234,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2011-11-01,159,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2016-12-01,142,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2014-06-01,180,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2000-04-01,213,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2008-10-01,140,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2009-04-01,182,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2016-03-01,201,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2003-09-01,186,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2017-10-01,125,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2000-05-01,222,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2004-07-01,152,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2016-05-01,199,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2016-08-01,125,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2002-02-01,201,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2012-02-01,192,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2004-08-01,116,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2013-09-01,128,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2014-05-01,173,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2015-10-01,159,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2021-02-01,144,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2003-12-01,133,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2002-04-01,228,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2013-12-01,158,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2005-09-01,155,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2005-12-01,145,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2023-03-01,148,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2009-07-01,148,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2002-09-01,159,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2013-10-01,141,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2022-12-01,121,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2002-07-01,186,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2000-06-01,187,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2003-10-01,154,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2007-09-01,142,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2009-06-01,166,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2002-03-01,211,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2018-12-01,150,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2010-10-01,137,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2011-06-01,152,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2005-10-01,159,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2003-04-01,217,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2006-04-01,197,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2012-01-01,188,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2001-07-01,180,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2016-01-01,153,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2004-10-01,147,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2006-07-01,166,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2015-12-01,121,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2012-12-01,160,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2008-01-01,133,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2012-11-01,152,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2005-07-01,208,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2016-11-01,116,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2017-02-01,172,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2020-02-01,170,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2006-05-01,226,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2010-06-01,154,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2008-04-01,171,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2023-01-01,149,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2018-09-01,118,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2014-12-01,165,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2022-11-01,115,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2021-01-01,151,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2005-08-01,167,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2019-10-01,154,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2017-12-01,159,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2007-12-01,161,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2006-08-01,168,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2008-11-01,116,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2001-09-01,207,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2021-10-01,114,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2003-06-01,185,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2007-02-01,157,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2007-07-01,165,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2011-12-01,180,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2007-04-01,170,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2017-09-01,147,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2004-11-01,136,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2006-02-01,159,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2004-06-01,204,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2004-01-01,167,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2004-12-01,143,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2007-10-01,141,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2017-03-01,215,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2016-02-01,174,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2013-11-01,148,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2008-08-01,157,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2023-10-01,119,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2006-10-01,149,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2017-11-01,143,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2005-04-01,222,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2008-06-01,179,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2019-05-01,152,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2014-10-01,135,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2009-08-01,128,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2002-11-01,151,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2019-01-01,166,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2015-08-01,131,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2002-10-01,129,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2002-05-01,176,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2017-07-01,209,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2023-05-01,153,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2009-03-01,196,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2010-09-01,116,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2004-04-01,192,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2019-03-01,185,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2022-10-01,116,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2004-05-01,194,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2006-11-01,148,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2023-09-01,118,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2018-07-01,166,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2012-04-01,162,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2012-06-01,162,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2020-09-01,147,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2002-01-01,195,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2004-03-01,188,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2007-06-01,159,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2022-05-01,137,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2007-03-01,192,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2001-02-01,209,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2020-12-01,141,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2021-09-01,130,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2014-09-01,157,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2001-04-01,217,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2010-04-01,161,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2018-11-01,131,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2011-01-01,144,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2021-04-01,165,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2021-12-01,142,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2023-11-01,95,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2003-08-01,165,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2021-07-01,118,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2006-06-01,186,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2015-02-01,162,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2014-02-01,163,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2018-02-01,156,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2014-11-01,159,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2007-05-01,196,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2020-11-01,117,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2012-10-01,145,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2019-09-01,125,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2010-03-01,218,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2019-11-01,131,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2011-07-01,192,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2009-05-01,162,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2011-02-01,170,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2014-08-01,153,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2022-07-01,117,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2008-05-01,177,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2007-11-01,110,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2016-09-01,127,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2006-12-01,152,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2018-08-01,158,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2005-01-01,183,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2011-08-01,142,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2019-07-01,156,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2002-12-01,154,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2022-02-01,133,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2020-01-01,149,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2008-12-01,141,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2022-03-01,146,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2022-06-01,147,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2013-08-01,137,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2000-08-01,178,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2005-06-01,190,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2009-11-01,125,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2001-01-01,194,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2017-06-01,181,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2019-02-01,172,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2023-02-01,123,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2000-10-01,194,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2004-09-01,146,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2013-02-01,143,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2005-11-01,160,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2011-10-01,128,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2010-05-01,164,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2000-09-01,191,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2013-06-01,148,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2020-08-01,116,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2020-05-01,150,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2001-08-01,174,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2014-04-01,163,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2016-04-01,188,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2012-09-01,137,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2019-06-01,153,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2002-06-01,183,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2006-01-01,149,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2000-02-01,190,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2020-10-01,125,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2003-11-01,154,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2009-12-01,145,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2015-01-01,157,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2005-05-01,201,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2012-03-01,216,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2012-07-01,187,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2017-05-01,180,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2015-04-01,186,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2020-04-01,183,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2023-08-01,124,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2010-07-01,141,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2023-06-01,130,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2015-06-01,169,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2011-03-01,220,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2005-02-01,179,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2012-08-01,146,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2002-08-01,183,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2013-07-01,134,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2015-07-01,165,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2008-03-01,189,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2008-02-01,160,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2023-07-01,128,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2000-01-01,138,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2010-12-01,128,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2006-09-01,159,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2000-07-01,237,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2001-06-01,183,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2018-06-01,177,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2010-02-01,168,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2008-07-01,154,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2013-05-01,185,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2017-04-01,168,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2003-01-01,200,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2003-03-01,193,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2018-03-01,188,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2021-11-01,113,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2018-01-01,172,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2001-12-01,211,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2004-02-01,170,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2000-12-01,191,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2003-07-01,182,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2010-11-01,133,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2019-12-01,122,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2021-08-01,126,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2020-07-01,135,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2003-05-01,203,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2023-12-01,91,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2007-08-01,132,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2014-01-01,164,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2016-10-01,141,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2017-01-01,145,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2011-09-01,148,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2015-03-01,179,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2015-09-01,142,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2005-03-01,225,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2019-08-01,149,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2021-06-01,152,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2022-09-01,103,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2009-09-01,142,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2001-05-01,192,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2022-04-01,171,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2015-05-01,190,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2003-02-01,205,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2001-10-01,164,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2010-01-01,168,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2016-06-01,164,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2020-03-01,165,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2014-07-01,171,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2011-04-01,162,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2008-09-01,137,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2018-05-01,176,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2013-01-01,175,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2018-10-01,142,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2015-11-01,123,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2022-01-01,138,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2020-06-01,154,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2001-03-01,191,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2017-08-01,156,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2021-03-01,155,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2000-11-01,149,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2014-03-01,158,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2009-01-01,144,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2016-07-01,147,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2007-01-01,185,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2018-04-01,162,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2009-02-01,169,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2006-03-01,188,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2013-03-01,181,NA,"ACTUAL","actual","histórico",NA,NA
+31044,2024-01-01,125.27408140147,1,"PROPHET","prediction","projeção",82.7236565438725,167.824506259066
+31044,2024-02-01,137.758146293195,1,"PROPHET","prediction","projeção",95.207721435598,180.308571150792
+31044,2024-03-01,156.642465480585,1,"PROPHET","prediction","projeção",114.092040622988,199.192890338182
+31044,2024-04-01,147.609204772295,1,"PROPHET","prediction","projeção",105.058779914698,190.159629629892
+31044,2024-05-01,140.721434671979,1,"PROPHET","prediction","projeção",98.1710098143823,183.271859529576
+31044,2024-06-01,136.278048607548,1,"PROPHET","prediction","projeção",93.7276237499514,178.828473465145
+31044,2024-07-01,128.290309236737,1,"PROPHET","prediction","projeção",85.7398843791405,170.840734094334
+31044,2024-08-01,106.104834075612,1,"PROPHET","prediction","projeção",63.5544092180151,148.655258933209
+31044,2024-09-01,108.919772559746,1,"PROPHET","prediction","projeção",66.3693477021492,151.470197417343
+31044,2024-10-01,106.310551669257,1,"PROPHET","prediction","projeção",63.7601268116601,148.860976526854
+31044,2024-11-01,95.1962275176753,1,"PROPHET","prediction","projeção",52.6458026600784,137.746652375272
+31044,2024-12-01,115.33557363091,1,"PROPHET","prediction","projeção",72.7851487733126,157.885998488506
+31044,2025-01-01,125.216813371642,1,"PROPHET","prediction","projeção",82.6663885140448,167.767238229239
+31044,2025-02-01,123.472759995187,1,"PROPHET","prediction","projeção",80.9223351375899,166.023184852784
+31044,2025-03-01,150.951496273114,1,"PROPHET","prediction","projeção",108.401071415517,193.501921130711
+31044,2025-04-01,142.133630561296,1,"PROPHET","prediction","projeção",99.5832057036995,184.684055418893
+31044,2025-05-01,137.321248774854,1,"PROPHET","prediction","projeção",94.770823917257,179.871673632451
+31044,2025-06-01,128.843216395879,1,"PROPHET","prediction","projeção",86.2927915382822,171.393641253476
+31044,2025-07-01,123.193822363256,1,"PROPHET","prediction","projeção",80.6433975056594,165.744247220853
+31044,2025-08-01,103.709438649064,1,"PROPHET","prediction","projeção",61.1590137914671,146.259863506661
+31044,2025-09-01,103.301407802419,1,"PROPHET","prediction","projeção",60.7509829448217,145.851832660016
+31044,2025-10-01,101.108604002358,1,"PROPHET","prediction","projeção",58.5581791447611,143.659028859955
+31044,2025-11-01,92.3647380391813,1,"PROPHET","prediction","projeção",49.8143131815844,134.915162896778
+31044,2025-12-01,107.537171769958,1,"PROPHET","prediction","projeção",64.9867469123613,150.087596627555
+31044,2026-01-01,118.587491347027,1,"PROPHET","prediction","projeção",76.0370664894296,161.137916204623
+31044,2026-02-01,121.628463729261,1,"PROPHET","prediction","projeção",79.0780388716637,164.178888586858
+31044,2026-03-01,145.212914582831,1,"PROPHET","prediction","projeção",102.662489725234,187.763339440428
+31044,2026-04-01,136.663451184012,1,"PROPHET","prediction","projeção",94.1130263264154,179.213876041609
+31044,2026-05-01,133.89129565824,1,"PROPHET","prediction","projeção",91.3408708006433,176.441720515837
+31044,2026-06-01,121.395415993755,1,"PROPHET","prediction","projeção",78.8449911361576,163.945840851352
+31044,2026-07-01,118.159768065799,1,"PROPHET","prediction","projeção",75.6093432082023,160.710192923396
+31044,2026-08-01,101.322923922516,1,"PROPHET","prediction","projeção",58.7724990649191,143.873348780113
+31044,2026-09-01,97.6530364052468,1,"PROPHET","prediction","projeção",55.1026115476499,140.203461262844
+31044,2026-10-01,95.9196336382753,1,"PROPHET","prediction","projeção",53.3692087806783,138.470058495872
+31044,2026-11-01,89.4992525443012,1,"PROPHET","prediction","projeção",46.9488276867042,132.049677401898
+31044,2026-12-01,99.7056983247302,1,"PROPHET","prediction","projeção",57.1552734671333,142.256123182327
+31044,2027-01-01,112.03480297934,1,"PROPHET","prediction","projeção",69.4843781217429,154.585227836937
+31044,2027-02-01,119.820140589571,1,"PROPHET","prediction","projeção",77.2697157319745,162.370565447168
+31044,2027-03-01,139.426894292262,1,"PROPHET","prediction","projeção",96.8764694346653,181.977319149859
+31044,2027-04-01,131.199159843834,1,"PROPHET","prediction","projeção",88.6487349862368,173.749584701431
+31044,2027-05-01,130.430889398668,1,"PROPHET","prediction","projeção",87.8804645410708,172.981314256265
+31044,2027-06-01,113.937400739314,1,"PROPHET","prediction","projeção",71.3869758817172,156.487825596911
+31044,2027-07-01,113.188363961582,1,"PROPHET","prediction","projeção",70.637939103985,155.738788819179
+31044,2027-08-01,98.942704196365,1,"PROPHET","prediction","projeção",56.3922793387681,141.493129053962
+31044,2027-09-01,91.9747616444817,1,"PROPHET","prediction","projeção",49.4243367868847,134.525186502079
+31044,2027-10-01,90.7436100773713,1,"PROPHET","prediction","projeção",48.1931852197743,133.294034934968
+31044,2027-11-01,86.5982344932497,1,"PROPHET","prediction","projeção",44.0478096356527,129.148659350847
+31044,2027-12-01,91.8443605427217,1,"PROPHET","prediction","projeção",49.2939356851247,134.394785400319
+31044,2028-01-01,105.560445795544,1,"PROPHET","prediction","projeção",63.0100209379467,148.110870653141
+31044,2028-02-01,118.044510687255,1,"PROPHET","prediction","projeção",75.4940858296583,160.594935544852
+31044,2028-03-01,136.928829874659,1,"PROPHET","prediction","projeção",94.3784050170624,179.479254732256
+31044,2028-04-01,127.895569166366,1,"PROPHET","prediction","projeção",85.3451443087691,170.445994023963
+31044,2028-05-01,121.007799066036,1,"PROPHET","prediction","projeção",78.457374208439,163.558223923633
+31044,2028-06-01,116.564413001636,1,"PROPHET","prediction","projeção",74.0139881440393,159.114837859233
+31044,2028-07-01,108.576673630812,1,"PROPHET","prediction","projeção",66.0262487732151,151.127098488409
+31044,2028-08-01,86.3911984696973,1,"PROPHET","prediction","projeção",43.8407736121004,128.941623327294
+31044,2028-09-01,89.2061369538193,1,"PROPHET","prediction","projeção",46.6557120962224,131.756561811416
+31044,2028-10-01,86.5969160633382,1,"PROPHET","prediction","projeção",44.0464912057413,129.147340920935
+31044,2028-11-01,75.4825919117584,1,"PROPHET","prediction","projeção",32.9321670541615,118.033016769355
+31044,2028-12-01,95.6219380249741,1,"PROPHET","prediction","projeção",53.0715131673771,138.172362882571
+31044,2029-01-01,105.503177765719,1,"PROPHET","prediction","projeção",62.9527529081224,148.053602623316
+31044,2029-02-01,103.759124389247,1,"PROPHET","prediction","projeção",61.2086995316502,146.309549246844
+31044,2029-03-01,131.237860667208,1,"PROPHET","prediction","projeção",88.6874358096111,173.788285524805
+31044,2029-04-01,122.419994955374,1,"PROPHET","prediction","projeção",79.8695700977774,164.970419812971
+31044,2029-05-01,117.607613168949,1,"PROPHET","prediction","projeção",75.0571883113516,160.158038026546
+31044,2029-06-01,109.129580789934,1,"PROPHET","prediction","projeção",66.579155932337,151.680005647531
+31044,2029-07-01,103.480186757337,1,"PROPHET","prediction","projeção",60.9297618997399,146.030611614934
+31044,2029-08-01,83.9958030431285,1,"PROPHET","prediction","projeção",41.4453781855315,126.546227900725
+31044,2029-09-01,83.5877721965088,1,"PROPHET","prediction","projeção",41.0373473389119,126.138197054106
+31044,2029-10-01,81.3949683964387,1,"PROPHET","prediction","projeção",38.8445435388418,123.945393254036
+31044,2029-11-01,72.6511024332781,1,"PROPHET","prediction","projeção",30.1006775756811,115.201527290875
+31044,2029-12-01,87.8235361640397,1,"PROPHET","prediction","projeção",45.2731113064428,130.373961021637
+31044,2030-01-01,98.8738557411149,1,"PROPHET","prediction","projeção",56.3234308835179,141.424280598712
+31044,2030-02-01,101.914828123384,1,"PROPHET","prediction","projeção",59.3644032657866,144.465252980981
+31044,2030-03-01,125.499278976894,1,"PROPHET","prediction","projeção",82.9488541192971,168.049703834491
+31044,2030-04-01,116.949815578089,1,"PROPHET","prediction","projeção",74.3993907204919,159.500240435686
+31044,2030-05-01,114.177660052307,1,"PROPHET","prediction","projeção",71.6272351947105,156.728084909904
+31044,2030-06-01,101.681780387836,1,"PROPHET","prediction","projeção",59.131355530239,144.232205245433
+31044,2030-07-01,98.4461324598722,1,"PROPHET","prediction","projeção",55.8957076022752,140.996557317469
+31044,2030-08-01,81.6092883166079,1,"PROPHET","prediction","projeção",39.0588634590109,124.159713174205
+31044,2030-09-01,77.9394007993026,1,"PROPHET","prediction","projeção",35.3889759417057,120.4898256569
+31044,2030-10-01,76.2059980323562,1,"PROPHET","prediction","projeção",33.6555731747593,118.756422889953
+31044,2030-11-01,69.7856169383656,1,"PROPHET","prediction","projeção",27.2351920807687,112.336041795963
+31044,2030-12-01,79.9920627188243,1,"PROPHET","prediction","projeção",37.4416378612274,122.542487576421
+31044,2031-01-01,92.3211673734102,1,"PROPHET","prediction","projeção",49.7707425158132,134.871592231007
+31044,2031-02-01,100.10650498367,1,"PROPHET","prediction","projeção",57.5560801260735,142.656929841267
+31044,2031-03-01,119.713258686354,1,"PROPHET","prediction","projeção",77.1628338287575,162.263683543951
+31044,2031-04-01,111.485524237912,1,"PROPHET","prediction","projeção",68.9350993803152,154.035949095509
+31044,2031-05-01,110.717253792783,1,"PROPHET","prediction","projeção",68.1668289351862,153.26767865038
+31044,2031-06-01,94.2237651333695,1,"PROPHET","prediction","projeção",51.6733402757725,136.774189990966
+31044,2031-07-01,93.4747283556628,1,"PROPHET","prediction","projeção",50.9243034980658,136.02515321326
+31044,2031-08-01,79.2290685904183,1,"PROPHET","prediction","projeção",36.6786437328213,121.779493448015
+31044,2031-09-01,72.2611260385542,1,"PROPHET","prediction","projeção",29.7107011809572,114.811550896151
+31044,2031-10-01,71.0299744714343,1,"PROPHET","prediction","projeção",28.4795496138374,113.580399329031
+31044,2031-11-01,66.8845988873412,1,"PROPHET","prediction","projeção",24.3341740297442,109.435023744938
+31044,2031-12-01,72.1307249368111,1,"PROPHET","prediction","projeção",29.5803000792142,114.681149794408
+31044,2032-01-01,85.8468101896204,1,"PROPHET","prediction","projeção",43.2963853320234,128.397235047217
+31044,2032-02-01,98.3308750813121,1,"PROPHET","prediction","projeção",55.7804502237151,140.881299938909
+31044,2032-03-01,117.215194268739,1,"PROPHET","prediction","projeção",74.664769411142,159.765619126336
+31044,2032-04-01,108.181933560448,1,"PROPHET","prediction","projeção",65.6315087028515,150.732358418045
+31044,2032-05-01,101.294163460152,1,"PROPHET","prediction","projeção",58.7437386025547,143.844588317749
+31044,2032-06-01,96.8507773957024,1,"PROPHET","prediction","projeção",54.3003525381054,139.401202253299
+31044,2032-07-01,88.863038024888,1,"PROPHET","prediction","projeção",46.312613167291,131.413462882485
+31044,2032-08-01,66.6775628637614,1,"PROPHET","prediction","projeção",24.1271380061644,109.227987721358
+31044,2032-09-01,69.4925013478962,1,"PROPHET","prediction","projeção",26.9420764902992,112.042926205493
+31044,2032-10-01,66.8832804573964,1,"PROPHET","prediction","projeção",24.3328555997994,109.433705314993
+31044,2032-11-01,55.7689563058231,1,"PROPHET","prediction","projeção",13.2185314482261,98.31938116342
+31044,2032-12-01,75.9083024190604,1,"PROPHET","prediction","projeção",33.3578775614634,118.458727276657
+31044,2024-01-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2024-02-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2024-03-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2024-04-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2024-05-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2024-06-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2024-07-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2024-08-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2024-09-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2024-10-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2024-11-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2024-12-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2025-01-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2025-02-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2025-03-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2025-04-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2025-05-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2025-06-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2025-07-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2025-08-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2025-09-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2025-10-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2025-11-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2025-12-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2026-01-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2026-02-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2026-03-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2026-04-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2026-05-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2026-06-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2026-07-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2026-08-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2026-09-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2026-10-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2026-11-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2026-12-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2027-01-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2027-02-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2027-03-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2027-04-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2027-05-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2027-06-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2027-07-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2027-08-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2027-09-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2027-10-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2027-11-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2027-12-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2028-01-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2028-02-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2028-03-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2028-04-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2028-05-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2028-06-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2028-07-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2028-08-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2028-09-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2028-10-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2028-11-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2028-12-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2029-01-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2029-02-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2029-03-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2029-04-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2029-05-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2029-06-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2029-07-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2029-08-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2029-09-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2029-10-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2029-11-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2029-12-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2030-01-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2030-02-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2030-03-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2030-04-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2030-05-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2030-06-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2030-07-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2030-08-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2030-09-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2030-10-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2030-11-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2030-12-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2031-01-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2031-02-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2031-03-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2031-04-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2031-05-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2031-06-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2031-07-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2031-08-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2031-09-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2031-10-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2031-11-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2031-12-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2032-01-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2032-02-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2032-03-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2032-04-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2032-05-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2032-06-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2032-07-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2032-08-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2032-09-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2032-10-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2032-11-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
+31044,2032-12-01,93.950553894043,2,"XGBOOST","prediction","projeção",57.2322588729231,130.668848915163
