@@ -13,14 +13,15 @@ df_combinado <- vroom::vroom("~/GitHub/materno_infantil/02_script/03_outputs_pro
          qtd = .value)
 
 
-
-ba <- c("29021","29022","29023","29024","29025","29026",
-        "29027", "29028")
+ce <- c("23016","23017","23018","23019","23020","23021",
+        "230022")
 
 dfs <- df_combinado |> 
   mutate(ano = year(data)) |> 
   filter(ano > 2015) |>
-  filter(substr(cod_regsaude, 1, 2) == "28")
+  filter(cod_regsaude %in% ce)
+  
+  filter(substr(cod_regsaude, 1, 2) == "23")
 
 pb <- progress_bar$new(
   format = "[:bar] :percent Concluído :current/:total (:eta restantes)",
@@ -53,4 +54,4 @@ for(i in 1:nrow(dfs)){
 }
 
 write.csv(servicos, 
-          "~/GitHub/materno_infantil/02_script/04_servicos/servicos_SE.csv")
+          "~/GitHub/materno_infantil/02_script/04_servicos/servicos_CE3.csv")
