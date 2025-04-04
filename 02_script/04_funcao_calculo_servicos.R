@@ -2,26 +2,24 @@ library(tidyverse)
 library(jsonlite)
 library(progress)
 
-acompanhando <- df_combinado |> 
-                  mutate(estado = substr(cod_regsaude, 1, 2)) |> 
-                  select(estado, cod_regsaude) |> 
-                  distinct()
-
 df_combinado <- vroom::vroom("~/GitHub/materno_infantil/02_script/03_outputs_projecoes/prophet/melhor_previsao_prophet/dfs_combinadoss.csv") |> 
   select(-`...1`) |> 
   rename(data = .index,
          qtd = .value)
 
+acompanhando <- df_combinado |> 
+  mutate(estado = substr(cod_regsaude, 1, 2)) |> 
+  select(estado, cod_regsaude) |> 
+  distinct()
 
-ce <- c("23016","23017","23018","23019","23020","23021",
-        "230022")
+ce <- c("29011")
 
 dfs <- df_combinado |> 
   mutate(ano = year(data)) |> 
   filter(ano > 2015) |>
-  filter(cod_regsaude %in% ce)
+#  filter(cod_regsaude %in% ce)
   
-  filter(substr(cod_regsaude, 1, 2) == "23")
+  filter(substr(cod_regsaude, 1, 2) == "28")
 
 pb <- progress_bar$new(
   format = "[:bar] :percent Concluído :current/:total (:eta restantes)",
@@ -54,4 +52,4 @@ for(i in 1:nrow(dfs)){
 }
 
 write.csv(servicos, 
-          "~/GitHub/materno_infantil/02_script/04_servicos/servicos_CE3.csv")
+          "~/GitHub/materno_infantil/02_script/04_servicos/servicos_SE.csv")

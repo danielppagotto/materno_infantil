@@ -1,0 +1,430 @@
+---
+title: "05_servicos_art_2019"
+format: html
+editor: visual
+---
+
+## Serviços necessários
+
+Aqui narramos os processos de serviços necessários considerando apenas um recorte para o ano de 2019.
+
+```{r}
+#| message: false
+#| warning: false
+
+library(tidyverse)
+library(RODBC)
+library(tidyverse)
+library(patchwork)
+library(geojsonio)
+library(geojsonsf)
+library(geobr)
+library(scales)
+library(ggspatial) 
+library(sf)
+library(readxl)
+library(leaflet)
+
+```
+
+## Leitura dos dados
+
+```{r}
+#| message: false
+#| warning: false
+
+dremio_host <- Sys.getenv("endereco")
+dremio_port <- Sys.getenv("port")
+dremio_uid <- Sys.getenv("uid")
+dremio_pwd <- Sys.getenv("datalake")
+
+
+channel <- odbcDriverConnect(sprintf("DRIVER=Dremio Connector;
+                                     HOST=%s;
+                                     PORT=%s;
+                                     UID=%s;
+                                     PWD=%s;
+                                     AUTHENTICATIONTYPE=Basic Authentication;
+                                     CONNECTIONTYPE=Direct", 
+                         dremio_host, 
+                         dremio_port, 
+                         dremio_uid, 
+                         dremio_pwd))
+
+query_servico <- 
+  'SELECT * FROM "@daniel"."procedimentos_materno_infantil_2019"'
+
+
+servicos <- sqlQuery(channel, 
+                     query_servico, 
+                     as.is = TRUE)
+
+servicos$mes_nascimento <- 
+  as.Date(servicos$mes_nascimento)
+
+
+```
+
+```{r}
+
+controle <- servicos |>
+  distinct() |> 
+  group_by(cod_regsaude, mes_proc_rea) |> 
+  count()
+
+```
+
+Lembrando que temos uma lista de 107 procedimentos:
+
+```{r}
+
+lista_procedimentos <- 
+  servicos |> 
+      distinct(codigo_sigtap, 
+              procedimento, 
+              tipo_procedimento, 
+              publico,
+              mes_proc_rea,
+              nivel_atencao) 
+
+DT::datatable(lista_procedimentos)
+
+```
+
+Vamos filtrar apenas aqueles procedimentos que ocorrem em 2019. É importante notar que, existem nascimentos em anos anteriores e subsequentes que também vão impactar em meses de 2019.
+
+Para o primeiro artigo, vamos manter apenas os profissionais médicos e as seguintes atividades: consultas (pré-natal, puericultura, crescimento e desenvolvimento), atendimento domiciliar e atividades educativas. Por hora, vamos assumir apenas este profissional realizando esta atividades.
+
+```{r}
+
+servicos2019 <- 
+  servicos |> 
+  distinct() |> 
+  mutate(ano_proc_rea = 
+           year(mes_proc_rea)) |> 
+  filter(ano_proc_rea == 2019) |> 
+  filter(nivel_atencao == "APS" & 
+  publico != "Gestantes de Alto Risco") |>
+  filter(tipo_procedimento == "Ações Educacionais" |
+         tipo_procedimento == "Consultas ou Visitas") |> 
+  filter(procedimento != "Avaliação odontológica") |> 
+  filter(procedimento != "Visita domiciliar") 
+
+#write.csv(servicos2019, 
+# "/02_script/04_servicos/servicos_2019.csv")
+
+```
+
+Outra coisa que podemos fazer é adicionar uma dedução da população beneficiária de plano de saúde da saúde suplementar. Para isso, vamos acessar dados da ANS sobre cobertura de plano de saúde em cada região de saúde.
+
+```{r}
+
+#| message: false
+#| warning: false
+
+dremio_host <- Sys.getenv("endereco")
+dremio_port <- Sys.getenv("port")
+dremio_uid <- Sys.getenv("uid")
+dremio_pwd <- Sys.getenv("datalake")
+
+
+channel <- odbcDriverConnect(sprintf("DRIVER=Dremio Connector;
+                                     HOST=%s;
+                                     PORT=%s;
+                                     UID=%s;
+                                     PWD=%s;
+                                     AUTHENTICATIONTYPE=Basic Authentication;
+                                     CONNECTIONTYPE=Direct", 
+                         dremio_host, 
+                         dremio_port, 
+                         dremio_uid, 
+                         dremio_pwd))
+
+query <- 
+  'SELECT uf_sigla, cod_regsaud, regiao_saude, COBERTURA FROM DFTS."dfts_taxa_cobertura2"'
+
+
+cobertura <- sqlQuery(channel, 
+                      query, 
+                      as.is = TRUE)
+
+cobertura$cod_regsaud <- as.numeric(cobertura$cod_regsaud)
+
+servicos19_tratado <- 
+  servicos2019 |> 
+  left_join(cobertura, 
+            by = c("cod_regsaude"=
+                   "cod_regsaud")) |> 
+  janitor::clean_names() |> 
+  mutate(cobertura = cobertura/100) |> 
+  rename(cobertura_ans = cobertura)
+
+# este é o cenário que consideramos serviços para apenas os SUS dependente
+sus = 1
+todos = 0
+
+
+if(sus == todos){
+  servicos19_tratado <- servicos19_tratado |> 
+    mutate(qtd_proc = qtd_proc)
+} else {
+  servicos19_tratado <- servicos19_tratado |>
+    mutate(qtd_proc = (qtd_nascidos - 
+                      (qtd_nascidos * cobertura_ans)) * 
+                      parametro)
+}
+
+servicos19_tratado <- 
+  servicos19_tratado |> 
+  select(ano_proc_rea, uf_sigla, cod_regsaude, 
+         regiao_saude, qtd_nascidos, cobertura_ans, 
+         procedimento, tipo_procedimento, publico, 
+         nivel_atencao, parametro, mes_proc_rea, 
+         qtd_proc)
+
+```
+
+## Traduzindo número de horas em número de profissionais necessários
+
+O próximo passo consiste em adicionar um parâmetro de tempo. Precisamos dividir agora tanto os casos que acessamos todos os nascidos como também aqueles que são vinculados aos SUS dependentes.
+
+Após isso, podemos "traduzir" o número de horas necessárias no total de profissionais.
+
+```{r}
+
+acoes_educacionais <- 45
+consultas <- 30
+ttd <- 131.333
+
+necessidade <- 
+  servicos19_tratado |> 
+  mutate(total_horas = 
+           case_when(tipo_procedimento == 
+                    "Ações Educacionais" ~ 
+                     qtd_proc * acoes_educacionais/60,
+                     tipo_procedimento == 
+                    "Consultas ou Visitas" ~ 
+                     qtd_proc * consultas/60)) |> 
+  mutate(nec_prof = total_horas/ttd) |> 
+  group_by(uf_sigla, cod_regsaude, regiao_saude,  
+           mes_proc_rea) |> 
+  summarise(nec_prof = sum(nec_prof),
+            nec_ch = sum(total_horas)) |> 
+  mutate(mes = month(mes_proc_rea),
+         ano = year(mes_proc_rea), 
+         .after = mes_proc_rea)
+
+```
+
+O próximo passo consiste em acessar a oferta de profissionais das regiões de saúde. No caso, estamos acessando apenas os profissionais que atuam na APS, a partir de um filtro aplicado na variável TP_UNID.
+
+```{r}
+
+query_oferta <- 'SELECT COMPETEN, regiao, cod_regsaud, 
+                        CBO_recod, categoria_profissional, 
+                        HORAS, FTE40  
+                 FROM "@daniel"."Profissionais_APS_tese"
+                 WHERE ANO = 2019'
+
+
+oferta <- sqlQuery(channel, 
+                   query_oferta, 
+                   as.is = TRUE) 
+
+oferta_tratado <- oferta |>
+                    filter(categoria_profissional == "Médicos") |> 
+                    janitor::clean_names() |> 
+                    mutate(ano = as.numeric(
+                                    substr(competen,
+                                           1, 4))) |> 
+                    mutate(mes = as.numeric(
+                                    substring(competen, 
+                                           5, 6))) |> 
+                    mutate(cod_regsaud = 
+                             as.numeric(cod_regsaud)) |> 
+                    mutate(fte40 = as.numeric(fte40))
+
+
+#write.csv(oferta_tratado,
+#    "~/GitHub/materno_infantil/01_dados/oferta_aps_2019.csv")
+
+
+```
+
+Juntando necessidades com oferta.
+
+```{r}
+#| message: false
+#| warning: false
+
+direta = 0.50
+
+foco_clinico <- 
+  read_csv("~/GitHub/materno_infantil/01_dados/foco_clinico.csv") |> 
+  select(cod_regsaud, perc_fc)
+
+
+oferta_vs_demanda_mensal <- 
+  necessidade |> 
+  left_join(oferta_tratado, 
+            by = c("cod_regsaude"="cod_regsaud",
+                   "mes"="mes",
+                   "ano"="ano")) |> 
+  left_join(foco_clinico, 
+            by = c("cod_regsaude"="cod_regsaud")) |> 
+  mutate(oferta_direta = fte40 * direta) |> 
+  mutate(oferta_linha = oferta_direta * perc_fc) |> 
+  mutate(abs = oferta_linha - nec_prof,
+         perc = 100 * (oferta_linha/nec_prof)) 
+
+
+resultado_anual <- 
+  oferta_vs_demanda_mensal |> 
+  group_by(regiao, uf_sigla, cod_regsaude, regiao_saude) |> 
+  summarise(necessidade_media = mean(nec_prof),
+            oferta_media = mean(oferta_linha)) |> 
+  mutate(perc = 100 * 
+         oferta_media/necessidade_media,
+         total = oferta_media - necessidade_media)
+
+```
+
+Plotando gráfico
+
+```{r}
+
+oferta_vs_demanda_mensal |> 
+  filter(cod_regsaude == '11001') |> 
+  ggplot(aes(x = mes, 
+             y = perc)) + geom_col() +
+  theme_minimal()
+  
+```
+
+Plotando por UF
+
+```{r}
+
+perc_uf <- resultado_anual |> 
+  group_by(regiao, uf_sigla) |> 
+  summarise(nec_media = sum(necessidade_media),
+            oferta_media = sum(oferta_media)) |> 
+  mutate(perc = (oferta_media/nec_media) * 100) 
+
+
+perc_uf |> 
+  ggplot(aes(x = perc, 
+             y = fct_reorder(uf_sigla, perc),
+             fill = regiao)) + 
+  geom_col() + theme_minimal() + ylab("UF") + 
+  xlab("Percentual (%)") +
+  theme(legend.position = "bottom")
+
+```
+
+Plotando por região
+
+```{r}
+
+perc_regiao <- resultado_anual |> 
+  group_by(regiao) |> 
+  summarise(nec_media = sum(necessidade_media),
+            oferta_media = sum(oferta_media)) |> 
+  mutate(perc = (oferta_media/nec_media) * 100) 
+
+
+perc_regiao |> 
+  ggplot(aes(x = perc, 
+             y = fct_reorder(regiao, perc),
+             fill = regiao)) + 
+  geom_col() + theme_minimal() + ylab("UF") + 
+  xlab("Percentual (%)") +
+  theme(legend.position = "bottom")
+
+```
+
+Plotando em mapa
+
+```{r}
+
+spdf <- 
+  geojson_read("~/GitHub/saude_bucal/01_dados/shape_file_regioes_saude.json", 
+               what = "sp") 
+
+estados_br <- read_state(year = 2020,
+                         showProgress = FALSE)
+
+spdf_fortified <- 
+  sf::st_as_sf(spdf)
+
+# Definir limites de longitude e latitude para focar no Brasil
+
+limite_long <- c(-75,-28)  
+
+limite_lat <- c(-33, 4)     
+
+baseline <- 
+  resultado_anual |> 
+  mutate(perc = if_else(perc > 100, 100, perc)) |> 
+  left_join(spdf_fortified,
+              by = c("cod_regsaude"="reg_id")) |> 
+  distinct()
+
+
+# Mapa -------------------------------------------------
+
+gerar_mapa <- 
+  
+  function(df, var_perc){
+  
+  var_sym <- sym(var_perc)
+  
+  ggplot() +
+    geom_sf(data = df, 
+            aes(fill = !!var_sym, 
+                geometry = geometry), 
+            color = "#f5f5f5") +
+    geom_sf(data = estados_br, 
+            fill = NA, 
+            color = "#4c4d4a", 
+            size = 0.1) +
+    theme_minimal() +
+    scale_fill_gradientn(colors = 
+                           c("#FF2400","#FF7F00",  
+                             "#c1c700","#7ac142",  
+                             "#2c7719"),  
+                         values = rescale(c(0, 50, 
+                                            100)), 
+                         limits = c(0, 100),
+                         breaks = c(0, 50, 
+                                    100)) +
+    labs(fill = "Gap de profissionais") +
+    annotation_north_arrow(
+      location = "tr", 
+      which_north = "true",
+      style = north_arrow_fancy_orienteering()) +
+    annotation_scale(location = "bl", 
+                     width_hint = 0.3) +
+    theme(
+      legend.justification = "center",
+      legend.box = "horizontal",
+      legend.position = "bottom",
+      axis.title.x = element_blank(),
+      axis.title.y = element_blank(),
+      axis.text.x = element_text(size = 14),  
+      axis.text.y = element_text(size = 14),
+      legend.text = element_text(size = 14),
+      plot.title = element_text(size = 14),
+      panel.border = element_rect(color = "black", 
+                                  fill = NA, 
+                                  size = 1), 
+      plot.margin = margin(10, 10, 10, 10))
+}
+
+todos <- gerar_mapa(baseline, 
+                    "perc")
+
+todos
+
+
+```

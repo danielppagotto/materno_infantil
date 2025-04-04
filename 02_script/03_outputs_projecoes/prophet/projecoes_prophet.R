@@ -18,7 +18,8 @@ teste <- nascidos |>
   select(uf_sigla, cod_regsaud) |> 
   distinct()
 
-write.csv(teste,"teste.csv")
+#write.csv(teste,"teste.csv")
+
 projecao <- function(regiao){
   
   df_regiao <- 
@@ -417,12 +418,12 @@ tendencia_filtrada <-
 }
 
 regioes <- nascidos |> 
-  filter(uf_sigla == "RS") 
+  filter(uf_sigla == "BA") 
 
 regioes <- unique(regioes$cod_regsaud)
 
 for (regiao in regioes) {
-
+ 
     cat("Processando região:", regiao, "\n")
   
     projecao(regiao)

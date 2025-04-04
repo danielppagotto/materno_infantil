@@ -15,4 +15,4 @@ dados_combinados <- arquivos |>
 
 
 write.csv(dados_combinados, 
-          "~/GitHub/materno_infantil/02_script/03_outputs_projecoes/prophet/melhor_previsao_prophet/dfs_combinadoss.csv")
+          "~/GitHub/materno_infantil/02_script/03_outputs_projecoes/prophet/melhor_previsao_prophet/dfs_combinados0104.csv")
