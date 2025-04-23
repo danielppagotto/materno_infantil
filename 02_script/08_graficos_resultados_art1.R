@@ -105,7 +105,7 @@ gerar_mapa <-
 
 
 a <- gerar_mapa(baseline, 
-                "perc","right","Cenário médio")
+                "perc","right","Cenário mediano")
 
 
 # Grafico UF --------------------------------------------------------------
@@ -122,15 +122,19 @@ b <- baseline |>
            label = "Mediana Nacional", 
            hjust = -0.25, color = "red") +
   ylim(0, 100) +
+  scale_fill_brewer(palette = "Set2", guide = guide_legend(nrow = 2)) +
   theme_minimal() + ylab("Percentual (%)") + 
-  xlab("UF") 
+  xlab("UF") +
+  ggtitle("Distribuição de resultados por UF") +
+  theme(legend.position = "bottom",
+        text = element_text(size = 16))
 
-c <- a + b
+c <- a | b
 c
 
-# ggsave(plot = c, 
-#        filename = "~/GitHub/materno_infantil/02_script/08_output_gráficos/figura_3_2019.jpeg",
-#        dpi = 1000, width = 10, height = 5)
+ggsave(plot = c,
+      filename = "~/GitHub/materno_infantil/02_script/08_output_gráficos/figura_3_2019.jpeg",
+      dpi = 700, width = 12, height = 8)
 
 # cenarios ----------------------------------------------------------------
 

@@ -7,12 +7,17 @@ library(tictoc)
 # Carregando dados que vão alimentar a funcao -----------------------------
 
 servicos <- 
-  vroom::vroom("~/GitHub/materno_infantil/02_script/04_servicos/servicos_2019.csv") |> 
+  vroom::vroom("~/GitHub/materno_infantil/02_script/04_servicos/servicos_14_19.csv") |> 
   select(-`...1`) 
 
+# oferta_antes <-
+#   vroom::vroom("~/GitHub/materno_infantil/01_dados/oferta_aps_14_19.csv") |>
+#   select(-`...1`)
+  
 oferta <- 
-  vroom::vroom("~/GitHub/materno_infantil/01_dados/oferta_aps_2019.csv") |> 
-  select(-`...1`) 
+  vroom::vroom("~/GitHub/materno_infantil/01_dados/oferta_aps_1419.csv") |> 
+  select(-`...1`) |> 
+  select(-uf_sigla, -regiao_saude_pad)
 
 cobertura <- 
   vroom::vroom("~/GitHub/materno_infantil/01_dados/cobertura_ans.csv") |> 
@@ -46,10 +51,11 @@ executar_simulacao_desagregado <- function(acoes_educacionais,
   # Verificações de colunas omitidas para brevidade
   
   # Filtrar procedimentos de 2019
-  servicos2019 <- 
+  servicos14_19 <- 
     servicos |> 
     mutate(ano_proc_rea = year(mes_proc_rea)) |> 
-    filter(ano_proc_rea == 2019) |> 
+    filter(ano_proc_rea >= 2014 & 
+           ano_proc_rea <= 2019) |> 
     filter(nivel_atencao == "APS" & 
              publico != "Gestantes de Alto Risco") |>
     filter(tipo_procedimento == "Ações Educacionais" |
@@ -60,10 +66,11 @@ executar_simulacao_desagregado <- function(acoes_educacionais,
   cobertura$cod_regsaud <- as.numeric(cobertura$cod_regsaud)
   
   # Juntar dados de serviços com cobertura
-  servicos19_tratado <- 
-    servicos2019 |> 
+  servicos14_19_tratado <- 
+    servicos14_19 |> 
     left_join(cobertura, 
-              by = c("cod_regsaude" = "cod_regsaud")) |> 
+              by = c("cod_regsaude"=
+                     "cod_regsaud")) |> 
     janitor::clean_names() |> 
     mutate(cobertura = cobertura/100) |> 
     rename(cobertura_ans = cobertura) 
@@ -72,17 +79,17 @@ executar_simulacao_desagregado <- function(acoes_educacionais,
   sus <- 1
   
   if(sus == todos){
-    servicos19_tratado <- servicos19_tratado |> 
+    servicos14_19_tratado <- servicos14_19_tratado |> 
       mutate(qtd_proc = qtd_proc)
   } else {
-    servicos19_tratado <- servicos19_tratado |>
+    servicos14_19_tratado <- servicos14_19_tratado |>
       mutate(qtd_proc = (qtd_nascidos - 
                            (qtd_nascidos * cobertura_ans)) * 
                parametro)
   }
   
-  servicos19_tratado <- 
-    servicos19_tratado |> 
+  servicos14_19_tratado <- 
+    servicos14_19_tratado |> 
     select(ano_proc_rea, uf_sigla, cod_regsaude, 
            regiao_saude, qtd_nascidos, cobertura_ans, 
            procedimento, tipo_procedimento, publico, 
@@ -90,8 +97,9 @@ executar_simulacao_desagregado <- function(acoes_educacionais,
            qtd_proc)
   
   # Traduzir número de horas em número de profissionais necessários
-  necessidade <- 
-    servicos19_tratado |> 
+  
+  necessidade14_19 <- 
+    servicos14_19_tratado |> 
     mutate(total_horas = 
              case_when(tipo_procedimento == 
                          "Ações Educacionais" ~ 
@@ -100,33 +108,33 @@ executar_simulacao_desagregado <- function(acoes_educacionais,
                          "Consultas ou Visitas" ~ 
                          qtd_proc * consultas/60)) |> 
     mutate(nec_prof = total_horas/ttd) |> 
-    group_by(uf_sigla, cod_regsaude, regiao_saude,  
-             mes_proc_rea) |> 
+    group_by(uf_sigla, cod_regsaude, regiao_saude, 
+             ano_proc_rea, mes_proc_rea) |> 
     summarise(nec_prof = sum(nec_prof),
-              nec_ch = sum(total_horas), .groups = "drop") |> 
+              nec_ch = sum(total_horas)) |> 
     mutate(mes = month(mes_proc_rea),
            ano = year(mes_proc_rea), 
-           .after = mes_proc_rea)
+           .after = mes_proc_rea) |> 
+    ungroup()
   
-  # Juntar necessidades com oferta
   oferta_vs_demanda_result <- 
-    necessidade |> 
+    necessidade14_19 |> 
     left_join(oferta, 
-              by = c("cod_regsaude" = "cod_regsaud",
-                     "mes" = "mes",
-                     "ano" = "ano")) |> 
+              by = c("cod_regsaude"="cod_regsaud",
+                     "mes"="mes",
+                     "ano"="ano")) |> 
     left_join(foco_clinico, 
-              by = c("cod_regsaude" = "cod_regsaud")) |> 
-    mutate(oferta_direta = fte40 * (1 - indireta),
+              by = c("cod_regsaude"="cod_regsaud")) |> 
+    mutate(oferta_direta =  fte40 * (1 - indireta),
            oferta_linha = oferta_direta * perc_fc) |> 
     mutate(total_abs = oferta_linha - nec_prof,
            total_perc = 100 * (oferta_linha/nec_prof)) |> 
-    group_by(uf_sigla, cod_regsaude, regiao_saude) |> 
-    summarise(necessidade_media = mean(nec_prof, na.rm = TRUE),
-              oferta_media = mean(oferta_linha, na.rm = TRUE),
-              .groups = "drop") |> 
+    group_by(ano, uf_sigla, 
+             cod_regsaude, regiao_saude) |> 
+    summarise(necessidade_media = mean(nec_prof),
+              oferta_media = mean(oferta_linha)) |> 
     mutate(perc = 100 * (oferta_media/necessidade_media)) |> 
-    mutate(total = (oferta_media - necessidade_media))
+    mutate(total = (oferta_media - necessidade_media)) 
   
   resultado <- list(
     por_regiao = oferta_vs_demanda_result,
@@ -150,8 +158,8 @@ executar_simulacao_desagregado <- function(acoes_educacionais,
 executar_monte_carlo_desagregado <- function(n_sim = 1000, 
                                              acoes_min = 22.5, 
                                              acoes_max = 50,
-                                             consultas_min = 25, 
-                                             consultas_max = 35,
+                                             consultas_min = 20, 
+                                             consultas_max = 40,
                                              ttd_min = 113, 
                                              ttd_max = 153,
                                              indireta_min = 0.30, 
@@ -165,6 +173,7 @@ executar_monte_carlo_desagregado <- function(n_sim = 1000,
   
   # Verificar e ajustar os dataframes
   cat("Verificando estrutura dos dataframes...\n")
+  
   # Verificar oferta
   if(!all(c("mes", "ano", "cod_regsaud") %in% colnames(oferta))) {
     cat("Ajustando dataframe 'oferta'...\n")
@@ -284,7 +293,7 @@ executar_monte_carlo_desagregado <- function(n_sim = 1000,
   # NOVO: Resumo por região de saúde
   resumo_por_regiao <- 
     resultados_regioes_completo |>
-      group_by(uf_sigla, cod_regsaude, regiao_saude) |>
+      group_by(ano, uf_sigla, cod_regsaude, regiao_saude) |>
       summarise(
         media_necessidade = mean(necessidade_media, na.rm = TRUE),
         media_oferta = mean(oferta_media, na.rm = TRUE),
@@ -323,8 +332,9 @@ executar_monte_carlo_desagregado <- function(n_sim = 1000,
     )
   
   # NOVO: Resultados por região e valor de 'todos'
-  resultados_regiao_todos <- resultados_regioes_completo |>
-    group_by(uf_sigla, cod_regsaude, regiao_saude, todos) |>
+  resultados_regiao_todos <- 
+    resultados_regioes_completo |>
+    group_by(ano, uf_sigla, cod_regsaude, regiao_saude, todos) |>
     summarise(
       media_percentual = mean(perc, na.rm = TRUE),
       mediana_percentual = median(perc, na.rm = TRUE),
@@ -364,10 +374,9 @@ executar_monte_carlo_desagregado <- function(n_sim = 1000,
          y = "Percentual de cobertura (%)") +
     theme_minimal()
   
-  # NOVO: Mapa de calor do percentual médio de cobertura por região
   # Primeiro, ordenamos as regiões por UF e nome da região
   regioes_ordenadas <- resumo_por_regiao |>
-    arrange(uf_sigla, regiao_saude) |>
+    arrange(ano, uf_sigla, regiao_saude) |>
     mutate(regiao_id = paste(uf_sigla, regiao_saude, sep = " - "))
   
   # Definir as 20 regiões com menor cobertura para visualização
@@ -425,11 +434,11 @@ executar_monte_carlo_desagregado <- function(n_sim = 1000,
 
 # Exemplo de como chamar a função
 resultado_mc <- executar_monte_carlo_desagregado(
-  n_sim = 10000,
-  acoes_min = 22.5, acoes_max = 37.5,
+  n_sim = 100,
+  acoes_min = 20, acoes_max = 60,
   consultas_min = 20, consultas_max = 40,
   ttd_min = 113, ttd_max = 153,
-  indireta_min = 0.30, indireta_max = 0.50,
+  indireta_min = 0.30, indireta_max = 0.60,
   prob_todos_0 = 0.5, prob_todos_1 = 0.5,
   servicos = servicos,
   cobertura = cobertura,
@@ -440,8 +449,9 @@ resultado_mc <- executar_monte_carlo_desagregado(
 # Funções auxiliares para análise de resultados desagregados
 
 # Identificar regiões com cobertura crítica (abaixo de um limiar)
-identificar_regioes_criticas <- function(resultado_mc, 
-                                         limiar_percentual = 50) {
+identificar_regioes_criticas <- 
+  function(resultado_mc, 
+           limiar_percentual = 50) {
   regioes_criticas <- resultado_mc$resumo_por_regiao |>
     filter(media_percentual < limiar_percentual) |>
     arrange(media_percentual)
@@ -455,19 +465,26 @@ analisar_sensibilidade_regiao <-
   function(resultado_mc, cod_regsaude_alvo) {
   
   # Filtrar dados para a região específica
-  dados_regiao <- resultado_mc$resultados_por_regiao |>
+  dados_regiao <- 
+    resultado_mc$resultados_por_regiao |>
     filter(cod_regsaude == cod_regsaude_alvo)
   
   # Calcular correlações para esta região
-  correlacoes <- cor(dados_regiao |>
-                       select(acoes_educacionais, 
+  correlacoes <- dados_regiao |> 
+                        select(acoes_educacionais, 
                               consultas, 
                               ttd, indireta, 
-                              todos, perc),
-                     use = "pairwise.complete.obs")
+                              todos, perc) |> 
+                        cor(use = "pairwise.complete.obs")
+                     
   
   # Criar gráficos de dispersão para visualizar relações
-  parametros <- c("acoes_educacionais", "consultas", "ttd", "indireta", "todos")
+  parametros <- c("acoes_educacionais", 
+                  "consultas", 
+                  "ttd", 
+                  "indireta", 
+                  "todos")
+  
   plots <- list()
   
   for (param in parametros) {
@@ -539,7 +556,7 @@ comparar_regioes <- function(resultado_mc,
 }
 
 estado <- cobertura |> 
-        filter(uf_sigla == "MG") |> 
+        filter(uf_sigla == "GO") |> 
         distinct(cod_regsaud)
 
 estado <- estado$cod_regsaud
@@ -554,10 +571,11 @@ teste
 dados <- teste$dados
 
 analisar_sensibilidade_regiao(resultado_mc, 
-                              cod_regsaude_alvo = "52001")
+                              cod_regsaude_alvo = "35132")
 
 criticos <- identificar_regioes_criticas(resultado_mc, 
                                         limiar_percentual = 50)
+
 
 analisar_sensibilidade_regiao(resultado_mc,
                               cod_regsaude_alvo = "35073")
@@ -565,21 +583,21 @@ analisar_sensibilidade_regiao(resultado_mc,
 
 # Exportando resultados ---------------------------------------------------
 
-resultado_resumo_por_regiao <- resultado_mc[["resumo_por_regiao"]]
-
-write.csv(resultado_resumo_por_regiao,
-          "~/GitHub/materno_infantil/02_script/07_output_montecarlo/resumo_regiao.csv")
-
-parametros_usados <- resultado_mc[["parametros"]]
-
-write.csv(parametros_usados, 
-          "~/GitHub/materno_infantil/02_script/07_output_montecarlo/parametros_usados.csv")
-
-resultados_regioes <- resultado_mc[["resultados_por_regiao"]]
-
-write.csv(resultados_regioes, 
-          "~/GitHub/materno_infantil/02_script/07_output_montecarlo/resultados_regioes.csv")
-
-arrow::write_parquet(resultados_regioes,
-                     "~/GitHub/materno_infantil/02_script/07_output_montecarlo/resultados_regioes.parquet")
-
+# resultado_resumo_por_regiao <- resultado_mc[["resumo_por_regiao"]]
+#  
+# write.csv(resultado_resumo_por_regiao,
+#            "~/GitHub/materno_infantil/02_script/07_output_montecarlo/resumo_regiao1419.csv")
+#  
+# parametros_usados <- resultado_mc[["parametros"]]
+#  
+# write.csv(parametros_usados, 
+#            "~/GitHub/materno_infantil/02_script/07_output_montecarlo/parametros_usados1419.csv")
+#  
+# resultados_regioes <- resultado_mc[["resultados_por_regiao"]]
+#  
+# write.csv(resultados_regioes, 
+#            "~/GitHub/materno_infantil/02_script/07_output_montecarlo/resultados_regioes.csv1419")
+#  
+# arrow::write_parquet(resultados_regioes,
+#                       "~/GitHub/materno_infantil/02_script/07_output_montecarlo/resultados_regioes1419.parquet")
+#  

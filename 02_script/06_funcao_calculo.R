@@ -37,19 +37,31 @@ consultas <- 30
 ttd <- 133
 indireta <- 0.40
 todos <- 0
+ferias <- 16
+feriados <- 4
+absenteismo <- 16 #novo parametro da funcao
+consultas_altorisco <- 45
+alto_risco <- 0.15
 
 
 oferta_vs_demanda <- 
   
   function(acoes_educacionais,
-           consultas, ttd, 
-           indireta, todos){
+           consultas, 
+           alto_risco,
+           indireta, 
+           todos, 
+           acoes_altorisco, 
+           consultas_altorisco,
+           absenteismo){
 
 # se todos = 1, pegar todos 
 # se todos = 0, pegar apenas SUS dependente
 
 sus <- 1
-    
+ferias <- 16
+feriados <- 4
+
 # Filtrar procedimentos de 2019
 servicos2019 <- 
   servicos |> 
@@ -76,42 +88,90 @@ servicos19_tratado <-
   janitor::clean_names() |> 
   mutate(cobertura = cobertura/100) |> 
   rename(cobertura_ans = cobertura) 
-  
+
+sus = 1
 
 if(sus == todos){
   servicos19_tratado <- servicos19_tratado |> 
-    mutate(qtd_proc = qtd_proc)
+    
+    mutate(qtd_proc_rh = 
+             case_when(
+               procedimento == "Consulta pré-natal" ~ 
+                 qtd_proc * (1-alto_risco),
+               procedimento == "Ações Educacionais" ~
+                 qtd_proc * (1-alto_risco),
+               TRUE ~ qtd_proc
+             )) |> 
+    mutate(qtd_proc_ar = 
+             case_when(
+               procedimento == "Consulta pré-natal" ~ 
+                 qtd_proc * (alto_risco),
+               procedimento == "Ações Educacionais" ~
+                 qtd_proc * (alto_risco),
+               TRUE ~ 0
+             ) 
+           
+    )
 } else {
-  servicos19_tratado <- servicos19_tratado |>
+  servicos19_tratado <- 
+    servicos19_tratado |>
     mutate(qtd_proc = (qtd_nascidos - 
-                      (qtd_nascidos * cobertura_ans)) * 
-                      parametro)
+                         (qtd_nascidos * cobertura_ans)) * 
+             parametro) |> 
+    mutate(qtd_proc_rh = 
+             case_when(
+               procedimento == "Consulta pré-natal" ~ 
+                 qtd_proc * (1-alto_risco),
+               procedimento == "Ações Educacionais" ~
+                 qtd_proc * (1-alto_risco),
+               TRUE ~ qtd_proc
+             )) |> 
+    mutate(qtd_proc_ar = 
+             case_when(
+               procedimento == "Consulta pré-natal" ~ 
+                 qtd_proc * (alto_risco),
+               procedimento == "Ações Educacionais" ~
+                 qtd_proc * (alto_risco),
+               TRUE ~ 0
+             )) 
 }
-  
-servicos19_tratado <- 
+
+servicos_tratado <- 
   servicos19_tratado |> 
-  select(ano_proc_rea, uf_sigla, cod_regsaude, 
-         regiao_saude, qtd_nascidos, cobertura_ans, 
-         procedimento, tipo_procedimento, publico, 
-         nivel_atencao, parametro, mes_proc_rea, 
-         qtd_proc)
+  select(ano_proc_rea, mes_proc_rea, uf_sigla, cod_regsaude, 
+         regiao_saude, qtd_nascidos, cobertura_ans, sigtap_recod,
+         procedimento, tipo_procedimento, mes_programado,
+         publico, nivel_atencao, parametro, qtd_proc, qtd_proc_rh, 
+         qtd_proc_ar)
 
 # Traduzir número de horas em número de profissionais necessários
 
+ttd <- 160 - ferias - feriados - absenteismo
+
 necessidade <- 
-  servicos19_tratado |> 
-  mutate(total_horas = 
+  servicos_tratado |> 
+  mutate(total_horas_rh = 
            case_when(tipo_procedimento == 
-                    "Ações Educacionais" ~ 
-                     qtd_proc * acoes_educacionais/60,
+                       "Ações Educacionais" ~ 
+                       qtd_proc_rh * acoes_educacionais/60,
                      tipo_procedimento == 
-                    "Consultas ou Visitas" ~ 
-                     qtd_proc * consultas/60)) |> 
-  mutate(nec_prof = total_horas/ttd) |> 
+                       "Consultas ou Visitas" ~ 
+                       qtd_proc_rh * consultas/60)) |> 
+  mutate(total_horas_ar = 
+           case_when(tipo_procedimento == 
+                       "Ações Educacionais" ~ 
+                       qtd_proc_ar * acoes_altorisco/60,
+                     tipo_procedimento == 
+                       "Consultas ou Visitas" ~ 
+                       qtd_proc_ar * consultas_altorisco/60)) |> 
+  mutate(nec_prof = (total_horas_rh + total_horas_ar)/ttd) 
+
+necessidade_tratada <- 
+  necessidade |> 
   group_by(uf_sigla, cod_regsaude, regiao_saude,  
            mes_proc_rea) |> 
   summarise(nec_prof = sum(nec_prof),
-            nec_ch = sum(total_horas)) |> 
+            nec_ch = sum(total_horas_rh + total_horas_ar)) |> 
   mutate(mes = month(mes_proc_rea),
          ano = year(mes_proc_rea), 
          .after = mes_proc_rea)
@@ -119,7 +179,7 @@ necessidade <-
 # Juntar necessidades com oferta
 
 oferta_vs_demanda <- 
-  necessidade |> 
+  necessidade_tratada |> 
     left_join(oferta, 
               by = c("cod_regsaude"="cod_regsaud",
                      "mes"="mes",
@@ -142,17 +202,22 @@ oferta_vs_demanda <-
 # Testando função ---------------------------------------------------------
 
 teste <- oferta_vs_demanda(acoes_educacionais = 30,
-                           consultas = 35, 
-                           ttd = 133, 
-                           indireta = 0.50,
-                           todos = 1)
-
-teste2 <- oferta_vs_demanda(acoes_educacionais = 60,
+                           alto_risco = 0.15,
+                           acoes_altorisco = 45,
                            consultas = 30, 
-                           ttd = 133, 
+                           absenteismo = 8, 
                            indireta = 0.50,
-                           todos = 0)
+                           todos = 1,
+                           consultas_altorisco = 40)
 
+teste2 <- oferta_vs_demanda(acoes_educacionais = 30,
+                            alto_risco = 0.50,
+                            acoes_altorisco = 45,
+                            consultas = 30, 
+                            absenteismo = 8, 
+                            indireta = 0.50,
+                            todos = 1,
+                            consultas_altorisco = 40)
 
 
 # Plotando resultado em mapa ----------------------------------------------
