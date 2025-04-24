@@ -12,10 +12,26 @@ library(readxl)
 library(leaflet)
 
 resultados_regioes <- 
-  read_csv("02_script/07_output_montecarlo/resultados_regioes.csv")
+  read_csv("~/GitHub/materno_infantil/02_script/08_output_gráficos/cenarios_selecionados.csv") |> 
+  mutate(regiao = case_when(
+    uf_sigla %in% c("MG", "SP", "RJ", "ES") ~ "Sudeste", 
+    uf_sigla %in% c("PR", "SC", "RS") ~ "Sul",
+    uf_sigla %in% c("AC", "AM", "AP", "PA", "RO", "RR", "TO") ~ "Norte",
+    uf_sigla %in% c("AL", "BA", "CE", "MA", "PB", "PE", "PI", "RN", "SE") ~ "Nordeste",
+    uf_sigla %in% c("DF", "GO", "MT", "MS") ~ "Centro-Oeste",
+    TRUE ~ "Não classificado"
+  ))
 
 resumo_regiao <- 
-  read_csv("02_script/07_output_montecarlo/resumo_regiao.csv")
+  read_csv("02_script/07_output_montecarlo/resumo_regiao.csv") |> 
+  mutate(regiao = case_when(
+    uf_sigla %in% c("MG", "SP", "RJ", "ES") ~ "Sudeste", 
+    uf_sigla %in% c("PR", "SC", "RS") ~ "Sul",
+    uf_sigla %in% c("AC", "AM", "AP", "PA", "RO", "RR", "TO") ~ "Norte",
+    uf_sigla %in% c("AL", "BA", "CE", "MA", "PB", "PE", "PI", "RN", "SE") ~ "Nordeste",
+    uf_sigla %in% c("DF", "GO", "MT", "MS") ~ "Centro-Oeste",
+    TRUE ~ "Não classificado"
+  ))
 
 
 # mapa resumo --------------------------------------------------------------------
@@ -42,15 +58,8 @@ baseline <-
   mutate(perc = if_else(perc > 100, 100, perc)) |> 
   left_join(spdf_fortified,
             by = c("cod_regsaude"="reg_id")) |> 
-  distinct() |> 
-  mutate(regiao = case_when(
-    uf_sigla %in% c("MG", "SP", "RJ", "ES") ~ "Sudeste", 
-    uf_sigla %in% c("PR", "SC", "RS") ~ "Sul",
-    uf_sigla %in% c("AC", "AM", "AP", "PA", "RO", "RR", "TO") ~ "Norte",
-    uf_sigla %in% c("AL", "BA", "CE", "MA", "PB", "PE", "PI", "RN", "SE") ~ "Nordeste",
-    uf_sigla %in% c("DF", "GO", "MT", "MS") ~ "Centro-Oeste",
-    TRUE ~ "Não classificado"
-  ))
+  distinct() 
+
 
 # funcao 
 
@@ -142,30 +151,13 @@ ggsave(plot = c,
 # absenteísmo alto, todos os usuarios, baixa produtividade, baixo percentual 
 # de atividades diretas
 
-regiao <- resultados_regioes |> 
-  filter(cod_regsaude == "52001") |> 
-  filter(todos == 1) |> 
-  filter(acoes_educacionais > 35 & acoes_educacionais < 45) |> 
-  filter(consultas > 25 & consultas < 40) |> 
-  filter(indireta > 0.40) |> 
-  filter(absenteismo > 20)
-
-# simulacao 9499
-
-cenario1 <- resultados_regioes |> 
-  filter(simulacao == 9499) |> 
+cenario1 <- 
+  resultados_regioes |> 
+  filter(cenario == "Cenário 1") |> 
   mutate(perc = if_else(perc > 100, 100, perc)) |> 
   left_join(spdf_fortified,
             by = c("cod_regsaude"="reg_id")) |> 
-  distinct() |> 
-  mutate(regiao = case_when(
-    uf_sigla %in% c("MG", "SP", "RJ", "ES") ~ "Sudeste", 
-    uf_sigla %in% c("PR", "SC", "RS") ~ "Sul",
-    uf_sigla %in% c("AC", "AM", "AP", "PA", "RO", "RR", "TO") ~ "Norte",
-    uf_sigla %in% c("AL", "BA", "CE", "MA", "PB", "PE", "PI", "RN", "SE") ~ "Nordeste",
-    uf_sigla %in% c("DF", "GO", "MT", "MS") ~ "Centro-Oeste",
-    TRUE ~ "Não classificado"
-  ))
+  distinct()
 
 mapa1 <- gerar_mapa(cenario1, 
            "perc",'none',"Cenário 1")
@@ -186,7 +178,6 @@ g1 <- cenario1_agrupado |>
   theme_minimal() + xlab("Região") + 
   ylab("Resultado relativo (%)") +
   theme(legend.position = "none")
-
 
 # cenario 2 ---------------------------------------------------------------
 # vamos deduzir os SUS dependente, mas com as demais condições mantidas
