@@ -182,31 +182,12 @@ g1 <- cenario1_agrupado |>
 # cenario 2 ---------------------------------------------------------------
 # vamos deduzir os SUS dependente, mas com as demais condições mantidas
 
-cenario2 <- 
-  resultados_regioes |> 
-  filter(cod_regsaude == "52001") |> 
-  filter(todos == 0) |> 
-  filter(acoes_educacionais > 35 & acoes_educacionais < 45) |> 
-  filter(consultas > 35 & consultas < 40) |> 
-  filter(indireta > 0.45) |> 
-  filter(absenteismo > 20)
-
-# simulacao 6550
-
 cenario2 <- resultados_regioes |> 
-  filter(simulacao == 6550) |> 
-  mutate(perc = if_else(perc > 100, 100, perc)) |> 
-  left_join(spdf_fortified,
-            by = c("cod_regsaude"="reg_id")) |> 
-  distinct() |> 
-  mutate(regiao = case_when(
-    uf_sigla %in% c("MG", "SP", "RJ", "ES") ~ "Sudeste", 
-    uf_sigla %in% c("PR", "SC", "RS") ~ "Sul",
-    uf_sigla %in% c("AC", "AM", "AP", "PA", "RO", "RR", "TO") ~ "Norte",
-    uf_sigla %in% c("AL", "BA", "CE", "MA", "PB", "PE", "PI", "RN", "SE") ~ "Nordeste",
-    uf_sigla %in% c("DF", "GO", "MT", "MS") ~ "Centro-Oeste",
-    TRUE ~ "Não classificado"
-  ))
+              filter(cenario == "Cenário 2") |> 
+              mutate(perc = if_else(perc > 100, 100, perc)) |> 
+              left_join(spdf_fortified,
+                        by = c("cod_regsaude"="reg_id")) |> 
+              distinct()
 
 mapa2 <- gerar_mapa(cenario2, 
            "perc", "none", "Cenário 2")
@@ -234,32 +215,16 @@ g2 <- cenario2_agrupado |>
 
 cenario3 <- 
   resultados_regioes |> 
-  filter(cod_regsaude == "52001") |> 
-  filter(todos == 0) |> 
-  filter(acoes_educacionais > 25 & acoes_educacionais < 45) |> 
-  filter(consultas > 35 & consultas < 40) |> 
-  filter(indireta < 0.45) |> 
-  filter(absenteismo < 10)
-
-# simulacao 9114 
-
-cenario3 <- resultados_regioes |> 
-  filter(simulacao == 9114) |> 
+  filter(cenario == "Cenário 3") |> 
   mutate(perc = if_else(perc > 100, 100, perc)) |> 
   left_join(spdf_fortified,
             by = c("cod_regsaude"="reg_id")) |> 
-  distinct() |> 
-  mutate(regiao = case_when(
-    uf_sigla %in% c("MG", "SP", "RJ", "ES") ~ "Sudeste", 
-    uf_sigla %in% c("PR", "SC", "RS") ~ "Sul",
-    uf_sigla %in% c("AC", "AM", "AP", "PA", "RO", "RR", "TO") ~ "Norte",
-    uf_sigla %in% c("AL", "BA", "CE", "MA", "PB", "PE", "PI", "RN", "SE") ~ "Nordeste",
-    uf_sigla %in% c("DF", "GO", "MT", "MS") ~ "Centro-Oeste",
-    TRUE ~ "Não classificado"
-  ))
+  distinct()
+
 
 mapa3 <- gerar_mapa(cenario3, 
-                    "perc", "none","Cenário 3")
+                    "perc", "none",
+                    "Cenário 3")
 
 cenario3_agrupado <- cenario3 |> 
   group_by(regiao) |> 
@@ -285,27 +250,11 @@ mapa3
 
 cenario4 <- 
   resultados_regioes |> 
-  filter(cod_regsaude == "52001") |> 
-  filter(todos == 0) |> 
-  filter(acoes_educacionais < 30) |> 
-  filter(consultas < 30) |> 
-  filter(indireta < 0.45) |> 
-  filter(absenteismo < 10)
-
-cenario4 <- resultados_regioes |> 
-  filter(simulacao == 1536) |> 
+  filter(cenario == "Cenário 4") |> 
   mutate(perc = if_else(perc > 100, 100, perc)) |> 
   left_join(spdf_fortified,
             by = c("cod_regsaude"="reg_id")) |> 
-  distinct() |> 
-  mutate(regiao = case_when(
-    uf_sigla %in% c("MG", "SP", "RJ", "ES") ~ "Sudeste", 
-    uf_sigla %in% c("PR", "SC", "RS") ~ "Sul",
-    uf_sigla %in% c("AC", "AM", "AP", "PA", "RO", "RR", "TO") ~ "Norte",
-    uf_sigla %in% c("AL", "BA", "CE", "MA", "PB", "PE", "PI", "RN", "SE") ~ "Nordeste",
-    uf_sigla %in% c("DF", "GO", "MT", "MS") ~ "Centro-Oeste",
-    TRUE ~ "Não classificado"
-  ))
+  distinct()
 
 mapa4 <- gerar_mapa(cenario4, 
                     "perc","right","Cenário 4")
@@ -359,7 +308,10 @@ graficos <- ggplot(cenarios_agrupados_prep,
   theme(axis.title.x = element_blank(),
         legend.position = "bottom")
 
-figura_artigo <- (mapa1 | mapa2 | mapa3 | mapa4) / graficos
+figura_artigo <- (mapa1 | 
+                  mapa2 | 
+                  mapa3 | 
+                  mapa4) / graficos
 
 ggsave(figura_artigo,
       filename = "~/GitHub/materno_infantil/02_script/08_output_gráficos/figura_artigo2.jpeg",

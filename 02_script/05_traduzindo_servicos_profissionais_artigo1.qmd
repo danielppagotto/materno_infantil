@@ -14,7 +14,6 @@ Aqui narramos os processos de serviços necessários considerando apenas um reco
 
 library(tidyverse)
 library(RODBC)
-library(tidyverse)
 library(patchwork)
 library(geojsonio)
 library(geojsonsf)
@@ -59,10 +58,6 @@ servicos <- sqlQuery(channel,
                      query_servico, 
                      as.is = TRUE)
 
-servicos$mes_nascimento <- 
-  as.Date(servicos$mes_nascimento)
-
-
 ```
 
 ```{r}
@@ -74,7 +69,7 @@ controle <- servicos |>
 
 ```
 
-Lembrando que temos uma lista de 107 procedimentos:
+Teste
 
 ```{r}
 
@@ -84,8 +79,35 @@ lista_procedimentos <-
               procedimento, 
               tipo_procedimento, 
               publico,
-              mes_proc_rea,
-              nivel_atencao) 
+              mes_programado,
+              parametro,
+              parametro_recod,
+              nivel_atencao) |> 
+  mutate(mes_programado = as.numeric(mes_programado)) 
+
+
+```
+
+Lembrando que temos uma lista de 107 procedimentos:
+
+```{r}
+
+lista_procedimentos_recod <- 
+  servicos |> 
+      distinct(codigo_sigtap, 
+              sigtap_recod,
+              procedimento, 
+              procedimento_recod,
+              tipo_procedimento, 
+              publico,
+              mes_programado,
+              parametro,
+              parametro_recod,
+              nivel_atencao) |> 
+  mutate(mes_programado = as.numeric(mes_programado)) |> 
+  group_by(sigtap_recod, procedimento_recod, tipo_procedimento,
+           publico, mes_programado, nivel_atencao) |> 
+  summarise(parametro = sum(parametro_recod))
 
 DT::datatable(lista_procedimentos)
 
@@ -108,10 +130,11 @@ servicos2019 <-
   filter(tipo_procedimento == "Ações Educacionais" |
          tipo_procedimento == "Consultas ou Visitas") |> 
   filter(procedimento != "Avaliação odontológica") |> 
-  filter(procedimento != "Visita domiciliar") 
+  filter(procedimento != "Visita domiciliar") |> 
+  filter(mes_programado < 36)
 
 #write.csv(servicos2019, 
-# "/02_script/04_servicos/servicos_2019.csv")
+# "~/GitHub/materno_infantil/02_script/04_servicos/servicos_2019.csv")
 
 ```
 
@@ -157,30 +180,74 @@ servicos19_tratado <-
                    "cod_regsaud")) |> 
   janitor::clean_names() |> 
   mutate(cobertura = cobertura/100) |> 
-  rename(cobertura_ans = cobertura)
+  rename(cobertura_ans = cobertura) |> 
+  mutate(parametro = if_else(
+                      procedimento == "Ações Educacionais",
+                      1, parametro))  
 
-# este é o cenário que consideramos serviços para apenas os SUS dependente
+```
+
+Este é o cenário que consideramos serviços para apenas os SUS dependente
+
+```{r}
+
 sus = 1
 todos = 0
-
+alto_risco = 0.50 #novo parametro para a funcao
 
 if(sus == todos){
   servicos19_tratado <- servicos19_tratado |> 
-    mutate(qtd_proc = qtd_proc)
+
+    mutate(qtd_proc_rh = 
+             case_when(
+               procedimento == "Consulta pré-natal" ~ 
+                 qtd_proc * (1-alto_risco),
+               procedimento == "Ações Educacionais" ~
+                 qtd_proc * (1-alto_risco),
+               TRUE ~ qtd_proc
+               )) |> 
+    mutate(qtd_proc_ar = 
+              case_when(
+               procedimento == "Consulta pré-natal" ~ 
+                 qtd_proc * (alto_risco),
+               procedimento == "Ações Educacionais" ~
+                 qtd_proc * (alto_risco),
+               TRUE ~ 0
+               ) 
+             
+          )
 } else {
-  servicos19_tratado <- servicos19_tratado |>
+  servicos19_tratado <- 
+    servicos19_tratado |>
     mutate(qtd_proc = (qtd_nascidos - 
                       (qtd_nascidos * cobertura_ans)) * 
-                      parametro)
+                      parametro) |> 
+    mutate(qtd_proc_rh = 
+             case_when(
+               procedimento == "Consulta pré-natal" ~ 
+                 qtd_proc * (1-alto_risco),
+               procedimento == "Ações Educacionais" ~
+                 qtd_proc * (1-alto_risco),
+               TRUE ~ qtd_proc
+               )) |> 
+    mutate(qtd_proc_ar = 
+              case_when(
+               procedimento == "Consulta pré-natal" ~ 
+                 qtd_proc * (alto_risco),
+               procedimento == "Ações Educacionais" ~
+                 qtd_proc * (alto_risco),
+               TRUE ~ 0
+               )) 
 }
 
-servicos19_tratado <- 
+servicos_tratado <- 
   servicos19_tratado |> 
-  select(ano_proc_rea, uf_sigla, cod_regsaude, 
-         regiao_saude, qtd_nascidos, cobertura_ans, 
-         procedimento, tipo_procedimento, publico, 
-         nivel_atencao, parametro, mes_proc_rea, 
-         qtd_proc)
+  select(ano_proc_rea, mes_proc_rea, uf_sigla, cod_regsaude, 
+         regiao_saude, qtd_nascidos, cobertura_ans, sigtap_recod,
+         procedimento, tipo_procedimento, mes_programado,
+         publico, nivel_atencao, parametro, qtd_proc, qtd_proc_rh, 
+         qtd_proc_ar)
+
 
 ```
 
@@ -193,23 +260,39 @@ Após isso, podemos "traduzir" o número de horas necessárias no total de profi
 ```{r}
 
 acoes_educacionais <- 45
+acoes_altorisco <- 60
 consultas <- 30
-ttd <- 131.333
+consultas_altorisco <- 45
+ferias <- 16
+feriados <- 4
+absenteismo <- 16 #novo parametro da funcao
+
+ttd <- 160 - ferias - feriados - absenteismo
 
 necessidade <- 
-  servicos19_tratado |> 
-  mutate(total_horas = 
+  servicos_tratado |> 
+  mutate(total_horas_rh = 
            case_when(tipo_procedimento == 
                     "Ações Educacionais" ~ 
-                     qtd_proc * acoes_educacionais/60,
+                     qtd_proc_rh * acoes_educacionais/60,
                      tipo_procedimento == 
                     "Consultas ou Visitas" ~ 
-                     qtd_proc * consultas/60)) |> 
-  mutate(nec_prof = total_horas/ttd) |> 
+                     qtd_proc_rh * consultas/60)) |> 
+    mutate(total_horas_ar = 
+           case_when(tipo_procedimento == 
+                    "Ações Educacionais" ~ 
+                     qtd_proc_ar * acoes_altorisco/60,
+                     tipo_procedimento == 
+                    "Consultas ou Visitas" ~ 
+                     qtd_proc_ar * consultas_altorisco/60)) |> 
+  mutate(nec_prof = (total_horas_rh + total_horas_ar)/ttd) 
+
+necessidade_tratada <- 
+  necessidade |> 
   group_by(uf_sigla, cod_regsaude, regiao_saude,  
            mes_proc_rea) |> 
   summarise(nec_prof = sum(nec_prof),
-            nec_ch = sum(total_horas)) |> 
+            nec_ch = sum(total_horas_rh + total_horas_ar)) |> 
   mutate(mes = month(mes_proc_rea),
          ano = year(mes_proc_rea), 
          .after = mes_proc_rea)
@@ -220,8 +303,11 @@ O próximo passo consiste em acessar a oferta de profissionais das regiões de s
 
 ```{r}
 
-query_oferta <- 'SELECT COMPETEN, regiao, cod_regsaud, 
-                        CBO_recod, categoria_profissional, 
+query_oferta <- 'SELECT COMPETEN, 
+                        regiao, 
+                        cod_regsaud, 
+                        CBO_recod,
+                        categoria_profissional, 
                         HORAS, FTE40  
                  FROM "@daniel"."Profissionais_APS_tese"
                  WHERE ANO = 2019'
@@ -265,7 +351,7 @@ foco_clinico <-
 
 
 oferta_vs_demanda_mensal <- 
-  necessidade |> 
+  necessidade_tratada |> 
   left_join(oferta_tratado, 
             by = c("cod_regsaude"="cod_regsaud",
                    "mes"="mes",

@@ -251,3 +251,15 @@ cenarios <- rbind(cenario1,
 # write.csv(cenarios, 
 #           "~/GitHub/materno_infantil/02_script/08_output_gráficos/cenarios_selecionados.csv")
 # 
+
+cenarios_comparados <- cenario1 |> 
+                          left_join(cenario2, by = "cod_regsaude") |> 
+                          left_join(cenario3, by = "cod_regsaude") |>
+                          left_join(cenario4, by = "cod_regsaude") |> 
+                          mutate(comp12 = perc.y - perc.x) |> 
+                          mutate(comp23 = perc.x.x - perc.y) |> 
+                          mutate(comp34 = perc.y.y - perc.x.x)
+
+mean(cenarios_comparados$comp12)
+mean(cenarios_comparados$comp23)
+mean(cenarios_comparados$comp34)
