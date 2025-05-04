@@ -141,9 +141,9 @@ b <- baseline |>
 c <- a | b
 c
 
-ggsave(plot = c,
-      filename = "~/GitHub/materno_infantil/02_script/08_output_gráficos/figura_3_2019.jpeg",
-      dpi = 700, width = 12, height = 8)
+# ggsave(plot = c,
+#       filename = "~/GitHub/materno_infantil/02_script/08_output_gráficos/figura_3_2019.jpeg",
+#       dpi = 700, width = 12, height = 8)
 
 # cenarios ----------------------------------------------------------------
 
@@ -164,8 +164,11 @@ mapa1 <- gerar_mapa(cenario1,
 
 cenario1_agrupado <- cenario1 |> 
   group_by(regiao) |> 
-  summarise(perc_medio = mean(perc)) |> 
-  mutate(perc_medio = round(perc_medio, 2)) |> 
+  summarise(necessidade = sum(necessidade_media),
+            oferta = sum(oferta_media)) |>
+  mutate(perc = (oferta/necessidade) * 100) |> 
+  mutate(absoluto = oferta - necessidade) |> 
+  mutate(perc_medio = round(perc, 2)) |> 
   mutate(cenario = "Cenário 1") 
 
 
@@ -194,8 +197,11 @@ mapa2 <- gerar_mapa(cenario2,
 
 cenario2_agrupado <- cenario2 |> 
   group_by(regiao) |> 
-  summarise(perc_medio = mean(perc)) |> 
-  mutate(perc_medio = round(perc_medio, 2)) |> 
+  summarise(necessidade = sum(necessidade_media),
+            oferta = sum(oferta_media)) |>
+  mutate(perc = (oferta/necessidade) * 100) |> 
+  mutate(perc_medio = round(perc, 2)) |> 
+  mutate(absoluto = oferta - necessidade) |> 
   mutate(cenario = "Cenário 2") 
 
 
@@ -228,8 +234,11 @@ mapa3 <- gerar_mapa(cenario3,
 
 cenario3_agrupado <- cenario3 |> 
   group_by(regiao) |> 
-  summarise(perc_medio = mean(perc)) |> 
-  mutate(perc_medio = round(perc_medio, 2)) |> 
+  summarise(necessidade = sum(necessidade_media),
+            oferta = sum(oferta_media)) |>
+  mutate(perc = (oferta/necessidade) * 100) |>
+  mutate(absoluto = oferta - necessidade) |> 
+  mutate(perc_medio = round(perc, 2)) |> 
   mutate(cenario = "Cenário 3") 
 
 
@@ -261,8 +270,11 @@ mapa4 <- gerar_mapa(cenario4,
 
 cenario4_agrupado <- cenario4 |> 
   group_by(regiao) |> 
-  summarise(perc_medio = mean(perc)) |> 
-  mutate(perc_medio = round(perc_medio, 2)) |> 
+  summarise(necessidade = sum(necessidade_media),
+            oferta = sum(oferta_media)) |>
+  mutate(perc = (oferta/necessidade) * 100) |> 
+  mutate(perc_medio = round(perc, 2)) |> 
+  mutate(absoluto = oferta - necessidade) |> 
   mutate(cenario = "Cenário 4") 
 
 
@@ -284,8 +296,17 @@ cenarios_agrupados <- rbind(cenario1_agrupado,
                             cenario3_agrupado,
                             cenario4_agrupado)
 
-# Prepare os dados adequadamente primeiro
-cenarios_agrupados_prep <- cenarios_agrupados |> 
+
+write.csv(cenarios_agrupados, 
+          "~/GitHub/materno_infantil/02_script/08_output_gráficos/cenarios_regiao.csv")
+
+
+# plotando gráficos -------------------------------------------------------
+
+
+
+cenarios_agrupados_prep <- 
+  cenarios_agrupados |> 
   rename(Região = regiao) |> 
   mutate(perc_medio_arredondado = round(perc_medio, 2))
 
@@ -294,16 +315,18 @@ dodge_width <- 0.9
 posicao <- position_dodge(width = dodge_width)
 
 # Crie o gráfico
-graficos <- ggplot(cenarios_agrupados_prep, 
+graficos <- 
+  ggplot(cenarios_agrupados_prep, 
        aes(x = fct_reorder(cenario, perc_medio), 
            y = perc_medio, 
            fill = Região, group = Região)) + 
   geom_col(position = posicao) + 
-  geom_text(aes(label = perc_medio_arredondado, y = perc_medio + 2),
+  geom_text(aes(label = perc_medio_arredondado, 
+                y = perc_medio + 2),
             position = posicao,
             size = 3) +
   theme_minimal() +
-  ylim(0, 100) + 
+  ylim(0, 110) + 
   ylab("Resultado relativo (%)") + 
   theme(axis.title.x = element_blank(),
         legend.position = "bottom")
