@@ -8,7 +8,8 @@ df_combinado <- vroom::vroom("~/GitHub/materno_infantil/02_script/03_outputs_pro
          qtd = .value)
 
 acompanhando <- df_combinado |> 
-  mutate(estado = substr(cod_regsaude, 1, 2)) |> 
+  mutate(estado = substr(cod_regsaude, 
+                         1, 2)) |> 
   select(estado, cod_regsaude) |> 
   distinct()
 

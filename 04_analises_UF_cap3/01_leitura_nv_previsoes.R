@@ -5,6 +5,8 @@ library(prophet)
 library(tsibble)
 library(fable)
 library(modeltime.ensemble)
+library(tidymodels)
+library(timetk)
 
 dremio_host <- Sys.getenv("endereco")
 dremio_port <- Sys.getenv("port")
@@ -43,13 +45,13 @@ nascidos <- nascidos |>
             filter(competen < "2024-07-01")
 
 nascidos |> 
-  filter(uf_sigla == "CE") |> 
+  filter(uf_sigla == "AM") |> 
   ggplot(aes(x = competen, y = qtd)) + 
   geom_line()
 
 # previsoes_nv para um estado apenas  ------------------------------------------------------------
 
-estado <- "CE"
+estado <- "RR"
 
 nascidos_uf <- nascidos |> 
                   filter(uf_sigla == estado)
@@ -111,7 +113,7 @@ modelo_5 <-
 
 # Modelo 6 - MARS
 
-modelo_6 <- 
+model_spec_mars <- 
   mars(mode = "regression") |>
   set_engine("earth") 
 
@@ -165,7 +167,11 @@ calibration_tbl |>
 melhores_modelos <- 
   calibration_tbl |>
   modeltime_accuracy() |> 
-  slice_min(mape, n = 3)
+  filter(.model_id %in% c(2, 3, 5))
+
+# AM, GO foi ETS, Prophet e LM
+# MS foi ETS, ARIMA, prophet
+# RR foi ets, arima com xgboost, lm 
 
 write.csv(melhores_modelos, 
           file = paste0("~/GitHub/materno_infantil/04_analises_UF_cap3/01_output_projecoes/melhores_modelos/melhores_modelos_",estado,".csv"))
@@ -194,6 +200,8 @@ a <-
   ggtitle(paste0("Comparação entre melhores projeções vs valores reais - UF: ",
                   estado))
 
+a
+
 ggsave(plot = a,
        filename = paste0("~/GitHub/materno_infantil/04_analises_UF_cap3/01_output_projecoes/projecao_vs_teste/proj_teste_",
        estado,".jpeg"), 
@@ -221,6 +229,8 @@ b <- refit_tbl |>
   ggtitle(paste0("Projeção dos três melhores modelos - UF: ",
                  estado))
 
+b
+
 ggsave(plot = b, 
        filename = paste0("~/GitHub/materno_infantil/04_analises_UF_cap3/01_output_projecoes/projecoes/",estado,
        "_top_3_proj.jpeg"), 
@@ -232,7 +242,7 @@ ggsave(plot = b,
 ensemble_fit <- 
   models_tbl |>
   filter(.model_id %in% id) |> 
-  ensemble_weighted(loadings = c(1, 3, 1),
+  ensemble_weighted(loadings = c(1, 1, 3),
                     scale_loadings = TRUE)
 
 ensemble_fit
@@ -280,7 +290,7 @@ c <- refit_tbl_ensemble |>
   xlab("Ano") + ylab("Total") +
   ggtitle(paste0("Projeção dos melhores modelos - UF: ",
                  estado)) 
-
+c
 ggsave(plot = c, 
        filename = paste0("~/GitHub/materno_infantil/04_analises_UF_cap3/01_output_projecoes/projecoes/",estado,"_proj_emsemble.jpeg"), 
        dpi = 500, height = 5, width = 8)
@@ -310,7 +320,7 @@ d <- proj_ano |>
   xlab("Ano") + ylab("Quantidade") + 
   ggtitle(paste0("Projeção em valores anuais - UF: ",
                  estado))
-
+d
 ggsave(plot = d, 
        filename = paste0("~/GitHub/materno_infantil/04_analises_UF_cap3/01_output_projecoes/projecoes/",estado,
                          "_proj_emsemble_anual.jpeg"), 
@@ -379,7 +389,7 @@ fazer_projecao <- function(estado){
   
   # Modelo 6 - MARS
   
-  modelo_6 <- 
+  model_spec_mars <- 
     mars(mode = "regression") |>
     set_engine("earth") 
   
