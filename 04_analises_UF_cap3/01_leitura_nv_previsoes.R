@@ -27,6 +27,8 @@ channel <- odbcDriverConnect(sprintf("DRIVER=Dremio Connector;
                                      dremio_pwd))
 
 
+# para nv por regioes "Analytics Layer"."Epidemiológico"."Nascidos Vivos por Região de Saúde"
+
 query <- 'SELECT * FROM "@daniel"."nascidos_uf_def_preliminar_ajustado"'
 
 
@@ -51,7 +53,7 @@ nascidos |>
 
 # previsoes_nv para um estado apenas  ------------------------------------------------------------
 
-estado <- "RR"
+estado <- "MG"
 
 nascidos_uf <- nascidos |> 
                   filter(uf_sigla == estado)
@@ -128,7 +130,7 @@ modelo_6 <- workflow() |>
   add_model(model_spec_mars) |>
   fit(training_data)
 
-# modelo 7 - Prophet boost
+# modelo 7 - ETS
 
 modelo_7 <- 
     exp_smoothing() |> 
@@ -167,14 +169,14 @@ calibration_tbl |>
 melhores_modelos <- 
   calibration_tbl |>
   modeltime_accuracy() |> 
-  filter(.model_id %in% c(2, 3, 5))
+  filter(.model_id %in% c(4, 6, 5))
 
 # AM, GO foi ETS, Prophet e LM
 # MS foi ETS, ARIMA, prophet
 # RR foi ets, arima com xgboost, lm 
 
-write.csv(melhores_modelos, 
-          file = paste0("~/GitHub/materno_infantil/04_analises_UF_cap3/01_output_projecoes/melhores_modelos/melhores_modelos_",estado,".csv"))
+# write.csv(melhores_modelos, 
+#           file = paste0("~/GitHub/materno_infantil/04_analises_UF_cap3/01_output_projecoes/melhores_modelos/melhores_modelos_",estado,".csv"))
 
 id <- melhores_modelos$.model_id
 
@@ -202,10 +204,10 @@ a <-
 
 a
 
-ggsave(plot = a,
-       filename = paste0("~/GitHub/materno_infantil/04_analises_UF_cap3/01_output_projecoes/projecao_vs_teste/proj_teste_",
-       estado,".jpeg"), 
-       dpi = 500, height = 5, width = 8)
+# ggsave(plot = a,
+#        filename = paste0("~/GitHub/materno_infantil/04_analises_UF_cap3/01_output_projecoes/projecao_vs_teste/proj_teste_",
+#        estado,".jpeg"), 
+#        dpi = 500, height = 5, width = 8)
 
 refit_tbl <- 
   calibration_tbl |>
@@ -230,11 +232,11 @@ b <- refit_tbl |>
                  estado))
 
 b
-
-ggsave(plot = b, 
-       filename = paste0("~/GitHub/materno_infantil/04_analises_UF_cap3/01_output_projecoes/projecoes/",estado,
-       "_top_3_proj.jpeg"), 
-       dpi = 500, height = 5, width = 8)
+# 
+# ggsave(plot = b, 
+#        filename = paste0("~/GitHub/materno_infantil/04_analises_UF_cap3/01_output_projecoes/projecoes/",estado,
+#        "_top_3_proj.jpeg"), 
+#        dpi = 500, height = 5, width = 8)
 
 
 # Criando o ensemble dos melhores
@@ -242,7 +244,9 @@ ggsave(plot = b,
 ensemble_fit <- 
   models_tbl |>
   filter(.model_id %in% id) |> 
-  ensemble_weighted(loadings = c(1, 1, 3),
+  ensemble_average()
+  
+  ensemble_weighted(loadings = c(3, 1, 1),
                     scale_loadings = TRUE)
 
 ensemble_fit
