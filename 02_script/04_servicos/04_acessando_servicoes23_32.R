@@ -27,5 +27,44 @@ servicos <- sqlQuery(channel,
                      query_servico, 
                      as.is = TRUE)
 
-#write.csv(servicos, 
-#           "~/GitHub/materno_infantil/02_script/04_servicos/servicos19_32.csv")
+# write.csv(servicos, 
+#            "~/GitHub/materno_infantil/02_script/04_servicos/servicos19_32.csv")
+
+
+query_servico23 <- 
+  'SELECT * FROM "@daniel"."procedimentos_materno_infantil_2023"'
+
+
+servicos_23 <- sqlQuery(channel, 
+                     query_servico23, 
+                     as.is = TRUE)
+
+
+servicos23_tratado <- 
+  servicos_23 |> 
+  filter(.model_desc == "Dados Históricos"|
+         .model_desc == "PROPHET")
+
+prenatal <- servicos23_tratado |> 
+  filter(cod_regsaude == "11001") |> 
+  filter(procedimento == "Consulta puerperal")
+
+prenatal |> 
+  ggplot(aes(x = mes_proc_rea, 
+             y = qtd_proc, 
+             fill = .model_desc)) + 
+  geom_col(position = "dodge") +
+  theme_minimal()
+
+servicos_actual <- servicos_23 |> 
+  filter(.model_desc == "ACTUAL" |
+         .model_desc == "Dados Históricos"|
+         .model_desc == "PROPHET") 
+
+servicos_historico <- servicos_23 |> 
+  filter(.model_desc == "Dados Históricos")
+
+write.csv(servicos_actual, 
+          "~/GitHub/materno_infantil/02_script/04_servicos/servicos23.csv")
+
+

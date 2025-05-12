@@ -17,7 +17,8 @@ cobertura <-
   mutate(cod_regsaud = 
            as.character(cod_regsaud)) |> 
   janitor::clean_names() |> 
-  select(uf_sigla, cod_regsaud, regiao_saude, cobertura)
+  select(uf_sigla, cod_regsaud, 
+         regiao_saude, cobertura)
 
 cobertura$cod_regsaud <- 
   as.numeric(cobertura$cod_regsaud)
@@ -66,12 +67,20 @@ servicos <- rbind(servicos23,
             filter(mes_programado < 35) |> 
             filter(procedimento != "Avaliação odontológica") |> 
             filter(procedimento != "Visita domiciliar") |> 
+            mutate(cod_regsaude = as.numeric(cod_regsaude)) |> 
             left_join(cobertura, 
                       by = c("cod_regsaude"="cod_regsaud"))
 
 write.csv(servicos, 
             "~/GitHub/materno_infantil/02_1_script_capitulo3/06_servicos/servicos19_32_tratado.csv")
 
+
+servicos |> 
+  filter(cod_regsaude == "11001") |> 
+  filter(procedimento == "Consulta pré-natal") |> 
+  ggplot(aes(x = mes_proc_rea, 
+             y = qtd_proc)) + geom_smooth(method = "loess")
+  
 
 # Oferta ------------------------------------------------------------------
 
