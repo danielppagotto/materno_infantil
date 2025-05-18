@@ -4,22 +4,18 @@ library(tidyverse)
 # Demanda -----------------------------------------------------------------
 
 servicos23_32 <- 
-  vroom::vroom("~/GitHub/materno_infantil/02_script/04_servicos/servicos23_32.csv") |> 
-  select(-`...1`)
-
-tendencias_categorica <- 
-  readxl::read_excel("~/GitHub/materno_infantil/01_dados/classificacao_tendencias_final.xlsx") 
+  vroom::vroom("~/GitHub/materno_infantil/02_1_script_capitulo3/06_servicos/servicos24_30_tratado.csv")
 
 tendencia_numerico <- servicos23_32 |> 
-  select(cod_regsaude, mes_nascimento, qtd_nascidos) |> 
+  select(cod_regsaude, competen, qtd_nasc) |> 
   distinct() |> 
-  filter(year(mes_nascimento) < 2031) |> 
-  filter(mes_nascimento %in% c("2024-01-01", "2030-12-01")) %>%
+  filter(year(competen) < 2031) |> 
+  filter(competen %in% c("2024-01-01", "2030-12-01")) %>%
   group_by(cod_regsaude) %>%
-  arrange(cod_regsaude, mes_nascimento) %>%
+  arrange(cod_regsaude, competen) %>%
   summarize(
-    valor_inicial = first(qtd_nascidos),
-    valor_final = last(qtd_nascidos),
+    valor_inicial = first(qtd_nasc),
+    valor_final = last(qtd_nasc),
     variacao_percentual = ((valor_final / valor_inicial) - 1) * 100
   ) |> 
   select(cod_regsaude, variacao_percentual) |> 

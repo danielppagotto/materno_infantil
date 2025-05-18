@@ -72,12 +72,14 @@ servicos24_32_tratado |>
   ylab("Quantidade de procedimentos")
 
 
+# write.csv(servicos24_32_tratado,
+#           "~/GitHub/materno_infantil/02_1_script_capitulo3/06_servicos/servicos24_30_tratado.csv")
 
 
 # Carregando dados
 
 cobertura <- 
-  vroom::vroom("~/GitHub/materno_infantil/01_dados/cobertura_ans.csv") |> 
+  vroom::vroom("~/GitHub/materno_infantil/02_1_script_capitulo3/10_cenarios_ans/cenarios_ans_projetado.csv") |> 
   select(-`...1`) |> 
   mutate(cod_regsaud = 
            as.character(cod_regsaud)) |> 
@@ -92,15 +94,6 @@ foco_clinico <-
   read_csv("~/GitHub/materno_infantil/01_dados/foco_clinico_projetado.csv") |> 
   select(-`...1`)
 
-# Serviços ----------------------------------------------------------------
-
-# este bloco é usado para selecionar as observações dos melhores modelos de projeção 
-
-
-write.csv(servicos, 
-            "~/GitHub/materno_infantil/02_1_script_capitulo3/06_servicos/servicos19_32_tratado.csv")
-
-
 
 # Oferta ------------------------------------------------------------------
 
@@ -110,7 +103,7 @@ oferta_aps <- read_csv("~/GitHub/materno_infantil/01_dados/oferta_aps07_25.csv")
                   mutate(ds = ymd(paste0(substr(competen, 1, 4), "-", 
                                                substr(competen, 5, 6), "-01"))) |> 
                   mutate(cenario = "reais") |> 
-                  filter(ds >= "2019-01-01" & 
+                  filter(ds >= "2024-01-01" & 
                          ds < "2025-02-01") |> 
                   rename(uf = uf_sigla,
                          regiao_saude = regiao_saude_pad,

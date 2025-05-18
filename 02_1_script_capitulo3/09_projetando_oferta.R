@@ -48,7 +48,7 @@ m <- prophet(df_prophet,
 
 # Criar dataframe para previsão até 2030
 future <- make_future_dataframe(m, 
-                                periods = 60, 
+                                periods = 82, 
                                 freq = "month") 
 future$ds <- as.Date(future$ds)
 
@@ -56,6 +56,7 @@ forecast <- predict(m, future)
 forecast$ds <- as.Date(forecast$ds)  
 
 data_max <- as.Date(max(df_prophet$ds))
+
 tendencia_base <- forecast |> 
   select(ds, trend) |>
   filter(ds >= data_max) 
@@ -65,9 +66,9 @@ tendencia_base <- forecast |>
 # Cenário 1: Manter o número relativamente constante
 # Isso significa seguir apenas a tendência do prophet
 
-# Cenário 2: Aumentar 5% até 2030
+# Cenário 2: Aumentar 10% até 2030
 # Calcular fator de crescimento mensal para chegar a 5% em 5 anos
-fator_aumento_mensal <- (1.15)^(1/60) - 1 # 60 meses
+fator_aumento_mensal <- (0.90)^(1/60) - 1 # 60 meses
 
 tendencia_aumento <- tendencia_base |>
   mutate(
@@ -76,8 +77,8 @@ tendencia_aumento <- tendencia_base |>
     trend_aumento = trend * fator
   )
 
-# Cenário 3: Reduzir 5% até 2030
-fator_reducao_mensal <- (0.85)^(1/60) - 1 # 60 meses (fator negativo)
+# Cenário 3: Reduzir 20% até 2030
+fator_reducao_mensal <- (0.80)^(1/60) - 1 # 60 meses (fator negativo)
 
 tendencia_reducao <- tendencia_base |>
   mutate(
@@ -106,7 +107,7 @@ previsoes_max <- max(previsoes$cenario_aumento)
 max_total <- c(previsoes_max, max_historico)
 
 nome_arquivo_csv <- 
-  paste0("~/GitHub/materno_infantil/02_script/09_output_projecao_oferta/dfs_projecoes/projecao_", 
+  paste0("~/GitHub/materno_infantil/02_1_script_capitulo3/09_output_projecao_oferta/dfs_projecoes/projecao_", 
          cod_rs, "_", categoria, ".csv")
 
 write.csv(previsoes, nome_arquivo_csv)
@@ -115,7 +116,7 @@ write.csv(previsoes, nome_arquivo_csv)
 # Primeiro, juntar dados históricos para o gráfico
 dados_historicos <- 
   df_prophet |>
-  select(ds, y)
+  select(ds, y) 
 
 # Dados para a tendência histórica
 tendencia_historica <- forecast |> 
@@ -138,11 +139,11 @@ a <- ggplot() +
             color = "green", size = 1.2) +
   geom_line(data = previsoes, aes(x = ds, y = cenario_reducao), 
             color = "red", size = 1.2) +
-  ylim(0, max(max_total)) +
+  ylim(0, 1.5 * max(max_total)) +
   # Adicionar legenda e rótulos com informação da região e categoria
   labs(
     title = paste0("Projeção de FTE40 até 2030 - Região ", cod_rs, " (", rs, "), Categoria: ", categoria),
-    subtitle = "Três cenários: base (azul), aumento de 10% (verde), redução de 10% (vermelho)",
+    subtitle = "Três cenários: base (azul), redução em 10% da tendência de crescimento (verde), redução de 20% da tendência de crescimento (vermelho)",
     x = "Data",
     y = "FTE40"
   ) +
@@ -150,16 +151,15 @@ a <- ggplot() +
   scale_x_date(date_breaks = "1 year", date_labels = "%Y") +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
+a
+
 # Criar nome de arquivo de imagem com o código da região
-nome_arquivo_img <- paste0("~/GitHub/materno_infantil/02_script/09_output_projecao_oferta/graficos/grafico_", cod_rs, "_", categoria, ".jpeg")
+nome_arquivo_img <- paste0("~/GitHub/materno_infantil/02_1_script_capitulo3/09_output_projecao_oferta/graficos/grafico_", cod_rs, "_", categoria, ".jpeg")
 
 ggsave(filename = nome_arquivo_img, 
        plot = a, dpi = 500, height = 5, width = 10)
 
 }
-
-
-#projecao(cod_rs = "53001", "Médicos")
 
 codigos_rs <- unique(oferta_aps$cod_regsaud)
 categorias <- unique(oferta_aps$categoria_profissional)
