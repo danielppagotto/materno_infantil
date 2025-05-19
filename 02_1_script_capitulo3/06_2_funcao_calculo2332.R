@@ -1,80 +1,5 @@
 
-library(RODBC)
 library(tidyverse)
-
-
-# Demanda -----------------------------------------------------------------
-
-dremio_host <- Sys.getenv("endereco")
-dremio_port <- Sys.getenv("port")
-dremio_uid <- Sys.getenv("uid")
-dremio_pwd <- Sys.getenv("datalake")
-
-
-channel <- odbcDriverConnect(sprintf("DRIVER=Dremio Connector;
-                                     HOST=%s;
-                                     PORT=%s;
-                                     UID=%s;
-                                     PWD=%s;
-                                     AUTHENTICATIONTYPE=Basic Authentication;
-                                     CONNECTIONTYPE=Direct", 
-                                     dremio_host, 
-                                     dremio_port, 
-                                     dremio_uid, 
-                                     dremio_pwd))
-
-query <- 'SELECT * FROM "@daniel"."servicos_NV_24_30"'
-
-servicos2432 <- sqlQuery(channel, 
-                     query, 
-                     as.is = TRUE) 
-
-
-servicos24_32_tratado <- 
-  servicos2432 |> 
-  rename(mes_proc_rea = mês_procedimento_realizado,
-         qtd_proc = quantidade, 
-         qtd_nasc = qtd,
-         cod_regsaude = cod_regsaud,
-         publico = Público,
-         mes_programado = mes) |> 
-  mutate(mes_programado = as.numeric(mes_programado)) |> 
-  mutate(ano_proc_rea = 
-           year(mes_proc_rea)) |> 
-  filter(nivel_atencao == "APS" & 
-           publico != "Gestantes de Alto Risco") |>
-  filter(tipo_procedimento == "Ações Educacionais" |
-           tipo_procedimento == "Consultas ou Visitas") |> 
-  filter(mes_programado < 35) |> 
-  filter(procedimento != "Avaliação odontológica") |> 
-  filter(procedimento != "Visita domiciliar") |> 
-  mutate(cod_regsaude = as.numeric(cod_regsaude)) |> 
-  filter(ano_proc_rea > 2023) |> 
-  mutate(mes_proc_rea = as.Date(mes_proc_rea))
-
-# verificando visualmente
-
-servicos24_32_tratado |> 
-  filter(cod_regsaude == "11001") |> 
-  filter(procedimento == "Consulta pré-natal") |> 
-  group_by(mes_proc_rea) |> 
-  summarise(qtd_proc = sum(qtd_proc)) |> 
-  ungroup() |> 
-  ggplot(aes(x = mes_proc_rea, 
-             y = qtd_proc)) +
-  geom_line() + 
-  theme(axis.text.x = element_text(angle = 90, 
-                                   hjust = 1, 
-                                   vjust = 0.5)) + 
-  ylim(0, 3000) +
-  theme_bw() +
-  xlab("Mês/ano") + 
-  ylab("Quantidade de procedimentos")
-
-
-# write.csv(servicos24_32_tratado,
-#           "~/GitHub/materno_infantil/02_1_script_capitulo3/06_servicos/servicos24_30_tratado.csv")
-
 
 # Carregando dados
 
@@ -84,18 +9,48 @@ cobertura <-
   mutate(cod_regsaud = 
            as.character(cod_regsaud)) |> 
   janitor::clean_names() |> 
-  select(uf_sigla, cod_regsaud, 
-         regiao_saude, cobertura)
-
+  filter(ano > 2023) |> 
+  select(ano, cod_regsaud, cobertura, cenario) 
+  
 cobertura$cod_regsaud <- 
   as.numeric(cobertura$cod_regsaud)
+
+servicos2332 <- 
+  vroom::vroom("~/GitHub/materno_infantil/02_1_script_capitulo3/06_servicos/servicos24_30_tratado.csv") |> 
+  select(-`...1`) 
+
+servicos_pecanha <- servicos |> 
+                        filter(cod_regsaude == "31080")
+
+# a função pode assumir os seguintes valores: 
+# todos, aumento, constante, diminuicao
+
+cenario_ans <- function(cenario_sus_dependente){
+  
+  if(cenario_sus_dependente == "todos" ){
+    
+    cobertura_ajustado <- cobertura |> 
+                            filter(cenario == "aumento") |> 
+                            mutate(cenario = "Sem dedução") |> 
+                            mutate(cobertura = 0)
+  } else {
+  
+  cobertura_ajustado <- 
+    cobertura |> 
+      filter(cenario == cenario_sus_dependente)
+  }
+  
+  return(cobertura_ajustado)
+}
+
+ans <- cenario_ans(cenario_sus_dependente = "aumento") |> 
+          rename(cenario_ans = cenario)
+
+# Oferta ------------------------------------------------------------------
 
 foco_clinico <- 
   read_csv("~/GitHub/materno_infantil/01_dados/foco_clinico_projetado.csv") |> 
   select(-`...1`)
-
-
-# Oferta ------------------------------------------------------------------
 
 oferta_aps <- read_csv("~/GitHub/materno_infantil/01_dados/oferta_aps07_25.csv") |> 
                   select(-`...1`) |> 
@@ -104,7 +59,7 @@ oferta_aps <- read_csv("~/GitHub/materno_infantil/01_dados/oferta_aps07_25.csv")
                                                substr(competen, 5, 6), "-01"))) |> 
                   mutate(cenario = "reais") |> 
                   filter(ds >= "2024-01-01" & 
-                         ds < "2025-02-01") |> 
+                         ds <= "2025-01-01") |> 
                   rename(uf = uf_sigla,
                          regiao_saude = regiao_saude_pad,
                          oferta = fte40,
@@ -115,7 +70,7 @@ oferta_aps <- read_csv("~/GitHub/materno_infantil/01_dados/oferta_aps07_25.csv")
                          oferta, categoria, CBO)
   
 previsao_oferta_enf <-  
-  vroom::vroom("~/GitHub/materno_infantil/02_1_script_capitulo3/09_output_projecao_oferta/dfs_projecoes/projecao_enfermeiros_combinados.csv") |> 
+  vroom::vroom("~/GitHub/materno_infantil/02_1_script_capitulo3/09_output_projecao_oferta/projecao_enfermeiros_combinados.csv") |> 
   pivot_longer(
     cols = c(cenario_base, cenario_aumento, cenario_reducao),
     names_to = "cenario",
@@ -123,10 +78,11 @@ previsao_oferta_enf <-
   ) |> 
   mutate(categoria = "Enfermeiros") |> 
   mutate(CBO = "2235") |> 
-  select(-arquivo_origem)
+  select(-arquivo_origem) |> 
+  filter(ds >= "2025-01-01")
   
 previsao_oferta_med <- 
-  vroom::vroom("~/GitHub/materno_infantil/02_1_script_capitulo3/09_output_projecao_oferta/dfs_projecoes/projecao_medicos_combinados.csv") |> 
+  vroom::vroom("~/GitHub/materno_infantil/02_1_script_capitulo3/09_output_projecao_oferta/projecao_medicos_combinados.csv") |> 
   pivot_longer(
     cols = c(cenario_base, cenario_aumento, cenario_reducao),
     names_to = "cenario",
@@ -134,83 +90,92 @@ previsao_oferta_med <-
   ) |> 
   mutate(categoria = "Médicos") |> 
   mutate(CBO = "2231") |> 
-  select(-arquivo_origem)
+  select(-arquivo_origem) |> 
+  filter(ds >= "2025-01-01")
 
 oferta <- rbind(oferta_aps,
                 previsao_oferta_enf,
-                previsao_oferta_med)
+                previsao_oferta_med) |> 
+          mutate(ano = year(ds)) |> 
+          left_join(foco_clinico, 
+                      by = c("cod_regsaud"="cod_regsaud",
+                             "ano"="ano")) |> 
+          filter(ds < "2031-01-01")
+
+oferta_anual <- 
+  oferta |> 
+  group_by(ano, uf, cod_regsaud, 
+           regiao_saude, cenario, 
+           categoria, CBO) |> 
+  summarise(oferta = mean(oferta))
 
 
-oferta |> 
-  filter(cod_regsaud == "16003") |> 
-  ggplot(aes(x = ds, y = oferta, 
-             col = cenario)) + 
-  geom_smooth(method="loess", span=0.3) + 
-  facet_wrap(~categoria)
+oferta_anual |> 
+  filter(cod_regsaud == "16003") |>
+  rename(Cenário = cenario) |> 
+  ggplot(aes(x = ano, y = oferta, 
+             col = Cenário)) + 
+  geom_smooth(method="loess",
+              se = FALSE) + 
+  facet_wrap(~categoria) + 
+  theme_minimal() +
+  xlab("Ano") + 
+  ylim(0, 200)
+
+cenario_oferta <- 
+  
+  function(oferta_cenario){
+  
+    oferta_ajustada <- 
+      oferta |> 
+      filter(cenario == oferta_cenario |
+             cenario == "reais")
+  
+  return(oferta_ajustada)
+}
+
+
+oferta_resultante <- 
+        cenario_oferta(oferta_cenario = "cenario_base") |> 
+        mutate(ano = year(ds),
+               mes = month(ds)) |> 
+        select(-regiao_saude, -uf,
+               -direcao, -variacao_percentual) 
 
 # Executando o passo a passo sem função -----------------------------------
 
-sus = 1
-todos = 0
-alto_risco = 0.15 #novo parametro para a funcao
-
-if(sus == todos){
-  
-  servicos_tratado <- 
-    
-    servicos |> 
-    mutate(qtd_proc_rh = 
-             case_when(
-               procedimento == "Consulta pré-natal" ~ 
-                 qtd_proc * (1-alto_risco),
-               procedimento == "Ações Educacionais" ~
-                 qtd_proc * (1-alto_risco),
-               TRUE ~ qtd_proc
-             )) |> 
-    mutate(qtd_proc_ar = 
-             case_when(
-               procedimento == "Consulta pré-natal" ~ 
-                 qtd_proc * (alto_risco),
-               procedimento == "Ações Educacionais" ~
-                 qtd_proc * (alto_risco),
-               TRUE ~ 0
-             ) 
-    )
-
-  } else {
-  
-  servicos_tratado <- 
-    
-    servicos |>
-    mutate(qtd_proc = ((qtd_nascidos - 
-                      (qtd_nascidos * (cobertura/100)))) * 
-             parametro_recod) |> 
-    mutate(qtd_proc_rh = 
-             case_when(
-               procedimento == "Consulta pré-natal" ~ 
-                 qtd_proc * (1-alto_risco),
-               procedimento == "Ações Educacionais" ~
-                 qtd_proc * (1-alto_risco),
-               TRUE ~ qtd_proc
-             )) |> 
-    mutate(qtd_proc_ar = 
-             case_when(
-               procedimento == "Consulta pré-natal" ~ 
-                 qtd_proc * (alto_risco),
-               procedimento == "Ações Educacionais" ~
-                 qtd_proc * (alto_risco),
-               TRUE ~ 0
-             )) 
-}
+alto_risco <- 0.15 #novo parametro para a funcao
 
 servicos_tratado <- 
-  servicos_tratado |> 
-  select(ano_proc_rea, mes_proc_rea, uf_sigla, cod_regsaude, 
-         regiao_saude, qtd_nascidos, cobertura, sigtap_recod,
+  servicos |> 
+  left_join(ans, 
+            by = c("cod_regsaude"="cod_regsaud",
+                   "ano_proc_rea"="ano")) |> 
+  mutate(qtd_cobertura = 
+           qtd_nasc - (qtd_nasc * (cobertura/100))) |> 
+  mutate(qtd_proc = parametro * qtd_cobertura) |> 
+    mutate(qtd_proc_rh = 
+             case_when(
+               procedimento == "Consulta pré-natal" ~ 
+                 qtd_proc * (1-alto_risco),
+               procedimento == "Ações Educacionais" ~
+                 qtd_proc * (1-alto_risco),
+               TRUE ~ qtd_proc
+             )) |> 
+    mutate(qtd_proc_ar = 
+             case_when(
+               procedimento == "Consulta pré-natal" ~ 
+                 qtd_proc * (alto_risco),
+               procedimento == "Ações Educacionais" ~
+                 qtd_proc * (alto_risco),
+               TRUE ~ 0
+             ))  |> 
+  select(ano_proc_rea, mes_proc_rea, uf_sigla, 
+         cod_regsaude, regiao_saude, qtd_nasc, 
+         cobertura, cenario_ans, codigo_sigtap,
          procedimento, tipo_procedimento, mes_programado,
-         publico, nivel_atencao, parametro, qtd_proc, qtd_proc_rh, 
-         qtd_proc_ar)
-
+         publico, nivel_atencao, parametro, 
+         qtd_proc, qtd_proc_rh, qtd_proc_ar)
 
 
 # Necessidade de profissionais --------------------------------------------
@@ -241,8 +206,8 @@ necessidade <-
                      tipo_procedimento == 
                        "Consultas ou Visitas" ~ 
                        qtd_proc_ar * consultas_altorisco/60)) |> 
-  mutate(nec_med = (((total_horas_rh * 0.50) + (total_horas_ar * 0.60))/ttd)) |> 
-  mutate(nec_enf = (((total_horas_rh * 0.50) + (total_horas_ar * 0.40))/ttd))
+  mutate(nec_med = (((total_horas_rh * 0.50) + (total_horas_ar * 0.50))/ttd)) |> 
+  mutate(nec_enf = (((total_horas_rh * 0.50) + (total_horas_ar * 0.50))/ttd))
 
 # parametros que precisam ser ajustados (0.50 e 0.60)
 
@@ -255,7 +220,7 @@ necessidade_tratada <-
   mutate(mes = month(mes_proc_rea),
          ano = year(mes_proc_rea), 
          .after = mes_proc_rea) |> 
-  filter(ano >= 2019 & ano < 2030)
+  filter(ano >= 2024 & ano < 2031)
 
 # Visualizando para uma região de saúde
 
@@ -264,13 +229,52 @@ necessidade_tratada |>
   ggplot(aes(x = mes_proc_rea, 
              y = nec_enf,
              fill = regiao_saude)) + 
-  geom_col() + theme_minimal() + 
+  geom_point() +
+  geom_smooth(method = "loess") +
+  theme_minimal() + 
   xlab("Mês de realização de procedimento") + 
-  ylab("Necessidade de enfermeiros")
+  ylab("Necessidade de enfermeiros") + 
+  ylim(0, 25) +
+  theme(legend.position = "none") 
 
 # necessidade dividido por categorias
 
-comparacao <- necessidade_tratada |> 
+oferta_enf <- oferta_resultante |> 
+  filter(categoria == "Enfermeiros")
+
+oferta_med <- oferta_resultante |> 
+  filter(categoria == "Médicos")
+
+comparar_enf <- 
+  necessidade_tratada |> 
+    left_join(oferta_enf, 
+            by = c("mes"="mes",
+                   "ano"="ano",
+                   "cod_regsaude"="cod_regsaud",
+                   "mes_proc_rea"="ds")) |> 
+  mutate(fte40 = oferta * 0.50 * perc_fc) |> 
+  mutate(ra = fte40 - nec_enf,
+         rr = fte40/nec_enf)
+
+comparar_med <- 
+  necessidade_tratada |> 
+  left_join(oferta_med, 
+            by = c("mes"="mes",
+                   "ano"="ano",
+                   "cod_regsaude"="cod_regsaud",
+                   "mes_proc_rea"="ds")) |> 
+  mutate(fte40 = oferta * 0.50 * perc_fc) |> 
+  mutate(ra = fte40 - nec_med,
+         rr = fte40/nec_med)
+
+
+
+
+
+
+
+comparacao <- 
+  necessidade_tratada |> 
   mutate(cod_regsaude = as.numeric(cod_regsaude)) |> 
   left_join(oferta, 
             by = c("ano"="ano",
