@@ -13,7 +13,7 @@ options(scipen = 999)
 # Carregando dados que vão alimentar a funcao -----------------------------
 
 servicos <- 
-  read_csv("02_script_debug/01_dfs/servicos23_tratado.csv") |> 
+  read_csv("~/GitHub/materno_infantil/02_script_debug/01_dfs/servicos23_tratado.csv") |> 
   select(-`...1`)
 
 oferta_med <- 
@@ -63,6 +63,8 @@ executar_simulacao_desagregado <- function(acoes_hab,
                                            enf_visita, 
                                            enf_cd, 
                                            enf_acoes,
+                                           ist_enf,
+                                           ist_medico,
                                            servicos_data,  
                                            oferta_data_med, 
                                            oferta_data_enf, 
@@ -150,7 +152,7 @@ executar_simulacao_desagregado <- function(acoes_hab,
   # Traduzir número de horas em número de profissionais necessários
   
   ttd <- 160 - ferias - feriados - absenteismo
-  
+
   necessidade <-
     servicos23_procedimentos |> 
     mutate(total_horas_rh = 
@@ -188,7 +190,7 @@ executar_simulacao_desagregado <- function(acoes_hab,
                        codigo_sigtap == "0301010080" ~ 
                          qtd_proc_ar * consulta_cd/60)) |> 
     mutate(nec_prof = (total_horas_rh + total_horas_ar)) |> 
-    mutate(necessidade_media_enf = case_when(codigo_sigtap == "0301010110" ~
+    mutate(nec_enf = case_when(codigo_sigtap == "0301010110" ~
                                  nec_prof * enf_prenatal,
                                codigo_sigtap == "0301010129" ~ 
                                  nec_prof * enf_puerperal, 
@@ -204,7 +206,9 @@ executar_simulacao_desagregado <- function(acoes_hab,
                                  nec_prof * enf_coleta_cito,
                                codigo_sigtap == "0301010080" ~
                                  nec_prof * enf_cd)) |> 
-    mutate(nec_med = nec_prof - necessidade_media_enf)
+    mutate(nec_enf = nec_enf * (1 + ist_enf)) |> 
+    mutate(nec_med = nec_prof - nec_enf) |> 
+    mutate(nec_med = nec_med * (1 + ist_medico))
   
   nec_prof <- 
     necessidade |>
@@ -214,9 +218,9 @@ executar_simulacao_desagregado <- function(acoes_hab,
              regiao_saude,
              uf_sigla) |> 
     summarise(nec_med = sum(nec_med),
-              necessidade_media_enf = sum(necessidade_media_enf)) |> 
+              nec_enf = sum(nec_enf)) |> 
     mutate(nec_med_prof = nec_med/ttd,
-           necessidade_media_enf_prof = necessidade_media_enf/ttd) |> 
+           necessidade_media_enf_prof = nec_enf/ttd) |> 
     rename(ano = ano_proc_rea) |> 
     mutate(mes = month(mes_proc_rea))|> 
     mutate(cod_regsaud = as.numeric(cod_regsaud)) 
@@ -357,7 +361,7 @@ executar_simulacao_desagregado <- function(acoes_hab,
 
 # Função principal para executar a simulação de Monte Carlo
 
-executar_monte_carlo_desagregado <- function(n_sim = 10000, 
+executar_monte_carlo_desagregado <- function(n_sim = 1000, 
                                              acoes_hab_min = 25,
                                              acoes_hab_max = 35,
                                              prenatal_hab_min = 20,
@@ -368,8 +372,8 @@ executar_monte_carlo_desagregado <- function(n_sim = 10000,
                                              indireta_med_max = 0.65,
                                              prob_todos_0 = 0.5, 
                                              prob_todos_1 = 0.5, 
-                                             absenteismo_min = 8,
-                                             absenteismo_max = 24,
+                                             absenteismo_min = 16,
+                                             absenteismo_max = 32,
                                              prenatal_alto_min = 25,
                                              prenatal_alto_max = 40,
                                              alto_risco_min = 0.10,
@@ -406,6 +410,10 @@ executar_monte_carlo_desagregado <- function(n_sim = 10000,
                                              enf_cd_max = 0.55,
                                              enf_acoes_min = 0.45,
                                              enf_acoes_max = 0.55,
+                                             ist_enf_min = 0.10,
+                                             ist_enf_max = 0.20,
+                                             ist_med_min = 0.10,
+                                             ist_med_max = 0.20,
                                              servicos, 
                                              oferta_med, 
                                              oferta_enf,
@@ -492,6 +500,12 @@ executar_monte_carlo_desagregado <- function(n_sim = 10000,
     enf_cd = runif(n_sim,
                    min = enf_cd_min,
                    max = enf_cd_max),
+    ist_enf = runif(n_sim, 
+                    min = ist_enf_min,
+                    max = ist_enf_max),
+    ist_med = runif(n_sim,
+                    min = ist_med_min,
+                    max = ist_med_max),
     todos = sample(c(0, 1), size = n_sim, 
                    replace = TRUE, 
                    prob = c(prob_todos_0, prob_todos_1))
@@ -540,6 +554,9 @@ executar_monte_carlo_desagregado <- function(n_sim = 10000,
       enf_visita = parametros_simulacao$enf_visita[i],
       enf_cd = parametros_simulacao$enf_cd[i],
       enf_acoes = parametros_simulacao$enf_acoes[i],
+      ist_enf = parametros_simulacao$ist_enf[i],
+      ist_med = parametros_simulacao$ist_med[i],
+      
       servicos_data = servicos,
       oferta_data_med = oferta_med,
       oferta_data_enf = oferta_enf,
@@ -603,6 +620,8 @@ executar_monte_carlo_desagregado <- function(n_sim = 10000,
         enf_visita = parametros_simulacao$enf_visita[i],
         enf_cd = parametros_simulacao$enf_cd[i],
         enf_acoes = parametros_simulacao$enf_acoes[i],
+        ist_enf = parametros_simulacao$ist_enf[i],
+        ist_med = parametros_simulacao$ist_med[i],
         
         # Parâmetro todos
         todos = parametros_simulacao$todos[i]
@@ -696,15 +715,15 @@ executar_monte_carlo_desagregado <- function(n_sim = 10000,
 
 
 resultado_mc <- executar_monte_carlo_desagregado(
-  n_sim = 10000, 
-  acoes_hab_min = 20, 
+  n_sim = 1000, 
+  acoes_hab_min = 25, 
   acoes_hab_max = 40,
-  prenatal_hab_min = 20, 
+  prenatal_hab_min = 25, 
   prenatal_hab_max = 40,
-  absenteismo_min = 8, 
-  absenteismo_max = 24,
+  absenteismo_min = 16, 
+  absenteismo_max = 32,
   indireta_enf_min = 0.50, 
-  indireta_enf_max = 0.60,
+  indireta_enf_max = 0.65,
   indireta_med_min = 0.50,
   indireta_med_max = 0.65,
   prob_todos_0 = 0.5, 
@@ -719,11 +738,11 @@ resultado_mc <- executar_monte_carlo_desagregado(
   ferias_max = 8,
   feriados_min = 4,
   feriados_max = 8,
-  imunizacao_min = 10,
-  imunizacao_max = 20,
+  imunizacao_min = 15,
+  imunizacao_max = 25,
   coleta_exames_min = 10,
-  coleta_exames_max = 20,
-  visita_min = 45,
+  coleta_exames_max = 25,
+  visita_min = 50,
   visita_max = 60,
   consulta_puerperal_min = 20,
   consulta_puerperal_max = 30,
@@ -745,6 +764,10 @@ resultado_mc <- executar_monte_carlo_desagregado(
   enf_cd_max = 0.55,
   enf_acoes_min = 0.45,
   enf_acoes_max = 0.55,
+  ist_enf_min = 0.15,
+  ist_enf_max = 0.20,
+  ist_med_min = 0.15,
+  ist_med_max = 0.20,
   servicos = servicos,
   oferta_med = oferta_med,
   oferta_enf = oferta_enf,
@@ -754,17 +777,34 @@ resultado_mc <- executar_monte_carlo_desagregado(
 
 
 
-# resultados_regioes <- resultado_mc[["resultados_por_regiao"]]|>   
-#   mutate(alto_risco = alto_risco * 100,
-#          indireta = indireta * 100, 
-#          rr_med = rr_med * 100, 
-#          participacao_medico = participacao_medico * 100) |> 
-#   mutate(regiao = case_when(
-#     uf_sigla %in% c("MG", "SP", "RJ", "ES") ~ "Sudeste", 
-#     uf_sigla %in% c("PR", "SC", "RS") ~ "Sul",
-#     uf_sigla %in% c("AC", "AM", "AP", "PA", "RO", "RR", "TO") ~ "Norte",
-#     uf_sigla %in% c("AL", "BA", "CE", "MA", "PB", "PE", "PI", "RN", "SE") ~ "Nordeste",
-#     uf_sigla %in% c("DF", "GO", "MT", "MS") ~ "Centro-Oeste",
-#     TRUE ~ "Não classificado"
-#   )) 
-# 
+resultados_regioes <- resultado_mc[["resultados_por_regiao"]]|>   
+  mutate(regiao = case_when(
+    uf_sigla %in% c("MG", "SP", "RJ", "ES") ~ "Sudeste", 
+    uf_sigla %in% c("PR", "SC", "RS") ~ "Sul",
+    uf_sigla %in% c("AC", "AM", "AP", "PA", "RO", "RR", "TO") ~ "Norte",
+    uf_sigla %in% c("AL", "BA", "CE", "MA", "PB", "PE", "PI", "RN", "SE") ~ "Nordeste",
+    uf_sigla %in% c("DF", "GO", "MT", "MS") ~ "Centro-Oeste",
+    TRUE ~ "Não classificado"
+  )) 
+
+write.csv(resultados_regioes,
+           "~/GitHub/materno_infantil/02_script_debug/02_output_mc/resultados_1000.csv")
+
+resumo_regiao <- resultado_mc[["resumo_por_regiao"]]
+
+write.csv(resumo_regiao,
+           "~/GitHub/materno_infantil/02_script_debug/02_output_mc/resumo_resultados_1000.csv")
+
+parametros <- resultado_mc[["parametros"]]
+
+write.csv(parametros,
+           "~/GitHub/materno_infantil/02_script_debug/02_output_mc/parametros_1000.csv")
+
+
+
+
+
+
+
+
+

@@ -79,7 +79,7 @@ indireta <- 0.50
 todos <- 1
 ferias <- 16 #horas mensais - ou seja, dois dias
 feriados <- 8 #horas mensais
-absenteismo <- 24
+absenteismo <- 0.20
 prenatal_alto <- 45
 alto_risco <- 0.15
 acoes_alto <- 50
@@ -98,6 +98,8 @@ enf_puerperal <- 0.50
 enf_visita <- 0.50 
 enf_cd <- 0.50
 enf_acoes <- 0.50
+ist_medico <- 0.15
+ist_enf <- 0.15
 
 # Aplicando sem função ----------------------------------------------------
 
@@ -124,7 +126,9 @@ servicos23 <-
 cobertura$cod_regsaud <- as.character(cobertura$cod_regsaud)
 
 lista <- servicos23 |> 
-            distinct(procedimento, mes_programado, tipo_procedimento,
+            distinct(procedimento, 
+                     mes_programado, 
+                     tipo_procedimento,
                      codigo_sigtap)
   
 
@@ -216,7 +220,8 @@ servicos23_procedimentos <-
 
 # Traduzir número de horas em número de profissionais necessários
 
-ttd <- 160 - ferias - feriados - absenteismo
+ttd <- 160 - ferias - feriados 
+ttd <- ttd - (ttd * absenteismo)
 
 necessidade <-
   servicos23_procedimentos |> 
@@ -271,7 +276,9 @@ necessidade <-
                                nec_prof * enf_coleta_cito,
                              codigo_sigtap == "0301010080" ~
                                nec_prof * enf_cd)) |> 
-  mutate(nec_med = nec_prof - nec_enf)
+  mutate(nec_med = nec_prof - nec_enf) |> 
+  mutate(nec_med = (1 + ist_medico) * nec_med) |>
+  mutate(nec_enf = (1 + ist_enf) * nec_enf)
   
 nec_prof <- 
   necessidade |>
@@ -442,7 +449,7 @@ oferta_vs_demanda <- function(acoes_hab, prenatal_hab, indireta_enf,
                               visita, consulta_puerperal, consulta_cd, 
                               enf_coleta_exames, enf_coleta_cito, enf_prenatal,
                               enf_imunizacao, enf_puerperal, enf_visita, enf_cd, 
-                              enf_acoes){
+                              enf_acoes, ist_enf, ist_medico){
   
 
   
@@ -571,7 +578,9 @@ oferta_vs_demanda <- function(acoes_hab, prenatal_hab, indireta_enf,
                                  nec_prof * enf_coleta_cito,
                                codigo_sigtap == "0301010080" ~
                                  nec_prof * enf_cd)) |> 
-    mutate(nec_med = nec_prof - nec_enf)
+    mutate(nec_enf = nec_enf * (1 + ist_enf),
+           nec_med = nec_prof - nec_enf,
+           nec_med = nec_med * (1 + ist_med))
   
   nec_prof <- 
     necessidade |>

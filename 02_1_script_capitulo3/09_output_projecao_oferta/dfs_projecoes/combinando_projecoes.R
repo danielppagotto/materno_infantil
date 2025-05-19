@@ -1,5 +1,5 @@
 # Caminho da pasta onde estão os arquivos
-caminho_pasta <- "~/GitHub/materno_infantil/02_script/09_output_projecao_oferta/dfs_projecoes"
+caminho_pasta <- "~/GitHub/materno_infantil/02_1_script_capitulo3/09_output_projecao_oferta/dfs_projecoes"
 
 # Carregar pacotes necessários
 library(dplyr)
@@ -34,8 +34,8 @@ dados_combinados <- dados_combinados |>
                           select(-`...1`)
 
 # Opcional: salvar o dataframe combinado
-# write_csv(dados_combinados, 
-#           "~/GitHub/materno_infantil/02_script/09_output_projecao_oferta/dfs_projecoes/projecao_enfermeiros_combinados.csv")
+write_csv(dados_combinados, 
+          "~/GitHub/materno_infantil/02_1_script_capitulo3/09_output_projecao_oferta/projecao_enfermeiros_combinados.csv")
 
 # Combinando medicina ---------------------------------------------------
 
@@ -57,6 +57,6 @@ dados_combinados_med <- dados_combinados_med |>
   select(-`...1`)
 
 # Opcional: salvar o dataframe combinado
-# write_csv(dados_combinados_med, 
-#            "~/GitHub/materno_infantil/02_script/09_output_projecao_oferta/dfs_projecoes/projecao_medicos_combinados.csv")
+write_csv(dados_combinados_med, 
+          "~/GitHub/materno_infantil/02_1_script_capitulo3/09_output_projecao_oferta/projecao_medicos_combinados.csv")
 
