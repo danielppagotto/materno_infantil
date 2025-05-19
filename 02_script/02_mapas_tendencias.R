@@ -33,7 +33,7 @@ baseline <-
   tendencias |> 
   mutate(cod_regsaud = as.numeric(cod_regsaud)) |> 
   left_join(spdf_fortified,
-              by = c("cod_regsaud"="reg_id")) |> 
+            by = c("cod_regsaud"="reg_id")) |> 
   distinct()
 
 

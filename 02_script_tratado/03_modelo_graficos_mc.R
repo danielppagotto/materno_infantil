@@ -1,12 +1,25 @@
 
 library(tidyverse)
-
-resumo_regiao <- 
-  read_csv("~/GitHub/materno_infantil/02_script_debug/02_output_mc/resumo_resultados23_19_05.csv") |> 
-  select(-`...1`)
+library(vroom)
+library(patchwork)
+library(geojsonio)
+library(geojsonsf)
+library(geobr)
+library(scales)
+library(ggspatial) 
+library(sf)
+library(readxl)
+library(sandwich)
+library(lmtest)
+library(modelsummary)
+library(patchwork)
 
 resultados_regioes <- 
-  read_csv("~/GitHub/materno_infantil/02_script_debug/02_output_mc/resultados_23_19_05.csv") |> 
+  read_csv("~/GitHub/materno_infantil/02_script_tratado/02_output_mc/resultados_1000.csv") |> 
+  select(-`...1`)
+
+resumo_regiao <- 
+  read_csv("~/GitHub/materno_infantil/02_script_tratado/02_output_mc/resumo_resultados_1000.csv") |> 
   select(-`...1`)
 
 
@@ -25,7 +38,9 @@ resultados_regioes <- resultados_regioes |>
                                enf_acoes = 100 * enf_acoes)
 
 
-modelo <- lm("rr_med ~ acoes_hab + prenatal_hab + absenteismo + alto_risco + indireta_med + 
+
+
+modelo <- lm("rr_enf ~ acoes_hab + prenatal_hab + absenteismo + alto_risco + indireta_med + 
              acoes_alto + prenatal_alto + coleta_exames + 
              visita + consulta_puerperal + consulta_cd + 
              enf_coleta_exames + enf_coleta_cito + enf_prenatal + 
@@ -38,7 +53,10 @@ summary(modelo)
 
 # Gráficos ----------------------------------------------------
 
-resumo_regiao  |> 
+cor.test(resumo_regiao$media_rr_med,
+         resumo_regiao$media_rr_enf)
+
+corr_rr <- resumo_regiao  |> 
   mutate(Região = case_when(
     uf_sigla %in% c("MG", "SP", "RJ", "ES") ~ "Sudeste", 
     uf_sigla %in% c("PR", "SC", "RS") ~ "Sul",
@@ -55,13 +73,25 @@ resumo_regiao  |>
   geom_vline(xintercept = 100, 
              linetype = "dashed",
              color = "red") +
-  geom_smooth(method = 'lm', se = FALSE) + 
+  geom_smooth(method = 'lm', se = FALSE,
+              col = "blue") + 
   facet_wrap(~Região)  + 
   theme_bw() +
+  annotate("text", x = 25, y = 200, label = "I", size = 3, fontface = "bold") +
+  annotate("text", x = 180, y = 200, label = "II", size = 3, fontface = "bold") +
+  annotate("text", x = 25, y = 80, label = "III", size = 3, fontface = "bold") +
+  annotate("text", x = 180, y = 80, label = "IV", size = 3, fontface = "bold") +
   xlab("Enfermeiros - RR(%)") + 
   ylab("Médicos - RR(%)") +
   xlim(0,250) + ylim(0,250)
 
+corr_rr
+
+ggsave(plot = corr_rr,
+       filename = "~/GitHub/materno_infantil/02_script_tratado/03_graficos/correlacao_rr.png",
+       dpi = 800, 
+       width = 8,
+       height = 5)
 
 dist_uf <- 
   resumo_regiao |> 
@@ -216,7 +246,8 @@ for(reg in regioes){
 
 mediana_br <- median(resumo_regiao$mediana_rr_med)
 
-resumo_regiao  |> 
+boxplot_med <- 
+  resumo_regiao  |> 
   mutate(Região = case_when(
     uf_sigla %in% c("MG", "SP", "RJ", "ES") ~ "Sudeste", 
     uf_sigla %in% c("PR", "SC", "RS") ~ "Sul",
@@ -234,11 +265,14 @@ resumo_regiao  |>
              color = "red") + 
   theme_minimal() + 
   xlab("UF") + 
-  ylab("Balanceamento (%)")
+  ylab("Balanceamento (%)") +
+  theme(legend.position = "none") + 
+  ggtitle("Distribuição de RR por UF","Médicos")
 
 mediana_br_enf <- median(resumo_regiao$mediana_rr_enf)
 
-resumo_regiao  |> 
+boxplot_enf <- 
+  resumo_regiao  |> 
   mutate(Região = case_when(
     uf_sigla %in% c("MG", "SP", "RJ", "ES") ~ "Sudeste", 
     uf_sigla %in% c("PR", "SC", "RS") ~ "Sul",
@@ -256,4 +290,242 @@ resumo_regiao  |>
              color = "red") + 
   theme_minimal() + 
   xlab("UF") + 
-  ylab("Balanceamento (%) - Enfermagem")
+  ylab("") + 
+  ggtitle("","Enfermeiros")
+
+boxplot <- boxplot_med + boxplot_enf
+
+ggsave(plot = boxplot,
+       filename = "~/GitHub/materno_infantil/02_script_tratado/03_graficos/boxplot.png",
+       dpi = 800, 
+       width = 8,
+       height = 5)
+
+
+# mapas -------------------------------------------------------------------
+
+estados_br <- read_state(year = 2020,
+                         showProgress = FALSE)
+
+spdf <- 
+  geojson_read("~/GitHub/saude_bucal/01_dados/shape_file_regioes_saude.json", 
+               what = "sp") 
+
+spdf_fortified <- 
+  sf::st_as_sf(spdf)
+
+# Definir limites de longitude e latitude para focar no Brasil
+limite_long <- c(-75, -28)  # limites de longitude
+limite_lat <- c(-33, 4)     # limites de latitude
+
+baseline <- 
+  resumo_regiao |> 
+  mutate(cod_regsaud = as.numeric(cod_regsaud)) |> 
+  left_join(spdf_fortified,
+            by = c("cod_regsaud"="reg_id")) |> 
+  distinct() |> 
+  mutate(mediana_rr_med_recod = 
+           if_else(mediana_rr_med > 200, 200,
+                   mediana_rr_med), 
+         mediana_rr_enf_recod = 
+           if_else(mediana_rr_enf > 200, 200,
+                   mediana_rr_enf))
+  
+
+
+# Mapa --------------------------------------------------------------------
+
+gerar_mapa <- 
+  
+  function(df, var_perc, titulo){
+    
+    var_sym <- sym(var_perc)
+    
+    ggplot() +
+      geom_sf(data = df, 
+              aes(fill = !!var_sym, 
+                  geometry = geometry), 
+              color = "#f5f5f5") +
+      geom_sf(data = estados_br, 
+              fill = NA, 
+              color = "#4c4d4a", 
+              size = 0.1) +
+      theme_minimal() +
+      scale_fill_gradientn(colors = 
+                             c("#FF2400","#FF7F00",  
+                               "#c1c700","#7ac142",  
+                               "#2c7719"),  
+                           values = rescale(c(0, 50,
+                                              100, 150)), 
+                           limits = c(0, 150),
+                           breaks = c(0, 50, 100, 150)) +
+      labs(fill = "RR(%)") +
+      annotation_north_arrow(
+        location = "tr", 
+        which_north = "true",
+        style = north_arrow_fancy_orienteering()) +
+      annotation_scale(location = "bl", 
+                       width_hint = 0.3) +
+      theme(
+        legend.justification = "center",
+        legend.box = "horizontal",
+        axis.title.x = element_blank(),
+        axis.title.y = element_blank(),
+        axis.text.x = element_text(size = 14),  
+        axis.text.y = element_text(size = 14),
+        legend.text = element_text(size = 14),
+        plot.title = element_text(size = 14),
+        panel.border = element_rect(color = "black", 
+                                    fill = NA, 
+                                    size = 1), 
+        plot.margin = margin(10, 10, 10, 10))
+  }
+
+
+mapa_mediana_medicos <- 
+  gerar_mapa(df = baseline, 
+           var_perc = "mediana_rr_med_recod",
+           titulo = "Médicos") + 
+  ggtitle("RR(%) por regiões de saúde",
+          "Médicos") + 
+  theme(legend.position = "none")
+
+mapa_mediana_enf <- 
+  gerar_mapa(df = baseline, 
+             var_perc = "mediana_rr_enf_recod",
+             titulo = "Enfermeiros") + 
+  ggtitle("RR(%) por regiões de saúde",
+          "Enfermeiros")
+
+mapa_mediana <- mapa_mediana_medicos + mapa_mediana_enf 
+
+ggsave(plot = mapa_mediana,
+       filename = "~/GitHub/materno_infantil/02_script_tratado/03_graficos/mapa_mediana.png",
+       dpi = 800, 
+       width = 10,
+       height = 5)
+
+# Separando cenários  -----------------------------------------------------
+
+# cenario 1 - Simulação 721
+
+cenario1 <- 
+  resultados_regioes |>
+    filter(simulacao == "721") |> 
+    mutate(cod_regsaud = as.numeric(cod_regsaud)) |> 
+    left_join(spdf_fortified,
+            by = c("cod_regsaud"="reg_id")) |> 
+    distinct() |> 
+    mutate(mediana_rr_med_recod = 
+             if_else(rr_med > 150, 150,
+                     rr_med), 
+           mediana_rr_enf_recod = 
+             if_else(rr_enf > 150, 150,
+                     rr_enf))
+
+cenario1_med <-  gerar_mapa(df = cenario1, 
+                            var_perc = "mediana_rr_med_recod",
+                            titulo = "Médicos") + 
+                  ggtitle("RR(%) por regiões de saúde",
+                      "Médicos") +
+                  theme(legend.position = "none")
+  
+  
+cenario1_enf <- 
+  gerar_mapa(df = cenario1, 
+             var_perc = "mediana_rr_enf_recod",
+             titulo = "Enfermeiros") + 
+  ggtitle("RR(%) por regiões de saúde",
+          "Enfermeiros")
+
+
+# Cenário 2 ---------------------------------------------------------------
+
+cenario2 <- 
+  resultados_regioes |>
+  filter(simulacao == "53") |> 
+  mutate(cod_regsaud = as.numeric(cod_regsaud)) |> 
+  left_join(spdf_fortified,
+            by = c("cod_regsaud"="reg_id")) |> 
+  distinct() |> 
+  mutate(mediana_rr_med_recod = 
+           if_else(rr_med > 150, 150,
+                   rr_med), 
+         mediana_rr_enf_recod = 
+           if_else(rr_enf > 150, 150,
+                   rr_enf))
+
+cenario2_med <-  gerar_mapa(df = cenario2, 
+                            var_perc = "mediana_rr_med_recod",
+                            titulo = "Médicos") + 
+  ggtitle("RR(%) por regiões de saúde",
+          "Médicos") +
+  theme(legend.position = "none")
+
+
+cenario2_enf <- 
+  gerar_mapa(df = cenario2, 
+             var_perc = "mediana_rr_enf_recod",
+             titulo = "Enfermeiros") + 
+  ggtitle("RR(%) por regiões de saúde",
+          "Enfermeiros")
+
+
+# cenário 3 ---------------------------------------------------------------
+
+cenario3 <- 
+  resultados_regioes |>
+  filter(simulacao == "842") |> 
+  mutate(cod_regsaud = as.numeric(cod_regsaud)) |> 
+  left_join(spdf_fortified,
+            by = c("cod_regsaud"="reg_id")) |> 
+  distinct() |> 
+  mutate(mediana_rr_med_recod = 
+           if_else(rr_med > 150, 150,
+                   rr_med), 
+         mediana_rr_enf_recod = 
+           if_else(rr_enf > 150, 150,
+                   rr_enf))
+
+cenario3_med <-  gerar_mapa(df = cenario3, 
+                            var_perc = "mediana_rr_med_recod",
+                            titulo = "Médicos") + 
+  ggtitle("RR(%) por regiões de saúde",
+          "Médicos") +
+  theme(legend.position = "none")
+
+
+cenario3_enf <- 
+  gerar_mapa(df = cenario3, 
+             var_perc = "mediana_rr_enf_recod",
+             titulo = "Enfermeiros") + 
+  ggtitle("RR(%) por regiões de saúde",
+          "Enfermeiros")
+
+
+# cenario 4 ---------------------------------------------------------------
+
+
+cenario4 <- 
+  resultados_regioes |>
+  filter(simulacao == "933") |> 
+  mutate(cod_regsaud = as.numeric(cod_regsaud)) |> 
+  left_join(spdf_fortified,
+            by = c("cod_regsaud"="reg_id")) |> 
+  distinct() |> 
+  mutate(mediana_rr_med_recod = 
+           if_else(rr_med > 150, 150,
+                   rr_med), 
+         mediana_rr_enf_recod = 
+           if_else(rr_enf > 150, 150,
+                   rr_enf))
+
+cenario4_med <-  gerar_mapa(df = cenario4, 
+                            var_perc = "mediana_rr_med_recod",
+                            titulo = "Médicos") + 
+  ggtitle("RR(%) por regiões de saúde",
+          "Médicos") +
+  theme(legend.position = "left")
+
+cenario1_med + cenario2_med + cenario3_med + cenario4_med
+
