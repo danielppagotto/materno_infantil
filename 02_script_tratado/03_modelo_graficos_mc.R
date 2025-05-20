@@ -95,7 +95,7 @@ ggsave(plot = corr_rr,
 
 dist_uf <- 
   resumo_regiao |> 
-  mutate(classificacao = case_when(
+  mutate(Classificação = case_when(
     media_rr_med >= 100 & 
     media_rr_enf >= 100 ~ "Ambos superávit",
     media_rr_med >= 100 &
@@ -104,12 +104,12 @@ dist_uf <-
     media_rr_med < 100 ~ "Superávit em enfermeiros e déficit de médicos",        
     media_rr_med <= 100 & 
     media_rr_enf <= 100 ~ "Ambos déficit")) |> 
-  group_by(uf_sigla, classificacao) |> 
+  group_by(uf_sigla, Classificação) |> 
   count()
 
 dist_uf |> 
   ggplot(aes(x = uf_sigla, y = n, 
-             fill = classificacao)) + 
+             fill = Classificação)) + 
   geom_col(position = "fill") +  coord_flip() + 
   xlab("UF") +
   theme_minimal() + 
@@ -325,10 +325,10 @@ baseline <-
             by = c("cod_regsaud"="reg_id")) |> 
   distinct() |> 
   mutate(mediana_rr_med_recod = 
-           if_else(mediana_rr_med > 200, 200,
+           if_else(mediana_rr_med > 150, 150,
                    mediana_rr_med), 
          mediana_rr_enf_recod = 
-           if_else(mediana_rr_enf > 200, 200,
+           if_else(mediana_rr_enf > 150, 150,
                    mediana_rr_enf))
   
 
@@ -423,20 +423,47 @@ cenario1 <-
              if_else(rr_enf > 150, 150,
                      rr_enf))
 
+dist_uf1 <- 
+  cenario1 |> 
+  mutate(Classificação = case_when(
+    rr_med >= 100 & 
+      rr_enf >= 100 ~ "Ambos superávit",
+    rr_med >= 100 &
+      rr_enf < 100 ~ "Superávit em médicos e déficit de enfermeiros",  
+    rr_enf >= 100 &
+      rr_med < 100 ~ "Superávit em enfermeiros e déficit de médicos",        
+    rr_med <= 100 & 
+      rr_enf <= 100 ~ "Ambos déficit")) |> 
+  group_by(uf_sigla, Classificação) |> 
+  count() |> 
+  ggplot(aes(x = uf_sigla, y = n, 
+             fill = Classificação)) + 
+  geom_col(position = "fill") +  coord_flip() + 
+  xlab("UF") +
+  ylab(" ") +
+  theme_minimal() + 
+  theme(legend.position = "none") + 
+  ggtitle("Cenário 1") + 
+  theme(text = element_text(size = 16))
+
+
+# mapas 1
+
 cenario1_med <-  gerar_mapa(df = cenario1, 
                             var_perc = "mediana_rr_med_recod",
                             titulo = "Médicos") + 
                   ggtitle("RR(%) por regiões de saúde",
-                      "Médicos") +
+                      "Médicos - Cenário 1") +
                   theme(legend.position = "none")
-  
+
   
 cenario1_enf <- 
   gerar_mapa(df = cenario1, 
              var_perc = "mediana_rr_enf_recod",
              titulo = "Enfermeiros") + 
   ggtitle("RR(%) por regiões de saúde",
-          "Enfermeiros")
+          "Enfermeiros - Cenário 1") + 
+  theme(legend.position = "none")
 
 
 # Cenário 2 ---------------------------------------------------------------
@@ -455,11 +482,35 @@ cenario2 <-
            if_else(rr_enf > 150, 150,
                    rr_enf))
 
+
+dist_uf2 <- 
+  cenario2 |> 
+  mutate(Classificação = case_when(
+    rr_med >= 100 & 
+      rr_enf >= 100 ~ "Ambos superávit",
+    rr_med >= 100 &
+      rr_enf < 100 ~ "Superávit em médicos e\ndeficit de enfermeiros",  
+    rr_enf >= 100 &
+      rr_med < 100 ~ "Superávit em enfermeiros e\ndeficit de médicos",        
+    rr_med <= 100 & 
+      rr_enf <= 100 ~ "Ambos déficit")) |> 
+  group_by(uf_sigla, Classificação) |> 
+  count() |> 
+  ggplot(aes(x = uf_sigla, y = n, 
+             fill = Classificação)) + 
+  geom_col(position = "fill") +  coord_flip() + 
+  xlab(" ") +
+  ylab(" ") +
+  theme_minimal() + 
+  theme(legend.position = "bottom") + 
+  ggtitle("Cenário 2") + 
+  theme(text = element_text(size = 16))
+
 cenario2_med <-  gerar_mapa(df = cenario2, 
                             var_perc = "mediana_rr_med_recod",
                             titulo = "Médicos") + 
-  ggtitle("RR(%) por regiões de saúde",
-          "Médicos") +
+  ggtitle("",
+          "Médicos - Cenário 2") +
   theme(legend.position = "none")
 
 
@@ -467,8 +518,9 @@ cenario2_enf <-
   gerar_mapa(df = cenario2, 
              var_perc = "mediana_rr_enf_recod",
              titulo = "Enfermeiros") + 
-  ggtitle("RR(%) por regiões de saúde",
-          "Enfermeiros")
+  ggtitle("",
+          "Enfermeiros - Cenário 2") + 
+  theme(legend.position = "none")
 
 
 # cenário 3 ---------------------------------------------------------------
@@ -487,11 +539,40 @@ cenario3 <-
            if_else(rr_enf > 150, 150,
                    rr_enf))
 
+
+dist_uf3 <- 
+  cenario3 |> 
+  mutate(Classificação = case_when(
+    rr_med >= 100 & 
+      rr_enf >= 100 ~ "Ambos superávit",
+    rr_med >= 100 &
+      rr_enf < 100 ~ "Superávit em médicos e\ndeficit de enfermeiros",  
+    rr_enf >= 100 &
+      rr_med < 100 ~ "Superávit em enfermeiros e\ndeficit de médicos",        
+    rr_med <= 100 & 
+      rr_enf <= 100 ~ "Ambos déficit")) |> 
+  group_by(uf_sigla, Classificação) |> 
+  count() |> 
+  ggplot(aes(x = uf_sigla, y = n, 
+             fill = Classificação)) + 
+  geom_col(position = "fill") +  
+  coord_flip() + 
+  xlab(" ") +
+  ylab("") +
+  theme_minimal() + 
+  theme(legend.position = "none") + 
+  guides(fill = guide_legend(nrow = 2)) +
+  ggtitle("Cenário 3") +
+  theme(text = element_text(size = 16))
+
+
+
+
 cenario3_med <-  gerar_mapa(df = cenario3, 
                             var_perc = "mediana_rr_med_recod",
                             titulo = "Médicos") + 
-  ggtitle("RR(%) por regiões de saúde",
-          "Médicos") +
+  ggtitle("",
+          "Médicos - Cenário 3") +
   theme(legend.position = "none")
 
 
@@ -499,8 +580,9 @@ cenario3_enf <-
   gerar_mapa(df = cenario3, 
              var_perc = "mediana_rr_enf_recod",
              titulo = "Enfermeiros") + 
-  ggtitle("RR(%) por regiões de saúde",
-          "Enfermeiros")
+  ggtitle("",
+          "Enfermeiros - Cenário 3")+ 
+  theme(legend.position = "none")
 
 
 # cenario 4 ---------------------------------------------------------------
@@ -518,14 +600,129 @@ cenario4 <-
                    rr_med), 
          mediana_rr_enf_recod = 
            if_else(rr_enf > 150, 150,
-                   rr_enf))
+                   rr_enf)) 
+
+dist_uf4 <- 
+  cenario4 |> 
+  mutate(Classificação = case_when(
+    rr_med >= 100 & 
+      rr_enf >= 100 ~ "Ambos superávit",
+    rr_med >= 100 &
+      rr_enf < 100 ~ "Superávit em médicos e déficit de enfermeiros",  
+    rr_enf >= 100 &
+      rr_med < 100 ~ "Superávit em enfermeiros e déficit de médicos",        
+    rr_med <= 100 & 
+      rr_enf <= 100 ~ "Ambos déficit")) |> 
+  group_by(uf_sigla, Classificação) |> 
+  count() |> 
+  ggplot(aes(x = uf_sigla, y = n, 
+             fill = Classificação)) + 
+  geom_col(position = "fill") +  coord_flip() + 
+  xlab(" ") + 
+  ylab(" ") +
+  theme_minimal() + 
+  theme(legend.position = "none") + 
+  ggtitle("Cenário 4") + 
+  theme(text = element_text(size = 16)) 
+
 
 cenario4_med <-  gerar_mapa(df = cenario4, 
                             var_perc = "mediana_rr_med_recod",
                             titulo = "Médicos") + 
-  ggtitle("RR(%) por regiões de saúde",
-          "Médicos") +
-  theme(legend.position = "left")
+  ggtitle("",
+          "Médicos - Cenário 4") +
+  theme(legend.position = "right")
 
-cenario1_med + cenario2_med + cenario3_med + cenario4_med
+cenario4_enf <- 
+  gerar_mapa(df = cenario4, 
+             var_perc = "mediana_rr_enf_recod",
+             titulo = "Enfermeiros") + 
+  ggtitle("",
+          "Enfermeiros - Cenário 4")+ 
+  theme(legend.position = "right")
 
+
+
+mapas_med <- cenario1_med | cenario2_med | cenario3_med | cenario4_med
+
+mapas_enf <- cenario1_enf | cenario2_enf | cenario3_enf | cenario4_enf
+
+mapas <- mapas_med / mapas_enf
+
+distribuicoes <- (dist_uf1 | dist_uf2 | dist_uf3 | dist_uf4)  
+
+ggsave(plot = distribuicoes,
+       filename = "~/GitHub/materno_infantil/02_script_tratado/03_graficos/distribuicoes.png",
+       dpi = 800, 
+       width = 15,
+       height = 8)
+
+ggsave(plot = mapas_med,
+       filename = "~/GitHub/materno_infantil/02_script_tratado/03_graficos/mapas_cenarios_med.png",
+       dpi = 800, 
+       width = 15,
+       height = 8)
+
+ggsave(plot = mapas,
+       filename = "~/GitHub/materno_infantil/02_script_tratado/03_graficos/mapas_cenarios.png",
+       dpi = 800, 
+       width = 15,
+       height = 8)
+
+ggsave(plot = mapas_enf,
+       filename = "~/GitHub/materno_infantil/02_script_tratado/03_graficos/mapa_cenarios_enf.png",
+       dpi = 800, 
+       width = 15,
+       height = 6)
+
+
+# salvando dados para calcular os gaps financeiros ------------------------
+
+
+ra_uf1 <- cenario1 |> 
+  group_by(uf_sigla) |> 
+  summarise(nec_med = sum(necessidade_media_med),
+            nec_enf = sum(necessidade_media_enf),
+            oferta_med = sum(oferta_media_med),
+            oferta_enf = sum(oferta_media_enf)) |> 
+  mutate(ra_med = oferta_med - nec_med,
+         ra_enf = oferta_enf - nec_enf) |> 
+  mutate(cenario = "Cenário 1") 
+
+ra_uf2 <- cenario2 |> 
+  group_by(uf_sigla) |> 
+  summarise(nec_med = sum(necessidade_media_med),
+            nec_enf = sum(necessidade_media_enf),
+            oferta_med = sum(oferta_media_med),
+            oferta_enf = sum(oferta_media_enf)) |> 
+  mutate(ra_med = oferta_med - nec_med,
+         ra_enf = oferta_enf - nec_enf) |> 
+  mutate(cenario = "Cenário 2")  
+
+ra_uf3 <- cenario3 |> 
+  group_by(uf_sigla) |> 
+  summarise(nec_med = sum(necessidade_media_med),
+            nec_enf = sum(necessidade_media_enf),
+            oferta_med = sum(oferta_media_med),
+            oferta_enf = sum(oferta_media_enf)) |> 
+  mutate(ra_med = oferta_med - nec_med,
+         ra_enf = oferta_enf - nec_enf) |> 
+  mutate(cenario = "Cenário 3") 
+
+ra_uf4 <- cenario4 |> 
+  group_by(uf_sigla) |> 
+  summarise(nec_med = sum(necessidade_media_med),
+            nec_enf = sum(necessidade_media_enf),
+            oferta_med = sum(oferta_media_med),
+            oferta_enf = sum(oferta_media_enf)) |> 
+  mutate(ra_med = oferta_med - nec_med,
+         ra_enf = oferta_enf - nec_enf) |> 
+  mutate(cenario = "Cenário 4") 
+
+ra_ufs <- rbind(ra_uf1,
+                ra_uf2,
+                ra_uf3,
+                ra_uf4)
+
+write.csv(ra_ufs,
+          "~/GitHub/materno_infantil/02_script_tratado/resultados_absolutos_uf.csv")
