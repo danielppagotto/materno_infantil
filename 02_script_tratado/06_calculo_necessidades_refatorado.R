@@ -386,3 +386,5 @@ c1 <- oferta_vs_demanda(acoes_hab = 45,
                         ist_med = 0.10,
                         tipo_ans = "diminuicao", 
                         cenario_oferta = "cenario_reducao20") 
+
+
