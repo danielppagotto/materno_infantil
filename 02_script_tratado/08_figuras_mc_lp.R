@@ -134,7 +134,8 @@ for(reg in regioes_saude){
 
 # plotando mapas para cenários --------------------------------------------
 
-dados_mapa <- dados_simulados |> 
+dados_mapa <- 
+  dados_simulados |> 
   group_by(ano, cod_regsaud, regiao_saude, uf_sigla) |> 
   summarise(mediana_enf = median(rr_enf),
             mediana_med = median(rr_med)) |> 
@@ -166,63 +167,83 @@ baseline25 <- dados_mapa |>
               mutate(cod_regsaud = as.numeric(cod_regsaud)) |> 
               left_join(spdf_fortified,
                      by = c("cod_regsaud"="reg_id")) |> 
-              distinct() 
+              distinct() |> 
+              mutate(mediana_enf = if_else(mediana_enf > 150, 150, 
+                                           mediana_enf),
+                     mediana_med = if_else(mediana_med > 150, 150,
+                                           mediana_med))
          
-baseline30 <- dados_mapa |> 
+baseline30 <- 
+  dados_mapa |> 
   filter(ano == 2030) |> 
   mutate(cod_regsaud = as.numeric(cod_regsaud)) |> 
   left_join(spdf_fortified,
             by = c("cod_regsaud"="reg_id")) |> 
-  distinct() 
+  distinct() |> 
+  mutate(mediana_enf = if_else(mediana_enf > 150, 150, 
+                               mediana_enf),
+         mediana_med = if_else(mediana_med > 150, 150,
+                               mediana_med))
          
 # Mapa --------------------------------------------------------------------
          
 gerar_mapa <- 
   
   function(df, var_perc, titulo){
-             
-             var_sym <- sym(var_perc)
-             
-             ggplot() +
-               geom_sf(data = df, 
-                       aes(fill = !!var_sym, 
-                           geometry = geometry), 
-                       color = "#f5f5f5") +
-               geom_sf(data = estados_br, 
-                       fill = NA, 
-                       color = "#4c4d4a", 
-                       size = 0.1) +
-               theme_minimal() +
-               annotation_north_arrow(
-                 location = "tr", 
-                 which_north = "true",
-                 style = north_arrow_fancy_orienteering()) +
-               annotation_scale(location = "bl", 
-                                width_hint = 0.3) +
-               theme(
-                 legend.justification = "center",
-                 legend.box = "horizontal",
-                 axis.title.x = element_blank(),
-                 axis.title.y = element_blank(),
-                 axis.text.x = element_text(size = 14),  
-                 axis.text.y = element_text(size = 14),
-                 legend.text = element_text(size = 14),
-                 plot.title = element_text(size = 14),
-                 panel.border = element_rect(color = "black", 
-                                             fill = NA, 
-                                             size = 1), 
-                 plot.margin = margin(10, 10, 10, 10))
-           }
+    
+    var_sym <- sym(var_perc)
+    
+    ggplot() +
+      geom_sf(data = df, 
+              aes(fill = !!var_sym, 
+                  geometry = geometry), 
+              color = "#f5f5f5") +
+      geom_sf(data = estados_br, 
+              fill = NA, 
+              color = "#4c4d4a", 
+              size = 0.1) +
+      theme_minimal() +
+      scale_fill_gradientn(colors = 
+                             c("#FF2400","#FF7F00",  
+                               "#c1c700","#7ac142",  
+                               "#2c7719"),  
+                           values = rescale(c(0, 50,
+                                              100, 150)), 
+                           limits = c(0, 150),
+                           breaks = c(0, 50, 100, 150)) +
+      labs(fill = "RR(%)") +
+      annotation_north_arrow(
+        location = "tr", 
+        which_north = "true",
+        style = north_arrow_fancy_orienteering()) +
+      annotation_scale(location = "bl", 
+                       width_hint = 0.3) +
+      theme(
+        legend.justification = "center",
+        legend.box = "horizontal",
+        axis.title.x = element_blank(),
+        axis.title.y = element_blank(),
+        axis.text.x = element_text(size = 14),  
+        axis.text.y = element_text(size = 14),
+        legend.text = element_text(size = 14),
+        plot.title = element_text(size = 14),
+        panel.border = element_rect(color = "black", 
+                                    fill = NA, 
+                                    size = 1), 
+        plot.margin = margin(10, 10, 10, 10))
+  }
+
+
          
          
 enf_mapa <- gerar_mapa(df = baseline25, 
-           var_perc = "status_enf",
+           var_perc = "mediana_enf",
            titulo = "Enfermeiros em 2025") + ggtitle("Enfermeiros - 2025") +
            theme(legend.position = "none")
          
          
 enf_mapa30 <- gerar_mapa(df = baseline30, 
-               var_perc = "status_enf",
+               var_perc = "mediana_enf",
                titulo = "Enfermeiros em 2030") + ggtitle("Enfermeiros - 2030") +
                labs(fill = "Status")
 
@@ -230,13 +251,13 @@ enf_mapa | enf_mapa30
 
 
 med_mapa <- gerar_mapa(df = baseline25, 
-                       var_perc = "status_med",
+                       var_perc = "mediana_med",
                        titulo = "Médicos em 2025") + ggtitle("Médicos - 2025") +
   theme(legend.position = "none")
 
 
 med_mapa30 <- gerar_mapa(df = baseline30, 
-                         var_perc = "status_med",
+                         var_perc = "mediana_med",
                          titulo = "Médicos em 2030") + ggtitle("Médicos - 2030") +
   labs(fill = "Status")
 
@@ -284,7 +305,7 @@ grafico_med <-
 a <- (med_mapa | med_mapa30) / grafico_med
 
 ggsave(plot = a, 
-       filename = "~/GitHub/materno_infantil/02_script_tratado/07_figuras_mapas_mclp/mapa_figura_med.jpeg",
+       filename = "~/GitHub/materno_infantil/02_script_tratado/07_figuras_mapas_mclp/mapa_figura_med2.jpeg",
        dpi = 500, 
        width = 12,
        height = 8)
@@ -333,7 +354,7 @@ grafico_enf <-
 b <- (enf_mapa | enf_mapa30) / grafico_enf
 
 ggsave(plot = b, 
-       filename = "~/GitHub/materno_infantil/02_script_tratado/07_figuras_mapas_mclp/mapa_figura_enf.jpeg",
+       filename = "~/GitHub/materno_infantil/02_script_tratado/07_figuras_mapas_mclp/mapa_figura_enf1.jpeg",
        dpi = 500, 
        width = 12,
        height = 8)
