@@ -1,0 +1,439 @@
+---
+title: "Predição"
+format: html
+editor: visual
+---
+
+## Predição de NV por região de saúde
+
+Nesse script é realizado predição do número de nascimentos por região de saúde. Primeiro analisa-se uma região em específico e depois generalizaremos para todas as demais através de uma função.
+
+Nos dois primeiros blocos de código serão carregadas as bibliotecas necessárias e a base de dados.
+
+```{r}
+library(RODBC)
+library(tidyverse)
+library(forecast)
+library(prophet)
+library(tsibble)
+library(fable)
+library(modeltime)
+library(modeltime.ensemble)
+library(tidymodels)
+library(timetk)
+```
+
+### 1. Tratamento dos dados.
+
+```{r}
+dremio_host <- Sys.getenv("endereco")
+dremio_port <- Sys.getenv("port")
+dremio_uid <- Sys.getenv("uid")
+dremio_pwd <- Sys.getenv("datalake")
+
+
+channel <- odbcDriverConnect(sprintf("DRIVER=Dremio Connector;
+                                     HOST=%s;
+                                     PORT=%s;
+                                     UID=%s;
+                                     PWD=%s;
+                                     AUTHENTICATIONTYPE=Basic Authentication;
+                                     CONNECTIONTYPE=Direct", 
+                                     dremio_host, 
+                                     dremio_port, 
+                                     dremio_uid, 
+                                     dremio_pwd))
+
+
+query <- 'SELECT * FROM "Analytics Layer"."Epidemiológico"."Nascidos Vivos por Região de Saúde"'
+
+
+data_base <- sqlQuery(channel, 
+                     query, 
+                     as.is = TRUE) |> 
+  janitor::clean_names()
+
+```
+
+A base de dados contém a séria histórica da quantidade de nascimentos por região de saúde desde o ano de 2000. A seguir é criada a variável compentência em formato data e filtrado os dados até o mês de julho de 2024.
+
+```{r}
+
+nascimentos_regioes <- data_base |> 
+  mutate(competen = paste0(mes,ano),
+         mes = substr(competen, 1, 2),
+         ano = substr(competen, 3, 6),
+         competen = ymd(paste0(ano, "-", 
+                               mes, "-01"))) |> 
+  filter(competen < "2024-07-01")
+```
+
+### 2. Predição de uma região de saúde.
+
+A seguir, dividiremos os dados em treino e teste a partir de 2022 e plotaremos a série em gráfico.
+
+```{r}
+nascidos_regiao <- nascimentos_regioes |> 
+  filter(regiao_saude == "Lavras") |> 
+  mutate(quantidade = as.numeric(quantidade)) |> 
+  rename(qtd = quantidade)
+
+training_data <- nascidos_regiao |> filter(competen < "2022-01-01")
+testing_data <- nascidos_regiao |> filter(competen >= "2022-01-01")
+
+nascidos_regiao |> 
+  plot_time_series(competen, qtd, .smooth = FALSE)
+```
+
+A seguir treinaremos um conjunto de 9 modelos preditivos com os dados de treino.
+
+```{r}
+# modelo 1 - arima
+
+modelo_1 <- 
+  arima_reg() |>
+  set_engine(engine = "auto_arima") |>
+  fit(qtd ~ competen, 
+      data = training_data)
+
+# Model 2 - arima boost
+
+modelo_2 <- arima_boost(
+  min_n = 2,
+  learn_rate = 0.015) |>
+  set_engine(engine = "auto_arima_xgboost") |>
+  fit(qtd ~ competen + 
+        as.numeric(competen) + 
+        factor(month(competen, 
+                     label = TRUE), 
+               ordered = F),
+      data = training_data)
+
+# Modelo 3 - ETS
+
+modelo_3 <- 
+  exp_smoothing() |>
+  set_engine(engine = "ets") |>
+  fit(qtd ~ competen, data = training_data)
+
+# Modelo 4 - Prophet
+
+modelo_4 <- 
+  prophet_reg() |>
+  set_engine(engine = "prophet") |>
+  fit(qtd ~ competen, data = training_data)
+
+# Modelo 5 - Regressão
+
+modelo_5 <- 
+  linear_reg() |>
+  set_engine("lm") |>
+  fit(qtd ~ as.numeric(competen) + 
+        factor(month(competen, 
+                     label = TRUE), 
+               ordered = FALSE),
+      data = training_data)
+
+# Modelo 6 - MARS
+
+model_spec_mars <- 
+  mars(mode = "regression") |>
+  set_engine("earth") 
+
+recipe_spec <- recipe(qtd ~ competen, data = training_data) |>
+  step_date(competen, features = "month", ordinal = FALSE) |>
+  step_mutate(date_num = as.numeric(competen)) |>
+  step_normalize(date_num) |>
+  step_rm(competen)
+
+modelo_6 <- workflow() |>
+  add_recipe(recipe_spec) |>
+  add_model(model_spec_mars) |>
+  fit(training_data)
+
+# modelo 7 - ETS
+
+modelo_7 <- 
+  exp_smoothing() |> 
+  set_engine(engine = "theta") |> 
+  fit(qtd ~ competen, data = training_data)
+
+# modelo 8 - Arima STLM
+
+modelo_8 <- seasonal_reg() |> 
+  set_engine("stlm_arima") |> 
+  fit(qtd ~ competen, data = training_data)
+
+# modelo 9 - NNetar_reg 
+
+modelo_9 <- nnetar_reg() |> 
+  set_engine("nnetar") |> 
+  fit(qtd ~ competen, data = training_data)
+```
+
+Após o treinamento, calibraremos os modelos, isto é, compararemos os valores preditos com os observados da base de teste, e a partir disso observaremos as métricas de desempenho.
+
+```{r}
+models_tbl <- 
+  modeltime_table(
+    modelo_1, modelo_2, modelo_3,
+    modelo_4, modelo_5, modelo_6,
+    modelo_7, modelo_8, modelo_9)
+
+calibration_tbl <- 
+  models_tbl |>
+  modeltime_calibrate(new_data = testing_data)
+
+calibration_tbl |>
+  modeltime_accuracy() |> 
+  table_modeltime_accuracy()
+```
+
+#### 2.1. Melhores modelos
+
+Os três modelos que apresentam os melhores resultados foram: LM, Earth e Prophet. A seguir plotaremos as predições e os valores observados em gráfico.
+
+```{r}
+melhores_modelos <- 
+  calibration_tbl |>
+  modeltime_accuracy() |> 
+  filter(.model_id %in% c(5, 6, 4))
+
+id <- melhores_modelos$.model_id
+
+comp_best_models <- 
+  calibration_tbl |>
+  modeltime_forecast(
+    new_data    = testing_data,
+    actual_data = nascidos_regiao
+  ) |>  
+  filter(.index >= "2022-01-01") |> 
+  filter(.model_id %in% id | is.na(.model_id))
+
+a <- 
+  comp_best_models |> 
+  ggplot(aes(x = .index, 
+             y = .value, 
+             col = .model_desc)) + 
+  geom_line(size = 1) + 
+  theme_minimal() + 
+  xlab("Ano") + ylab("Total") +
+  ylim(0, max(comp_best_models$.value) * 1.10) + 
+  ggtitle(paste0("Comparação entre melhores projeções vs valores reais - Região de Saúde: "))
+
+a
+```
+
+A seguir, treinaremos os modelos novamente com todo o conjunto de dados e plotaremos os resultados de predição dos melhores modelos para os próximos anos.
+
+```{r}
+refit_tbl <- 
+  calibration_tbl |>
+  modeltime_refit(data = nascidos_regiao)
+
+b <- refit_tbl |>
+  filter(.model_id %in% id) |> 
+  modeltime_forecast(h = "8 years", 
+                     actual_data = nascidos_regiao) |> 
+  filter(year(.index) < 2031) |> 
+  ggplot(aes(x = .index, 
+             y = .value, 
+             col = .model_desc)) +
+  geom_line() + 
+  geom_smooth(method = "loess", 
+              se = FALSE,
+              size = 0.5) +
+  theme_minimal() + 
+  ylim(0, max(comp_best_models$.value) * 1.50) + 
+  xlab("Ano") + ylab("Total") +
+  ggtitle(paste0("Projeção dos três melhores modelos - UF: "))
+
+b
+```
+
+#### 2.2. Ensemble
+
+Abaixo, é criado um ensemble (combinação) dos melhores modelos e em seguida é plotado um gráfico com a predição e os valores observados.
+
+```{r}
+
+ensemble_fit <- 
+  models_tbl |>
+  filter(.model_id %in% id) |> 
+  ensemble_average()
+
+calibration_tbl_ensemble <- 
+  modeltime_table(
+    ensemble_fit) |>
+  modeltime_calibrate(testing_data, 
+                      quiet = FALSE)
+
+# Forecast vs Test Set
+calibration_tbl_ensemble |>
+  modeltime_forecast(
+    new_data    = testing_data,
+    actual_data = nascidos_regiao
+  ) |> 
+  ggplot(aes(x = .index, 
+             y = .value, 
+             col = .model_desc)) +
+  geom_line() + 
+  theme_minimal() + 
+  ylim(0, max(comp_best_models$.value) * 1.50) + 
+  xlab("Ano") + ylab("Total") +
+  ggtitle(paste0("Projeção dos melhores modelos - UF: "))
+```
+
+Agora retreinaremos os todos os dados e prediremos os valores futuros.
+
+```{r}
+refit_tbl_ensemble <- 
+  calibration_tbl_ensemble |>
+  modeltime_refit(data = nascidos_regiao)
+
+refit_tbl_ensemble |>
+  modeltime_forecast(h = "8 years", 
+                     actual_data = nascidos_regiao) |> 
+  filter(year(.index) < 2031) |> 
+  ggplot(aes(x = .index, 
+             y = .value, 
+             col = .model_desc)) +
+  geom_line() + 
+  geom_smooth(method = "loess",
+              col = "blue", 
+              se = FALSE,
+              size = 0.5) +
+  theme_minimal() + 
+  ylim(0, max(comp_best_models$.value) * 1.50) + 
+  xlab("Ano") + ylab("Total") +
+  ggtitle(paste0("Projeção dos melhores modelos - UF: ")) 
+c
+```
+
+### 3. Definição de função preditora.
+
+A partir dos melhores modelos analisados anteriormente, definiremos uma função com o ensemble para predizer valores por regiões de saúde.
+
+```{r}
+
+predizer_natalidade <- function(regiao){
+  
+  #Tratando e filtrando
+  nascimentos_regioes <- data_base |> 
+  mutate(competen = paste0(mes,ano),
+         mes = substr(competen, 1, 2),
+         ano = substr(competen, 3, 6),
+         competen = ymd(paste0(ano, "-", 
+                               mes, "-01"))) |> 
+  filter(competen < "2024-01-01") |> 
+  filter(cod_regsaud == regiao) |> 
+  mutate(quantidade = as.numeric(quantidade)) |> 
+  rename(qtd = quantidade)
+
+    
+  #Divindo em treino e teste
+  training_data <- nascimentos_regioes |> filter(competen < "2021-01-01")
+  testing_data <- nascimentos_regioes |> filter(competen >= "2021-01-01")
+  
+  # Modelo 1 - Prophet
+  modelo_1 <- 
+  prophet_reg() |>
+  set_engine(engine = "prophet") |>
+  fit(qtd ~ competen, data = training_data)
+
+  # Modelo 2 - Regressão
+  modelo_2 <- 
+  linear_reg() |>
+  set_engine("lm") |>
+  fit(qtd ~ as.numeric(competen) + 
+        factor(month(competen, 
+                     label = TRUE), 
+               ordered = FALSE),
+      data = training_data)
+  
+  # Modelo 3 - Earth
+  model_spec_mars <- 
+  mars(mode = "regression") |>
+  set_engine("earth") 
+
+  recipe_spec <- recipe(qtd ~ competen, data = training_data) |>
+    step_date(competen, features = "month", ordinal = FALSE) |>
+    step_mutate(date_num = as.numeric(competen)) |>
+    step_normalize(date_num) |>
+    step_rm(competen)
+  
+  modelo_3 <- workflow() |>
+    add_recipe(recipe_spec) |>
+    add_model(model_spec_mars) |>
+    fit(training_data)
+  
+  # Juntando os modelos em uma tabela
+  models_tbl <- 
+  modeltime_table(
+    modelo_1, modelo_2, modelo_3)
+  
+  # Combinando os modelos
+  ensemble_fit <- 
+  models_tbl |>
+  ensemble_average()
+  
+  # Calibrando os modelos
+  calibration_tbl_ensemble <- 
+    modeltime_table(
+      ensemble_fit) |>
+    modeltime_calibrate(testing_data, 
+                        quiet = FALSE)
+  
+  predicao_teste <- calibration_tbl_ensemble[[5]][[1]] |> 
+    mutate(cod_regsaud = regiao) |>
+    rename(valor_observado = .actual,
+           valor_predito = .prediction,
+           residuo = .residuals)
+  
+  refit_tbl_ensemble <- 
+    calibration_tbl_ensemble |>
+    modeltime_refit(data = nascimentos_regioes)
+  
+  predicao_futuro <- refit_tbl_ensemble |>
+    modeltime_forecast(h = "8 years", 
+                       actual_data = nascimentos_regioes) |> 
+    filter(year(.index) < 2032) |> 
+    pivot_wider(names_from = .key, values_from = .value) |> 
+    filter(.index > "2023-12-01") |> 
+    select(.index, actual, prediction) |> 
+    rename(competen = .index,
+           valor_observado = actual,
+           valor_predito = prediction) |> 
+    mutate(residuo = NA,
+           cod_regsaud = regiao)
+  
+  resultado <- rbind(predicao_teste, predicao_futuro)
+  
+  historico <- nascimentos_regioes |> 
+    select(cod_regsaud, competen, qtd) |> 
+    filter(competen < "2021-01-01") |> 
+    rename(valor_observado = qtd)
+  
+  resultado_final <- bind_rows(resultado, historico)
+  
+  return(resultado_final)
+}
+```
+
+Por fim, aplicaremos a função para todas as regiões de saúde do Brasil.
+
+```{r}
+lista <- data_base |> 
+  distinct(cod_regsaud)
+
+lista_regioes <- as.character(lista$cod_regsaud)
+
+resultado <- list()
+for (regiao in lista_regioes) {
+  resultado[[length(resultado) + 1]] <-
+    predizer_natalidade(regiao = regiao)
+  
+}
+
+resultado_final <- do.call(rbind,resultado)
+```
