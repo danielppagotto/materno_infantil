@@ -15,7 +15,7 @@ library(modelsummary)
 library(patchwork)
 
 dados_simulados <- 
-  vroom::vroom("~/GitHub/materno_infantil/02_script_tratado/02_output_mc/resultados_lp_500.csv") |> 
+  vroom::vroom("~/GitHub/materno_infantil/02_script_tratado/02_output_mc/resultados_lp_500_0206.csv") |> 
   select(-`...1`)
 
 
@@ -34,7 +34,7 @@ cod <- unique(dados$cod_regsaud)
 
 medianas <- dados |>
   group_by(ano) |>
-  summarize(rr_enf_mediana = median(rr_enf))
+  summarize(rr_enf_mediana = median(rr_med))
 
 percentis <- dados |>
   group_by(ano) |>
@@ -93,7 +93,7 @@ grafico <- ggplot() +
   # Configurações
   scale_x_continuous(breaks = 2025:2030) +
   labs(
-    title = "Resultados Relativos para Enfermeiros",
+    title = "Resultados Relativos para Médicos",
     subtitle = paste0("Região de Saúde: ", 
                       regiao," - ", uf),
     x = "Ano",
@@ -114,7 +114,7 @@ grafico <- ggplot() +
             nudge_y = 7)
   
 ggsave(plot = grafico,
-       filename = paste0("~/GitHub/materno_infantil/02_script_tratado/07_figuras_mc_lp/mc_enfermeiros_",
+       filename = paste0("~/GitHub/materno_infantil/02_script_tratado/07_figuras_mc_lp/mc_medicos_",
                          cod,".jpeg"),
        dpi = 600, 
        height = 5,
@@ -299,13 +299,13 @@ grafico_med <-
   theme(
     axis.text.x = element_text(angle = 45, hjust = 1),  # Rotacionar rótulos do eixo x para melhor visualização
     panel.grid.major.x = element_blank(),                # Remover linhas de grade verticais
-    legend.position = "none"                          # Posicionar legenda abaixo
+    legend.position = "bottom"                          # Posicionar legenda abaixo
   ) 
 
 a <- (med_mapa | med_mapa30) / grafico_med
 
 ggsave(plot = a, 
-       filename = "~/GitHub/materno_infantil/02_script_tratado/07_figuras_mapas_mclp/mapa_figura_med2.jpeg",
+       filename = "~/GitHub/materno_infantil/02_script_tratado/07_figuras_mapas_mclp/mapa_figura_med02_06.jpeg",
        dpi = 500, 
        width = 12,
        height = 8)
@@ -348,13 +348,13 @@ grafico_enf <-
   theme(
     axis.text.x = element_text(angle = 45, hjust = 1),  # Rotacionar rótulos do eixo x para melhor visualização
     panel.grid.major.x = element_blank(),                # Remover linhas de grade verticais
-    legend.position = "none"                          # Posicionar legenda abaixo
+    legend.position = "bottom"                          # Posicionar legenda abaixo
   ) 
 
 b <- (enf_mapa | enf_mapa30) / grafico_enf
 
 ggsave(plot = b, 
-       filename = "~/GitHub/materno_infantil/02_script_tratado/07_figuras_mapas_mclp/mapa_figura_enf1.jpeg",
+       filename = "~/GitHub/materno_infantil/02_script_tratado/07_figuras_mapas_mclp/mapa_figura_enf0206.jpeg",
        dpi = 500, 
        width = 12,
        height = 8)
@@ -403,8 +403,9 @@ x <- dados_mapa |>
   geom_text(data = anotacoes, 
             aes(x = x, y = y, 
                 label = paste0("r = ", round(correlacao, 2))))
+
 ggsave(plot = x, 
-       filename = "~/GitHub/materno_infantil/02_script_tratado/07_figuras_mapas_mclp/correlacao_mc_lp.jpeg",
+       filename = "~/GitHub/materno_infantil/02_script_tratado/07_figuras_mapas_mclp/correlacao_mc_lp0206.jpeg",
        dpi = 500, 
        width = 6,
        height = 4)

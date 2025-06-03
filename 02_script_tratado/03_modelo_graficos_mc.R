@@ -15,11 +15,11 @@ library(modelsummary)
 library(patchwork)
 
 resultados_regioes <- 
-  read_csv("~/GitHub/materno_infantil/02_script_tratado/02_output_mc/resultados_1000.csv") |> 
+  read_csv("~/GitHub/materno_infantil/02_script_tratado/02_output_mc/resultados_1000_0206.csv") |> 
   select(-`...1`)
 
 resumo_regiao <- 
-  read_csv("~/GitHub/materno_infantil/02_script_tratado/02_output_mc/resumo_resultados_1000.csv") |> 
+  read_csv("~/GitHub/materno_infantil/02_script_tratado/02_output_mc/resumo_resultados_1000_0206.csv") |> 
   select(-`...1`)
 
 
@@ -40,7 +40,7 @@ resultados_regioes <- resultados_regioes |>
 
 
 
-modelo <- lm("rr_enf ~ acoes_hab + prenatal_hab + absenteismo + alto_risco + indireta_med + 
+modelo <- lm("rr_med ~ acoes_hab + prenatal_hab + absenteismo + alto_risco + indireta_med + 
              acoes_alto + prenatal_alto + coleta_exames + 
              visita + consulta_puerperal + consulta_cd + 
              enf_coleta_exames + enf_coleta_cito + enf_prenatal + 
@@ -88,7 +88,7 @@ corr_rr <- resumo_regiao  |>
 corr_rr
 
 ggsave(plot = corr_rr,
-       filename = "~/GitHub/materno_infantil/02_script_tratado/03_graficos/correlacao_rr.png",
+       filename = "~/GitHub/materno_infantil/02_script_tratado/03_graficos/correlacao_rr_0206.png",
        dpi = 800, 
        width = 8,
        height = 5)
@@ -110,7 +110,8 @@ dist_uf <-
 dist_uf |> 
   ggplot(aes(x = uf_sigla, y = n, 
              fill = Classificação)) + 
-  geom_col(position = "fill") +  coord_flip() + 
+  geom_col(position = "fill") +  
+  coord_flip() + 
   xlab("UF") +
   theme_minimal() + 
   theme(legend.position = "bottom") 
@@ -122,7 +123,7 @@ dist_uf |>
 
 mediana <- 
   resultados_regioes |> 
-  filter(cod_regsaud == 23003) |> 
+  filter(cod_regsaud == 17007) |> 
   group_by(cod_regsaud) |> 
   summarise(mediana_med = median(rr_med),
             mediana_enf = median(rr_enf), 
@@ -135,7 +136,7 @@ mediana_med <- mediana$mediana_med
 mediana_enf <- mediana$mediana_enf
 
 med <- resultados_regioes |> 
-  filter(cod_regsaud == 23003) |> 
+  filter(cod_regsaud == 17007) |> 
   ggplot(aes(x = rr_med)) + 
   geom_histogram(fill = "darkblue",
                  col = "black") + 
@@ -145,10 +146,10 @@ med <- resultados_regioes |>
   theme_bw() + xlab("Percentual (%)") + 
   ylab("Frequência")  + xlim(0, 200) + 
   ggtitle("Distribuição de Resultado Relativo - Médicos",
-          "Região de Saúde: 3ª Região Maracanaú - CE")
+          "Região de Saúde: Cantão - TO")
 
 enf <- resultados_regioes |> 
-  filter(cod_regsaud == 23003) |> 
+  filter(cod_regsaud == 17007) |> 
   ggplot(aes(x = rr_enf)) + 
   geom_histogram(fill = "darkgreen",
                  col = "black") + 
@@ -158,10 +159,14 @@ enf <- resultados_regioes |>
   theme_bw() + xlab("Percentual (%)") + 
   ylab("Frequência")  + xlim(0, 200) + 
   ggtitle("Distribuição de Resultado Relativo - Enfermeiros",
-          "Região de Saúde: 3ª Região Maracanaú - CE")
+          "Região de Saúde: Cantão - TO")
 
 a <- med + enf
 a
+
+ggsave(plot = a, 
+       filename = "~/GitHub/materno_infantil/02_script_tratado/03_graficos/figura12.png",
+       height = 5, width = 10)
 
 # Função
 
@@ -223,7 +228,7 @@ distribuicao_resultados <-
     b <- med + enf
     
     ggsave(plot = b, 
-           filename = paste0("~/GitHub/materno_infantil/02_script_debug/03_graficos/01_histograma/histograma_regiao_",
+           filename = paste0("~/GitHub/materno_infantil/02_script_tratado/03_graficos/histograma_regiao_0206/histograma",
                              reg,".jpeg"),
            dpi = 500, 
            width = 12, 
@@ -296,7 +301,7 @@ boxplot_enf <-
 boxplot <- boxplot_med + boxplot_enf
 
 ggsave(plot = boxplot,
-       filename = "~/GitHub/materno_infantil/02_script_tratado/03_graficos/boxplot.png",
+       filename = "~/GitHub/materno_infantil/02_script_tratado/03_graficos/boxplot_0206.png",
        dpi = 800, 
        width = 8,
        height = 5)
@@ -312,7 +317,8 @@ spdf <-
                what = "sp") 
 
 spdf_fortified <- 
-  sf::st_as_sf(spdf)
+  sf::st_as_sf(spdf) |> 
+  st_set_crs(4674)
 
 # Definir limites de longitude e latitude para focar no Brasil
 limite_long <- c(-75, -28)  # limites de longitude
@@ -329,27 +335,118 @@ baseline <-
                    mediana_rr_med), 
          mediana_rr_enf_recod = 
            if_else(mediana_rr_enf > 150, 150,
-                   mediana_rr_enf))
-  
+                   mediana_rr_enf)) |> 
+  st_as_sf() |> 
+  st_set_crs(st_crs(spdf_fortified)) |> 
+  mutate(resultado_med = if_else(mediana_rr_med >= 100,
+                                 "Superávit",
+                                 "Déficit")) |> 
+  mutate(resultado_enf = if_else(mediana_rr_enf >= 100,
+                                 "Superávit",
+                                 "Déficit")) |> 
+  mutate(Região = case_when(
+    uf_sigla %in% c("MG", "SP", "RJ", "ES") ~ "Sudeste", 
+    uf_sigla %in% c("PR", "SC", "RS") ~ "Sul",
+    uf_sigla %in% c("AC", "AM", "AP", "PA", "RO", "RR", "TO") ~ "Norte",
+    uf_sigla %in% c("AL", "BA", "CE", "MA", "PB", "PE", "PI", "RN", "SE") ~ "Nordeste",
+    uf_sigla %in% c("DF", "GO", "MT", "MS") ~ "Centro-Oeste",
+    TRUE ~ "Não classificado"))
+
+baseline |>
+  ggplot(aes(x = mediana_rr_med,
+             fill = Região)) + 
+  geom_histogram() + 
+  facet_wrap(~Região, nrow = 5,
+             scale = "free") + theme_minimal()
+
+median(baseline$mediana_rr_med)
+  median(baseline$mediana_rr_enf)
+
+# Mapa déficit superávit  -------------------------------------------------
+
+ggplot()  +
+  geom_sf(data = baseline, 
+          aes(fill = resultado_med, 
+              geometry = geometry), 
+          color = "#f5f5f5") +
+  geom_sf(data = estados_br, 
+          fill = NA, 
+          color = "#474A51", 
+          linewidth = 0.1) + 
+  theme_minimal() +
+  labs(fill = "RR(%)") +
+  annotation_north_arrow(
+    location = "tr", 
+    which_north = "true",
+    style = north_arrow_fancy_orienteering()) +
+  annotation_scale(location = "bl", 
+                   width_hint = 0.3) +
+  theme(
+    legend.justification = "center",
+    legend.box = "horizontal",
+    axis.title.x = element_blank(),
+    axis.title.y = element_blank(),
+    axis.text.x = element_text(size = 14),  
+    axis.text.y = element_text(size = 14),
+    legend.text = element_text(size = 14),
+    plot.title = element_text(size = 14),
+    panel.border = element_rect(color = "black", 
+                                fill = NA, 
+                                size = 1), 
+    plot.margin = margin(10, 10, 10, 10))
+
+ggplot()  +
+  geom_sf(data = baseline, 
+          aes(fill = resultado_enf, 
+              geometry = geometry), 
+          color = "#f5f5f5") +
+  geom_sf(data = estados_br, 
+          fill = NA, 
+          color = "#474A51", 
+          linewidth = 0.1) + 
+  theme_minimal() +
+  labs(fill = "RR(%)") +
+  annotation_north_arrow(
+    location = "tr", 
+    which_north = "true",
+    style = north_arrow_fancy_orienteering()) +
+  annotation_scale(location = "bl", 
+                   width_hint = 0.3) +
+  theme(
+    legend.justification = "center",
+    legend.box = "horizontal",
+    axis.title.x = element_blank(),
+    axis.title.y = element_blank(),
+    axis.text.x = element_text(size = 14),  
+    axis.text.y = element_text(size = 14),
+    legend.text = element_text(size = 14),
+    plot.title = element_text(size = 14),
+    panel.border = element_rect(color = "black", 
+                                fill = NA, 
+                                size = 1), 
+    plot.margin = margin(10, 10, 10, 10))
+
 
 
 # Mapa --------------------------------------------------------------------
 
 gerar_mapa <- 
   
-  function(df, var_perc, titulo){
+  function(df, 
+           var_perc, 
+           titulo){
     
     var_sym <- sym(var_perc)
     
-    ggplot() +
+    ggplot()  +
       geom_sf(data = df, 
               aes(fill = !!var_sym, 
                   geometry = geometry), 
               color = "#f5f5f5") +
       geom_sf(data = estados_br, 
               fill = NA, 
-              color = "#4c4d4a", 
-              size = 0.1) +
+              color = "#474A51", 
+              linewidth = 0.1) + 
       theme_minimal() +
       scale_fill_gradientn(colors = 
                              c("#FF2400","#FF7F00",  
@@ -390,6 +487,8 @@ mapa_mediana_medicos <-
           "Médicos") + 
   theme(legend.position = "none")
 
+mapa_mediana_medicos
+
 mapa_mediana_enf <- 
   gerar_mapa(df = baseline, 
              var_perc = "mediana_rr_enf_recod",
@@ -399,8 +498,10 @@ mapa_mediana_enf <-
 
 mapa_mediana <- mapa_mediana_medicos + mapa_mediana_enf 
 
+mapa_mediana
+
 ggsave(plot = mapa_mediana,
-       filename = "~/GitHub/materno_infantil/02_script_tratado/03_graficos/mapa_mediana.png",
+       filename = "~/GitHub/materno_infantil/02_script_tratado/03_graficos/mapa_mediana0206.png",
        dpi = 800, 
        width = 10,
        height = 5)
@@ -411,7 +512,7 @@ ggsave(plot = mapa_mediana,
 
 cenario1 <- 
   resultados_regioes |>
-    filter(simulacao == "721") |> 
+    filter(simulacao == "199") |> 
     mutate(cod_regsaud = as.numeric(cod_regsaud)) |> 
     left_join(spdf_fortified,
             by = c("cod_regsaud"="reg_id")) |> 
@@ -470,7 +571,7 @@ cenario1_enf <-
 
 cenario2 <- 
   resultados_regioes |>
-  filter(simulacao == "53") |> 
+  filter(simulacao == "4") |> 
   mutate(cod_regsaud = as.numeric(cod_regsaud)) |> 
   left_join(spdf_fortified,
             by = c("cod_regsaud"="reg_id")) |> 
@@ -527,7 +628,7 @@ cenario2_enf <-
 
 cenario3 <- 
   resultados_regioes |>
-  filter(simulacao == "842") |> 
+  filter(simulacao == "112") |> 
   mutate(cod_regsaud = as.numeric(cod_regsaud)) |> 
   left_join(spdf_fortified,
             by = c("cod_regsaud"="reg_id")) |> 
@@ -590,7 +691,7 @@ cenario3_enf <-
 
 cenario4 <- 
   resultados_regioes |>
-  filter(simulacao == "933") |> 
+  filter(simulacao == "619") |> 
   mutate(cod_regsaud = as.numeric(cod_regsaud)) |> 
   left_join(spdf_fortified,
             by = c("cod_regsaud"="reg_id")) |> 
@@ -652,25 +753,25 @@ mapas <- mapas_med / mapas_enf
 distribuicoes <- (dist_uf1 | dist_uf2 | dist_uf3 | dist_uf4)  
 
 ggsave(plot = distribuicoes,
-       filename = "~/GitHub/materno_infantil/02_script_tratado/03_graficos/distribuicoes.png",
+       filename = "~/GitHub/materno_infantil/02_script_tratado/03_graficos/distribuicoes0206.png",
        dpi = 800, 
        width = 15,
        height = 8)
 
 ggsave(plot = mapas_med,
-       filename = "~/GitHub/materno_infantil/02_script_tratado/03_graficos/mapas_cenarios_med.png",
+       filename = "~/GitHub/materno_infantil/02_script_tratado/03_graficos/mapas_cenarios_med0206.png",
        dpi = 800, 
        width = 15,
        height = 8)
 
 ggsave(plot = mapas,
-       filename = "~/GitHub/materno_infantil/02_script_tratado/03_graficos/mapas_cenarios.png",
+       filename = "~/GitHub/materno_infantil/02_script_tratado/03_graficos/mapas_cenarios0206.png",
        dpi = 800, 
        width = 15,
        height = 8)
 
 ggsave(plot = mapas_enf,
-       filename = "~/GitHub/materno_infantil/02_script_tratado/03_graficos/mapa_cenarios_enf.png",
+       filename = "~/GitHub/materno_infantil/02_script_tratado/03_graficos/mapa_cenarios_enf0206.png",
        dpi = 800, 
        width = 15,
        height = 6)
@@ -725,4 +826,4 @@ ra_ufs <- rbind(ra_uf1,
                 ra_uf4)
 
 write.csv(ra_ufs,
-          "~/GitHub/materno_infantil/02_script_tratado/resultados_absolutos_uf.csv")
+          "~/GitHub/materno_infantil/02_script_tratado/resultados_absolutos_uf0206.csv")

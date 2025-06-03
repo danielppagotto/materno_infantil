@@ -12,7 +12,7 @@ rendimentos <-
                         "Médicos"))
 
 resultados_regioes <- 
-  read_csv("~/GitHub/materno_infantil/02_script_tratado/resultados_absolutos_uf.csv")
+  read_csv("~/GitHub/materno_infantil/02_script_tratado/resultados_absolutos_uf0206.csv")
 
 
 resultados_enf <- 
@@ -83,4 +83,4 @@ lacunas <- rbind(resultados_enf,
                  resultados_med)
 
 writexl::write_xlsx(lacunas, 
-                    "~/GitHub/materno_infantil/02_script_tratado/04_orcamentos/rendimentos_necessarios.xlsx")
+                    "~/GitHub/materno_infantil/02_script_tratado/04_orcamentos/rendimentos_necessarios0206.xlsx")

@@ -145,12 +145,16 @@ calcular_necessidades <- function(procedimentos, prenatal_hab, consulta_puerpera
 
 # Transformando horas de prof em número de prof ---------------------------
 
-agregar_necessidades <- function(necessidades, ferias, feriados, absenteismo) {
+agregar_necessidades <- 
+  function(necessidades, ferias, 
+           feriados, absenteismo) {
+ 
   ttd <- 160 - ferias - feriados - absenteismo
   
   nec_prof_agregado <- 
     necessidades |>
-    group_by(ano_proc_rea, mes_proc_rea, cod_regsaud, regiao_saude, uf_sigla) |> 
+    group_by(ano_proc_rea, mes_proc_rea, 
+             cod_regsaud, regiao_saude, uf_sigla) |> 
     summarise(nec_med = sum(nec_med), nec_enf = sum(nec_enf)) |> 
     mutate(nec_med_prof = nec_med/ttd, nec_enf_prof = nec_enf/ttd) |> 
     rename(ano = ano_proc_rea) |> 

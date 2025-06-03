@@ -492,10 +492,10 @@ executar_monte_carlo_modular <- function(n_sim = 500,
                                          enf_cd_max = 0.55,
                                          enf_acoes_min = 0.45,
                                          enf_acoes_max = 0.55,
-                                         ist_enf_min = 0.10,
-                                         ist_enf_max = 0.20,
-                                         ist_med_min = 0.10,
-                                         ist_med_max = 0.20,
+                                         ist_enf_min = 0,
+                                         ist_enf_max = 0,
+                                         ist_med_min = 0,
+                                         ist_med_max = 0,
                                          prob_ans_aumento = 1/3,
                                          prob_ans_constante = 1/3, 
                                          prob_ans_diminuicao = 1/3,
@@ -873,10 +873,10 @@ resultado_mc <-
     enf_cd_max = 0.55,
     enf_acoes_min = 0.45,
     enf_acoes_max = 0.55,
-    ist_enf_min = 0.15,
-    ist_enf_max = 0.20,
-    ist_med_min = 0.15,
-    ist_med_max = 0.20,
+    ist_enf_min = 0,
+    ist_enf_max = 0,
+    ist_med_min = 0,
+    ist_med_max = 0,
     servicos = servicos,
     oferta_med = oferta_med,
     oferta_enf = oferta_enf,
@@ -894,16 +894,16 @@ resultados_regioes <- resultado_mc[["resultados_por_regiao"]]|>
     TRUE ~ "Não classificado"
   )) 
  
-# write.csv(resultados_regioes,
-#             "~/GitHub/materno_infantil/02_script_tratado/02_output_mc/resultados_lp_500.csv")
-#  
-# resumo_regiao <- resultado_mc[["resumo_por_regiao"]]
-#  
-# write.csv(resumo_regiao,
-#             "~/GitHub/materno_infantil/02_script_tratado/02_output_mc/resumo_resultados_lp_500.csv")
-#  
-# parametros <- resultado_mc[["parametros"]]
-#  
-# write.csv(parametros,
-#             "~/GitHub/materno_infantil/02_script_tratado/02_output_mc/parametros_lp_500.csv")
-#  
+write.csv(resultados_regioes,
+            "~/GitHub/materno_infantil/02_script_tratado/02_output_mc/resultados_lp_500_0206.csv")
+
+resumo_regiao <- resultado_mc[["resumo_por_regiao"]]
+
+write.csv(resumo_regiao,
+            "~/GitHub/materno_infantil/02_script_tratado/02_output_mc/resumo_resultados_lp_500_0206.csv")
+
+parametros <- resultado_mc[["parametros"]]
+
+write.csv(parametros,
+            "~/GitHub/materno_infantil/02_script_tratado/02_output_mc/parametros_lp_500_0206.csv")
+
