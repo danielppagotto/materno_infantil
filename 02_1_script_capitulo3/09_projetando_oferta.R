@@ -19,6 +19,8 @@ oferta_aps |>
   geom_line() + 
   geom_smooth(method="loess", span=0.3)
 
+cod_rs = "52001"
+categoria = "Médicos"
 
 projecao <- function(cod_rs, 
                      categoria){
@@ -59,7 +61,8 @@ data_max <- as.Date(max(df_prophet$ds))
 
 tendencia_base <- forecast |> 
   select(ds, trend) |>
-  filter(ds >= data_max) 
+  filter(ds >= data_max) |> 
+  filter(ds <= "2030-12-01")
 
 # Criar os três cenários de previsão
 
@@ -101,7 +104,8 @@ previsoes <- tendencia_base |>
   mutate(cod_regsaud = cod_rs,
          uf = uf, 
          regiao_saude = rs, 
-         regiao = regiao)
+         regiao = regiao) |> 
+  filter(ds <= "2030-12-01")
 
 previsoes_max <- max(previsoes$cenario_aumento)
 max_total <- c(previsoes_max, max_historico)
@@ -140,16 +144,19 @@ a <- ggplot() +
   geom_line(data = previsoes, aes(x = ds, y = cenario_reducao), 
             color = "red", size = 1.2) +
   ylim(0, 1.5 * max(max_total)) +
+  xlim(as.Date(NA), as.Date("2030-12-31")) +  # Adicione esta linha
   # Adicionar legenda e rótulos com informação da região e categoria
   labs(
     title = paste0("Projeção de FTE40 até 2030 - Região ", cod_rs, " (", rs, "), Categoria: ", categoria),
-    subtitle = "Três cenários: base (azul), redução em 10% da tendência de crescimento (verde), redução de 20% da tendência de crescimento (vermelho)",
+    subtitle = "Três cenários: base (azul), redução em 10% da tendência de crescimento (verde),\n redução de 20% da tendência de crescimento (vermelho)",
     x = "Data",
     y = "FTE40"
   ) +
   theme_minimal() +
-  scale_x_date(date_breaks = "1 year", date_labels = "%Y") +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+  scale_x_date(date_breaks = "1 year", 
+               date_labels = "%Y") +
+  theme(axis.text.x = element_text(angle = 45, 
+                                   hjust = 1))
 
 a
 
@@ -160,6 +167,7 @@ ggsave(filename = nome_arquivo_img,
        plot = a, dpi = 500, height = 5, width = 10)
 
 }
+
 
 codigos_rs <- unique(oferta_aps$cod_regsaud)
 categorias <- unique(oferta_aps$categoria_profissional)

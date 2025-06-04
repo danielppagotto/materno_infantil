@@ -36,9 +36,6 @@ oferta_aps <- sqlQuery(channel,
 
 oferta_aps$fte40 <- as.numeric(oferta_aps$fte40)
 
-
-
-
 # Fazendo alguns tratamentos ----------------------------------------------
 
 
